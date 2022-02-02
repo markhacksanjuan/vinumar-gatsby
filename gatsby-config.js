@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "vinumar-web",
   },
-  plugins: [],
+  plugins: [`gatsby-theme-material-ui`],
 };

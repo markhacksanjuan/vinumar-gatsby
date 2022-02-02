@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'DiatypeLight';
+    src: url('../public/fonts/ABCDiatype-Light.woff') format('woff'),
+        url('../public/fonts/ABCDiatype-Light.woff2') format('woff2')
+}
+body {
+    font-family: 'DiatypeLight'
+}
+a {
+    text-decoration: none !important;
+}
+ul {
+    margin: 0;
+    list-style: none;
+}
+p{
+    margin: 0
+}
