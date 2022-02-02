@@ -1,7 +1,9 @@
 @font-face {
+    src: url('/src/public/fonts/ABCDiatype-Light.woff') format('woff'),
+        url('/src//public//fonts/ABCDiatype-Light.woff2') format('woff2');
     font-family: 'DiatypeLight';
-    src: url('../public/fonts/ABCDiatype-Light.woff') format('woff'),
-        url('../public/fonts/ABCDiatype-Light.woff2') format('woff2')
+    /* src: url('../public/fonts/ABCDiatype-Light.woff') format('woff'),
+        url('../public/fonts/ABCDiatype-Light.woff2') format('woff2') */
 }
 body {
     font-family: 'DiatypeLight'

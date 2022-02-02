@@ -7,13 +7,14 @@ const useStyles = makeStyles(theme => ({
         background: wine,
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'center',
         paddingBottom: '70px',
         paddingTop: '60px',
-        paddingLeft: '260px'
+        paddingLeft: '100px',
+        paddingRight: '100px'
     },
     block: {
-        width: '214px'
+        width: '150px'
     },
     list: {
         listStyle: 'none',
