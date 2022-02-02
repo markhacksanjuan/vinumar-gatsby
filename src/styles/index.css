@@ -6,7 +6,7 @@
         url('../public/fonts/ABCDiatype-Light.woff2') format('woff2') */
 }
 body {
-    font-family: 'DiatypeLight'
+    font-family: 'DiatypeLight' !important
 }
 a {
     text-decoration: none !important;

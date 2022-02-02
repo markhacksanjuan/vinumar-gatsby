@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: '1.3rem'
     },
     listGeneralElement: {
+        fontFamily: 'DiatypeLight',
         textDecoration: 'none',
         color: black,
         '&:visited': {
