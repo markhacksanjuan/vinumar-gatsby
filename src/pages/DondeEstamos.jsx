@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../components/navbar/Navbar'
+import Navbar from '../components/navbarIndex/NavbarIndex'
 
 const DondePage = () => {
     return(
         <>
-            <Navbar />
+            <Navbar width='214px' />
         </>
     )
 }

@@ -5,7 +5,7 @@ const useStyles = makeStyles(theme => ({
     container: {
         display: 'flex',
         flexDirection: 'row',
-        color: 'red'
+        justifyContent: 'space-between'
     },
     listGeneral: {
         textDecoration: 'none',
@@ -21,14 +21,19 @@ const useStyles = makeStyles(theme => ({
         fontFamily: 'DiatypeLight',
         textDecoration: 'none',
         color: black,
+        fontWeight: 'bold',
         '&:visited': {
             color: black
         },
         fontSize: '0.9rem',
+        cursor: 'pointer'
     },
     logo: {
         marginTop: '23px',
         marginLeft: '22px'
+    },
+    logoPages: {
+
     },
     listElement: {
         width: '100%',
@@ -51,5 +56,8 @@ const useStyles = makeStyles(theme => ({
         marginRight: '11px',
         paddingTop: '0.3rem'
     },
+    menu: {
+        position: 'absolute'
+    }
 }))
 export default useStyles

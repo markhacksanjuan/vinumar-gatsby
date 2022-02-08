@@ -14,7 +14,9 @@ const useStyles = makeStyles(theme => ({
         paddingRight: '100px'
     },
     block: {
-        width: '150px'
+        width: '180px',
+        marginLeft: '5px',
+        marginRight: '5px'
     },
     list: {
         listStyle: 'none',
