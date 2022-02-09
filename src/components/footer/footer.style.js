@@ -11,7 +11,8 @@ const useStyles = makeStyles(theme => ({
         paddingBottom: '70px',
         paddingTop: '60px',
         paddingLeft: '100px',
-        paddingRight: '100px'
+        paddingRight: '100px',
+        marginTop: '150px'
     },
     block: {
         width: '180px',

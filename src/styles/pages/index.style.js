@@ -53,11 +53,45 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
+    containerDonde: {
+        borderTop: 'solid 1px black',
+        width: '80%',
+        margin: 'auto',
+        marginBottom: '300px',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        fontSize: '18px'
+    },
+    containerDondeText: {
+        display: 'flex',
+        flexDirection: 'row'
+    },
+    cardDonde: {
+        width: '61%'
+    },
+    dondeDirecc: {
+        marginRight: '70px'
+    },
+    h2Donde: {
+
+    },
+    dondeImg: {
+        width: '100%',
+        height: '396px',
+        objectFit: 'cover',
+        marginTop: '28px'
+    },
     titleCard: {
 
     },
     textCard: {
         width: '65%'
+    },
+    button: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center'
     }
 }))
 export default useStyles

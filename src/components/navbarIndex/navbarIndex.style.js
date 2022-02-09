@@ -28,6 +28,15 @@ const useStyles = makeStyles(theme => ({
         fontSize: '0.9rem',
         cursor: 'pointer'
     },
+    listSubMenu: {
+        fontFamily: 'DiatypeLight',
+        textDecoration: 'none',
+        color: black,
+        '&:visited': {
+            color: black
+        },
+        fontSize: '0.9rem',
+    },
     logo: {
         marginTop: '23px',
         marginLeft: '22px'

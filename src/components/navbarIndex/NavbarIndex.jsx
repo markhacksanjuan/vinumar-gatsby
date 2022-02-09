@@ -19,12 +19,12 @@ const NavbarIndex = ({width}) => {
         return(
             <>
               <ul className={classes.menu}>
-                    <li>Extractos de piel de uva</li>
-                    <li>Extractos de vino</li>
-                    <li>Taninos de uva</li>
-                    <li>Alcoholes de uso de boca</li>
-                    <li>Alcoholes industriales</li>
-                    <li>Pepita de uva</li>
+                    <li><Link className={classes.listSubMenu} to='/productos/ExtractosPiel'>Extractos de piel de uva</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/productos/ExtractosVino'>Extractos de vino</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/productos/Taninos'>Taninos de uva</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/productos/AlcoholesBoca'>Alcoholes de uso de boca</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/productos/AlcoholesIndustriales'>Alcoholes industriales</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/productos/Pepita'>Pepita de uva</Link></li>
                 </ul>  
             </>
         )
@@ -37,9 +37,9 @@ const NavbarIndex = ({width}) => {
         return(
             <>
                 <ul className={classes.menu}>
-                    <li>Recursos humanos y técnicos</li>
-                    <li>Historia</li>
-                    <li>Valores</li>
+                    <li><Link className={classes.listSubMenu} to='/nosotros/Recursos'>Recursos humanos y técnicos</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/nosotros/Historia'>Historia</Link></li>
+                    <li><Link className={classes.listSubMenu} to='/nosotros/Valores'>Valores</Link></li>
                 </ul> 
             </>
         )

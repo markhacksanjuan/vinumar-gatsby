@@ -1,6 +1,7 @@
 import * as React from "react"
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
+import Button from '../components/button/Button'
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -13,6 +14,7 @@ import extVino from '../images/img/Extracto-de-vino-caracteristicas.jpg'
 import taninosUva from '../images/img/taninos-aplicaciones.jpg'
 import alcohol from '../images/img/Alcohol-uso-boca-app.jpg'
 import pepitas from '../images/img/Pepita-app.jpg'
+import dondeImg from '../images/img/Situacion-Geografica-Carrusel-1.jpg'
 
 // markup
 const IndexPage = ({}) => {
@@ -26,9 +28,9 @@ const IndexPage = ({}) => {
       </>
     )
   }
-  const renderText = () => {
+  const RenderTextCentered = ({ text }) => {
     return(
-      <p className={classes.textTitle}>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</p>
+      <p className={classes.textTitle}>{text}</p>
     )
   }
   const ProductoCard = ({title, text, image}) => {
@@ -81,15 +83,37 @@ const IndexPage = ({}) => {
       </>
     )
   }
+  const renderDonde = () => {
+    return(
+      <>
+        <div className={classes.containerDonde}>
+          <h2>Dónde estamos</h2>
+          <div className={classes.cardDonde}>
+            <div className={classes.containerDondeText}>
+              <p className={classes.dondeDirecc}>ctra. Munera, 5 02600 Villarrobledo Albacete, España</p>
+              <div>
+                <p>Nos ubicamos en una localización estratégica: Castilla-La Mancha, una de las mayores regiones productoras de uva de alta calidad a escala mundial. Esta cercanía a la materia prima nos garantiza abundancia de suministro y una gran capacidad de producción, para responder a las demandas de nuestros clientes con la máxima rapidez. </p>
+                <p>Además, contamos con una red logística de largo alcance por autovía, ferrocarril, transporte aéreo y marítimo, que nos permite llegar allí donde sea preciso. Desde donde estamos todo son ventajas.</p>
+              </div>
+            </div>
+              <img className={classes.dondeImg} src={dondeImg} alt='Donde estamos' />
+          </div>
+        </div>
+      </>
+    )
+  }
 
   return (
     <main>
       <Navbar width='451px' />
       <div className={classes.container}>
         {renderHeader()}
-        {renderText()}
+        <RenderTextCentered text='En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.' />
         {renderProductos()}
+        {renderDonde()}
+        <RenderTextCentered text='Más de 60 años haciendo historia en el mundo de la uva.' />
       </div>
+        <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red' width='282px' />
 
       <Footer />
     </main>
