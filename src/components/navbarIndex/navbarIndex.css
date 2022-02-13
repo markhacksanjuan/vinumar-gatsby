@@ -1,0 +1,75 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar-list-general {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 1477px;
+    margin-left: 0.1rem;
+    padding: 0;
+    margin-top: 1.3rem
+}
+.navbar-list-general-element {
+    font-family: 'DiatypeLight';
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer
+}
+.navbar-list-general-element:hover {
+    color: black
+}
+.navbar-list-general-element:visited {
+    color:black
+}
+.navbar-list-sub-menu {
+    font-family: 'DiatypeLight';
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+.navbar-list-sub-menu:hover {
+    color: black
+}
+.navbar-list-sub-menu:visited {
+    color: black
+}
+.navbar-logo {
+    margin-top: 23px;
+    margin-left: 22px;
+}
+.navbar-list-element {
+    width: 100%;
+    border-top: solid 1px black;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding-top: 0.3rem;
+}
+.navbar-list-element:hover {
+    color: black
+}
+.navbar-list-element:visited {
+    color: black
+}
+.navbar-list-element-contact {
+    width: 80%;
+    border-top: 1px solid black;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding-top: 0.3rem;
+}
+.navbar-list-element-lang {
+    width: 20%;
+    border-top: solid 1px black;
+    margin-left: 11px;
+    margin-right: 11px;
+    padding-top: 0.3rem;
+}
+.navbar-menu {
+    position: absolute
+}

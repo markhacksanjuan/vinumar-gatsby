@@ -1,31 +1,30 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import useStyles from './footer.style'
+import './footer.css'
 
 const Footer = () => {
-    const classes = useStyles()
     return(
         <>
-            <div className={classes.container}>
-                <div className={classes.block}>
-                    <p className={classes.title}>Contacto</p>
+            <div className='footer-container'>
+                <div className='footer-black'>
+                    <p className='footer-title'>Contacto</p>
                     <div>
-                        <ul className={classes.listContact}>
+                        <ul className='footer-list-contact'>
                             <li>ctra. Munera, 5</li>
                             <li>02600 Villarrobledo</li>
                             <li>Albacete, España</li>
                         </ul>
-                        <ul className={classes.listContact}>
+                        <ul className='footer-list-contact'>
                             <li>T +34 967141500</li>
                             <li>F +34 967144111</li>
                         </ul>
-                        <p className={classes.email}>vinumar@vinumar.es</p>
+                        <p className='email'>vinumar@vinumar.es</p>
                     </div>
                 </div>
-                <div className={classes.block}>
-                    <p className={classes.title}>Productos</p>
+                <div className='footer-block'>
+                    <p className='footer-title'>Productos</p>
                     <div>
-                        <ul className={classes.list}>
+                        <ul className='footer-list'>
                             <li>Extracto de piel de uva</li>
                             <li>Extracto de vino</li>
                             <li>Taninos de uva</li>
@@ -34,26 +33,26 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className={classes.block}>
-                    <p className={classes.title}>Sobre Nosotros</p>
+                <div className='footer-block'>
+                    <p className='footer-title'>Sobre Nosotros</p>
                     <div>
-                        <ul className={classes.list}>
+                        <ul className='footer-list'>
                             <li>Recursos técnicos y humanos</li>
                             <li>Historia</li>
                             <li>Valores</li>
                         </ul>
                     </div>
                 </div>
-                <div className={classes.block}>
-                    <p className={classes.titleNoBottom}>Dónde Estamos</p>
+                <div className='footer-block'>
+                    <p className='footer-title-no-bottom'>Dónde Estamos</p>
                 </div>
-                <div className={classes.block}>
-                    <p className={classes.titleNoBottom}>Sostenibilidad</p>
+                <div className='footer-block'>
+                    <p className='title-no-bottom'>Sostenibilidad</p>
                 </div>
-                <div className={classes.block}>
-                    <p className={classes.title}>Política de Privacidad</p>
+                <div className='footer-block'>
+                    <p className='footer-title'>Política de Privacidad</p>
                     <div>
-                        <ul className={classes.list}>
+                        <ul className='footer-list'>
                             <li>Política de cookies</li>
                             <li>Política de privacidad</li>
                             <li>Aviso legal</li>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, navigate } from 'gatsby'
 import useStyles from './button.style'
+import './button.css'
 
 const Button = ({ text, goTo, style, width }) => {
     const classes = useStyles()
@@ -10,8 +11,8 @@ const Button = ({ text, goTo, style, width }) => {
     }
     return(
         <>
-            <div className={classes.button}>
-                <button className={classes[style]} style={{ width }} onClick={() => onClick()}>{text}</button>
+            <div className='button-component'>
+                <button className={`${style}`} style={{ width }} onClick={() => onClick()}>{text}</button>
             </div>
         </>
     )

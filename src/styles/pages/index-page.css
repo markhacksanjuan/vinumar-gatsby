@@ -1,0 +1,93 @@
+.index-container {
+
+}
+.index-container-header {
+    width: 100%
+}
+.index-header-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 266px
+}
+.index-text-title {
+    font-size: 37px;
+    color: #A02E33;
+    width: 926px;
+    text-align: center;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.index-card {
+    border-top: solid 1px black;
+    width: 47%;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 442px;
+    margin-top: 60px;
+    padding-top: 10px
+}
+.index-card-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.index-container-product {
+    border-top: solid 1px black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 300px;
+}
+.index-container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.index-container-text-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.index-container-donde {
+    border-top: solid 1px black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px
+}
+.index-container-donde-text {
+    display: flex;
+    flex-direction: row
+}
+.index-card-donde {
+    width: 61%
+}
+.index-donde-direccion {
+    margin-right: 70px
+}
+.index-h2-donde {
+
+}
+.index-donde-img {
+    width: 100%;
+    height: 396px;
+    object-fit: cover;
+    margin-top: 28px
+}
+.index-title-card {
+
+}
+.index-text-card {
+    width: 65%
+}
+.index-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
