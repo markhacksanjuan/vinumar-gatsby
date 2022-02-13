@@ -103,12 +103,12 @@ const IndexPage = ({}) => {
       <Navbar width='451px' />
       <div className='index-container'>
         {renderHeader()}
-        <TextCentered text='En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.' />
+        <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
         {renderProductos()}
         {renderDonde()}
-        <TextCentered text='Más de 60 años haciendo historia en el mundo de la uva.' />
+        <TextCentered>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
       </div>
-        <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='282px' />
+        <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='282px'>SABER MÁS SOBRE VINUMAR</Button>
 
       <Footer />
     </main>

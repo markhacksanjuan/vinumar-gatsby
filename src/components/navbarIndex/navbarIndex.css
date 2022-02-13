@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background: white;
+    top: 0
 }
 .navbar-list-general {
     text-decoration: none;
@@ -22,10 +25,10 @@
     cursor: pointer
 }
 .navbar-list-general-element:hover {
-    color: black
+    color: #A02E33
 }
 .navbar-list-general-element:visited {
-    color:black
+    color:none
 }
 .navbar-list-sub-menu {
     font-family: 'DiatypeLight';
@@ -34,10 +37,10 @@
     font-size: 0.9rem;
 }
 .navbar-list-sub-menu:hover {
-    color: black
+    color: #A02E33
 }
 .navbar-list-sub-menu:visited {
-    color: black
+    color: none
 }
 .navbar-logo {
     margin-top: 23px;
@@ -51,7 +54,7 @@
     padding-top: 0.3rem;
 }
 .navbar-list-element:hover {
-    color: black
+    color: #A02E33
 }
 .navbar-list-element:visited {
     color: black
@@ -71,5 +74,6 @@
     padding-top: 0.3rem;
 }
 .navbar-menu {
-    position: absolute
+    position: absolute;
+    background: white
 }

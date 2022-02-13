@@ -3,6 +3,7 @@ import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
+import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 
 // import images
 import pielHeaderImg from '../../images/img/Extracto-piel-uva-caract-2.jpg'
@@ -16,8 +17,8 @@ const ExtractosPiel = () => {
             <>
                 <div className='piel-container-header'>
                     <div className='piel-container-header-title'>
-                        <h4 className='piel-h4-header'>Extractos de piel de uva</h4>
-                        <p className='piel-p-header'>También conocidos como enocianina, los extractos de piel de uva son colorantes 100% naturales obtenidos por la extracción acuosa de la fracción de antocianos (o antocianinas) de las uvas tintas, pigmentos pertenecientes a la familia de los polifenoles, cuyo espectro cromático abarca desde el rojo oscuro al violeta. Disponemos de dos prácticos formatos: líquido o polvo.</p>
+                        <h4>Extractos de piel de uva</h4>
+                        <p>También conocidos como enocianina, los extractos de piel de uva son colorantes 100% naturales obtenidos por la extracción acuosa de la fracción de antocianos (o antocianinas) de las uvas tintas, pigmentos pertenecientes a la familia de los polifenoles, cuyo espectro cromático abarca desde el rojo oscuro al violeta. Disponemos de dos prácticos formatos: líquido o polvo.</p>
                     </div>
                     <div className='piel-header-apli-carac-img-container'>
                         <div className='piel-header-apli-carac-container'>
@@ -70,8 +71,10 @@ const ExtractosPiel = () => {
 
             {renderExtractosHeader()}
 
-            <TextCentered text='También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.' />
-            <Button text='CONTACTA CON NOSOTROS' style='red-button' width='270' goTo='/Contacto' />
+            <TextCentered>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
+            <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
+
+            <EntornoNatural type='slider' />
             <Footer />
 
         </>

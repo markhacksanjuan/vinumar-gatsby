@@ -1,4 +1,4 @@
-.piel-container-header {
+.uva-container-header {
     border-top: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -7,20 +7,20 @@
     margin-top: 302px;
     width: 80%;
 }
-.piel-container-header-title {
+.uva-container-header-title {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
     justify-content: space-between;
 }
-.piel-container-header-title h4 {
+.uva-container-header-title h4 {
     font-size: 37px;
     margin: 0
 }
-.piel-container-header-title p {
+.uva-container-header-title p {
     width: 50%;
 }
-.piel-header-apli-carac-img-container {
+.uva-header-apli-carac-img-container {
     display: flex;
     flex-direction: row;
     border-top: solid 1px black;
@@ -28,51 +28,51 @@
     padding-top: 10px
 }
 
-.piel-header-apli-carac-container {
+.uva-header-apli-carac-container {
     width: 60%
 }
-.piel-header-apli-carac-title {
+.uva-header-apli-carac-title {
     font-weight: bold;
     width: 30%
 }
-.piel-header-apli-container {
+.uva-header-apli-container {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.piel-header-apli-container > ul {
+.uva-header-apli-container > ul {
     width: 40%;
     margin-right: 10px
 }
-.piel-header-apli-container > ul > li {
+.uva-header-apli-container > ul > li {
     border-bottom: solid 1px black
 }
-.piel-header-apli-container > ul > li:last-child {
+.uva-header-apli-container > ul > li:last-child {
     border: none
 }
-.piel-header-apli-definition {
+.uva-header-apli-definition {
     width: 40%;
 }
-.piel-header-carac-container {
+.uva-header-carac-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-top: solid 1px black;
     padding-top: 10px
 }
-.piel-header-carac-container > ul {
+.uva-header-carac-container > ul {
     width: 80%
 }
-.piel-header-carac-container > ul > li:last-child {
+.uva-header-carac-container > ul > li:last-child {
     border: none
 }
-.piel-header-carac-li {
+.uva-header-carac-li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid 1px black
 }
-.piel-header-img {
+.uva-header-img {
     width: 50%;
     height: 688px;
     object-fit: cover;

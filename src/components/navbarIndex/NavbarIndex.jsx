@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
-import useStyles from './navbarIndex.style'
 
 const NavbarIndex = ({width}) => {
-    const classes = useStyles()
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
 
@@ -23,8 +21,7 @@ const NavbarIndex = ({width}) => {
                     <li><Link className='navbar-list-sub-menu' to='/productos/ExtractosPiel'>Extractos de piel de uva</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/productos/ExtractosVino'>Extractos de vino</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/productos/Taninos'>Taninos de uva</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/AlcoholesBoca'>Alcoholes de uso de boca</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/AlcoholesIndustriales'>Alcoholes industriales</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/productos/Alcoholes'>Alcoholes</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/productos/Pepita'>Pepita de uva</Link></li>
                 </ul>  
             </>

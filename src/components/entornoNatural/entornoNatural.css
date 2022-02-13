@@ -1,0 +1,33 @@
+.entorno-container {
+    border-top: solid 1px black;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 250px;
+    justify-content: center;
+    width: 80%
+}
+.entorno-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px
+}
+.entorno-text-container h4 {
+    font-size: 37px;
+    margin: 0
+}
+.entorno-text-container p {
+    width: 50%
+}
+.entorno-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.entorno-img-container img {
+    width: 49%;
+    height: 1000px;
+    object-fit: cover
+}

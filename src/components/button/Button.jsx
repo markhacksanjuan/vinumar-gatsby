@@ -3,7 +3,7 @@ import { Link, navigate } from 'gatsby'
 import useStyles from './button.style'
 import './button.css'
 
-const Button = ({ text, goTo, style, width }) => {
+const Button = ({ goTo, style, width, children }) => {
     const classes = useStyles()
 
     const onClick = () => {
@@ -12,7 +12,7 @@ const Button = ({ text, goTo, style, width }) => {
     return(
         <>
             <div className='button-component'>
-                <button className={`${style}`} style={{ width }} onClick={() => onClick()}>{text}</button>
+                <button className={`${style}`} style={{ width }} onClick={() => onClick()}>{children}</button>
             </div>
         </>
     )

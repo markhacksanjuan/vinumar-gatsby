@@ -1,4 +1,4 @@
-.piel-container-header {
+.taninos-container-header {
     border-top: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -7,20 +7,20 @@
     margin-top: 302px;
     width: 80%;
 }
-.piel-container-header-title {
+.taninos-container-header-title {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
     justify-content: space-between;
 }
-.piel-container-header-title h4 {
+.taninos-container-header-title h4 {
     font-size: 37px;
     margin: 0
 }
-.piel-container-header-title p {
+.taninos-container-header-title p {
     width: 50%;
 }
-.piel-header-apli-carac-img-container {
+.taninos-header-apli-carac-img-container {
     display: flex;
     flex-direction: row;
     border-top: solid 1px black;
@@ -28,51 +28,51 @@
     padding-top: 10px
 }
 
-.piel-header-apli-carac-container {
+.taninos-header-apli-carac-container {
     width: 60%
 }
-.piel-header-apli-carac-title {
+.taninos-header-apli-carac-title {
     font-weight: bold;
     width: 30%
 }
-.piel-header-apli-container {
+.taninos-header-apli-container {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.piel-header-apli-container > ul {
+.taninos-header-apli-container > ul {
     width: 40%;
     margin-right: 10px
 }
-.piel-header-apli-container > ul > li {
+.taninos-header-apli-container > ul > li {
     border-bottom: solid 1px black
 }
-.piel-header-apli-container > ul > li:last-child {
+.taninos-header-apli-container > ul > li:last-child {
     border: none
 }
-.piel-header-apli-definition {
+.taninos-header-apli-definition {
     width: 40%;
 }
-.piel-header-carac-container {
+.taninos-header-carac-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: solid 1px black;
-    padding-top: 10px
+    padding-top: 10px;
+    border-top: solid 1px black
 }
-.piel-header-carac-container > ul {
+.taninos-header-carac-container > ul {
     width: 80%
 }
-.piel-header-carac-container > ul > li:last-child {
-    border: none
-}
-.piel-header-carac-li {
+.taninos-header-carac-container > ul > li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid 1px black
 }
-.piel-header-img {
+.taninos-header-carac-container > ul > li:last-child {
+    border: none
+}
+.taninos-header-img {
     width: 50%;
     height: 688px;
     object-fit: cover;

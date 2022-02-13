@@ -1,4 +1,4 @@
-.piel-container-header {
+.pepita-container-header {
     border-top: solid 1px black;
     display: flex;
     flex-direction: column;
@@ -6,21 +6,22 @@
     margin: auto;
     margin-top: 302px;
     width: 80%;
+    margin-bottom: 60px
 }
-.piel-container-header-title {
+.pepita-container-header-title {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
     justify-content: space-between;
 }
-.piel-container-header-title h4 {
+.pepita-container-header-title h4 {
     font-size: 37px;
     margin: 0
 }
-.piel-container-header-title p {
+.pepita-container-header-title p {
     width: 50%;
 }
-.piel-header-apli-carac-img-container {
+.pepita-header-apli-carac-img-container {
     display: flex;
     flex-direction: row;
     border-top: solid 1px black;
@@ -28,51 +29,51 @@
     padding-top: 10px
 }
 
-.piel-header-apli-carac-container {
+.pepita-header-apli-carac-container {
     width: 60%
 }
-.piel-header-apli-carac-title {
+.pepita-header-apli-carac-title {
     font-weight: bold;
     width: 30%
 }
-.piel-header-apli-container {
+.pepita-header-apli-container {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.piel-header-apli-container > ul {
+.pepita-header-apli-container > ul {
     width: 40%;
     margin-right: 10px
 }
-.piel-header-apli-container > ul > li {
+.pepita-header-apli-container > ul > li {
     border-bottom: solid 1px black
 }
-.piel-header-apli-container > ul > li:last-child {
+.pepita-header-apli-container > ul > li:last-child {
     border: none
 }
-.piel-header-apli-definition {
+.pepita-header-apli-definition {
     width: 40%;
 }
-.piel-header-carac-container {
+.pepita-header-carac-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-top: solid 1px black;
     padding-top: 10px
 }
-.piel-header-carac-container > ul {
+.pepita-header-carac-container > ul {
     width: 80%
 }
-.piel-header-carac-container > ul > li:last-child {
+.pepita-header-carac-container > ul > li:last-child {
     border: none
 }
-.piel-header-carac-li {
+.pepita-header-carac-li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid 1px black
 }
-.piel-header-img {
+.pepita-header-img {
     width: 50%;
     height: 688px;
     object-fit: cover;
