@@ -23,7 +23,7 @@ const IndexPage = ({}) => {
     return(
       <>
         <div className='index-container-header'>
-          <img className='index-header-img' src={headerImg} alt='Vinumar' />
+          <img src={headerImg} alt='Vinumar' />
         </div>
       </>
     )

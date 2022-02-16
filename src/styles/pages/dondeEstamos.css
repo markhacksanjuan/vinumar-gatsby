@@ -1,0 +1,76 @@
+.donde-container {
+
+}
+.donde-container-header {
+    width: 100%;
+}
+.donde-container-header img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 266px
+}
+.donde-container-estamos {
+    border-top: 1px solid black;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 60px
+}
+.donde-container-estamos h4 {
+    font-size: 37px;
+    margin: 0;
+}
+.donde-container-ubicacion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.donde-container-ubicacion img {
+    width: 100%;
+    margin-top: 28px
+}
+.donde-container-ubicacion-text {
+    display: flex;
+    flex-direction: row
+}
+.donde-container-ubicacion-text p:first-child {
+    width: 19%
+}
+.donde-container-ubicacion-text p:last-child {
+    width: 80%;
+    margin-left: 50px
+}
+.donde-container-ventajas {
+    width: 80%;
+    border-top: 1px solid black;
+    margin: auto;
+    margin-top: 200px
+}
+.donde-container-ventajas h4 {
+    font-size: 37px;
+    margin: 0;
+}
+.donde-container-ventaja-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px
+}
+.donde-ventaja-card {
+    border-top: 1px solid black;
+    width: 32%
+}
+.donde-ventaja-card p {
+    font-weight: bold;
+    font-size: 18px
+}
+.donde-ventaja-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: 28px
+}

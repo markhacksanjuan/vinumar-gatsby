@@ -47,7 +47,7 @@ const Footer = () => {
                     <p className='footer-title-no-bottom'>Dónde Estamos</p>
                 </div>
                 <div className='footer-block'>
-                    <p className='title-no-bottom'>Sostenibilidad</p>
+                    <p className='footer-title-no-bottom'>Sostenibilidad</p>
                 </div>
                 <div className='footer-block'>
                     <p className='footer-title'>Política de Privacidad</p>
