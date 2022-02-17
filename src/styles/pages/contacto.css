@@ -1,0 +1,54 @@
+.contact-content-container {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 300px;
+    width: 80%;
+    padding-top: 15px
+}
+.contact-content-container > div {
+    width: 49%
+}
+.contact-content-container > div > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 42px
+}
+.contact-content-container > div > div:first-child p {
+    width: 30%
+}
+.contact-content-container > div > div:last-child {
+    border-top: 1px solid black;
+    padding-top: 15px
+}
+.contact-content-container h4 {
+    font-size: 37px;
+    margin: 0;
+    padding-bottom: 60px
+}
+.contact-content-container form {
+    border-top: 1px solid black;
+    padding-top: 10px
+}
+.contact-content-container form > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.contact-content-container form > div > textarea {
+    margin-top: 17px
+}
+.contact-content-container form > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#checkbox input {
+    width: 40px !important;
+    margin-right: 12px
+}
+.contact-content-container button {
+    margin-left: 130px
+}

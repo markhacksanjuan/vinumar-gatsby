@@ -23,3 +23,26 @@ button {
     border: 1px solid black;
     height: 40px;
 }
+input {
+    border: none;
+    font-size: 18px;
+    height: 33px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border-top: 1px solid black;
+    color: #00000040;
+}
+label {
+    font-size: 18px;
+    height: 33px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+textarea{
+    background-color: #0000000d
+    ;
+    border: none;
+    resize: none;
+    font-size: 23px;
+}

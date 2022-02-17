@@ -31,6 +31,7 @@ const EntornoNatural = ({ type, children, title }) => {
                         width='80%'
                         height={600}
                         showNavs={true}
+                        className='entorno-slider'
                      />
                 </div>
             </>
