@@ -1,0 +1,109 @@
+.recursos-recursos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 286px;
+    border-top: 1px solid black;
+}
+.recursos-recursos-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px
+}
+.recursos-recursos-container div:first-child > p {
+    width: 49%;
+}
+.recursos-recursos-container h4 {
+    font-size: 37px;
+    margin: 0;
+}
+.recursos-recursos-tecnicos {
+    border-top: 1px solid black;
+}
+.recursos-recursos-tecnicos ul {
+    margin-top: 25px;
+    list-style-type: circle;
+}
+.recursos-recursos-tecnicos > p:first-child {
+    font-weight: bold;
+    font-size: 18px
+}
+.recursos-recursos-tecnicos > div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 23px;
+}
+.recursos-recursos-tecnicos img {
+    object-fit: cover;
+    width: 49%;
+    height: 49%;
+}
+.recursos-recursos-automatizacion {
+    border-top: 1px solid black;
+    margin-top: 30px
+}
+.recursos-recursos-automatizacion > p:first-child {
+    font-weight: bold;
+    font-size: 18px
+}
+.recursos-recursos-automatizacion > p:last-of-type {
+    width: 30%;
+}
+.recursos-recursos-automatizacion img {
+    object-fit: cover;
+    width: 49%;
+    height: 400px;
+}
+
+.recursos-equipo-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    margin-top: 300px;
+    border-top: 1px solid black
+}
+.recursos-equipo-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.recursos-equipo-container h4 {
+    font-size: 37px;
+    margin: 0
+}
+.recursos-equipo-container div:first-child > p {
+    width: 49%;
+    margin-bottom: 28px
+}
+
+.recursos-instalaciones-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    margin-top: 300px;
+    border-top: 1px solid black;
+    margin-bottom: 70px
+}
+.recursos-instalaciones-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    margin-top: 15px
+}
+.recursos-instalaciones-container h4 {
+    font-size: 37px;
+    margin: 0
+}
+.recursos-instalaciones-container div:first-child > p {
+    width: 49%;
+    margin-bottom: 28px
+}
