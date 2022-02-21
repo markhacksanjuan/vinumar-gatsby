@@ -46,16 +46,24 @@ const NavbarIndex = ({width}) => {
         setShowNosotros(!showNosotros)
         setShowProd(false)
     }
+    const closeSubMenu = () => {
+        if(showProd || showNosotros){
+            setTimeout(() => {
+                setShowNosotros(false)
+                setShowProd(false)
+            }, 100)
+        }
+    }
     const renderListGeneral = () => {
         return(
             <ul className='navbar-list-general'>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/'>Inicio</Link></li>
                 <li className='navbar-list-element'>
-                    <p className='navbar-list-general-element' onClick={onClickProd}>Productos</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onClick={onClickProd} onBlur={closeSubMenu}>Productos</p>
                     {showProd && renderProd()}
                 </li>
                 <li className='navbar-list-element'>
-                    <p className='navbar-list-general-element' onClick={onClickNosotros} to='/Nosotros'>Sobre nosotros</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onClick={onClickNosotros} onBlur={closeSubMenu} to='/Nosotros'>Sobre nosotros</p>
                     {showNosotros && renderNosotros()}
                 </li>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/DondeEstamos'>Dónde estamos</Link></li>

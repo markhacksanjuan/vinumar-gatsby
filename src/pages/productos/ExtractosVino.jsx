@@ -8,6 +8,10 @@ import Button from '../../components/button/Button'
 import '../../styles/pages/extractos-uva.css'
 
 import uvaHeaderImg from '../../images/img/Extracto-de-vino-caracteristicas.jpg'
+import vinoProducto1 from '../../images/img/Extracto-piel-uva-app.jpg'
+import vinoProducto2 from '../../images/img/Extracto-piel-uva-app.jpg'
+import vinoProducto3 from '../../images/img/Extracto-piel-uva-app.jpg'
+import vinoProducto4 from '../../images/img/Extracto-piel-uva-app.jpg'
 
 
 const ExtractosVino = () => {
@@ -58,11 +62,183 @@ const ExtractosVino = () => {
         )
     }
 
+    const renderProductosCardLiquido = () => {
+        return(
+            <>
+                <div>
+                    <div>
+                        <p>Líquido</p>
+                        <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración, filtración y pasteurización de vino tinto o blanco.</p>
+                    </div>
+                    <img src={vinoProducto1} alt="Liquido" />
+                    <div>
+                        <p>Tinto</p>
+                        <div>
+                            <p>VINUWINE R55L</p>
+                            <ul>
+                                <li>
+                                    <p>Color</p>
+                                    <p>Marrón rojo</p>
+                                </li>
+                                <li>
+                                    <p>E3/Color</p>
+                                    <p>0,5 - 1,5</p>
+                                </li>
+                                <li>
+                                    <p>pH</p>
+                                    <p>&#8804;3,80</p>
+                                </li>
+                                <li>
+                                    <p>Brix</p>
+                                    <p>52 - 58 </p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Cisterna alimentaria</li>
+                                        <li>Contenedor 1000 l</li>
+                                        <li>Garrafas 60 l, 220 l</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <img src={vinoProducto1} alt="Liquido" />
+                    <div>
+                        <p>Blanco</p>
+                        <div>
+                            <p>VINUWINE B55L</p>
+                            <ul>
+                                <li>
+                                    <p>Índice color</p>
+                                    <p>&lt;60</p>
+                                </li>
+                                <li>
+                                    <p>Color</p>
+                                    <p>Marrón amarillento</p>
+                                </li>
+                                <li>
+                                    <p>pH</p>
+                                    <p>&#8804;3,80</p>
+                                </li>
+                                <li>
+                                    <p>Brix</p>
+                                    <p>52 - 58 </p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Cisterna alimentaria</li>
+                                        <li>Contenedor 1000 l</li>
+                                        <li>Garrafas 60 l, 220 l</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </>
+        )
+    }
+    const renderProductosCardPolvo = () => {
+        return(
+            <>
+                <div>
+                    <div>
+                        <p>Polvo</p>
+                        <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración y filtración de vino tinto o blanco, y se deshidrata por atomización, con o sin soporte de secado (maltodextrina).</p>
+                    </div>
+                    <img src={vinoProducto1} alt="Liquido" />
+                    <div>
+                        <p>Tinto</p>
+                        <div>
+                            <p>VINUWINE R55L</p>
+                            <ul>
+                                <li>
+                                    <p>Color</p>
+                                    <p>Marrón rojo</p>
+                                </li>
+                                <li>
+                                    <p>pH</p>
+                                    <p>&#8804;3,80</p>
+                                </li>
+                                <li>
+                                    <p>Humedad</p>
+                                    <p>&lt; 7 %</p>
+                                </li>
+                                <li>
+                                    <p>Soporte de secado</p>
+                                    <p>Maltodextrina</p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Bolsas de aluminio 25 Kg termosoldad al vacío</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <img src={vinoProducto1} alt="Liquido" />
+                    <div>
+                        <p>Blanco</p>
+                        <div>
+                            <p>VINUWINE B55L</p>
+                            <ul>
+                                <li>
+                                    <p>Color</p>
+                                    <p>Amarillo paja</p>
+                                </li>
+                                <li>
+                                    <p>pH</p>
+                                    <p>&#8804;3,80</p>
+                                </li>
+                                <li>
+                                    <p>Humedad</p>
+                                    <p>&lt; 7 %</p>
+                                </li>
+                                <li>
+                                    <p>Soporte de secado</p>
+                                    <p>Maltodextrina</p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Bolsas de aluminio 25 Kg termosoldad al vacío</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </>
+        )
+    }
+    const renderProductos = () => {
+        return(
+            <>
+                <div className="uva-productos-container">
+                    <h4>Nuestra gama de extractos de vino</h4>
+                    <div>
+                        {renderProductosCardLiquido()}
+                        {renderProductosCardPolvo()}
+                    </div>
+                </div>
+            </>
+        )
+    }
+
     return(
         <>
             <Navbar width='214px' />
 
             {renderExtractosHeader()}
+
+            {renderProductos()}
 
             <TextCentered>También ofrecemos productos personalizados, según las necesidades requeridas. Como el extracto de vino en polvo Vinuwine SM ideal para uso alimentario y nutracéutico, sin maltodextrina y rico en polifenoles (&gt;30%).</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>

@@ -8,6 +8,7 @@ import Button from '../../components/button/Button'
 import '../../styles/pages/taninos.css'
 import taninosHeaderImg from '../../images/img/taninos_caracteristicas.jpg'
 
+import taninosProductoImg from '../../images/img/taninos-aplicaciones.jpg'
 
 const Taninos = () => {
 
@@ -46,11 +47,67 @@ const Taninos = () => {
         )
     }
 
+    const renderProductosCardPolvo = () => {
+        return(
+            <>
+                <div>
+                    <p>Polvo</p>
+                    <img src={taninosProductoImg} alt="Polvo" />
+                    <div>
+                        <p>VINUPEB P</p>
+                        <div>
+                            <p>Taninos condensados de alto peso molecular extraídos exclusivamente de la piel de uva blanca seleccionada.</p>
+                            <ul>
+                                <li>
+                                    <p>Taninos</p>
+                                    <p>&gt; 65 %</p>
+                                </li>
+                                <li>
+                                    <p>Cenizas</p>
+                                    <p>&lt; 4 %</p>
+                                </li>
+                                <li>
+                                    <p>Hierro</p>
+                                    <p>&gt; 50 ppm</p>
+                                </li>
+                                <li>
+                                    <p>Humedad</p>
+                                    <p>&lt; 7 %</p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    const renderProductos = () => {
+        return(
+            <>
+                <div className="taninos-productos-container">
+                    <h4>Nuestra elección en Taninos de uva</h4>
+                    <div>
+                        {renderProductosCardPolvo()}
+                    </div>
+                </div>
+            </>
+        )
+    }
+
+
     return(
         <>
             <Navbar width='214px' />
 
             {renderTaninosHeader()}
+
+            {renderProductos()}
 
             <TextCentered>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>

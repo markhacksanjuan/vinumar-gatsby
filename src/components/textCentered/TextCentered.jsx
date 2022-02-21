@@ -3,7 +3,7 @@ import './textCentered.css'
 
 const TextCentered = ({ children }) => {
     return(
-        <p className='component-text-centered'>{children}</p>
+        <h4 className='component-text-centered'>{children}</h4>
       )
 }
 export default TextCentered

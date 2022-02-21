@@ -8,6 +8,8 @@ import Button from '../../components/button/Button'
 import '../../styles/pages/alcoholes.css'
 import alcoholesHeaderImg from '../../images/img/Alcohol_uso_boca_caract.jpg'
 
+import alcoholesProductoImg from '../../images/img/Alcohol-uso-boca-app.jpg'
+
 const Alcoholes = () => {
 
     const renderAlcoholesHeader = () => {
@@ -69,11 +71,48 @@ const Alcoholes = () => {
         )
     }
 
+    const renderProductos = () => {
+        return(
+            <>
+                <div className="alcoholes-productos-container">
+                    <h4>Nuestra gama de alcoholes</h4>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Alcohol bruto</p>
+                                <p>Fabricado a partir de subproductos de origen vínico con una graduación de 92,0º a 92,5º.</p>
+                            </li>
+                            <li>
+                                <p>Alcohol rectificado</p>
+                                <p>Fabricado a partir de subproductos de origen vínico con una graduación de 96º a 96,5º.</p>
+                            </li>
+                            <li>
+                                <p>Alcohol parcialmente desnaturalizado</p>
+                                <p>Fabricado a partir de alcohol bruto o rectificado, se desnaturaliza en nuestras instalaciones conforme a la legislación vigente.</p>
+                            </li>
+                            <li>
+                                <p>Destilado de vino</p>
+                                <p>Fabricado con vinos previamente seleccionados y con una graduación de 94,0º a 95,9º.</p>
+                            </li>
+                            <li>
+                                <p>Aguardiente de vino</p>
+                                <p>Fabricado con vinos previamente seleccionados y con una graduación de entre 65º y 77º.</p>
+                            </li>
+                        </ul>
+                        <img src={alcoholesProductoImg} alt="Alcoholes" />
+                    </div>
+                </div>
+            </>
+        )
+    }
+
     return(
         <>
             <Navbar width='214px' />
 
             {renderAlcoholesHeader()}
+
+            {renderProductos()}
 
             <TextCentered>Realizamos todas las fabricaciones exclusivamente bajo pedido.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>

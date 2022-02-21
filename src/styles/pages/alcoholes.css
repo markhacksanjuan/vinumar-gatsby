@@ -68,3 +68,43 @@
     object-fit: cover;
     margin-left: 20px
 }
+
+.alcoholes-productos-container {
+    width: 80%;
+    border-top: 1px solid black;
+    margin: auto;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.alcoholes-productos-container h4 {
+    margin: 0;
+}
+.alcoholes-productos-container > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px
+}
+.alcoholes-productos-container > div ul, img {
+    width: 49%
+}
+.alcoholes-productos-container img {
+    object-fit: cover;
+    height: 300px;
+    border-radius: 0 15px 15px 15px
+}
+.alcoholes-productos-container li {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.alcoholes-productos-container li > p:first-child {
+    font-weight: bold;
+    width: 40%
+}
+.alcoholes-productos-container li > p:last-child {
+    width: 59%
+}

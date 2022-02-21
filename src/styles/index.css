@@ -16,8 +16,14 @@ ul {
     list-style: none;
     padding: 0
 }
+h4 {
+    font-weight: normal;
+    font-size: 37px
+}
 p{
-    margin: 0
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4rem;
 }
 button {
     border: 1px solid black;

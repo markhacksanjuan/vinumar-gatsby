@@ -7,6 +7,7 @@ import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 
 // import images
 import pielHeaderImg from '../../images/img/Extracto-piel-uva-caract-2.jpg'
+import pielProducto1 from '../../images/img/Extracto-piel-uva-caract-2.jpg'
 
 import '../../styles/pages/extractos-piel.css'
 
@@ -64,12 +65,105 @@ const ExtractosPiel = () => {
             </>
         )
     }
+    const renderProductosCardLiquido = () => {
+        return(
+            <>
+                <div>
+                            <p>Líquido</p>
+                            <img src={pielProducto1} alt="Liquido" />
+                            <div>
+                                <p>VINUPER 3</p>
+                                <div>
+                                    <p>Colorante alimentario 100% natural, sin aditivos añadidos. Se obtiene de la piel de la uva tinta mediante extracción y concentración.</p>
+                                    <ul>
+                                        <li>
+                                            <p>E3/Color</p>
+                                            <p>2,9 - 3,1</p>
+                                        </li>
+                                        <li>
+                                            <p>Color</p>
+                                            <p>Rojo oscuro a violeta</p>
+                                        </li>
+                                        <li>
+                                            <p>pH</p>
+                                            <p>&lt;3,0</p>
+                                        </li>
+                                        <li>
+                                            <p>Envases</p>
+                                            <ul>
+                                                <li>Cisterna alimentaria</li>
+                                                <li>Contenedor 1000 l</li>
+                                                <li>Garrafas 60 l, 220 l</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+            </>
+        )
+    }
+    const renderProductosCardPolvo = () => {
+        return(
+            <>
+                <div>
+                    <p>Polvo</p>
+                    <img src={pielProducto1} alt="Polvo" />
+                    <div>
+                        <p>VINUCAP 12</p>
+                        <div>
+                            <p>Colorante alimentario 100% natural, sin aditivos añadidos. Se obtiene de la piel de la uva tinta mediante extracción, concentración y atomización, sin soporte de secado.</p>
+                            <ul>
+                                <li>
+                                    <p>E3/Color</p>
+                                    <p>11,4 - 12,6</p>
+                                </li>
+                                <li>
+                                    <p>Color</p>
+                                    <p>Rojo oscuro</p>
+                                </li>
+                                <li>
+                                    <p>pH</p>
+                                    <p>&lt;3,5</p>
+                                </li>
+                                <li>
+                                    <p>Humedad</p>
+                                    <p>&lt;7 %</p>
+                                </li>
+                                <li>
+                                    <p>Envases</p>
+                                    <ul>
+                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    const renderProductos = () => {
+        return(
+            <>
+                <div className="piel-productos-container">
+                    <h4>Nuestra gama de extractos de piel de uva E-163</h4>
+                    <div>
+                        {renderProductosCardLiquido()}
+                        {renderProductosCardPolvo()}
+                    </div>
+                </div>
+            </>
+        )
+    }
 
     return(
         <>
             <Navbar width='214px' />
 
             {renderExtractosHeader()}
+
+            {renderProductos()}
 
             <TextCentered>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
