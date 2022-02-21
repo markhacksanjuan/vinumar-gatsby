@@ -1,9 +1,14 @@
 .component-text-centered {
-    font-size: 37px;
     color: #A02E33;
     width: 926px;
     text-align: center;
     margin: auto;
     margin-top: 250px;
     margin-bottom: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .component-text-centered {
+        width: 100%
+    }
 }

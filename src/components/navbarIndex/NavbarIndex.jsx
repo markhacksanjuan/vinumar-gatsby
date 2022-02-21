@@ -3,14 +3,16 @@ import { Link } from 'gatsby'
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
 
-const NavbarIndex = ({width}) => {
+const NavbarIndex = ({ width }) => {
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
 
     const renderLogo = () => {
         return(
             <div>
-                <Link  to='/'><img className='navbar-logo' src={logo} width={width} alt='Logo'/></Link>
+                <Link  to='/'>
+                    <img className='navbar-logo' src={logo} width={width} alt='Logo'/>
+                </Link>
             </div>
         )
     }
@@ -73,6 +75,7 @@ const NavbarIndex = ({width}) => {
             </ul>
         )
     }
+
     return(
         <>
             <div className='navbar-container'>

@@ -86,7 +86,7 @@
     justify-content: space-between;
     margin-top: 60px
 }
-.alcoholes-productos-container > div ul, img {
+.alcoholes-productos-container > div ul, .alcoholes-productos-container > div img {
     width: 49%
 }
 .alcoholes-productos-container img {

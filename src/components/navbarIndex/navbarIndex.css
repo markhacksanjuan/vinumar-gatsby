@@ -6,6 +6,7 @@
     background: white;
     top: 0;
     z-index: 50;
+    width: 100%
 }
 .navbar-list-general {
     text-decoration: none;
@@ -77,4 +78,18 @@
 .navbar-menu {
     position: absolute;
     background: white
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-logo {
+        width: 65% !important
+    }
+    .navbar-list-general {
+        width: 20%;
+        flex-wrap: wrap
+    }
 }
