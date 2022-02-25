@@ -7,7 +7,18 @@
     object-fit: cover;
     margin-top: 266px;
 }
-
+.historia-container-header p {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+    position: absolute;
+    top: 47%;
+    width: 40%;
+    margin: auto;
+    left: 30%
+}
 .historia-vinumar-container {
     display: flex;
     flex-direction: column;

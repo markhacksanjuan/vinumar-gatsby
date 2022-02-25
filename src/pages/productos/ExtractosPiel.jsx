@@ -6,8 +6,10 @@ import Button from '../../components/button/Button'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 
 // import images
-import pielHeaderImg from '../../images/img/Extracto-piel-uva-caract-2.jpg'
-import pielProducto1 from '../../images/img/Extracto-piel-uva-caract-2.jpg'
+import pielHeaderImg from '../../images/selected/Aplicacion color.jpg'
+import pielProducto1 from '../../images/selected/CAS_3593 (color polvo).jpg'
+import pielProductoLiquido from '../../images/selected/Extracto piel uva liquido.jpg'
+
 
 import '../../styles/pages/extractos-piel.css'
 
@@ -70,7 +72,7 @@ const ExtractosPiel = () => {
             <>
                 <div>
                             <p>Líquido</p>
-                            <img src={pielProducto1} alt="Liquido" />
+                            <img src={pielProductoLiquido} alt="Liquido" />
                             <div>
                                 <p>VINUPER 3</p>
                                 <div>

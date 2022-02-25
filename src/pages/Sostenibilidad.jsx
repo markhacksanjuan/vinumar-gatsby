@@ -3,9 +3,9 @@ import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import '../styles/pages/sostenibilidad.css'
 
-import headerImg from '../images/img/Sostenibilidad_Pagina_10.jpg'
-import sostenibilidad1 from '../images/img/Sostenibilidad_Pagina_10.jpg'
-import sostenibilidad2 from '../images/img/Sostenibilidad_Pagina_10.jpg'
+import headerImg from '../images/selected/Principal DJI_0788.jpg'
+import sostenibilidad1 from '../images/selected/Sostenibilidad 2-611057066.jpg'
+import sostenibilidad2 from '../images/selected/Sostenibilidad 3-1941562780.jpg'
 
 import Button from '../components/button/Button'
 
@@ -15,6 +15,7 @@ const SostenibilidadPage = () => {
             <>
                 <div className="sostenibilidad-container-header">
                     <img src={headerImg} alt="Sostenibilidad header" />
+                    <p>La sostenibilidad, mucho antes de la sostenibilidad.</p>
                 </div>
             </>
         )

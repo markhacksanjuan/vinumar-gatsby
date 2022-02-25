@@ -7,6 +7,18 @@
     object-fit: cover;
     margin-top: 266px
 }
+.valores-container-header p {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+    position: absolute;
+    top: 47%;
+    width: 40%;
+    margin: auto;
+    left: 30%
+}
 .valores-content-container {
     border-top: 1px solid black;
     width: 80%;

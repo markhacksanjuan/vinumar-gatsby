@@ -4,24 +4,22 @@ import Footer from '../../components/footer/Footer'
 import '../../styles/pages/historia.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
-import headerImg from '../../images/img/DJI_0559.jpg'
+import headerImg from '../../images/selected/Principal AA15-1 V2.jpg'
 
-import img1 from '../../images/img/Nuestro_Equipo_Carrusel_1.jpg'
-import img2 from '../../images/img/Nuestro_Equipo_Carrusel_2.jpg'
-import img3 from '../../images/img/Nuestro_Equipo_Carrusel_3.jpg'
-import img4 from '../../images/img/Nuestro_Equipo_Carrusel_4.jpg'
+import img1 from '../../images/selected/Historia-1img060.jpg'
+import img2 from '../../images/selected/Historia-2IND2001-018.jpg'
+import img3 from '../../images/selected/Historia-3IND2001-061.jpg'
 
-import imgInst1 from '../../images/img/Historia_Carrusel_1_1.jpg'
-import imgInst2 from '../../images/img/Historia_Carrusel_1_3.jpg'
-import imgInst3 from '../../images/img/Historia_Carrusel_1_2.jpg'
+import imgInst1 from '../../images/selected/Crecimiento-1img139.jpg'
+import imgInst2 from '../../images/selected/Crecimiento-2DJI_0559.jpg'
+import imgInst3 from '../../images/selected/Crecimiento-3DJI_0551.jpg'
 
 
 const Historia = () => {
     const images = [
         { url: img1 },
         { url: img2 },
-        { url: img3 },
-        { url: img4 }
+        { url: img3 }
     ]
     const imagesHist = [
         { url: imgInst1 },
@@ -35,6 +33,7 @@ const Historia = () => {
             <>
                 <div className="historia-container-header">
                     <img src={headerImg} alt="historia" />
+                    <p>Una historia de familia, tradición e innovación.</p>
                 </div>
             </>
         )
@@ -47,12 +46,12 @@ const Historia = () => {
                         <h4>Vinumar viene de lejos</h4>
                         <p>Nuestros orígenes se remontan a 1855, concretamente a una familia de Mora la Nova en Cataluña, de larga tradición en la destilación de alcoholes. Un siglo más tarde, en 1955, la familia decidió establecerse en Castilla-La Mancha atraída por sus grandes extensiones de viñedos, constituyendo el embrión de la actual empresa. Hoy, somos una empresa familiar de tercera generación que ha evolucionado al ritmo de los distintos momentos de la historia para consolidarse con el reciclaje, tratamiento, valorización y comercialización de los productos derivados de la viticultura, ofreciendo servicio a múltiples industrias.</p>
                     </div>
-                    <SimpleImageSlider 
+                    {images && <SimpleImageSlider 
                         images={images}
                         width='80%'
                         height={600}
                         showNavs={true}
-                    />
+                    />}
                 </div>
             </>
         )
@@ -137,12 +136,12 @@ const Historia = () => {
                         <h4>Una historia de crecimiento</h4>
                         <p>El recorrido de Vinumar es la histora de una empresa familiar que ha conseguido pasar de ser una empresa local a una compañía de alcance internacional con tesón, valentía y visión. La base de nuestro crecimiento es el respeto por el producto, el conocimiento tecnológico y de gestión de los recursos y, fundamentalmente, haber situado siempre en el centro a nuestros clientes.</p>
                     </div>
-                    <SimpleImageSlider 
+                    {imagesHist && <SimpleImageSlider 
                         images={imagesHist}
                         width='80%'
                         height={600}
                         showNavs={true}
-                    />
+                    />}
                 </div>
             </>
         )

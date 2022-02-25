@@ -53,7 +53,7 @@ const NavbarIndex = ({ width }) => {
             setTimeout(() => {
                 setShowNosotros(false)
                 setShowProd(false)
-            }, 100)
+            }, 200)
         }
     }
     const renderListGeneral = () => {

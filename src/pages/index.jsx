@@ -9,12 +9,12 @@ import '../styles/index.css'
 import '../styles/pages/index-page.css'
 
 // IMPORT PICTURES
-import headerImg from '../images/img/DJI_0559.jpg'
-import extPiel from '../images/img/Extracto-piel-uva-app.jpg'
+import headerImg from '../images/selected/DJI_0698 (principal).jpg'
+import extPiel from '../images/selected/CAS_3593 (color polvo).jpg'
 import extVino from '../images/img/Extracto-de-vino-caracteristicas.jpg'
-import taninosUva from '../images/img/taninos-aplicaciones.jpg'
+import taninosUva from '../images/selected/taninos.jpg'
 import alcohol from '../images/img/Alcohol-uso-boca-app.jpg'
-import pepitas from '../images/img/Pepita-app.jpg'
+import pepitas from '../images/selected/granilla.jpg'
 import dondeImg from '../images/img/Situacion-Geografica-Carrusel-1.jpg'
 
 // markup
@@ -24,6 +24,7 @@ const IndexPage = ({}) => {
       <>
         <div className='index-container-header'>
           <img src={headerImg} alt='Vinumar' />
+          <p>Más de 60 años de tradición e innovación en el mundo de la uva.</p>
         </div>
       </>
     )

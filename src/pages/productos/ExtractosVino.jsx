@@ -7,11 +7,11 @@ import Button from '../../components/button/Button'
 
 import '../../styles/pages/extractos-uva.css'
 
-import uvaHeaderImg from '../../images/img/Extracto-de-vino-caracteristicas.jpg'
-import vinoProducto1 from '../../images/img/Extracto-piel-uva-app.jpg'
-import vinoProducto2 from '../../images/img/Extracto-piel-uva-app.jpg'
-import vinoProducto3 from '../../images/img/Extracto-piel-uva-app.jpg'
-import vinoProducto4 from '../../images/img/Extracto-piel-uva-app.jpg'
+import uvaHeaderImg from '../../images/selected/Aplicacion vinuwine.jpg'
+import vinoProducto1 from '../../images/selected/Extracto vino tinto liquido.jpg'
+import vinoProducto2 from '../../images/selected/extracto vino tinto en polvo.jpg'
+import vinoProducto3 from '../../images/selected/Extracto vino blanco liquido.jpg'
+import vinoProducto4 from '../../images/selected/E.V.B. polvo.jpg'
 
 
 const ExtractosVino = () => {
@@ -104,7 +104,7 @@ const ExtractosVino = () => {
                         </div>
                     </div>
 
-                    <img src={vinoProducto1} alt="Liquido" />
+                    <img src={vinoProducto3} alt="Liquido" />
                     <div>
                         <p>Blanco</p>
                         <div>
@@ -150,7 +150,7 @@ const ExtractosVino = () => {
                         <p>Polvo</p>
                         <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración y filtración de vino tinto o blanco, y se deshidrata por atomización, con o sin soporte de secado (maltodextrina).</p>
                     </div>
-                    <img src={vinoProducto1} alt="Liquido" />
+                    <img src={vinoProducto2} alt="Liquido" />
                     <div>
                         <p>Tinto</p>
                         <div>
@@ -182,7 +182,7 @@ const ExtractosVino = () => {
                         </div>
                     </div>
 
-                    <img src={vinoProducto1} alt="Liquido" />
+                    <img src={vinoProducto4} alt="Liquido" />
                     <div>
                         <p>Blanco</p>
                         <div>

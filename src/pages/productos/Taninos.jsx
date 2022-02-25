@@ -6,9 +6,9 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/taninos.css'
-import taninosHeaderImg from '../../images/img/taninos_caracteristicas.jpg'
+import taninosHeaderImg from '../../images/selected/372710398 (Aplicacion taninos).jpg'
 
-import taninosProductoImg from '../../images/img/taninos-aplicaciones.jpg'
+import taninosProductoImg from '../../images/selected/taninos.jpg'
 
 const Taninos = () => {
 

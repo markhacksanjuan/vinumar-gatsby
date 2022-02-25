@@ -1,0 +1,31 @@
+.situacion-container {
+    border-top: solid 1px black;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 300px;
+    justify-content: center;
+    width: 80%
+}
+.situacion-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 28px
+}
+.situacion-text-container h4 {
+    font-size: 37px;
+    margin: 0
+}
+.situacion-container p {
+    font-weight: bold;
+}
+.situacion-text-container > p:last-child {
+    width: 50%;
+    font-weight: normal;
+}
+.situacion-slider {
+    position: relative
+}

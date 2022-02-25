@@ -3,12 +3,17 @@ import './entornoNatural.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
 // import images to slider
-import img1 from '../../images/img/Entorno_natural_Carrusel_1.jpg'
-import img2 from '../../images/img/Entorno_natural_Carrusel_2.jpg'
-import img3 from '../../images/img/Entorno_natural_Carrusel_3.jpg'
+// import img1 from '../../images/img/Entorno_natural_Carrusel_1.jpg'
+// import img2 from '../../images/img/Entorno_natural_Carrusel_2.jpg'
+// import img3 from '../../images/img/Entorno_natural_Carrusel_3.jpg'
 
 import imgAlcohol1 from '../../images/img/Situacion-Geografica-Carrusel-1.jpg'
 import imgAlcohol2 from '../../images/img/Entorno_natural_Pagina_6.jpg'
+
+import img1 from '../../images/selected/173236994.jpg'
+import img2 from '../../images/selected/DSC00958.jpg'
+import img3 from '../../images/selected/DJI_0705-2.jpg'
+
 
 const EntornoNatural = ({ type, children, title }) => {
     const images = [
@@ -16,6 +21,12 @@ const EntornoNatural = ({ type, children, title }) => {
         { url: img2 },
         { url: img3 }
     ]
+    // const imagesSlider = [
+    //     { url: sliderImg1 },
+    //     { url: sliderImg2 },
+    //     { url: sliderImg3 }
+    // ]
+
 
     switch(type) {
         case 'slider': 

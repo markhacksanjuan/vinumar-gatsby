@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
+import Situacion from '../components/situacion/Situacion'
 import '../styles/pages/dondeEstamos.css'
 
-import headerImg from '../images/img/Situacion_Geografica_Carrusel_2.jpg'
+import headerImg from '../images/selected/DJI_0697-2 (principal).jpg'
 import dondeImg from '../images/img/Situacion-Geografica-Carrusel-1.jpg'
 import ventaja1 from '../images/img/Entorno_natural_Pagina_6.jpg'
 import ventaja2 from '../images/img/Entorno_natural_Carrusel_1.jpg'
@@ -19,10 +20,12 @@ const DondePage = () => {
             <>
                 <div className='donde-container-header'>
                     <img src={headerImg} alt="Donde estamos header" />
+                    <p>En el corazón de Castilla-La Mancha.</p>
                 </div>
             </>
         )
     }
+
     const renderDonde = () => {
         return(
             <>
@@ -71,6 +74,9 @@ const DondePage = () => {
             <div className='donde-container'>
                 {renderHeader()}
                 <TextCentered>La tierra donde se extrae con sabiduría todo el potencial de una uva excelente.</TextCentered>
+                
+                <Situacion />
+
                 {renderDonde()}
                 <Button style='red-button' goTo='/nosotros/Valores'>SABER MÁS SOBRE VINUMAR</Button>
                 {renderVentajas()}

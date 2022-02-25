@@ -6,9 +6,10 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/alcoholes.css'
-import alcoholesHeaderImg from '../../images/img/Alcohol_uso_boca_caract.jpg'
+import alcoholesHeaderImg from '../../images/selected/stock-photo-fuel-pistols-at-pe.jpg'
 
-import alcoholesProductoImg from '../../images/img/Alcohol-uso-boca-app.jpg'
+import alcoholesProductoImg from '../../images/selected/Alcohol.jpg'
+
 
 const Alcoholes = () => {
 

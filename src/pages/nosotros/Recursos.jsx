@@ -5,30 +5,37 @@ import Button from '../../components/button/Button'
 
 import '../../styles/pages/recursos.css'
 
-import recursos1 from '../../images/img/Sostenibilidad_Pagina_10.jpg'
+import recursos1 from '../../images/selected/Recursos Tecnicos (DSC00668 ).jpg'
+import atomizacion from '../../images/selected/Sistema de atomizacion (DSC06679 V2).jpg'
 
 import SimpleImageSlider from 'react-simple-image-slider'
 
-import img1 from '../../images/img/Nuestro_Equipo_Carrusel_1.jpg'
-import img2 from '../../images/img/Nuestro_Equipo_Carrusel_2.jpg'
-import img3 from '../../images/img/Nuestro_Equipo_Carrusel_3.jpg'
-import img4 from '../../images/img/Nuestro_Equipo_Carrusel_4.jpg'
+import img1 from '../../images/selected/Nuestroequipo1.jpg'
+import img2 from '../../images/selected/Nuestroequipo2DSC00893.jpg'
+import img3 from '../../images/selected/Nuestroequipo3Detalle2.jpg'
+import img4 from '../../images/selected/Nuestroequipo4DSC06860.jpg'
+import img5 from '../../images/selected/Nuestroequipo5DSC06804.jpg'
+import img6 from '../../images/selected/NuestroEquipo6DSC1.jpg'
 
-import imgInst1 from '../../images/img/Historia_Carrusel_1_1.jpg'
-import imgInst2 from '../../images/img/Historia_Carrusel_1_3.jpg'
-import imgInst3 from '../../images/img/Historia_Carrusel_1_2.jpg'
+import imgInst1 from '../../images/selected/Asitrabajamos-1-DSC06777.jpg'
+import imgInst2 from '../../images/selected/Astrabajamos-2-DSC00599.jpg'
+import imgInst3 from '../../images/selected/Asitrabajamos-3-DSC06823.jpg'
+import imgInst4 from '../../images/selected/Asitrabajamos-4-DSC00886.jpg'
 
 const Recursos = () => {
     const images = [
         { url: img1 },
         { url: img2 },
         { url: img3 },
-        { url: img4 }
+        { url: img4 },
+        { url: img5 },
+        { url: img6 }
     ]
     const imagesInst = [
         { url: imgInst1 },
         { url: imgInst2 },
-        { url: imgInst3 }
+        { url: imgInst3 },
+        { url: imgInst4 }
     ]
     const renderRecursos = () => {
         return(
@@ -61,7 +68,7 @@ const Recursos = () => {
                     <div className='recursos-recursos-automatizacion'>
                         <p>Sistema de atomización</p>
                         <p>El proceso de atomización destaca, entre otras características, por su capacidad de obtener el producto con distintas granulometrías. El hecho de disponer de un sistema de atomización propio, supone un punto de inflexión en lo que respecta tanto a nuestro nivel de producción como a la fluidez y eficiencia de gestión y suministro.</p>
-                        <img src={recursos1} alt="Recursos 2" />
+                        <img src={atomizacion} alt="Recursos 2" />
                     </div>
                 </div>
             </>
@@ -75,12 +82,12 @@ const Recursos = () => {
                         <h4>Nuestro equipo</h4>
                         <p>Sólo se alcanza el éxito a través del trabajo en equipo. Nunca hubiéramos alcanzado el nivel que actualmente tenemos sin el esfuerzo compartido de los más de cien profesionales de la empresa, personas que participan en cada fase de la cadena de producción, desde la Recepción al Departamento de Calidad, el Laboratorio o el Equipo de Ventas y sus ramas Nacional y Exportación. Entre todos, hemos sabido extraer del fruto de esta tierra toda su riqueza para labrar con él un presente y un futuro fértiles.</p>
                     </div>
-                    <SimpleImageSlider
+                    {images && <SimpleImageSlider
                         images={images}
                         width='80%'
                         height={600}
                         showNavs={true}
-                    />
+                    />}
                 </div>
             </>
         )
@@ -93,12 +100,12 @@ const Recursos = () => {
                         <h4>Así trabajamos</h4>
                         <p>Esta selección de imágenes ayuda a comprender cómo fabricamos nuestros productos.</p>
                     </div>
-                    <SimpleImageSlider
+                    {imagesInst && <SimpleImageSlider
                         images={imagesInst}
                         width='80%'
                         height={600}
                         showNavs={true}
-                    />
+                    />}
                 </div>
             </>
         )

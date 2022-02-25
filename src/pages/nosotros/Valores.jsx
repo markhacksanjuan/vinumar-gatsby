@@ -4,7 +4,7 @@ import Footer from '../../components/footer/Footer'
 import '../../styles/pages/valores.css'
 import TextCentered from '../../components/textCentered/TextCentered'
 
-import headerImg from '../../images/img/Historia_Carrusel_1_1.jpg'
+import headerImg from '../../images/selected/Principal DSC00902.jpg'
 import valores1 from '../../images/img/Historia_Carrusel_2_3.jpg'
 import valores2 from '../../images/img/Historia_Carrusel_2_2.jpg'
 import valores3 from '../../images/img/Situacion-Geografica-Carrusel-1.jpg'
@@ -17,6 +17,7 @@ const Valores = () => {
             <>
                 <div className="valores-container-header">
                     <img src={headerImg} alt="Valores" />
+                    <p>Una empresa conducida a través de los valores.</p>
                 </div>
             </>
         )
