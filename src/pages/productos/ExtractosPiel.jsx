@@ -21,7 +21,7 @@ const ExtractosPiel = () => {
                 <div className='piel-container-header'>
                     <div className='piel-container-header-title'>
                         <h4>Extractos de piel de uva</h4>
-                        <p>También conocidos como enocianina, los extractos de piel de uva son colorantes 100% naturales obtenidos por la extracción acuosa de la fracción de antocianos (o antocianinas) de las uvas tintas, pigmentos pertenecientes a la familia de los polifenoles, cuyo espectro cromático abarca desde el rojo oscuro al violeta. Disponemos de dos prácticos formatos: líquido o polvo.</p>
+                        <p>También conocidos como enocianina, los extractos de piel de uva son colorantes 100% naturales obtenidos por la extracción acuosa de la fracción de antocianos (o antocianinas) de las uvas tintas, pigmentos pertenecientes a la familia de los polifenoles, cuyo espectro cromático abarca desde el rojo oscuro al violeta.<span className='parrafo'>Disponemos de dos prácticos formatos: líquido o polvo.</span></p>
                     </div>
                     <div className='piel-header-apli-carac-img-container'>
                         <div className='piel-header-apli-carac-container'>
@@ -42,7 +42,7 @@ const ExtractosPiel = () => {
                                 <ul>
                                     <li className='piel-header-carac-li'>
                                         <p>Nombre botánico</p>
-                                        <p>Vitis Vinífera</p>
+                                        <p className='italic'>Vitis Vinífera</p>
                                     </li>
                                     <li className='piel-header-carac-li'>
                                         <p>Etiquetado</p>

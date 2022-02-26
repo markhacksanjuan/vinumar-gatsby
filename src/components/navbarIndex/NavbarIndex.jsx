@@ -76,6 +76,15 @@ const NavbarIndex = ({ width }) => {
         )
     }
 
+    const setBodyBlack = () => {
+        const body = document.querySelector('body')
+        body.style.background = 'rgba(0, 0, 0, 0.7)'
+    }
+    const setBodyWhite = () => {
+        const body = document.querySelector('body')
+        body.style.background = 'none'
+    }
+
     return(
         <>
             <div className='navbar-container'>

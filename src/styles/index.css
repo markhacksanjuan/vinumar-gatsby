@@ -13,7 +13,7 @@ a {
 }
 ul {
     margin: 0;
-    list-style: none;
+    /* list-style: none; */
     padding: 0
 }
 h4 {
@@ -52,7 +52,13 @@ textarea{
     resize: none;
     font-size: 23px;
 }
-
+span.parrafo {
+    display: block;
+    margin-top: 1rem
+}
+.italic {
+    font-style: italic
+}
 
 @media only screen and (max-width: 600px) {
     h4 {

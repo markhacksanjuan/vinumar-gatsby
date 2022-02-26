@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
+    position: relative
 }
 .red-button {
     background: #A02E33;
@@ -9,5 +11,8 @@
 }
 .white-button {
     background: white;
-    color: black
+    color: black;
+    position: absolute;
+    bottom: 67px;
+    z-index: 10;
 }

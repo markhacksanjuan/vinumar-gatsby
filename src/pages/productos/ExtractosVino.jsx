@@ -42,7 +42,7 @@ const ExtractosVino = () => {
                                 <ul>
                                     <li className='uva-header-carac-li'>
                                         <p>Nombre botánico</p>
-                                        <p>Vitis Vinífera</p>
+                                        <p className='italic'>Vitis Vinífera</p>
                                     </li>
                                     <li className='uva-header-carac-li'>
                                         <p>Etiquetado</p>

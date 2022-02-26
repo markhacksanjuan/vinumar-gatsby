@@ -102,18 +102,22 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 80%;
+    width: 80.7%;
     margin-top: 300px;
     border-top: 1px solid black
 }
 .historia-historia-container div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-top: 10px
 }
 .historia-historia-container h4 {
     font-size: 37px;
     margin: 0
+}
+.historia-historia-container span {
+    display: block
 }
 .historia-historia-container div:first-child > p {
     width: 49%;

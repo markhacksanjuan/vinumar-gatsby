@@ -26,7 +26,20 @@ const SostenibilidadPage = () => {
                 <div className='sostenibilidad-container-main'>
                     <h4>Sostenibilidad</h4>
                     <div>
-                        <p>Mucho, mucho antes de que aparecieran conceptos como “sostenibilidad” o “economía circular”, Vinumar llevaba toda su vida practicándolos. Porque ¿qué es la valorización de los subproductos vinícolas sino el mejor ejemplo de la puesta en práctica de los valores de la sostenibilidad y la economía circular? Desde el primer día, en Vinumar hemos apostado por una política proactiva para la protección del medio y la reducción del impacto ambiental. Nuestra actividad económica está indisociablemente enfocada hacia la máxima eficiencia y la disminución de residuos, favoreciendo el reciclaje y la reutilización. Somos Destilador Autorizado por la UE como garantes de la calidad del vino y preservadores del medio ambiente. Contribuimos a la reducción del impacto ambiental gracias al tratamiento del orujo de uva, verificado con la ISCC (International Sustainability & Carbon Certification). Utilizamos la energía de la biomasa de los subproductos de la uva, para nuestros procesos productivos con un balance neutro en CO2. Tenemos el reconocimiento de la garantía de calidad ISO9001, que también reafirma nuestro compromiso con los valores y objetivos de responsabilidad social y desarrollo sostenible. Invertimos en actualizar e innovar en tecnología, como hemos hecho en la modificación de procesos, sistemas de depuración y tratamiento del agua para su mayor reutilización, protegiendo los recursos hídricos. Además, bajo la premisa de devolver al campo lo que es del campo, llevamos a cabo valoraciones agrícolas de nuestros efluentes mediante acuerdos colaborativos con los agricultores de Castilla-La Mancha sobre mejoras en el aprovechamiento del agua y los nutrientes para sus cultivos.</p>
+                        <p>Mucho, mucho antes de que aparecieran conceptos como “sostenibilidad” o “economía circular”, Vinumar llevaba toda su vida practicándolos. Porque ¿qué es la valorización de los subproductos vinícolas sino el mejor ejemplo de la puesta en práctica de los valores de la sostenibilidad y la economía circular?
+                        <span className="parrafo">Desde el primer día, en Vinumar hemos apostado por una política proactiva para la protección del medio y la reducción del impacto ambiental. Nuestra actividad económica está indisociablemente enfocada hacia la máxima eficiencia y la disminución de residuos, favoreciendo el reciclaje y la reutilización.</span>
+                        <span className="parrafo">Somos Destilador Autorizado por la UE como garantes de la calidad del vino y preservadores del medio ambiente.</span>
+                        <span className="parrafo">Contribuimos a la reducción del impacto ambiental gracias al tratamiento del orujo de uva, verificado con la ISCC (International Sustainability & Carbon Certification).</span>
+                        <span className="parrafo">Utilizamos la energía de la biomasa de los subproductos de la uva, para nuestros procesos productivos con un balance neutro en CO2.</span>
+                        <span className="parrafo">Tenemos el reconocimiento de la garantía de calidad ISO9001, que también reafirma nuestro compromiso con los valores y objetivos de responsabilidad social y desarrollo sostenible.</span>
+                        <span className="parrafo">Invertimos en actualizar e innovar en tecnología, como hemos hecho en la modificación de procesos, sistemas de depuración y tratamiento del agua para su mayor reutilización, protegiendo los recursos hídricos.</span>
+                        <span className="parrafo">Además, bajo la premisa de devolver al campo lo que es del campo, llevamos a cabo valoraciones agrícolas de nuestros efluentes mediante acuerdos colaborativos con los agricultores de Castilla-La Mancha sobre mejoras en el aprovechamiento del agua y los nutrientes para sus cultivos.</span></p>
+                        
+                        
+                        
+                        
+                        
+                        
                         <img src={sostenibilidad1} alt="sostenibilidad 1" />
                     </div>
                     <div>

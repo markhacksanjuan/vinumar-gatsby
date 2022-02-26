@@ -17,14 +17,19 @@
 }
 .situacion-text-container h4 {
     font-size: 37px;
-    margin: 0
+    margin: 0;
+    margin-right: 132px
 }
 .situacion-container p {
     font-weight: bold;
 }
+.situacion-container > p:first-child {
+    width: 31%
+}
 .situacion-text-container > p:last-child {
-    width: 50%;
+    width: 49.45%;
     font-weight: normal;
+    margin-left: 22px
 }
 .situacion-slider {
     position: relative
