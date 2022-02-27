@@ -23,7 +23,7 @@
     border-top: 1px solid black;
     margin: auto;
     margin-top: 300px;
-    width: 80%;
+    width: 72.82%;
     display: flex;
     flex-direction: column
 }
@@ -41,7 +41,7 @@
     margin-bottom: 70px
 }
 .sostenibilidad-container-main div > img {
-    width: 55%;
+    width: 49.3%;
     height: 688px;
     object-fit: cover;
 }
@@ -51,9 +51,8 @@
 .sostenibilidad-container-main div > img:first-child {
     margin-right: 22px;
 }
-.sostenibilidad-container-main div > p:last-child {
-    width: 40%;
-}
 .sostenibilidad-main-title {
     font-weight: bold;
+    width: 50%;
+    margin-right: 89px
 }

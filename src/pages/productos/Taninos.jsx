@@ -18,14 +18,21 @@ const Taninos = () => {
                 <div className='taninos-container-header'>
                     <div className='taninos-container-header-title'>
                         <h4>Taninos de uva</h4>
-                        <p>Se trata de un aditivo natural que se extrae esencialmente de la piel y las pepitas de la uva. Los taninos de uva pertenecen a la familia de los polifenoles y poseen una reconocida acción antioxidante. Dentro de la industria alimentaria, se utilizan en enología como suplemento que mejora la calidad del vino, estabilizando su color y optimizando su estructura. En Vinumar ofrecemos taninos de uva blanca seleccionada en formato polvo.</p>
+                        <p>Se trata de un aditivo natural que se extrae esencialmente de la piel y las pepitas de la uva. Los taninos de uva pertenecen a la familia de los polifenoles y poseen una reconocida acción antioxidante. Dentro de la industria alimentaria, se utilizan en enología como suplemento que mejora la calidad del vino, estabilizando su color y optimizando su estructura.
+                            <span className="parrafo">
+                                En Vinumar ofrecemos taninos de uva blanca seleccionada en formato polvo.
+                            </span>
+                        </p>
                     </div>
                     <div className='taninos-header-apli-carac-img-container'>
                         <div className='taninos-header-apli-carac-container'>
                             <div className='taninos-header-apli-container'>
                                 <p className='taninos-header-apli-carac-title'>Aplicaciones</p>
                                 <ul>
-                                    <li>Industria alimentaria, uso enológico</li>
+                                    <li>Industria alimentaria, 
+                                    <span className='block'>uso enológico</span>
+                                    
+                                    </li>
                                 </ul>
                                 <p className='taninos-header-apli-definition'>Los taninos refuerzan las características y la conservación de un vino, ya que aportan los polifenoles naturales necesarios para otorgarle distintas cualidades organolépticas durante la vinificación, actuando sobre su color, estructrura, astringencia y amargura.</p>
                             </div>
@@ -34,7 +41,7 @@ const Taninos = () => {
                                 <ul>
                                     <li className='taninos-header-carac-li'>
                                         <p>Nombre botánico</p>
-                                        <p>Vitis Vinífera</p>
+                                        <p className='italic'>Vitis Vinífera</p>
                                     </li>
                                 </ul>
                             </div>
@@ -55,7 +62,7 @@ const Taninos = () => {
                     <img src={taninosProductoImg} alt="Polvo" />
                     <div>
                         <p>VINUPEB P</p>
-                        <div>
+                        <div className='taninos-productos-carac'>
                             <p>Taninos condensados de alto peso molecular extraídos exclusivamente de la piel de uva blanca seleccionada.</p>
                             <ul>
                                 <li>

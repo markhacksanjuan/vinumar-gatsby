@@ -5,7 +5,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 80%;
+    width: 72.82%;
 }
 .uva-container-header-title {
     display: flex;
@@ -151,14 +151,17 @@
     flex-direction: column;
     padding-top: 7px;
     margin-top: 15px;
-    border-top: 1px solid black
+    border-top: 1px solid black;
+}
+.uva-productos-carac {
+    height: 380px;
 }
 .uva-productos-container > div > div > div:first-child {
     display: flex;
     flex-direction: row;
     padding-top: 7px;
     margin-top: 15px;
-    margin-bottom: 48px
+    height: 141px;
 }
 .uva-productos-container > div > div > div > div  {
     border-top: 1px solid black;
@@ -176,6 +179,8 @@
 .uva-productos-container > div > div > div > div > ul > li {
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 7px
 }
 .uva-productos-container > div > div > div > div > ul > li > p:first-child {
     margin-right: 25%;
@@ -188,5 +193,14 @@
     border-top: none
 }
 .uva-productos-container > div > div > div > div > ul > li > ul{
-    width: 49%
+    width: 49%;
+    list-style: none;
+}
+.uva-productos-container > div > div > div > div > ul > li > ul > li{
+    padding-top: 10px;
+    padding-bottom: 7px
+}
+.uva-productos-subtitle {
+    padding-top: 10px;
+    padding-bottom: 7px
 }

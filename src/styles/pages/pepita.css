@@ -5,7 +5,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 80%;
+    width: 72.82%;
     margin-bottom: 60px
 }
 .pepita-container-header-title {
@@ -19,7 +19,7 @@
     margin: 0
 }
 .pepita-container-header-title p {
-    width: 50%;
+    width: 49.3%;
 }
 .pepita-header-apli-carac-img-container {
     display: flex;
@@ -34,25 +34,31 @@
 }
 .pepita-header-apli-carac-title {
     font-weight: bold;
-    width: 30%
+    width: 31%
 }
 .pepita-header-apli-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
+    margin-bottom: 60px
+}
+.pepita-header-apli-container ul {
+    list-style: none;
 }
 .pepita-header-apli-container > ul {
-    width: 40%;
-    margin-right: 10px
+    width: 31%;
 }
 .pepita-header-apli-container > ul > li {
-    border-bottom: solid 1px black
+    border-bottom: solid 1px black;
+    padding-top: 7px;
+    padding-bottom: 10px
 }
 .pepita-header-apli-container > ul > li:last-child {
     border: none
 }
 .pepita-header-apli-definition {
-    width: 40%;
+    width: 31%;
 }
 .pepita-header-carac-container {
     display: flex;
@@ -60,6 +66,9 @@
     justify-content: space-between;
     border-top: solid 1px black;
     padding-top: 10px
+}
+.pepita-header-carac-container > p {
+    width: 42%
 }
 .pepita-header-carac-container > ul {
     width: 80%
@@ -71,10 +80,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: solid 1px black
+    border-bottom: solid 1px black;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+.pepita-header-carac-li p, .pepita-header-carac-li ul {
+    width: 50%
 }
 .pepita-header-img {
-    width: 50%;
+    width: 49.3%;
     height: 688px;
     object-fit: cover;
     margin-left: 20px

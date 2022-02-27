@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <>
             <div className='footer-container'>
-                <div className='footer-black'>
+                <div className='footer-block'>
                     <p className='footer-title'>Contacto</p>
                     <div>
                         <ul className='footer-list-contact'>
@@ -25,11 +25,11 @@ const Footer = () => {
                     <p className='footer-title'>Productos</p>
                     <div>
                         <ul className='footer-list'>
-                            <li>Extracto de piel de uva</li>
-                            <li>Extracto de vino</li>
-                            <li>Taninos de uva</li>
-                            <li>Alcoholes</li>
-                            <li>Pepita de uva</li>
+                            <li><Link to='/productos/ExtractosPiel'>Extracto de piel de uva</Link></li>
+                            <li><Link to='/productos/ExtractosVino'>Extracto de vino</Link></li>
+                            <li><Link to='/productos/Taninos'>Taninos de uva</Link></li>
+                            <li><Link to='/productos/Alcoholes'>Alcoholes</Link></li>
+                            <li><Link to='/productos/Pepita'>Pepita de uva</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -37,17 +37,17 @@ const Footer = () => {
                     <p className='footer-title'>Sobre Nosotros</p>
                     <div>
                         <ul className='footer-list'>
-                            <li>Recursos técnicos y humanos</li>
-                            <li>Historia</li>
-                            <li>Valores</li>
+                            <li><Link to='/nosotros/Recursos'>Recursos técnicos y humanos</Link></li>
+                            <li><Link to='/nosotros/Historia'>Historia</Link></li>
+                            <li><Link to='/nosotros/Valores'>Valores</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'>Dónde Estamos</p>
+                    <p className='footer-title-no-bottom'><Link to='/DondeEstamos'>Dónde Estamos</Link></p>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'>Sostenibilidad</p>
+                    <p className='footer-title-no-bottom'><Link to='/Sostenibilidad'>Sostenibilidad</Link></p>
                 </div>
                 <div className='footer-block'>
                     <p className='footer-title'>Política de Privacidad</p>

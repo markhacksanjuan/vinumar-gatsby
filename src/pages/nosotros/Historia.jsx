@@ -50,7 +50,7 @@ const Historia = () => {
                     </div>
                     {images && <SimpleImageSlider 
                         images={images}
-                        width='80%'
+                        width='72.82%'
                         height={600}
                         showNavs={true}
                     />}
@@ -142,7 +142,7 @@ const Historia = () => {
                     </div>
                     {imagesHist && <SimpleImageSlider 
                         images={imagesHist}
-                        width='80%'
+                        width='72.82%'
                         height={600}
                         showNavs={true}
                     />}

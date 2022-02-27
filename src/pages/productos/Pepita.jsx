@@ -35,17 +35,17 @@ const Pepita = () => {
                                 <ul>
                                     <li className='pepita-header-carac-li'>
                                         <p>Nombre botánico</p>
-                                        <p>Vitis Vinífera</p>
+                                        <p className='italic'>Vitis Vinífera</p>
                                     </li>
                                     <li className='pepita-header-carac-li'>
                                         <p>Etiquetado</p>
-                                        <ul>
+                                        <ul className='circle'>
                                             <li>Granilla de uva</li>
                                         </ul>
                                     </li>
                                     <li className='pepita-header-carac-li'>
                                         <p>Almacenaje</p>
-                                        <ul>
+                                        <ul className='no-style'>
                                             <li>Conservar a temperatura ambiente</li>
                                         </ul>
                                     </li>

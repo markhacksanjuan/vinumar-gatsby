@@ -24,14 +24,15 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 80%;
+    width: 72.82%;
     margin-top: 300px;
     border-top: 1px solid black
 }
 .historia-vinumar-container div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-top: 15px
 }
 .historia-vinumar-container h4 {
     font-size: 37px;
@@ -48,7 +49,7 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 80%;
+    width: 72.82%;
     margin-top: 300px;
     border-top: 1px solid black
 }
@@ -102,7 +103,7 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 80.7%;
+    width: 72.82%;
     margin-top: 300px;
     border-top: 1px solid black
 }

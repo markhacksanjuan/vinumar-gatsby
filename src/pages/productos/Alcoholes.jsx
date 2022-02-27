@@ -19,12 +19,19 @@ const Alcoholes = () => {
                 <div className='alcoholes-container-header'>
                     <div className='alcoholes-container-header-title'>
                         <h4>Alcoholes</h4>
-                        <p>Desde nuestros inicios, la fabricación de alcoholes ha estado permanentemente presente en las distintas actividades desarrolladas por Vinumar, por lo que es todo un clásico. Todos los alcoholes que fabricamos en nuestras instalaciones son de procedencia exclusivamente vínica, y se obtienen en columnas de flujo continuo a partir del vino o de los subproductos de vinificación. Los alcoholes vínicos reciben distintas denominaciones según sea su proceso de obtención, su purificación o refinado, su graduación alcohólica o las características organolépticas del alcohol obtenido.</p>
+                        <p>Desde nuestros inicios, la fabricación de alcoholes ha estado permanentemente presente en las distintas actividades desarrolladas por Vinumar, por lo que es todo un clásico.
+                        <span className="parrafo">
+                            Todos los alcoholes que fabricamos en nuestras instalaciones son de procedencia exclusivamente vínica, y se obtienen en columnas de flujo continuo a partir del vino o de los subproductos de vinificación.
+                        </span>
+                        <span className="parrafo">
+                            Los alcoholes vínicos reciben distintas denominaciones según sea su proceso de obtención, su purificación o refinado, su graduación alcohólica o las características organolépticas del alcohol obtenido.
+                        </span>
+                        </p>
                     </div>
                     <div className='alcoholes-header-apli-carac-img-container'>
                         <div className='alcoholes-header-apli-carac-container'>
                             <div className='alcoholes-header-carac-container'>
-                                <p className='alcoholes-header-apli-carac-title'>Características</p>
+                                <p className='alcoholes-header-apli-carac-title'>Aplicaciones</p>
                                 <div>
                                     <ul>
                                         <li>

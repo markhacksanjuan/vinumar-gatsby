@@ -49,7 +49,7 @@ const Recursos = () => {
                         <p>Recursos técnicos</p>
                         <div>
                             <p>Nuestra capacidad de producción está preparada para responder antep picos de demanda con agilidad y una alta capacidad de reacción. Para ello contamos con:</p>
-                            <ul>
+                            <ul className='circle'>
                                 <li>140.000 m2 de suelo industrial</li>
                                 <li>15.000 m2 de naves de proceso</li>
                                 <li>1.000.000 Hl de almacenamiento</li>
@@ -84,7 +84,7 @@ const Recursos = () => {
                     </div>
                     {images && <SimpleImageSlider
                         images={images}
-                        width='80%'
+                        width='72.82%'
                         height={600}
                         showNavs={true}
                     />}
@@ -102,7 +102,7 @@ const Recursos = () => {
                     </div>
                     {imagesInst && <SimpleImageSlider
                         images={imagesInst}
-                        width='80%'
+                        width='72.82%'
                         height={600}
                         showNavs={true}
                     />}

@@ -71,8 +71,8 @@ const ExtractosVino = () => {
                         <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración, filtración y pasteurización de vino tinto o blanco.</p>
                     </div>
                     <img src={vinoProducto1} alt="Liquido" />
-                    <div>
-                        <p>Tinto</p>
+                    <div className='uva-productos-carac'>
+                        <p className='uva-productos-subtitle'>Tinto</p>
                         <div>
                             <p>VINUWINE R55L</p>
                             <ul>
@@ -106,7 +106,7 @@ const ExtractosVino = () => {
 
                     <img src={vinoProducto3} alt="Liquido" />
                     <div>
-                        <p>Blanco</p>
+                        <p className='uva-productos-subtitle'>Blanco</p>
                         <div>
                             <p>VINUWINE B55L</p>
                             <ul>
@@ -151,8 +151,8 @@ const ExtractosVino = () => {
                         <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración y filtración de vino tinto o blanco, y se deshidrata por atomización, con o sin soporte de secado (maltodextrina).</p>
                     </div>
                     <img src={vinoProducto2} alt="Liquido" />
-                    <div>
-                        <p>Tinto</p>
+                    <div className='uva-productos-carac'>
+                        <p className='uva-productos-subtitle'>Tinto</p>
                         <div>
                             <p>VINUWINE R55L</p>
                             <ul>
@@ -184,7 +184,7 @@ const ExtractosVino = () => {
 
                     <img src={vinoProducto4} alt="Liquido" />
                     <div>
-                        <p>Blanco</p>
+                        <p className='uva-productos-subtitle'>Blanco</p>
                         <div>
                             <p>VINUWINE B55L</p>
                             <ul>

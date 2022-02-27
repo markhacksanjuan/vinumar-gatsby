@@ -5,7 +5,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 80%;
+    width: 72.82%;
 }
 .taninos-container-header-title {
     display: flex;
@@ -18,7 +18,7 @@
     margin: 0
 }
 .taninos-container-header-title p {
-    width: 50%;
+    width: 49.3%;
 }
 .taninos-header-apli-carac-img-container {
     display: flex;
@@ -33,16 +33,18 @@
 }
 .taninos-header-apli-carac-title {
     font-weight: bold;
-    width: 30%
+    width: 33%
 }
 .taninos-header-apli-container {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 60px
 }
 .taninos-header-apli-container > ul {
-    width: 40%;
-    margin-right: 10px
+    width: 33%;
+    margin-right: 10px;
+    list-style: none;
 }
 .taninos-header-apli-container > ul > li {
     border-bottom: solid 1px black
@@ -51,7 +53,7 @@
     border: none
 }
 .taninos-header-apli-definition {
-    width: 40%;
+    width: 33%;
 }
 .taninos-header-carac-container {
     display: flex;
@@ -61,7 +63,7 @@
     border-top: solid 1px black
 }
 .taninos-header-carac-container > ul {
-    width: 80%
+    width: 71%
 }
 .taninos-header-carac-container > ul > li {
     display: flex;
@@ -72,8 +74,11 @@
 .taninos-header-carac-container > ul > li:last-child {
     border: none
 }
+.taninos-header-carac-container > ul > li:last-child > p {
+    width: 50%
+}
 .taninos-header-img {
-    width: 50%;
+    width: 49.3%;
     height: 688px;
     object-fit: cover;
     margin-left: 20px
@@ -84,7 +89,7 @@
 
 .taninos-productos-container {
     border-top: 1px solid black;
-    width: 80%;
+    width: 72.82%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -127,8 +132,7 @@
     margin-top: 15px
 }
 .taninos-productos-container > div > div > div > p {
-    margin-right: 20%;
-    width: 45%
+    width: 67%
 }
 .taninos-productos-container > div > div > div > div > ul > li {
     display: flex;
@@ -146,4 +150,17 @@
 }
 .taninos-productos-container > div > div > div > div > ul > li > ul{
     width: 49%
+}
+.taninos-productos-carac ul {
+    list-style: none;
+}
+.taninos-productos-carac {
+    /* width: 70% */
+}
+.taninos-productos-carac > ul > li {
+    padding-top: 10px;
+    padding-bottom: 7px
+}
+.taninos-productos-carac > p {
+    padding-bottom: 7px
 }

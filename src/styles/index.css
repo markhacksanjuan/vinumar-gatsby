@@ -13,8 +13,14 @@ a {
 }
 ul {
     margin: 0;
-    /* list-style: none; */
     padding: 0
+}
+ul.no-style {
+    list-style: none
+}
+ul.circle {
+    list-style: circle;
+    padding-left: 20px
 }
 h4 {
     font-weight: normal;
@@ -55,6 +61,9 @@ textarea{
 span.parrafo {
     display: block;
     margin-top: 1rem
+}
+span.block {
+    display: block
 }
 .italic {
     font-style: italic
