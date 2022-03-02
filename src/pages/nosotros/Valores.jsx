@@ -3,13 +3,14 @@ import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import '../../styles/pages/valores.css'
 import TextCentered from '../../components/textCentered/TextCentered'
+import Button from '../../components/button/Button'
 
 import headerImg from '../../images/selected/Principal DSC00902.jpg'
-import valores1 from '../../images/img/Historia_Carrusel_2_3.jpg'
-import valores2 from '../../images/img/Historia_Carrusel_2_2.jpg'
-import valores3 from '../../images/img/Situacion-Geografica-Carrusel-1.jpg'
-import valores4 from '../../images/img/Historia_Carrusel_1_3.jpg'
-import valores5 from '../../images/img/Situacion-Geografica-Carrusel-1.jpg'
+import valores1 from '../../images/ilustraciones/Vinumar_Ilustraciones_Tecnologia.jpg'
+import valores2 from '../../images/ilustraciones/Vinumar_Ilustraciones_Reactividad.jpg'
+import valores3 from '../../images/ilustraciones/Vinumar_Ilustraciones_Confianza.jpg'
+import valores4 from '../../images/ilustraciones/Vinumar_Ilustraciones_Experiencia.jpg'
+import valores5 from '../../images/ilustraciones/Vinumar_Ilustraciones_Sostenibilidad.jpg'
 
 const Valores = () => {
     const renderHeader = () => {
@@ -74,6 +75,7 @@ const Valores = () => {
             {renderHeader()}
             <TextCentered>Los valores corporativos son la única ventaja competitiva que no se puede replicar.</TextCentered>
             {renderContent()}
+            <Button style='red-button' width='270px' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
             <Footer />
 
         </>

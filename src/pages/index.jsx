@@ -16,7 +16,7 @@ import extVino from '../images/img/Extracto-de-vino-caracteristicas.jpg'
 import taninosUva from '../images/selected/taninos.jpg'
 import alcohol from '../images/img/Alcohol-uso-boca-app.jpg'
 import pepitas from '../images/selected/granilla.jpg'
-import dondeImg from '../images/img/Situacion-Geografica-Carrusel-1.jpg'
+import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
 
 // markup
 const IndexPage = ({}) => {
