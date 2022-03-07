@@ -37,7 +37,7 @@ const NavbarIndex = ({ width }) => {
         return(
             <>
                 <ul className='navbar-menu'>
-                    <li><Link className='navbar-list-sub-menu' to='/nosotros/Recursos'>Recursos humanos y técnicos</Link></li>
+                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/nosotros/Recursos'>Recursos humanos y técnicos</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/nosotros/Historia'>Historia</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/nosotros/Valores'>Valores</Link></li>
                 </ul> 
@@ -49,22 +49,22 @@ const NavbarIndex = ({ width }) => {
         setShowProd(false)
     }
     const closeSubMenu = () => {
-        if(showProd || showNosotros){
-            setTimeout(() => {
-                setShowNosotros(false)
-                setShowProd(false)
-            }, 200)
-        }
+        // if(showProd || showNosotros){
+        //     setTimeout(() => {
+        //         setShowNosotros(false)
+        //         setShowProd(false)
+        //     }, 200)
+        // }
     }
     const renderListGeneral = () => {
         return(
             <ul className='navbar-list-general'>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/'>Inicio</Link></li>
-                <li className='navbar-list-element'>
+                <li className='navbar-list-element navbar-relative'>
                     <p className='navbar-list-general-element' tabIndex='0' onClick={onClickProd} onBlur={closeSubMenu}>Productos</p>
                     {showProd && renderProd()}
                 </li>
-                <li className='navbar-list-element'>
+                <li className='navbar-list-element navbar-relative'>
                     <p className='navbar-list-general-element' tabIndex='0' onClick={onClickNosotros} onBlur={closeSubMenu} to='/Nosotros'>Sobre nosotros</p>
                     {showNosotros && renderNosotros()}
                 </li>
@@ -74,15 +74,6 @@ const NavbarIndex = ({ width }) => {
                 <li className='navbar-list-element-lang'><Link className='navbar-list-general-element' to='/'>EN</Link></li>
             </ul>
         )
-    }
-
-    const setBodyBlack = () => {
-        const body = document.querySelector('body')
-        body.style.background = 'rgba(0, 0, 0, 0.7)'
-    }
-    const setBodyWhite = () => {
-        const body = document.querySelector('body')
-        body.style.background = 'none'
     }
 
     return(

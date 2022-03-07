@@ -20,7 +20,9 @@ const DondePage = () => {
             <>
                 <div className='donde-container-header'>
                     <img src={headerImg} alt="Donde estamos header" />
-                    <p>En el corazón de Castilla-La Mancha.</p>
+                    <div className='donde-container-header-h2'>
+                        <h2>En el corazón de Castilla-La Mancha.</h2>
+                    </div>
                 </div>
             </>
         )

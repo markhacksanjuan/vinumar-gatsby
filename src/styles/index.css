@@ -68,6 +68,9 @@ span.block {
 .italic {
     font-style: italic
 }
+.no-border {
+    border: none !important
+}
 
 @media only screen and (max-width: 600px) {
     h4 {
