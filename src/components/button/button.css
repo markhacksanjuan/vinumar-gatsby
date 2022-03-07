@@ -3,7 +3,12 @@
     flex-direction: row;
     justify-content: center;
     margin: 0;
-    position: relative
+    position: relative;
+}
+.red-button, .white-button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 12px 7px 10px;
 }
 .red-button {
     background: #A02E33;

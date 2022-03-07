@@ -25,8 +25,10 @@ const IndexPage = ({}) => {
       <>
         <div className='index-container-header'>
           <img src={headerImg} alt='Vinumar' />
-          <p>Más de 60 años de tradición e innovación en el mundo de la uva.</p>
-          <Button className='index-card-button' style='white-button' width='164' goTo='#productos'>Ver productos</Button>
+          <div className="index-container-header-h2">
+            <h2>Más de 60 años de tradición e innovación en el mundo de la uva.</h2>
+          </div>
+          <Button className='index-card-button' style='white-button' goTo='#productos'>Ver productos</Button>
 
         </div>
       </>
@@ -122,9 +124,9 @@ const IndexPage = ({}) => {
         <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
         {renderProductos()}
         {renderDonde()}
-        <TextCentered>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
+        <TextCentered width='960px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
       </div>
-        <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='282px'>SABER MÁS SOBRE VINUMAR</Button>
+        <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>SABER MÁS SOBRE VINUMAR</Button>
 
       <Footer />
     </main>
