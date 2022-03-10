@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
@@ -6,15 +6,36 @@ import './navbarIndex.css'
 const NavbarIndex = ({ width }) => {
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
+    const [scroll, setScroll] = useState('451px')
+
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            window.onscroll = () => {
+                if(window.scrollY > 215 ){
+                    setScroll('214px')
+                }else {
+                    const factor = window.scrollY
+                    const newScroll = 451 - factor
+                    setScroll(`${newScroll}px`)
+                }
+            }
+        }
+    }, [])
+    // 214px
 
     const renderLogo = () => {
         return(
             <div>
                 <Link  to='/'>
-                    <img className='navbar-logo' src={logo} width={width} alt='Logo'/>
+                    <img className='navbar-logo' onScroll={onScroll}  src={logo} width={scroll} alt='Logo'/>
                 </Link>
             </div>
         )
+    }
+    const onScroll = (e) => {
+        console.log('on scroll')
+        console.log(e)
+        console.log(e.target)
     }
     const renderProd = () => {
         return(

@@ -15,12 +15,12 @@ const ContactoPage = () => {
                     <input type="text" name='name' placeholder="Nombre y Apellidos" />
                     <input type="email" placeholder="correo@electronico.com" />
                     <div>
-                        <textarea name="mensaje" id="mensaje" cols="51" rows="15" placeholder='Mensaje...'></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="48" rows="15" placeholder='Mensaje...'></textarea>
                     </div>
                     <div id='checkbox' >
                         <input type="checkbox" name='rgpd' />
                         <label for="rgpd">Acepto RGPD</label>
-                        <Button style='white-button'>ENVIAR</Button>
+                        <Button style='send-button'>ENVIAR</Button>
                     </div>
                 </form>
             </>

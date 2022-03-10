@@ -21,3 +21,8 @@
     bottom: 67px;
     z-index: 10;
 }
+.send-button {
+    background: white;
+    color: black;
+    z-index: 10;
+}

@@ -6,7 +6,8 @@
         url('../public/fonts/ABCDiatype-Light.woff2') format('woff2') */
 }
 body {
-    font-family: 'DiatypeLight' !important
+    font-family: 'DiatypeLight' !important;
+    letter-spacing: 0;
 }
 a {
     text-decoration: none !important;
@@ -22,18 +23,28 @@ ul.circle {
     list-style: circle;
     padding-left: 20px
 }
+li{
+    font-size: 18px;
+    line-height: 20px;
+}
+h2{
+    font-size: 18px;
+    line-height: 20px;
+}
 h4 {
     font-weight: normal;
     font-size: 37px;
+    line-height: 39px;
 }
 p{
     margin: 0;
     font-size: 18px;
-    line-height: 1.4rem;
+    line-height: 20px;
 }
 button {
     border: 1px solid black;
     height: 40px;
+    font-size: 18px;
 }
 input {
     border: none;
