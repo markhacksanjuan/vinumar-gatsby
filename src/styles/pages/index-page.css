@@ -53,7 +53,7 @@
 .index-card-img {
     height: 300px;
     width: 100%;
-    object-fit: cover;
+    object-fit: none;
 }
 .index-container-product {
     border-top: solid 1px black;

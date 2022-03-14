@@ -14,12 +14,20 @@
     background: #A02E33;
     color: white
 }
+.red-button:hover {
+    background: white;
+    color: #A02E33
+}
 .white-button {
     background: white;
     color: black;
     position: absolute;
     bottom: 67px;
     z-index: 10;
+}
+.white-button:hover {
+    background: #E7CBCC;
+    color: black;
 }
 .send-button {
     background: white;

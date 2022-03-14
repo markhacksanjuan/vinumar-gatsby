@@ -72,7 +72,7 @@ const ExtractosPiel = () => {
             <>
                 <div>
                             <p>Líquido</p>
-                            <img src={pielProductoLiquido} alt="Liquido" />
+                            <img className='fit-cover' src={pielProductoLiquido} alt="Liquido" />
                             <div>
                                 <p>VINUPER 3</p>
                                 <div>
@@ -110,7 +110,7 @@ const ExtractosPiel = () => {
             <>
                 <div>
                     <p>Polvo</p>
-                    <img src={pielProducto1} alt="Polvo" />
+                    <img className='fit-none' src={pielProducto1} alt="Polvo" />
                     <div>
                         <p>VINUCAP 12</p>
                         <div>

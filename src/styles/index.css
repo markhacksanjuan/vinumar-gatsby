@@ -42,7 +42,7 @@ p{
     line-height: 20px;
 }
 button {
-    border: 1px solid black;
+    border: 0.5px solid black;
     height: 40px;
     font-size: 18px;
 }
@@ -75,6 +75,12 @@ span.parrafo {
 }
 span.block {
     display: block
+}
+img.fit-none {
+    object-fit: none
+}
+img.fit-cover {
+    object-fit: cover
 }
 .italic {
     font-style: italic

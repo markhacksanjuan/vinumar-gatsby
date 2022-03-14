@@ -28,7 +28,7 @@ const IndexPage = ({}) => {
           <div className="index-container-header-h2">
             <h2>Más de 60 años de tradición e innovación en el mundo de la uva.</h2>
           </div>
-          <Button className='index-card-button' style='white-button' goTo='#productos'>Ver productos</Button>
+          <Button className='index-card-button' style='white-button' goTo='#productos'>VER PRODUCTOS</Button>
 
         </div>
       </>
