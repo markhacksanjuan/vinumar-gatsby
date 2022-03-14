@@ -122,7 +122,6 @@
     border-radius: 15px 15px 15px 0;
     height: 300px;
     width: 100%;
-    object-fit: cover;
 }
 .taninos-productos-container > div > div > div {
     border-top: 1px solid black;

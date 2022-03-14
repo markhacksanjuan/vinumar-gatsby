@@ -70,7 +70,7 @@ const ExtractosVino = () => {
                         <p>Líquido</p>
                         <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración, filtración y pasteurización de vino tinto o blanco.</p>
                     </div>
-                    <img src={vinoProducto1} alt="Liquido" />
+                    <img className='fit-cover' src={vinoProducto1} alt="Liquido" />
                     <div className='uva-productos-carac'>
                         <p className='uva-productos-subtitle'>Tinto</p>
                         <div>
@@ -104,7 +104,7 @@ const ExtractosVino = () => {
                         </div>
                     </div>
 
-                    <img src={vinoProducto3} alt="Liquido" />
+                    <img className='fit-cover' src={vinoProducto3} alt="Liquido" />
                     <div>
                         <p className='uva-productos-subtitle'>Blanco</p>
                         <div>
@@ -150,7 +150,7 @@ const ExtractosVino = () => {
                         <p>Polvo</p>
                         <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración y filtración de vino tinto o blanco, y se deshidrata por atomización, con o sin soporte de secado (maltodextrina).</p>
                     </div>
-                    <img src={vinoProducto2} alt="Liquido" />
+                    <img className='fit-none' src={vinoProducto2} alt="Liquido" />
                     <div className='uva-productos-carac'>
                         <p className='uva-productos-subtitle'>Tinto</p>
                         <div>
@@ -182,7 +182,7 @@ const ExtractosVino = () => {
                         </div>
                     </div>
 
-                    <img src={vinoProducto4} alt="Liquido" />
+                    <img className='fit-none' src={vinoProducto4} alt="Liquido" />
                     <div>
                         <p className='uva-productos-subtitle'>Blanco</p>
                         <div>

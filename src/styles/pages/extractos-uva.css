@@ -144,7 +144,7 @@
     border-radius: 15px 15px 15px 0;
     height: 300px;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .uva-productos-container > div > div > div {
     display: flex;

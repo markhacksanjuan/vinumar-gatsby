@@ -59,7 +59,7 @@ const Taninos = () => {
             <>
                 <div>
                     <p>Polvo</p>
-                    <img src={taninosProductoImg} alt="Polvo" />
+                    <img className='fit-none' src={taninosProductoImg} alt="Polvo" />
                     <div>
                         <p>VINUPEB P</p>
                         <div className='taninos-productos-carac'>
@@ -98,7 +98,7 @@ const Taninos = () => {
         return(
             <>
                 <div className="taninos-productos-container">
-                    <h4>Nuestra elección en Taninos de uva</h4>
+                    <h4>Nuestra selección en Taninos de uva</h4>
                     <div>
                         {renderProductosCardPolvo()}
                     </div>
