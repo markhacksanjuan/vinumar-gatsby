@@ -12,7 +12,7 @@ const Button = ({ goTo, style, width, children }) => {
     return(
         <>
             <div className='button-component'>
-                <button className={`${style}`} style={{ width }} onClick={() => onClick()}>{children}</button>
+                <button className={`${style}`}  onClick={() => onClick()}>{children}</button>
             </div>
         </>
     )
