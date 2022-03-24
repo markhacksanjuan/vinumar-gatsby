@@ -116,7 +116,7 @@ const Taninos = () => {
 
             {renderProductos()}
 
-            <TextCentered>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
+            <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
             <EntornoNatural type='slider' />

@@ -240,7 +240,7 @@ const ExtractosVino = () => {
 
             {renderProductos()}
 
-            <TextCentered>También ofrecemos productos personalizados, según las necesidades requeridas. Como el extracto de vino en polvo Vinuwine SM ideal para uso alimentario y nutracéutico, sin maltodextrina y rico en polifenoles (&gt;30%).</TextCentered>
+            <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, según las necesidades requeridas. Como el extracto de vino en polvo Vinuwine SM ideal para uso alimentario y nutracéutico, sin maltodextrina y rico en polifenoles (&gt;30%).</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
             <EntornoNatural type='slider' />

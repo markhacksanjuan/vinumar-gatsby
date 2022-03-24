@@ -122,7 +122,7 @@ const Alcoholes = () => {
 
             {renderProductos()}
 
-            <TextCentered>Realizamos todas las fabricaciones exclusivamente bajo pedido.</TextCentered>
+            <TextCentered width='925px' margin='60px'>Realizamos todas las fabricaciones exclusivamente bajo pedido.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
             <EntornoNatural type='alcohol' />

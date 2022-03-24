@@ -124,7 +124,7 @@ const IndexPage = ({}) => {
         <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
         {renderProductos()}
         {renderDonde()}
-        <TextCentered width='960px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
+        <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
       </div>
         <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>SABER MÁS SOBRE VINUMAR</Button>
 

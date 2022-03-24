@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "develop:desktop": "gatsby --openssl-legacy-provider develop"
   },
   "dependencies": {
     "@emotion/react": "^11.5.0",
