@@ -32,7 +32,10 @@ const Valores = () => {
                         <div>
                             <p className='valores-content-title'>Tecnología</p>
                             <img src={valores1} alt="Valores" />
-                            <p className='valores-content-description'>La apuesta tecnológica es para nosotros una larga tradición. Desde nuestra fundación, la continua investigación e inversión en las más avanzadas tecnologías ha sido la base fundamental para crecer ofreciendo productos idóneos con todas las garantías de seguridad e higiene. La inversión en tecnología nos permite innovar con perseverancia en procesos y maquinarias para proporcionar siempre soluciones óptimas a nuestros clientes.</p>
+                            <p className='valores-content-description'>La apuesta tecnológica es para nosotros una larga tradición. Desde nuestra fundación, la continua investigación e inversión en las más avanzadas tecnologías ha sido la base fundamental para crecer ofreciendo productos idóneos con todas las garantías de seguridad e higiene.
+                            <br/>
+                            <br/>
+                            La inversión en tecnología nos permite innovar con perseverancia en procesos y maquinarias para proporcionar siempre soluciones óptimas a nuestros clientes.</p>
                         </div>
                         <div>
                             <div className='valores-content-card'>
@@ -40,7 +43,10 @@ const Valores = () => {
                                     <p className='valores-content-title'>Reactividad</p>
                                     <img src={valores2} alt="Valores" />
                                 </div>
-                                <p>Hoy en día, la reactividad es fundamental. Saber responder de forma clara, rápida y eficaz a las necesidades del cliente más exigente es imprescindible en un entorno competitivo. La industria avanza cada vez más rápido y es en la capacidad de reacción donde nuestros clientes encuentran en nosotros a su mejor aliado. Porque sus problemas nos estimulan a encontrar la mejor solución.</p>
+                                <p>Hoy en día, la reactividad es fundamental. Saber responder de forma clara, rápida y eficaz a las necesidades del cliente más exigente es imprescindible en un entorno competitivo.
+                                    <br/>
+                                    <br/>
+                                    La industria avanza cada vez más rápido y es en la capacidad de reacción donde nuestros clientes encuentran en nosotros a su mejor aliado. Porque sus problemas nos estimulan a encontrar la mejor solución.</p>
                             </div>
                             <div className='valores-content-card'>
                                 <div>

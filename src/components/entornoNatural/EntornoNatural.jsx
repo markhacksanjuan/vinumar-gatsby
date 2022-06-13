@@ -43,6 +43,9 @@ const EntornoNatural = ({ type, children, title }) => {
                         height={600}
                         showNavs={true}
                         className='entorno-slider'
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                      />
                 </div>
             </>

@@ -3,6 +3,7 @@ import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import '../../styles/pages/historia.css'
 import SimpleImageSlider from 'react-simple-image-slider'
+import Button from '../../components/button/Button'
 
 import headerImg from '../../images/selected/Principal AA15-1 V2.jpg'
 
@@ -53,6 +54,9 @@ const Historia = () => {
                         width='72.82%'
                         height={600}
                         showNavs={true}
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                     />}
                 </div>
             </>
@@ -72,9 +76,9 @@ const Historia = () => {
                                 <p>La primera generación se asienta definitivamente en Castilla-La Mancha, iniciando su arraigo a la Tierra del vino, que se consolidará en 1957 con la compra de una fábrica de alcohol en Villarrobledo.</p>
                                 <p>1955</p>
                             </div>
-                            <div style={{ height: '130px' }}>
+                            <div className='two-years' style={{ height: '130px' }}>
                                 <p>Década de gran expansión con sucesivas ampliaciones y modernizaciones de las secciones de concentrados, almacenamiento y granilla de uva, así como de la bodega de vinos.</p>
-                                <p style={{ width: '28%'}}>1970-79</p>
+                                <p style={{ width: '50%'}}>1970-79</p>
                             </div>
                             <div style={{ height: '115px' }}>
                                 <p>Inauguración de la nueva planta de extracción y producción de materia colorante, hecho histórico que marcará el futuro de la empresa y su reinvención hacia los productos derivados de la uva.</p>
@@ -84,11 +88,11 @@ const Historia = () => {
                                 <p>Ampliación de las instalaciones de secado de orujo de uva y puesta en marcha de una nueva EDAR.</p>
                                 <p>2005</p>
                             </div>
-                            <div>
+                            <div style={{ paddingBottom: '10px'}}>
                                 <p>Inicio de nuevos procesos de aplicación de I+D+i para la obtención de distintos productos derivados de la uva.</p>
                                 <p>2018</p>
                             </div>
-                            <div>
+                            <div style={{ paddingBottom: '10px', paddingTop: '10px'}}>
                                 <p>Adquisición de la nueva planta de purificacón de la materia colorante.</p>
                                 <p>2020</p>
                             </div>
@@ -145,6 +149,9 @@ const Historia = () => {
                         width='72.82%'
                         height={600}
                         showNavs={true}
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                     />}
                 </div>
             </>
@@ -157,6 +164,7 @@ const Historia = () => {
             {renderVinumar()}
             {renderCronologia()}
             {renderHistoria()}
+            <Button style='red-button' goTo='/Contacto'  >CONTACTA CON NOSOTROS</Button>
             <Footer />
 
         </>

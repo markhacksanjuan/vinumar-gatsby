@@ -36,8 +36,8 @@ const ContactoPage = () => {
                     </div>
                     <div>
                         <div>
-                            <p>ctra. Munera, 5 02600 Villarrobledo Albacete, España</p>
-                            <p>T +34 967141500 F +34 967144111</p>
+                            <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, España</p>
+                            <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>
                         </div>
                         <Gmap />

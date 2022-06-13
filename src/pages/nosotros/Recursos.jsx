@@ -43,15 +43,18 @@ const Recursos = () => {
                 <div className="recursos-recursos-container">
                     <div>
                         <h4>Recursos técnicos y humanos</h4>
-                        <p>Uno de los factores de la calidad de nuestros productos corresponde a la selección de la materia prima. Para obtener de ella los mejores resultados se necesita además, disponer de las instalaciones, la tecnología y el equipo humano adecuado. Llevamos más de seis décadas actualizando y mejorando todos nuestros procesos, lo que nos permite una gran capacidad tanto en producción como en especificaciones, para satisfacer las necesidades de nuestros clientes de una manera rápida y eficaz.</p>
+                        <p>Uno de los factores de la calidad de nuestros productos corresponde a la selección de la materia prima. Para obtener de ella los mejores resultados se necesita además, disponer de las instalaciones, la tecnología y el equipo humano adecuado.
+                            <br/>
+                            <br/>
+                            Llevamos más de seis décadas actualizando y mejorando todos nuestros procesos, lo que nos permite una gran capacidad tanto en producción como en especificaciones, para satisfacer las necesidades de nuestros clientes de una manera rápida y eficaz.</p>
                     </div>
                     <div className='recursos-recursos-tecnicos'>
                         <p>Recursos técnicos</p>
                         <div>
-                            <p>Nuestra capacidad de producción está preparada para responder antep picos de demanda con agilidad y una alta capacidad de reacción. Para ello contamos con:</p>
+                            <p>Nuestra capacidad de producción está preparada para responder ante picos de demanda con agilidad y una alta capacidad de reacción. Para ello contamos con:</p>
                             <ul className='circle'>
-                                <li>140.000 m2 de suelo industrial</li>
-                                <li>15.000 m2 de naves de proceso</li>
+                                <li>140.000 m<sup>2</sup> de suelo industrial</li>
+                                <li>15.000 m<sup>2</sup> de naves de proceso</li>
                                 <li>1.000.000 Hl de almacenamiento</li>
                                 <li>Líneas de extracción en frío</li>
                                 <li>Concentradores al vacío múltiple efecto</li>
@@ -87,6 +90,9 @@ const Recursos = () => {
                         width='72.82%'
                         height={600}
                         showNavs={true}
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                     />}
                 </div>
             </>
@@ -105,6 +111,9 @@ const Recursos = () => {
                         width='72.82%'
                         height={600}
                         showNavs={true}
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                     />}
                 </div>
             </>

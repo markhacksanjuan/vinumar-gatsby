@@ -41,6 +41,9 @@ const Situacion = ({ type, children, title }) => {
                         height={600}
                         showNavs={true}
                         className='situacion-slider'
+                        showBullets={true}
+                        autoPlay={true}
+                        autoPlayDelay={4}
                      />
                 </div>
             </>

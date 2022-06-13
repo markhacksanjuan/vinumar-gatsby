@@ -17,7 +17,9 @@ const Pepita = () => {
                 <div className='pepita-container-header'>
                     <div className='pepita-container-header-title'>
                         <h4>Pepita de uva</h4>
-                        <p>También conocida como granilla de uva, la pepita de uva es un producto de gran valor alimenticio y nutritivo obtenido a partir del secado del orujo de la uva y su posterior separación. Nuestra pepita de uva está cuidadosamente seleccionada para minimizar las impurezas y, además, cuenta con un nivel de acidez, humedad y porcentaje de materia grasa óptimos.</p>
+                        <p>También conocida como granilla de uva, la pepita de uva es un producto de gran valor alimenticio y nutritivo obtenido a partir del secado del orujo de la uva y su posterior separación.
+                            <br/><br/> 
+                            Nuestra pepita de uva está cuidadosamente seleccionada para minimizar las impurezas y, además, cuenta con un nivel de acidez, humedad y porcentaje de materia grasa óptimos.</p>
                     </div>
                     <div className='pepita-header-apli-carac-img-container'>
                         <div className='pepita-header-apli-carac-container'>

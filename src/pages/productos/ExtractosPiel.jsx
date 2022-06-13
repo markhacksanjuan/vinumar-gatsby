@@ -88,7 +88,7 @@ const ExtractosPiel = () => {
                                         </li>
                                         <li>
                                             <p>pH</p>
-                                            <p>&lt;3,0</p>
+                                            <p>&lt; 3,0</p>
                                         </li>
                                         <li>
                                             <p>Envases</p>
@@ -96,6 +96,7 @@ const ExtractosPiel = () => {
                                                 <li>Cisterna alimentaria</li>
                                                 <li>Contenedor 1000 l</li>
                                                 <li>Garrafas 60 l, 220 l</li>
+                                                <li>Envases de 25 l</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -126,11 +127,11 @@ const ExtractosPiel = () => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&lt;3,5</p>
+                                    <p>&lt; 3,5</p>
                                 </li>
                                 <li>
                                     <p>Humedad</p>
-                                    <p>&lt;7 %</p>
+                                    <p>&lt; 7 %</p>
                                 </li>
                                 <li>
                                     <p>Envases</p>

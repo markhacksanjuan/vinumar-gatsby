@@ -55,7 +55,8 @@
 }
 .historia-crono-container h4 {
     font-size: 37px;
-    margin: 0
+    margin: 0;
+    margin-top: 15px
 }
 .historia-crono-container > div:first-child {
     margin-bottom: 65px
@@ -95,7 +96,9 @@
 .historia-crono-container > div > div:last-child > div > p:last-child {
     padding-left: 8%
 }
-
+.two-years {
+    padding-right:18% !important
+}
 
 
 .historia-historia-container {
@@ -105,7 +108,8 @@
     justify-content: center;
     width: 72.82%;
     margin-top: 300px;
-    border-top: 1px solid black
+    border-top: 1px solid black;
+    margin-bottom: 70px
 }
 .historia-historia-container div {
     display: flex;

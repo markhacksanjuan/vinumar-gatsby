@@ -48,7 +48,7 @@ const ExtractosVino = () => {
                                         <p>Etiquetado</p>
                                         <ul>
                                             <li>Extracto de vino tinto o vino blanco</li>
-                                            <li>Concentrado de vino desalcolizado</li>
+                                            <li>Concentrado de vino desalcoholizado</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -86,7 +86,7 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&#8804;3,80</p>
+                                    <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
                                     <p>Brix</p>
@@ -98,6 +98,7 @@ const ExtractosVino = () => {
                                         <li>Cisterna alimentaria</li>
                                         <li>Contenedor 1000 l</li>
                                         <li>Garrafas 60 l, 220 l</li>
+                                        <li>Envases 20 l</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -154,7 +155,7 @@ const ExtractosVino = () => {
                     <div className='uva-productos-carac'>
                         <p className='uva-productos-subtitle'>Tinto</p>
                         <div>
-                            <p>VINUWINE R55L</p>
+                            <p>VINUWINE RP</p>
                             <ul>
                                 <li>
                                     <p>Color</p>
@@ -162,7 +163,7 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&#8804;3,80</p>
+                                    <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
                                     <p>Humedad</p>
@@ -175,7 +176,7 @@ const ExtractosVino = () => {
                                 <li>
                                     <p>Envases</p>
                                     <ul>
-                                        <li>Bolsas de aluminio 25 Kg termosoldad al vacío</li>
+                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -186,7 +187,7 @@ const ExtractosVino = () => {
                     <div>
                         <p className='uva-productos-subtitle'>Blanco</p>
                         <div>
-                            <p>VINUWINE B55L</p>
+                            <p>VINUWINE BP</p>
                             <ul>
                                 <li>
                                     <p>Color</p>
@@ -207,7 +208,7 @@ const ExtractosVino = () => {
                                 <li>
                                     <p>Envases</p>
                                     <ul>
-                                        <li>Bolsas de aluminio 25 Kg termosoldad al vacío</li>
+                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
                                     </ul>
                                 </li>
                             </ul>

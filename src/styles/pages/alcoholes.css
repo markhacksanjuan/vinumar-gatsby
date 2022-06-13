@@ -88,6 +88,7 @@
 }
 .alcoholes-productos-container h4 {
     margin: 0;
+    margin-top: 15px
 }
 .alcoholes-productos-container > div {
     display: flex;

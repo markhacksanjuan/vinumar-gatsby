@@ -25,8 +25,8 @@ const Footer = () => {
                     <p className='footer-title'>Productos</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link to='/productos/ExtractosPiel'>Extracto de piel de uva</Link></li>
-                            <li><Link to='/productos/ExtractosVino'>Extracto de vino</Link></li>
+                            <li><Link to='/productos/ExtractosPiel'>Extractos de piel de uva</Link></li>
+                            <li><Link to='/productos/ExtractosVino'>Extractos de vino</Link></li>
                             <li><Link to='/productos/Taninos'>Taninos de uva</Link></li>
                             <li><Link to='/productos/Alcoholes'>Alcoholes</Link></li>
                             <li><Link to='/productos/Pepita'>Pepita de uva</Link></li>
@@ -57,7 +57,7 @@ const Footer = () => {
                             <li>Política de privacidad</li>
                             <li>Aviso legal</li>
                             <li>Fondo Europeo de Desarrollo Regional</li>
-                            <li>2022 Vinumar</li>
+                            <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>
                 </div>

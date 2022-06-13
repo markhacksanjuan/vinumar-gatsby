@@ -98,7 +98,7 @@ const Taninos = () => {
         return(
             <>
                 <div className="taninos-productos-container">
-                    <h4>Nuestra selección en Taninos de uva</h4>
+                    <h4>Nuestra elección en Taninos de uva</h4>
                     <div>
                         {renderProductosCardPolvo()}
                     </div>

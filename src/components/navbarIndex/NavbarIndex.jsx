@@ -40,7 +40,7 @@ const NavbarIndex = ({ width }) => {
     const renderProd = () => {
         return(
             <>
-              <ul className='navbar-menu'>
+              <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
                     <li><Link className='navbar-list-sub-menu' to='/productos/ExtractosPiel'>Extractos de piel de uva</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/productos/ExtractosVino'>Extractos de vino</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/productos/Taninos'>Taninos de uva</Link></li>
@@ -50,15 +50,16 @@ const NavbarIndex = ({ width }) => {
             </>
         )
     }
-    const onClickProd = () => {
-        setShowProd(!showProd)
+    const onHoverProd = () => {
+        // setShowProd(!showProd)
+        setShowProd(true)
         setShowNosotros(false)
     }
     const renderNosotros = () => {
         return(
             <>
-                <ul className='navbar-menu'>
-                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/nosotros/Recursos'>Recursos humanos y técnicos</Link></li>
+                <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()}>
+                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/nosotros/Recursos'>Recursos técnicos y humanos</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/nosotros/Historia'>Historia</Link></li>
                     <li><Link className='navbar-list-sub-menu' to='/nosotros/Valores'>Valores</Link></li>
                 </ul> 
@@ -66,10 +67,17 @@ const NavbarIndex = ({ width }) => {
         )
     }
     const onClickNosotros = () => {
-        setShowNosotros(!showNosotros)
+        // setShowNosotros(!showNosotros)
+        setShowNosotros(true)
         setShowProd(false)
     }
     const closeSubMenu = () => {
+        if(showProd){
+            setShowProd(false)
+        }
+        if(showNosotros){
+            setShowNosotros(false)
+        }
         // if(showProd || showNosotros){
         //     setTimeout(() => {
         //         setShowNosotros(false)
@@ -82,11 +90,11 @@ const NavbarIndex = ({ width }) => {
             <ul className='navbar-list-general'>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/'>Inicio</Link></li>
                 <li className='navbar-list-element navbar-relative'>
-                    <p className='navbar-list-general-element' tabIndex='0' onClick={onClickProd} onBlur={closeSubMenu}>Productos</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >Productos</p>
                     {showProd && renderProd()}
                 </li>
                 <li className='navbar-list-element navbar-relative'>
-                    <p className='navbar-list-general-element' tabIndex='0' onClick={onClickNosotros} onBlur={closeSubMenu} to='/Nosotros'>Sobre nosotros</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>Sobre nosotros</p>
                     {showNosotros && renderNosotros()}
                 </li>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/DondeEstamos'>Dónde estamos</Link></li>

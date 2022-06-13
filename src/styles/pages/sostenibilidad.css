@@ -30,7 +30,8 @@
 .sostenibilidad-container-main h4 {
     font-size: 37px;
     margin: 0;
-    margin-bottom: 70px
+    margin-bottom: 70px;
+    margin-top: 15px
 }
 .sostenibilidad-container-main div {
     border-top: 1px solid black;
