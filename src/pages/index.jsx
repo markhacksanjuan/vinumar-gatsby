@@ -68,10 +68,10 @@ const IndexPage = ({}) => {
   const renderProductos = () => {
     return(
       <>
-        <div id='productos' className={`index-container-product ${scroll > 550 && 'index-container-product-animated'}`}>
+        <div id='productos' className={`index-container-product ${scroll > 800 && 'index-container-product-animated'}`}>
           <h2>Productos</h2>
           <div className='index-container-cards'>
-            <div className={`index-card ${scroll > 600 && 'index-card-animated-left'}`}>
+            <div className={`index-card ${scroll > 800 && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title='Extractos de piel de uva'
                 text= 'Es uno de los colorantes naturales más destacados en el mundo de la alimentación. El extracto de piel de uva permite una amplia variedad de usos en todos sus tonos de color.'
@@ -82,7 +82,7 @@ const IndexPage = ({}) => {
                 // cardClass='index-card-animated-left'
               />
             </div>
-            <div className={`index-card ${scroll > 800 && 'index-card-animated-right'}`}>
+            <div className={`index-card ${scroll > 900 && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title='Extractos de vino'
                 text= 'Aromatizante y saborizante concentrado y desalcoholizado elaborado a partir de vinos tintos y blancos seleccionados. El extracto de vino es el ingrediente secreto de salsas, platos preparados, bebidas no alcohólicas, etc. de uso muy frecuente en alimentación.'
@@ -90,7 +90,7 @@ const IndexPage = ({}) => {
                 goTo='/productos/ExtractosVino'
               />
             </div>
-            <div className={`index-card ${scroll > 1100 && 'index-card-animated-left'}`}>
+            <div className={`index-card ${scroll > 1100 && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title='Taninos de uva'
                 text= 'Son compuestos fenólicos naturales que se extraen de la piel y las pepitas de la uva. Los taninos, además de potenciadores del sabor, aportan múltiples cualidades en el campo de la enología.'
@@ -98,7 +98,7 @@ const IndexPage = ({}) => {
                 goTo='/productos/Taninos'
               />
             </div>
-            <div className={`index-card ${scroll > 1250 && 'index-card-animated-right'}`}>
+            <div className={`index-card ${scroll > 1250 && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title='Alcoholes'
                 text= 'Fabricados a partir del vino o los subproductos de la vinificación, los alcoholes abarcan desde los aguardientes a los utilizados por la industria química y farmacéutica, el sector sanitario o hasta el energético.'
@@ -106,7 +106,7 @@ const IndexPage = ({}) => {
                 goTo='/productos/Alcoholes'
               />
             </div>
-            <div className={`index-card ${scroll > 1500 && 'index-card-animated-left'}`}>
+            <div className={`index-card ${scroll > 1500 && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title='Pepita de uva'
                 text= 'Fruto del secado del orujo de la uva y su posterior separación, la pepita de uva es la base del aceite de granilla, que contiene vitamina E y ácidos grasos esenciales omega 3 y omega 6.'
@@ -149,12 +149,12 @@ const IndexPage = ({}) => {
       <Navbar width='451px' />
       <div className='index-container'>
         {renderHeader()}
-        <div className={`text-centered-right ${scroll > 100  && 'text-centered-animated-right'}`}>
+        <div className={`text-centered-right ${scroll > 80  && 'text-centered-animated-bottom'}`}>
           <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
         </div>
         {renderProductos()}
         {renderDonde()}
-        <div className={`text-centered-left ${scroll > 3000 && 'text-centered-animated-left'}`}>
+        <div className={`text-centered-left ${scroll > 3000 && 'text-centered-animated-bottom'}`}>
           <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
         </div>
       </div>

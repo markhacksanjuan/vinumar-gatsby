@@ -183,30 +183,42 @@
   /* transition-delay: 0.1s; */
 }
 
+@keyframes text-centered-animated-bottom {
+    0% {margin-top: 100%; opacity: 0}
+    30% {opacity: 0}
+    100% {margin-top: 0%; opacity: 1}
+}
 @keyframes text-centered-animated-right {
-    0% {left: 100%; opacity: 0}
-    33% {opacity: 0}
-    100% {left: 0%; opacity: 1}
+    0% {margin-top: 100%; opacity: 0}
+    30% {opacity: 0}
+    100% {margin-top: 0%; opacity: 1}
 }
 @keyframes text-centered-animated-left {
     0% {right: 100%; opacity: 0}
     100% {right: 0; opacity: 1}
 }
 .text-centered-right {
-    left: 100%;
+    /* left: 100%; */
+    margin-top: 100%;
     position: relative;
     opacity: 0;
-    animation-timing-function: ease-in-out;
 }
 .text-centered-left {
     right: 0;
     position: relative;
     opacity: 0;
 }
+.text-centered-animated-bottom {
+    animation-name: text-centered-animated-bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
 .text-centered-animated-right {
     animation-name: text-centered-animated-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .text-centered-animated-left {
     animation-name: text-centered-animated-left;
@@ -227,14 +239,30 @@
 
 @keyframes productos {
     0% {opacity: 0; margin-top: 100%}
+    30% {opacity: 0}
     100% {opacity: 1; margin-top: 0}
 }
 .index-container-product-animated {
     /* position: relative;
     left: 100%; */
     animation-name: productos;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes product-card-bottom {
+    0% {opacity: 0; margin-top: 100%}
+    30% {opacity: 0}
+    100% {opacity: 1; margin-top: 60px}
+}
+.index-card-animated-bottom {
+    position: relative;
+    /* margin-top: 100%; */
+    animation-name: product-card-bottom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 @keyframes product-card-left {
     0% {opacity: 0; right: 100%}
@@ -263,10 +291,12 @@
 
 @keyframes donde {
     0% {opacity: 0; margin-top: 100%}
+    30% {opacity: 0}
     100% {opacity: 1; margin-top: 0}
 }
 .index-container-donde-animated {
     animation-name: donde;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
