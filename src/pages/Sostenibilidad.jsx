@@ -3,9 +3,9 @@ import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import '../styles/pages/sostenibilidad.css'
 
-import headerImg from '../images/selected/Principal DJI_0788.jpg'
-import sostenibilidad1 from '../images/selected/Sostenibilidad 2-611057066.jpg'
-import sostenibilidad2 from '../images/selected/Sostenibilidad 3-1941562780.jpg'
+import headerImg from '../images/DEF/DJI_0722-2.jpg'
+import sostenibilidad1 from '../images/DEF/BL8A7152.jpg'
+import sostenibilidad2 from '../images/DEF/BL8A8775.jpg'
 
 import Button from '../components/button/Button'
 

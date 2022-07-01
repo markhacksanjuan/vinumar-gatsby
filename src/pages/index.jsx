@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useState } from "react"
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Button from '../components/button/Button'
@@ -11,15 +11,28 @@ import '../styles/pages/index-page.css'
 
 // IMPORT PICTURES
 import headerImg from '../images/selected/DJI_0698 (principal).jpg'
-import extPiel from '../images/selected/CAS_3593 (color polvo).jpg'
-import extVino from '../images/img/Extracto-de-vino-caracteristicas.jpg'
-import taninosUva from '../images/selected/taninos.jpg'
-import alcohol from '../images/img/Alcohol-uso-boca-app.jpg'
-import pepitas from '../images/selected/granilla.jpg'
+import extPiel from '../images/DEF/BL8A9509_1.jpg'
+import extVino from '../images/DEF/BL8A9953_1.jpg'
+import taninosUva from '../images/DEF/BL8A9520_1.jpg'
+import alcohol from '../images/DEF/BL8A9307.jpg'
+import pepitas from '../images/DEF/BL8A9093.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
 
 // markup
 const IndexPage = ({}) => {
+  const [scroll, setScroll] = useState()
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      window.onscroll = () => {
+        const factor = window.scrollY
+        console.log(factor)
+        setScroll(factor)
+      }
+    }
+  })
+
+
   const renderHeader = () => {
     return(
       <>
@@ -34,58 +47,73 @@ const IndexPage = ({}) => {
       </>
     )
   }
-  const ProductoCard = ({title, text, image, goTo}) => {
+  const ProductoCard = ({ title, text, image, goTo, cardClass, scrollCard }) => {
     return(
       <>
-        <div className='index-card'>
+        {/* <div className={`index-card`}> */}
           <div className='index-container-text-card'>
             <p className='index-title-card'>{title}</p>
             <p className='index-text-card'>{text}</p>
           </div>
-          <div>
+          <div className="view">
             <img src={image} className='index-card-img' alt={title} />
-            <Button className='index-card-button' style='white-button' width='164' goTo={goTo}>DESCUBRE MÁS</Button>
+            <div className="mask">
+              <Button className='index-card-button' style='white-button' width='164' goTo={goTo}>DESCUBRE MÁS</Button>
+            </div>
           </div>
-        </div>
+        {/* </div> */}
       </>
     )
   }
   const renderProductos = () => {
     return(
       <>
-        <div id='productos' className='index-container-product'>
+        <div id='productos' className={`index-container-product ${scroll > 550 && 'index-container-product-animated'}`}>
           <h2>Productos</h2>
           <div className='index-container-cards'>
-            <ProductoCard 
-              title='Extractos de piel de uva'
-              text= 'Es uno de los colorantes naturales más destacados en el mundo de la alimentación. El extracto de piel de uva permite una amplia variedad de usos en todos sus tonos de color.'
-              image={extPiel}
-              goTo='/productos/ExtractosPiel'
-            />
-            <ProductoCard 
-              title='Extractos de vino'
-              text= 'Aromatizante y saborizante concentrado y desalcoholizado elaborado a partir de vinos tintos y blancos seleccionados. El extracto de vino es el ingrediente secreto de salsas, platos preparados, bebidas no alcohólicas, etc. de uso muy frecuente en alimentación.'
-              image={extVino}
-              goTo='/productos/ExtractosVino'
-            />
-            <ProductoCard 
-              title='Taninos de uva'
-              text= 'Son compuestos fenólicos naturales que se extraen de la piel y las pepitas de la uva. Los taninos, además de potenciadores del sabor, aportan múltiples cualidades en el campo de la enología.'
-              image={taninosUva}
-              goTo='/productos/Taninos'
-            />
-            <ProductoCard 
-              title='Alcoholes'
-              text= 'Fabricados a partir del vino o los subproductos de la vinificación, los alcoholes abarcan desde los aguardientes a los utilizados por la industria química y farmacéutica, el sector sanitario o hasta el energético.'
-              image={alcohol}
-              goTo='/productos/Alcoholes'
-            />
-            <ProductoCard 
-              title='Pepita de uva'
-              text= 'Fruto del secado del orujo de la uva y su posterior separación, la pepita de uva es la base del aceite de granilla, que contiene vitamina E y ácidos grasos esenciales omega 3 y omega 6.'
-              image={pepitas}
-              goTo='/productos/Pepita'
-            />
+            <div className={`index-card ${scroll > 600 && 'index-card-animated-left'}`}>
+              <ProductoCard 
+                title='Extractos de piel de uva'
+                text= 'Es uno de los colorantes naturales más destacados en el mundo de la alimentación. El extracto de piel de uva permite una amplia variedad de usos en todos sus tonos de color.'
+                image={extPiel}
+                goTo='/productos/ExtractosPiel'
+                // className={scroll > 600 && 'index-card-animated'}
+                // scrollCard={600}
+                // cardClass='index-card-animated-left'
+              />
+            </div>
+            <div className={`index-card ${scroll > 800 && 'index-card-animated-right'}`}>
+              <ProductoCard 
+                title='Extractos de vino'
+                text= 'Aromatizante y saborizante concentrado y desalcoholizado elaborado a partir de vinos tintos y blancos seleccionados. El extracto de vino es el ingrediente secreto de salsas, platos preparados, bebidas no alcohólicas, etc. de uso muy frecuente en alimentación.'
+                image={extVino}
+                goTo='/productos/ExtractosVino'
+              />
+            </div>
+            <div className={`index-card ${scroll > 1100 && 'index-card-animated-left'}`}>
+              <ProductoCard 
+                title='Taninos de uva'
+                text= 'Son compuestos fenólicos naturales que se extraen de la piel y las pepitas de la uva. Los taninos, además de potenciadores del sabor, aportan múltiples cualidades en el campo de la enología.'
+                image={taninosUva}
+                goTo='/productos/Taninos'
+              />
+            </div>
+            <div className={`index-card ${scroll > 1250 && 'index-card-animated-right'}`}>
+              <ProductoCard 
+                title='Alcoholes'
+                text= 'Fabricados a partir del vino o los subproductos de la vinificación, los alcoholes abarcan desde los aguardientes a los utilizados por la industria química y farmacéutica, el sector sanitario o hasta el energético.'
+                image={alcohol}
+                goTo='/productos/Alcoholes'
+              />
+            </div>
+            <div className={`index-card ${scroll > 1500 && 'index-card-animated-left'}`}>
+              <ProductoCard 
+                title='Pepita de uva'
+                text= 'Fruto del secado del orujo de la uva y su posterior separación, la pepita de uva es la base del aceite de granilla, que contiene vitamina E y ácidos grasos esenciales omega 3 y omega 6.'
+                image={pepitas}
+                goTo='/productos/Pepita'
+              />
+            </div>
           </div>
         </div>
 
@@ -95,7 +123,7 @@ const IndexPage = ({}) => {
   const renderDonde = () => {
     return(
       <>
-        <div className='index-container-donde'>
+        <div className={`index-container-donde ${scroll > 2300 && 'index-container-donde-animated'}`}>
           <h2>Dónde estamos</h2>
           <div className='index-card-donde'>
             <div className='index-container-donde-text'>
@@ -121,10 +149,14 @@ const IndexPage = ({}) => {
       <Navbar width='451px' />
       <div className='index-container'>
         {renderHeader()}
-        <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
+        <div className={`text-centered-right ${scroll > 100  && 'text-centered-animated-right'}`}>
+          <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
+        </div>
         {renderProductos()}
         {renderDonde()}
-        <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
+        <div className={`text-centered-left ${scroll > 3000 && 'text-centered-animated-left'}`}>
+          <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
+        </div>
       </div>
         <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>SABER MÁS SOBRE VINUMAR</Button>
 

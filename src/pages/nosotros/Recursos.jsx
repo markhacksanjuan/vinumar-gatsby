@@ -5,31 +5,28 @@ import Button from '../../components/button/Button'
 
 import '../../styles/pages/recursos.css'
 
-import recursos1 from '../../images/selected/Recursos Tecnicos (DSC00668 ).jpg'
-import atomizacion from '../../images/selected/Sistema de atomizacion (DSC06679 V2).jpg'
+import recursos1 from '../../images/DEF/BL8A7254.jpg'
+import atomizacion from '../../images/DEF/BL8A8625.jpg'
 
 import SimpleImageSlider from 'react-simple-image-slider'
 
-import img1 from '../../images/selected/Nuestroequipo1.jpg'
-import img2 from '../../images/selected/Nuestroequipo2DSC00893.jpg'
-import img3 from '../../images/selected/Nuestroequipo3Detalle2.jpg'
-import img4 from '../../images/selected/Nuestroequipo4DSC06860.jpg'
-import img5 from '../../images/selected/Nuestroequipo5DSC06804.jpg'
-import img6 from '../../images/selected/NuestroEquipo6DSC1.jpg'
+import img1 from '../../images/DEF/BL8A8997.jpg'
+import img2 from '../../images/DEF/BL8A8603.jpg'
+import img3 from '../../images/DEF/BL8A8820.jpg'
+// import img4 from '../../images/selected/Nuestroequipo4DSC06860.jpg'
+// import img5 from '../../images/selected/Nuestroequipo5DSC06804.jpg'
+// import img6 from '../../images/selected/NuestroEquipo6DSC1.jpg'
 
-import imgInst1 from '../../images/selected/Asitrabajamos-1-DSC06777.jpg'
-import imgInst2 from '../../images/selected/Astrabajamos-2-DSC00599.jpg'
-import imgInst3 from '../../images/selected/Asitrabajamos-3-DSC06823.jpg'
-import imgInst4 from '../../images/selected/Asitrabajamos-4-DSC00886.jpg'
+import imgInst1 from '../../images/DEF/BL8A8167.jpg'
+import imgInst2 from '../../images/DEF/BL8A8569.jpg'
+import imgInst3 from '../../images/DEF/BL8A7860.jpg'
+import imgInst4 from '../../images/DEF/BL8A8586.jpg'
 
 const Recursos = () => {
     const images = [
         { url: img1 },
         { url: img2 },
-        { url: img3 },
-        { url: img4 },
-        { url: img5 },
-        { url: img6 }
+        { url: img3 }
     ]
     const imagesInst = [
         { url: imgInst1 },

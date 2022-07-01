@@ -5,27 +5,28 @@ import '../../styles/pages/historia.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 import Button from '../../components/button/Button'
 
-import headerImg from '../../images/selected/Principal AA15-1 V2.jpg'
+import headerImg from '../../images/DEF/historicas/AA15-1 V2.jpg'
 
-import img1 from '../../images/selected/Historia-1img060.jpg'
-import img2 from '../../images/selected/Historia-2IND2001-018.jpg'
-import img3 from '../../images/selected/Historia-3IND2001-061.jpg'
+import img1 from '../../images/DEF/historicas/img060.jpg'
+import img2 from '../../images/DEF/historicas/img139.jpg'
+// import img3 from '../../images/selected/Historia-3IND2001-061.jpg'
 
-import imgInst1 from '../../images/selected/Crecimiento-1img139.jpg'
-import imgInst2 from '../../images/selected/Crecimiento-2DJI_0559.jpg'
-import imgInst3 from '../../images/selected/Crecimiento-3DJI_0551.jpg'
+import imgInst1 from '../../images/DEF/BL8A7370.jpg'
+import imgInst2 from '../../images/DEF/DJI_0559.jpg'
+import imgInst3 from '../../images/DEF/BL8A7156.jpg'
+import imgInst4 from '../../images/DEF/DJI_0551.jpg'
 
 
 const Historia = () => {
     const images = [
         { url: img1 },
-        { url: img2 },
-        { url: img3 }
+        { url: img2 }
     ]
     const imagesHist = [
         { url: imgInst1 },
         { url: imgInst2 },
-        { url: imgInst3 }
+        { url: imgInst3 },
+        { url: imgInst4 }
     ]
 
 

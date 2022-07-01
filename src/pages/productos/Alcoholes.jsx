@@ -6,9 +6,9 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/alcoholes.css'
-import alcoholesHeaderImg from '../../images/selected/stock-photo-fuel-pistols-at-pe.jpg'
+import alcoholesHeaderImg from '../../images/DEF/BL8A4092.jpg'
 
-import alcoholesProductoImg from '../../images/selected/Alcohol.jpg'
+import alcoholesProductoImg from '../../images/DEF/BL8A9307.jpg'
 
 
 const Alcoholes = () => {

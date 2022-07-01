@@ -6,7 +6,7 @@ import Button from '../../components/button/Button'
 
 import '../../styles/pages/pepita.css'
 
-import pepitaHeaderImg from '../../images/selected/388929796 (Aplicacion aceite).jpg'
+import pepitaHeaderImg from '../../images/DEF/BL8A9687.jpg'
 
 
 const Pepita = () => {

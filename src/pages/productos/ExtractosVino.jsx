@@ -7,11 +7,11 @@ import Button from '../../components/button/Button'
 
 import '../../styles/pages/extractos-uva.css'
 
-import uvaHeaderImg from '../../images/selected/Aplicacion vinuwine.jpg'
-import vinoProducto1 from '../../images/selected/Extracto vino tinto liquido.jpg'
-import vinoProducto2 from '../../images/selected/extracto vino tinto en polvo.jpg'
-import vinoProducto3 from '../../images/selected/Extracto vino blanco liquido.jpg'
-import vinoProducto4 from '../../images/selected/E.V.B. polvo.jpg'
+import uvaHeaderImg from '../../images/DEF/BL8A9790.jpg'
+import vinoProducto1 from '../../images/DEF/BL8A9852.jpg'
+import vinoProducto2 from '../../images/DEF/BL8A9269.jpg'
+import vinoProducto3 from '../../images/DEF/BL8A9953_2.jpg'
+import vinoProducto4 from '../../images/DEF/BL8A9427.jpg'
 
 
 const ExtractosVino = () => {
@@ -244,7 +244,7 @@ const ExtractosVino = () => {
             <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, según las necesidades requeridas. Como el extracto de vino en polvo Vinuwine SM ideal para uso alimentario y nutracéutico, sin maltodextrina y rico en polifenoles (&gt;30%).</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
-            <EntornoNatural type='slider' />
+            <EntornoNatural type='vino' />
 
             <Footer />
 

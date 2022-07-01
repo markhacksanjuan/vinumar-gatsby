@@ -135,6 +135,7 @@
     border-radius: 15px 15px 15px 0;
     height: 300px;
     width: 100%;
+    object-position: left 10%;
 }
 .piel-productos-container > div > div > div {
     border-top: 1px solid black;

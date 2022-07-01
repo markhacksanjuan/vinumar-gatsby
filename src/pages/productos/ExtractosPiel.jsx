@@ -6,9 +6,9 @@ import Button from '../../components/button/Button'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 
 // import images
-import pielHeaderImg from '../../images/selected/Aplicacion color.jpg'
-import pielProducto1 from '../../images/selected/CAS_3593 (color polvo).jpg'
-import pielProductoLiquido from '../../images/selected/Extracto piel uva liquido.jpg'
+import pielHeaderImg from '../../images/DEF/BL8A9583.jpg'
+import pielProducto1 from '../../images/DEF/BL8A9509_2.jpg'
+import pielProductoLiquido from '../../images/DEF/BL8A4185.jpg'
 
 
 import '../../styles/pages/extractos-piel.css'
@@ -111,7 +111,7 @@ const ExtractosPiel = () => {
             <>
                 <div>
                     <p>Polvo</p>
-                    <img className='fit-none' src={pielProducto1} alt="Polvo" />
+                    <img className='fit-cover' src={pielProducto1} alt="Polvo" />
                     <div>
                         <p>VINUCAP 12</p>
                         <div>
@@ -171,7 +171,7 @@ const ExtractosPiel = () => {
             <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
-            <EntornoNatural type='slider' />
+            <EntornoNatural type='piel' />
             <Footer />
 
         </>

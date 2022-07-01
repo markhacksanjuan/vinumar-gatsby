@@ -6,9 +6,9 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/taninos.css'
-import taninosHeaderImg from '../../images/selected/372710398 (Aplicacion taninos).jpg'
+import taninosHeaderImg from '../../images/DEF/BL8A9614.jpg'
 
-import taninosProductoImg from '../../images/selected/taninos.jpg'
+import taninosProductoImg from '../../images/DEF/BL8A9520_2.jpg'
 
 const Taninos = () => {
 
@@ -119,7 +119,7 @@ const Taninos = () => {
             <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
             <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
 
-            <EntornoNatural type='slider' />
+            <EntornoNatural type='taninos' />
             <Footer />
 
         </>

@@ -4,7 +4,7 @@ import Footer from '../components/footer/Footer'
 import Situacion from '../components/situacion/Situacion'
 import '../styles/pages/dondeEstamos.css'
 
-import headerImg from '../images/selected/DJI_0697-2 (principal).jpg'
+import headerImg from '../images/DEF/DJI_0705-2.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
 import ventaja1 from '../images/ilustraciones/Vinumar_Ilustraciones_Cercania.jpg'
 import ventaja2 from '../images/ilustraciones/Vinumar_Ilustraciones_Rapidez.jpg'
