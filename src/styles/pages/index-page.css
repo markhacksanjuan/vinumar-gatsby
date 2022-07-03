@@ -88,7 +88,6 @@
     justify-content: space-between;
     font-size: 18px;
     margin-top: 100%;
-    opacity: 0
 }
 .index-container-donde-text {
     display: flex;
@@ -96,26 +95,26 @@
     padding-top: 10px;
     justify-content: space-between;
 }
-.index-container-donde-text > div {
-}
 .index-card-donde {
-    width: 66.34%
+    width: 66.34%;
 }
 .index-donde-direccion {
     width: 89.35%;
     margin-right: 23px;
+    opacity: 0
 }
 .index-donde-direccion span {
     display: block
 }
-.index-h2-donde {
-
+.index-donde-text {
+    opacity: 0
 }
 .index-donde-img {
     width: 100%;
     height: 396px;
     object-fit: cover;
-    margin-top: 28px
+    margin-top: 28px;
+    opacity: 0
 }
 
 .index-title-card {
@@ -131,7 +130,8 @@
 }
 .index-card-button {
     position: absolute;
-    top: 50px !important
+    top: 50px !important;
+    opacity: 0;
 }
 /* .index-card > div:last-child {
     position: relative
@@ -183,36 +183,33 @@
   /* transition-delay: 0.1s; */
 }
 
-@keyframes text-centered-animated-bottom {
+@keyframes fade-in {
+    0% {opacity: 0}
+    25% {opacity: 0}
+    100% {opacity: 1}
+}
+.fade-in {
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes animation-bottom {
     0% {margin-top: 100%; opacity: 0}
-    30% {opacity: 0}
+    20% {opacity: 0}
     100% {margin-top: 0%; opacity: 1}
 }
-@keyframes text-centered-animated-right {
-    0% {margin-top: 100%; opacity: 0}
-    30% {opacity: 0}
-    100% {margin-top: 0%; opacity: 1}
-}
-@keyframes text-centered-animated-left {
-    0% {right: 100%; opacity: 0}
-    100% {right: 0; opacity: 1}
-}
-.text-centered-right {
-    /* left: 100%; */
+.text-centered-bottom {
     margin-top: 100%;
     position: relative;
-    opacity: 0;
 }
-.text-centered-left {
-    right: 0;
-    position: relative;
-    opacity: 0;
-}
+
 .text-centered-animated-bottom {
-    animation-name: text-centered-animated-bottom;
+
+    animation-name: animation-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
 }
 .text-centered-animated-right {
     animation-name: text-centered-animated-right;
@@ -227,28 +224,39 @@
 }
 
 
-@keyframes header {
+@keyframes header-fade-in {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 .index-container-header{
-    animation-name: header;
+    animation-name: header-fade-in;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+    animation-delay: 1s
+}
+.index-h2 {
+    opacity: 0;
+    animation-name: header-fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s
+}
+.button-fade-in {
+    opacity: 0;
+    animation-name: header-fade-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s
 }
 
-@keyframes productos {
-    0% {opacity: 0; margin-top: 100%}
-    30% {opacity: 0}
-    100% {opacity: 1; margin-top: 0}
-}
+
 .index-container-product-animated {
     /* position: relative;
     left: 100%; */
-    animation-name: productos;
+    animation-name: animation-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
 }
 
 @keyframes product-card-bottom {
@@ -258,45 +266,58 @@
 }
 .index-card-animated-bottom {
     position: relative;
-    /* margin-top: 100%; */
     animation-name: product-card-bottom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
-@keyframes product-card-left {
-    0% {opacity: 0; right: 100%}
-    100% {opacity: 1; right: 0%}
-}
-.index-card-animated-left {
-    position: relative;
-    right: 100%;
-    animation-name: product-card-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-@keyframes product-card-right {
-    0% {opacity: 0; left: 100%}
-    100% {opacity: 1; left: 0%}
-}
-.index-card-animated-right {
-    position: relative;
-    left: 100%;
-    animation-name: product-card-right;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
 
-@keyframes donde {
-    0% {opacity: 0; margin-top: 100%}
-    30% {opacity: 0}
-    100% {opacity: 1; margin-top: 0}
+/* DONDE */
+@keyframes animation-donde-bottom {
+    0% {margin-top: 100%; opacity: 0}
+    20% {opacity: 0}
+    100% {margin-top: 0%; opacity: 1}
 }
-.index-container-donde-animated {
-    animation-name: donde;
+.donde-animated {
+    opacity: 0;
+    animation-name: animation-donde-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
+}
+.index-donde-direccion-animated {
+    animation-name: animation-donde-bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
+    animation-delay: 1s;
+}
+.index-donde-text-animated {
+    animation-name: animation-donde-bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
+    animation-delay: 3s;
+}
+.index-donde-img-animated {
+    animation-name: animation-donde-bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
+    animation-delay: 5s;
+}
+
+@keyframes animation-button-bottom {
+    0% {margin-top: 100%; opacity: 0}
+    20% {opacity: 0}
+    100% {margin-top: 0%; opacity: 1}
+}
+.index-button-mas {
+    opacity: 0
+}
+.index-button-mas-animated {
+    animation-name: animation-button-bottom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
 }
