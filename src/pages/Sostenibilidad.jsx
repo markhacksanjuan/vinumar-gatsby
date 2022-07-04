@@ -53,7 +53,7 @@ const SostenibilidadPage = () => {
     }
     return(
         <>
-            <Navbar width='214px' />
+            <Navbar/>
             <div className='sostenibilidad-container'>
                 {renderHeader()}
                 {renderSostenibilidad()}

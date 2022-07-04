@@ -3,20 +3,29 @@ import { Link } from 'gatsby'
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
 
-const NavbarIndex = ({ width }) => {
+const NavbarIndex = ({ scrollPage }) => {
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
     const [scroll, setScroll] = useState('451px')
 
     useEffect(() => {
         if(typeof window !== 'undefined'){
-            window.onscroll = () => {
-                if(window.scrollY > 215 ){
-                    setScroll('214px')
-                }else {
-                    const factor = window.scrollY
-                    const newScroll = 451 - factor
+            if(scrollPage){
+                if(scrollPage > 215) { setScroll('214px')}
+                else {
+                    const newScroll = 451 - scrollPage
                     setScroll(`${newScroll}px`)
+                }
+            }else {
+                window.onscroll = () => {
+                    if(window.scrollY > 215 ){
+                        setScroll('214px')
+                    }else {
+                        console.log(window.scrollY)
+                        const factor = window.scrollY
+                        const newScroll = 451 - factor
+                        setScroll(`${newScroll}px`)
+                    }
                 }
             }
         }

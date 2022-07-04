@@ -36,7 +36,6 @@ const IndexPage = ({}) => {
     if(typeof window !== 'undefined'){
       window.onscroll = () => {
         const factor = window.scrollY
-        console.log(factor)
         setScroll(factor)
         if(factor > 80) { setScrollTextCentered_1(true) }
         if(factor > 400) { setScrollProductos(true) }
@@ -49,8 +48,13 @@ const IndexPage = ({}) => {
         if(factor > 3200) { setScrollButton(true) }
         if(factor > 2400) { setScrollDonde(true) }
       }
-    }
-  })
+      window.scrollBy({
+        top: -window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } 
+  }, [])
 
 
 
@@ -167,7 +171,7 @@ const IndexPage = ({}) => {
 
   return (
     <main>
-      <Navbar width='451px' />
+      <Navbar scrollPage={scroll}/>
       <div className='index-container'>
         {renderHeader()}
         <div className={`text-centered-bottom ${scrollTextCentered_1  && 'text-centered-animated-bottom'}`}>
