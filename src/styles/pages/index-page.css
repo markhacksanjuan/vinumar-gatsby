@@ -197,30 +197,14 @@
 @keyframes animation-bottom {
     0% {margin-top: 100%; opacity: 0}
     20% {opacity: 0}
-    100% {margin-top: 0%; opacity: 1}
-}
-.text-centered-bottom {
-    margin-top: 100%;
-    position: relative;
+    100% {margin-top: 60px; opacity: 1}
 }
 
 .text-centered-animated-bottom {
-
     animation-name: animation-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
-}
-.text-centered-animated-right {
-    animation-name: text-centered-animated-right;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-.text-centered-animated-left {
-    animation-name: text-centered-animated-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
 
 
@@ -232,28 +216,29 @@
     animation-name: header-fade-in;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 1s
 }
 .index-h2 {
     opacity: 0;
     animation-name: header-fade-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-delay: 2s
+    animation-delay: 1s
 }
 .button-fade-in {
     opacity: 0;
     animation-name: header-fade-in;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-delay: 3s
+    animation-delay: 1500ms
 }
 
-
+@keyframes product-container-bottom {
+    0% {opacity: 0; margin-top: 100%}
+    30% {opacity: 0}
+    100% {opacity: 1; margin-top: 60px}
+}
 .index-container-product-animated {
-    /* position: relative;
-    left: 100%; */
-    animation-name: animation-bottom;
+    animation-name: product-container-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
@@ -261,7 +246,7 @@
 
 @keyframes product-card-bottom {
     0% {opacity: 0; margin-top: 100%}
-    30% {opacity: 0}
+    40% {opacity: 0}
     100% {opacity: 1; margin-top: 60px}
 }
 .index-card-animated-bottom {
@@ -278,6 +263,11 @@
     20% {opacity: 0}
     100% {margin-top: 0%; opacity: 1}
 }
+@keyframes animation-donde-img-fade-in {
+    0% {opacity: 0}
+    35% {opacity: 0}
+    100% {opacity: 1}
+}
 .donde-animated {
     opacity: 0;
     animation-name: animation-donde-bottom;
@@ -290,21 +280,21 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
-    animation-delay: 1s;
+    animation-delay: 500ms;
 }
 .index-donde-text-animated {
     animation-name: animation-donde-bottom;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
-    animation-delay: 3s;
+    animation-delay: 1s;
 }
 .index-donde-img-animated {
-    animation-name: animation-donde-bottom;
+    animation-name: animation-donde-bottom, animation-donde-img-fade-in;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
-    animation-delay: 5s;
+    animation-delay: 1500ms;
 }
 
 @keyframes animation-button-bottom {
@@ -320,4 +310,7 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.14, 0, 0, 1);
+}
+.text-centered-fade-in {
+    opacity: 0
 }

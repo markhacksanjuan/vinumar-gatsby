@@ -21,7 +21,6 @@ const NavbarIndex = ({ width }) => {
             }
         }
     }, [])
-    // 214px
 
     const renderLogo = () => {
         return(
@@ -51,7 +50,6 @@ const NavbarIndex = ({ width }) => {
         )
     }
     const onHoverProd = () => {
-        // setShowProd(!showProd)
         setShowProd(true)
         setShowNosotros(false)
     }
@@ -67,7 +65,6 @@ const NavbarIndex = ({ width }) => {
         )
     }
     const onClickNosotros = () => {
-        // setShowNosotros(!showNosotros)
         setShowNosotros(true)
         setShowProd(false)
     }
@@ -78,17 +75,11 @@ const NavbarIndex = ({ width }) => {
         if(showNosotros){
             setShowNosotros(false)
         }
-        // if(showProd || showNosotros){
-        //     setTimeout(() => {
-        //         setShowNosotros(false)
-        //         setShowProd(false)
-        //     }, 200)
-        // }
     }
     const renderListGeneral = () => {
         return(
             <ul className='navbar-list-general'>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/'>Inicio</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/'>Inicio</Link></li>
                 <li className='navbar-list-element navbar-relative'>
                     <p className='navbar-list-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >Productos</p>
                     {showProd && renderProd()}
@@ -97,10 +88,10 @@ const NavbarIndex = ({ width }) => {
                     <p className='navbar-list-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>Sobre nosotros</p>
                     {showNosotros && renderNosotros()}
                 </li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/DondeEstamos'>Dónde estamos</Link></li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' to='/Sostenibilidad'>Sostenibilidad</Link></li>
-                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' to='/Contacto'>Contacto</Link></li>
-                <li className='navbar-list-element-lang'><Link className='navbar-list-general-element' to='/'>EN</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/DondeEstamos'>Dónde estamos</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/Sostenibilidad'>Sostenibilidad</Link></li>
+                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/Contacto'>Contacto</Link></li>
+                <li className='navbar-list-element-lang'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/'>EN</Link></li>
             </ul>
         )
     }
