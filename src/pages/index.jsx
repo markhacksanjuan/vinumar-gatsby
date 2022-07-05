@@ -171,7 +171,7 @@ const IndexPage = ({}) => {
 
   return (
     <main>
-      <Navbar scrollPage={scroll}/>
+      <Navbar/>
       <div className='index-container'>
         {renderHeader()}
         <div className={`text-centered-bottom ${scrollTextCentered_1  && 'text-centered-animated-bottom'}`}>

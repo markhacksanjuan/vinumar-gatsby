@@ -9,26 +9,29 @@ const NavbarIndex = ({ scrollPage }) => {
     const [scroll, setScroll] = useState('451px')
 
     useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(scrollPage){
-                if(scrollPage > 215) { setScroll('214px')}
-                else {
-                    const newScroll = 451 - scrollPage
-                    setScroll(`${newScroll}px`)
-                }
+        window.addEventListener('scroll', e => {
+            if(window.scrollY > 215 ){
+                setScroll('214px')
             }else {
-                window.onscroll = () => {
-                    if(window.scrollY > 215 ){
-                        setScroll('214px')
-                    }else {
-                        console.log(window.scrollY)
-                        const factor = window.scrollY
-                        const newScroll = 451 - factor
-                        setScroll(`${newScroll}px`)
-                    }
-                }
+                const factor = window.scrollY
+                const newScroll = 451 - factor
+                setScroll(`${newScroll}px`)
             }
-        }
+        })
+        // if(typeof window !== 'undefined'){
+        //     console.log('hola')
+        //         window.onscroll = () => {
+        //             console.log('hola')
+        //             if(window.scrollY > 215 ){
+        //                 setScroll('214px')
+        //             }else {
+        //                 console.log(window.scrollY)
+        //                 const factor = window.scrollY
+        //                 const newScroll = 451 - factor
+        //                 setScroll(`${newScroll}px`)
+        //             }
+        //         }
+        // }
     }, [])
 
     const renderLogo = () => {
