@@ -162,7 +162,12 @@ const IndexPage = ({}) => {
                 </p>
               </div>
             </div>
-              <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={dondeImg} alt='Donde estamos' />
+              <div className="view-donde">
+                <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={dondeImg} alt='Donde estamos' />
+                <div className="mask-donde">
+                  <Button className='index-card-button' style='white-button' width='164' goTo='/DondeEstamos'>DÓNDE ESTAMOS</Button>
+                </div>
+              </div>
           </div>
         </div>
       </>
