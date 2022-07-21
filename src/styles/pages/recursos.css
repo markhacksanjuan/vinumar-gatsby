@@ -73,7 +73,7 @@
     border-top: 1px solid black;
     padding-top: 15px
 }
-.recursos-equipo-container div {
+.recursos-equipo-container > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between

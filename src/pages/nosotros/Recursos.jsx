@@ -9,6 +9,8 @@ import recursos1 from '../../images/DEF/BL8A7254.jpg'
 import atomizacion from '../../images/DEF/BL8A8625.jpg'
 
 import SimpleImageSlider from 'react-simple-image-slider'
+import ImageGallery from 'react-image-gallery'
+import "react-image-gallery/styles/css/image-gallery.css"
 
 import img1 from '../../images/DEF/BL8A8997.jpg'
 import img2 from '../../images/DEF/BL8A8603.jpg'
@@ -24,15 +26,43 @@ import imgInst4 from '../../images/DEF/BL8A8586.jpg'
 
 const Recursos = () => {
     const images = [
-        { url: img1 },
-        { url: img2 },
-        { url: img3 }
+        { 
+            original: img1, 
+            originalHeight: 600,
+            originalClass: 'slideClass',
+        },
+        { 
+            original: img2,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+        { 
+            original: img3,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         }
     ]
     const imagesInst = [
-        { url: imgInst1 },
-        { url: imgInst2 },
-        { url: imgInst3 },
-        { url: imgInst4 }
+        { 
+            original: imgInst1, 
+            originalHeight: 600,
+            originalClass: 'slideClass',
+        },
+        { 
+            original: imgInst2,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+        { 
+            original: imgInst3,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+         { 
+             original: imgInst4,
+             originalHeight: 600,
+             originalClass: 'slideClass',
+          }
     ]
     const renderRecursos = () => {
         return(
@@ -82,14 +112,25 @@ const Recursos = () => {
                         <h4>Nuestro equipo</h4>
                         <p>Sólo se alcanza el éxito a través del trabajo en equipo. Nunca hubiéramos alcanzado el nivel que actualmente tenemos sin el esfuerzo compartido de los más de cien profesionales de la empresa, personas que participan en cada fase de la cadena de producción, desde la Recepción al Departamento de Calidad, el Laboratorio o el Equipo de Ventas y sus ramas Nacional y Exportación. Entre todos, hemos sabido extraer del fruto de esta tierra toda su riqueza para labrar con él un presente y un futuro fértiles.</p>
                     </div>
-                    {images && <SimpleImageSlider
+                    {/* {images && <SimpleImageSlider
                         images={images}
                         width='72.82%'
                         height={600}
                         showNavs={true}
                         showBullets={true}
+                        // autoPlay={true}
+                        // autoPlayDelay={4}
+                        style={{
+                            backgroundColor: 'rgb(255,255,255)',
+                            backgroundPosition: 'center'
+                        }}
+                    />} */}
+                    {images && <ImageGallery
+                        items={images}
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showBullets={true}
                         autoPlay={true}
-                        autoPlayDelay={4}
                     />}
                 </div>
             </>
@@ -103,7 +144,7 @@ const Recursos = () => {
                         <h4>Así trabajamos</h4>
                         <p>Esta selección de imágenes ayuda a comprender cómo fabricamos nuestros productos.</p>
                     </div>
-                    {imagesInst && <SimpleImageSlider
+                    {/* {imagesInst && <SimpleImageSlider
                         images={imagesInst}
                         width='72.82%'
                         height={600}
@@ -111,6 +152,13 @@ const Recursos = () => {
                         showBullets={true}
                         autoPlay={true}
                         autoPlayDelay={4}
+                    />} */}
+                    {imagesInst && <ImageGallery
+                        items={imagesInst}
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showBullets={true}
+                        autoPlay={true}
                     />}
                 </div>
             </>

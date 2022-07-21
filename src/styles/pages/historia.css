@@ -28,7 +28,7 @@
     margin-top: 300px;
     border-top: 1px solid black
 }
-.historia-vinumar-container div {
+.historia-vinumar-container > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,7 +111,7 @@
     border-top: 1px solid black;
     margin-bottom: 70px
 }
-.historia-historia-container div {
+.historia-historia-container > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

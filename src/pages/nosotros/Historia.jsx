@@ -5,6 +5,9 @@ import '../../styles/pages/historia.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 import Button from '../../components/button/Button'
 
+import ImageGallery from 'react-image-gallery'
+import "react-image-gallery/styles/css/image-gallery.css"
+
 import headerImg from '../../images/DEF/historicas/AA15-1 V2.jpg'
 
 import img1 from '../../images/DEF/historicas/img060.jpg'
@@ -19,14 +22,38 @@ import imgInst4 from '../../images/DEF/DJI_0551.jpg'
 
 const Historia = () => {
     const images = [
-        { url: img1 },
-        { url: img2 }
+        { 
+            original: img1, 
+            originalHeight: 600,
+            originalClass: 'slideClass',
+        },
+        { 
+            original: img2,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         }
     ]
     const imagesHist = [
-        { url: imgInst1 },
-        { url: imgInst2 },
-        { url: imgInst3 },
-        { url: imgInst4 }
+        { 
+            original: imgInst1, 
+            originalHeight: 600,
+            originalClass: 'slideClass',
+        },
+        { 
+            original: imgInst2,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+        { 
+            original: imgInst3,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+         { 
+             original: imgInst4,
+             originalHeight: 600,
+             originalClass: 'slideClass',
+          }
     ]
 
 
@@ -50,7 +77,7 @@ const Historia = () => {
                             <span className="parrafo">Hoy, somos una empresa familiar de tercera generación que ha evolucionado al ritmo de los distintos momentos de la historia para consolidarse con el reciclaje, tratamiento, valorización y comercialización de los productos derivados de la viticultura, ofreciendo servicio a múltiples industrias.</span>
                         </p>
                     </div>
-                    {images && <SimpleImageSlider 
+                    {/* {images && <SimpleImageSlider 
                         images={images}
                         width='72.82%'
                         height={600}
@@ -58,6 +85,13 @@ const Historia = () => {
                         showBullets={true}
                         autoPlay={true}
                         autoPlayDelay={4}
+                    />} */}
+                    {images && <ImageGallery
+                        items={images}
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showBullets={true}
+                        autoPlay={true}
                     />}
                 </div>
             </>
@@ -145,7 +179,7 @@ const Historia = () => {
                         <span>La base de nuestro crecimiento es el respeto por el producto, el conocimiento tecnológico y de gestión de los recursos y, fundamentalmente, haber situado siempre en el centro a nuestros clientes.</span>
                         </p>
                     </div>
-                    {imagesHist && <SimpleImageSlider 
+                    {/* {imagesHist && <SimpleImageSlider 
                         images={imagesHist}
                         width='72.82%'
                         height={600}
@@ -153,6 +187,13 @@ const Historia = () => {
                         showBullets={true}
                         autoPlay={true}
                         autoPlayDelay={4}
+                    />} */}
+                    {imagesHist && <ImageGallery
+                        items={imagesHist}
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showBullets={true}
+                        autoPlay={true}
                     />}
                 </div>
             </>

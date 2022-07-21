@@ -2,6 +2,9 @@ import React from 'react'
 import './situacion.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
+import ImageGallery from 'react-image-gallery'
+import "react-image-gallery/styles/css/image-gallery.css"
+
 // import images to slider
 // import img1 from '../../images/img/Entorno_natural_Carrusel_1.jpg'
 // import img2 from '../../images/img/Entorno_natural_Carrusel_2.jpg'
@@ -17,9 +20,21 @@ import img3 from '../../images/selected/DJI_0696-2_sit3.jpg'
 
 const Situacion = ({ type, children, title }) => {
     const images = [
-        { url: img1 },
-        { url: img2 },
-        { url: img3 }
+        { 
+            original: img1, 
+            originalHeight: 600,
+            originalClass: 'slideClass',
+        },
+        { 
+            original: img2,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         },
+        { 
+            original: img3,
+            originalHeight: 600,
+            originalClass: 'slideClass',
+         }
     ]
     // const imagesSlider = [
     //     { url: sliderImg1 },
@@ -35,7 +50,7 @@ const Situacion = ({ type, children, title }) => {
                         <p>Enraizados en esta tierra</p>
                         <p>Hace más de 60 años, decidimos plantar nuestras raíces en estos parajes únicos para vivir inmersos en una de las zonas de mayor producción de uva del mundo. Hoy, somos parte del tejido económico de Castilla-La Mancha como referente internacional en el mercado del tratamiento de la uva.</p>
                     </div>
-                    <SimpleImageSlider
+                    {/* <SimpleImageSlider
                         images={images}
                         width='72.82%'
                         height={600}
@@ -44,7 +59,14 @@ const Situacion = ({ type, children, title }) => {
                         showBullets={true}
                         autoPlay={true}
                         autoPlayDelay={4}
-                     />
+                     /> */}
+                     <ImageGallery
+                        items={images}
+                        showThumbnails={false}
+                        showFullscreenButton={false}
+                        showBullets={true}
+                        autoPlay={true}
+                    />
                 </div>
             </>
         )

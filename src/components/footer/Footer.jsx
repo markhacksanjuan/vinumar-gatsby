@@ -2,6 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './footer.css'
 
+import avisoLegal from '../../legal/AVISO_LEGAL.pdf'
+import cookies from '../../legal/COOKIES.pdf'
+import fondo from '../../legal/FONDO.pdf'
+import privacidad from '../../legal/PRIVACIDAD.pdf'
+
 const Footer = () => {
     return(
         <>
@@ -53,10 +58,10 @@ const Footer = () => {
                     <p className='footer-title'>Política de Privacidad</p>
                     <div>
                         <ul className='footer-list'>
-                            <li>Política de cookies</li>
-                            <li>Política de privacidad</li>
-                            <li>Aviso legal</li>
-                            <li>Fondo Europeo de Desarrollo Regional</li>
+                            <li><a href={cookies} target='_blank'>Política de cookies</a></li>
+                            <li><a href={privacidad} target='_blank'>Política de privacidad</a></li>
+                            <li><a href={avisoLegal} target='_blank'>Aviso legal</a></li>
+                            <li><a href={fondo} target='_blank'>Fondo Europeo de Desarrollo Regional</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>
