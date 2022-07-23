@@ -82,7 +82,7 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>E3/Color</p>
-                                    <p>0,5 - 1,5</p>
+                                    <p>0,5 &#8212; 1,5</p>
                                 </li>
                                 <li>
                                     <p>pH</p>
@@ -90,15 +90,14 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>Brix</p>
-                                    <p>52 - 58 </p>
+                                    <p>52 &#8212; 58 </p>
                                 </li>
                                 <li>
                                     <p>Envases</p>
                                     <ul>
                                         <li>Cisterna alimentaria</li>
                                         <li>Contenedor 1000 l</li>
-                                        <li>Garrafas 60 l, 220 l</li>
-                                        <li>Envases 20 l</li>
+                                        <li>Garrafas 20l, 60 l, 220 l</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -113,7 +112,7 @@ const ExtractosVino = () => {
                             <ul>
                                 <li>
                                     <p>Índice color</p>
-                                    <p>&lt;60</p>
+                                    <p>&lt; 60</p>
                                 </li>
                                 <li>
                                     <p>Color</p>
@@ -121,11 +120,11 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&#8804;3,80</p>
+                                    <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
                                     <p>Brix</p>
-                                    <p>52 - 58 </p>
+                                    <p>52 &#8212; 58 </p>
                                 </li>
                                 <li>
                                     <p>Envases</p>
@@ -195,7 +194,7 @@ const ExtractosVino = () => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&#8804;3,80</p>
+                                    <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
                                     <p>Humedad</p>

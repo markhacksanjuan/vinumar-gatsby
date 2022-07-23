@@ -80,7 +80,7 @@ const ExtractosPiel = () => {
                                     <ul>
                                         <li>
                                             <p>E3/Color</p>
-                                            <p>2,9 - 3,1</p>
+                                            <p>2,9 &#8212; 3,1</p>
                                         </li>
                                         <li>
                                             <p>Color</p>
@@ -95,8 +95,7 @@ const ExtractosPiel = () => {
                                             <ul>
                                                 <li>Cisterna alimentaria</li>
                                                 <li>Contenedor 1000 l</li>
-                                                <li>Garrafas 60 l, 220 l</li>
-                                                <li>Envases de 25 l</li>
+                                                <li>Garrafas 25l, 60 l, 220 l</li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -119,7 +118,7 @@ const ExtractosPiel = () => {
                             <ul>
                                 <li>
                                     <p>E3/Color</p>
-                                    <p>11,4 - 12,6</p>
+                                    <p>11,4 &#8212; 12,6</p>
                                 </li>
                                 <li>
                                     <p>Color</p>
