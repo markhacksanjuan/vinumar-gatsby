@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer'
 import Button from '../components/button/Button'
 import TextCentered from "../components/textCentered/TextCentered"
 import { Link } from 'gatsby'
+import Layout, { LangStateContext } from "../components/Layout/Layout"
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -175,25 +176,27 @@ const IndexPage = ({}) => {
   }
 
   return (
-    <main>
-      <Navbar/>
-      <div className='index-container'>
-        {renderHeader()}
-        <div className={`text-centered-bottom ${scrollTextCentered_1  && 'text-centered-animated-bottom'}`}>
-          <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
+    <>
+      <Layout>
+        <LangStateContext.Consumer>
+        <div className='index-container'>
+          {renderHeader()}
+          <div className={`text-centered-bottom ${scrollTextCentered_1  && 'text-centered-animated-bottom'}`}>
+            <TextCentered>En Vinumar somos especialistas en productos derivados de la uva. Combinamos tecnología, agilidad y tradición, con el único objetivo de extraer la máxima calidad de un fruto excepcional: la uva de Castilla-La Mancha.</TextCentered>
+          </div>
+          {renderProductos()}
+          {renderDonde()}
+          <div className={`text-centered-fade-in ${scrollTextCentered_2 && 'fade-in'}`}>
+            <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
+          </div>
         </div>
-        {renderProductos()}
-        {renderDonde()}
-        <div className={`text-centered-fade-in ${scrollTextCentered_2 && 'fade-in'}`}>
-          <TextCentered width='960px' margin='60px'>Más de 60 años haciendo historia en el mundo de la uva.</TextCentered>
-        </div>
-      </div>
-        <div className={`index-button-mas ${scrollButton && 'fade-in'}`}>
-          <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>SABER MÁS SOBRE VINUMAR</Button>
-        </div>
+          <div className={`index-button-mas ${scrollButton && 'fade-in'}`}>
+            <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>SABER MÁS SOBRE VINUMAR</Button>
+          </div>
+        </LangStateContext.Consumer>
 
-      <Footer />
-    </main>
+      </Layout>
+    </>
   )
 }
 
