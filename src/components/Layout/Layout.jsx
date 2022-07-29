@@ -1,16 +1,14 @@
-import React, { useState, createContext } from 'react'
-import Navbar from '../navbarIndex'
-import Footer from '../footer'
-
-export const LangStateContext = createContext()
+import React, { useState, createContext, useReducer } from 'react'
+import Navbar from '../navbarIndex/NavbarIndex'
+import Footer from '../footer/Footer'
 
 const Layout = ({ children }) => {
     return(
-        <LangStateContext.Provider>
+        <>
             <Navbar />
             <main>{children}</main>
             <Footer />
-        </LangStateContext.Provider>
+        </>
     )
 }
 export default Layout

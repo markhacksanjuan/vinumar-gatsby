@@ -106,3 +106,7 @@
         flex-wrap: wrap
     }
 }
+
+.li-lang {
+    cursor: pointer;
+}
