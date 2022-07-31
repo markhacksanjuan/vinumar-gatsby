@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './situacion.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
@@ -17,8 +17,12 @@ import img1 from '../../images/selected/DJI_0682-2_sit1.jpg'
 import img2 from '../../images/selected/DJI_0684-2_sit2.jpg'
 import img3 from '../../images/selected/DJI_0696-2_sit3.jpg'
 
+import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
+import { langText_where } from '../../lang/lang_where'
+
 
 const Situacion = ({ type, children, title }) => {
+    const { lang } = useContext(LangStateContext)
     const images = [
         { 
             original: img1, 
@@ -46,9 +50,9 @@ const Situacion = ({ type, children, title }) => {
             <>
                 <div className='situacion-container'>
                     <div className='situacion-text-container'>
-                        <h4>Situación geográfica</h4>
-                        <p>Enraizados en esta tierra</p>
-                        <p>Hace más de 60 años, decidimos plantar nuestras raíces en estos parajes únicos para vivir inmersos en una de las zonas de mayor producción de uva del mundo. Hoy, somos parte del tejido económico de Castilla-La Mancha como referente internacional en el mercado del tratamiento de la uva.</p>
+                        <h4>{langText_where.geographic.title[lang]}</h4>
+                        <p>{langText_where.geographic.sub_title[lang]}</p>
+                        <p>{langText_where.geographic.text[lang]}</p>
                     </div>
                     {/* <SimpleImageSlider
                         images={images}

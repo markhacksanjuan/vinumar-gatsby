@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './entornoNatural.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
@@ -15,8 +15,11 @@ import imgTanino from '../../images/DEF/BL8A8864.jpg'
 import imgAlcohol2 from '../../images/DEF/BL8A8679.jpg'
 import imgPepita from '../../images/DEF/BL8A8730.jpg'
 
+import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
+import { langText_natural } from '../../lang/lang_natural'
 
 const EntornoNatural = ({ type, children, title }) => {
+    const { lang } = useContext(LangStateContext)
     const images = [
         { url: img1 },
         { url: img2 },
@@ -28,6 +31,8 @@ const EntornoNatural = ({ type, children, title }) => {
     //     { url: sliderImg3 }
     // ]
 
+    const titleLang = langText_natural.title[lang]
+    const text = langText_natural.text[lang]
 
     switch(type) {
         case 'slider': 
@@ -35,8 +40,8 @@ const EntornoNatural = ({ type, children, title }) => {
             <>
                 <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <SimpleImageSlider
                         images={images}
@@ -56,8 +61,8 @@ const EntornoNatural = ({ type, children, title }) => {
                 <>
                 <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -72,8 +77,8 @@ const EntornoNatural = ({ type, children, title }) => {
                 <>
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -87,8 +92,8 @@ const EntornoNatural = ({ type, children, title }) => {
                 <>
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -102,8 +107,8 @@ const EntornoNatural = ({ type, children, title }) => {
                 <>
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -117,8 +122,8 @@ const EntornoNatural = ({ type, children, title }) => {
                 <>
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
-                        <h4>Entorno natural</h4>
-                        <p>La calidad de nuestros productos es directamente proporcional a la calidad de la uva. Esta es la razón por la que hace más de 60 años decidimos trasladarnos a Castilla-La Mancha, uno de los viñedos más importantes del mundo. Desde Villarrobledo trabajamos con la convicción de que utilizar una excelente materia prima y alta tecnología no es suficiente: estar rodeados por los distintos productores de uvas es el factor clave que prioriza la calidad del producto final. Porque esta cercanía nos permite procesar el orujo fresco con mayor inmediatez, optimizando sustancialmente su extracción y avalando la reactividad que nos caracteriza.</p>
+                        <h4>{titleLang}</h4>
+                        <p>{text}</p>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />

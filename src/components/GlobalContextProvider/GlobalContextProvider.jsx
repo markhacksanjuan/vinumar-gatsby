@@ -8,10 +8,15 @@ const initialState = {
 }
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'TOGGLE_LANG':
+        case 'ES':
             return {
                 ...state,
-                lang: state.lang === 'es' ? 'en' : 'es'
+                lang: 'es'
+            }
+        case 'EN':
+            return {
+                ...state,
+                lang: 'en'
             }
         default:
             return state

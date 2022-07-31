@@ -65,6 +65,10 @@ export const langText_index = {
                     es: 'Fruto del secado del orujo de la uva y su posterior separación, la pepita de uva es la base del aceite de granilla, que contiene vitamina E y ácidos grasos esenciales omega 3 y omega 6.',
                     en: 'The fruit of the drying of grape marc and its subsequent separation, grape seed is the basis of oil which contains vitamin E as well as omega 3 and omega 6 essential fatty acids. '
                 }
+            },
+            button_more: {
+                es: 'DESCUBRE MÁS',
+                en: 'Find out more'
             }
         },
         where: {
@@ -79,6 +83,10 @@ export const langText_index = {
             text_bottom: {
                 es: 'Además, contamos con una red logística de largo alcance por autovía, ferrocarril, transporte aéreo y marítimo, que nos permite llegar allí donde sea preciso. Desde donde estamos todo son ventajas.',
                 en: 'In addition, we have a long-range logistics network by highway, rail, air and sea transport, which allows us to reach where necessary. From where we are, everything is an advantage.'
+            },
+            button_where: {
+                es: 'DÓNDE ESTAMOS',
+                en: 'Where we are'
             }
         },
         text_centered_bottom: {
