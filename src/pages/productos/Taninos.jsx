@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -10,38 +10,42 @@ import taninosHeaderImg from '../../images/DEF/BL8A9614.jpg'
 
 import taninosProductoImg from '../../images/DEF/BL8A9520_2.jpg'
 
+import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { langText } from '../../lang'
+
 const Taninos = () => {
+    const { lang } = useContext(LangStateContext)
 
     const renderTaninosHeader = () => {
         return(
             <>
                 <div className='taninos-container-header'>
                     <div className='taninos-container-header-title'>
-                        <h4>Taninos de uva</h4>
-                        <p>Se trata de un aditivo natural que se extrae esencialmente de la piel y las pepitas de la uva. Los taninos de uva pertenecen a la familia de los polifenoles y poseen una reconocida acción antioxidante. Dentro de la industria alimentaria, se utilizan en enología como suplemento que mejora la calidad del vino, estabilizando su color y optimizando su estructura.
+                        <h4>{langText.tannins.header.title[lang]}</h4>
+                        <p>{langText.tannins.header.text_1[lang]}
                             <span className="parrafo">
-                                En Vinumar ofrecemos taninos de uva blanca seleccionada en formato polvo.
+                            {langText.tannins.header.text_2[lang]}
                             </span>
                         </p>
                     </div>
                     <div className='taninos-header-apli-carac-img-container'>
                         <div className='taninos-header-apli-carac-container'>
                             <div className='taninos-header-apli-container'>
-                                <p className='taninos-header-apli-carac-title'>Aplicaciones</p>
+                                <p className='taninos-header-apli-carac-title'>{langText.tannins.header.applications.title[lang]}</p>
                                 <ul>
-                                    <li>Industria alimentaria, 
-                                    <span className='block'>uso enológico</span>
+                                    <li>{langText.tannins.header.applications.industry[lang]}, 
+                                    <span className='block'>{langText.tannins.header.applications.name[lang]}</span>
                                     
                                     </li>
                                 </ul>
-                                <p className='taninos-header-apli-definition'>Los taninos refuerzan las características y la conservación de un vino, ya que aportan los polifenoles naturales necesarios para otorgarle distintas cualidades organolépticas durante la vinificación, actuando sobre su color, estructrura, astringencia y amargura.</p>
+                                <p className='taninos-header-apli-definition'>{langText.tannins.header.applications.text[lang]}</p>
                             </div>
                             <div className='taninos-header-carac-container'>
-                                <p className='taninos-header-apli-carac-title'>Características</p>
+                                <p className='taninos-header-apli-carac-title'>{langText.tannins.header.characteristics.title[lang]}</p>
                                 <ul>
                                     <li className='taninos-header-carac-li'>
-                                        <p>Nombre botánico</p>
-                                        <p className='italic'>Vitis Vinífera</p>
+                                        <p>{langText.tannins.header.characteristics.botanic.title[lang]}</p>
+                                        <p className='italic'>{langText.tannins.header.characteristics.botanic.name[lang]}</p>
                                     </li>
                                 </ul>
                             </div>
@@ -58,33 +62,33 @@ const Taninos = () => {
         return(
             <>
                 <div>
-                    <p>Polvo</p>
+                    <p>{langText.tannins.products.powder.title[lang]}</p>
                     <img className='fit-none' src={taninosProductoImg} alt="Polvo" />
                     <div>
                         <p>VINUPEB P</p>
                         <div className='taninos-productos-carac'>
-                            <p>Taninos condensados de alto peso molecular extraídos exclusivamente de la piel de uva blanca seleccionada.</p>
+                            <p>{langText.tannins.products.powder.text[lang]}</p>
                             <ul>
                                 <li>
-                                    <p>Taninos</p>
+                                    <p>{langText.tannins.products.powder.tannins[lang]}</p>
                                     <p>&gt; 65 %</p>
                                 </li>
                                 <li>
-                                    <p>Cenizas</p>
+                                    <p>{langText.tannins.products.powder.ashes[lang]}</p>
                                     <p>&lt; 4 %</p>
                                 </li>
                                 <li>
-                                    <p>Hierro</p>
+                                    <p>{langText.tannins.products.powder.iron[lang]}</p>
                                     <p>&gt; 50 ppm</p>
                                 </li>
                                 <li>
-                                    <p>Humedad</p>
+                                    <p>{langText.tannins.products.powder.moisture[lang]}</p>
                                     <p>&lt; 7 %</p>
                                 </li>
                                 <li>
-                                    <p>Envases</p>
+                                    <p>{langText.tannins.products.powder.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
+                                        <li>{langText.tannins.products.powder.packaging.text[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -98,7 +102,7 @@ const Taninos = () => {
         return(
             <>
                 <div className="taninos-productos-container">
-                    <h4>Nuestra elección en Taninos de uva</h4>
+                    <h4>{langText.tannins.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
                     </div>
@@ -116,8 +120,8 @@ const Taninos = () => {
 
             {renderProductos()}
 
-            <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
+            <TextCentered width='925px' margin='60px'>{langText.tannins.centered[lang]}</TextCentered>
+            <Button style='red-button' width='270' goTo='/Contacto'>{langText.tannins.button[lang]}</Button>
 
             <EntornoNatural type='taninos' />
             <Footer />

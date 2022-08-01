@@ -16,7 +16,7 @@ import imgAlcohol2 from '../../images/DEF/BL8A8679.jpg'
 import imgPepita from '../../images/DEF/BL8A8730.jpg'
 
 import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
-import { langText_natural } from '../../lang/lang_natural'
+import { langText } from '../../lang'
 
 const EntornoNatural = ({ type, children, title }) => {
     const { lang } = useContext(LangStateContext)
@@ -31,8 +31,8 @@ const EntornoNatural = ({ type, children, title }) => {
     //     { url: sliderImg3 }
     // ]
 
-    const titleLang = langText_natural.title[lang]
-    const text = langText_natural.text[lang]
+    const titleLang = langText.natural.title[lang]
+    const text = langText.natural.text[lang]
 
     switch(type) {
         case 'slider': 

@@ -13,7 +13,7 @@ import valores4 from '../../images/ilustraciones/Vinumar_Ilustraciones_Experienc
 import valores5 from '../../images/ilustraciones/Vinumar_Ilustraciones_Sostenibilidad.jpg'
 
 import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
-import { langText_values } from '../../lang/lang_values'
+import { langText } from '../../lang'
 
 const Valores = () => {
     const { lang } = useContext(LangStateContext)
@@ -22,7 +22,7 @@ const Valores = () => {
             <>
                 <div className="valores-container-header">
                     <img src={headerImg} alt="Valores" />
-                    <p>{langText_values.header[lang]}</p>
+                    <p>{langText.values.header[lang]}</p>
                 </div>
             </>
         )
@@ -31,47 +31,47 @@ const Valores = () => {
         return(
             <>
                 <div className="valores-content-container">
-                    <h4>{langText_values.values.title[lang]}</h4>
+                    <h4>{langText.values.values.title[lang]}</h4>
                     <div>
                         <div>
-                            <p className='valores-content-title'>{langText_values.values.tech.title[lang]}</p>
+                            <p className='valores-content-title'>{langText.values.values.tech.title[lang]}</p>
                             <img src={valores1} alt="Valores" />
-                            <p className='valores-content-description'>{langText_values.values.tech.text_1[lang]}
+                            <p className='valores-content-description'>{langText.values.values.tech.text_1[lang]}
                             <br/>
                             <br/>
-                            {langText_values.values.tech.text_2[lang]}</p>
+                            {langText.values.values.tech.text_2[lang]}</p>
                         </div>
                         <div>
                             <div className='valores-content-card'>
                                 <div>
-                                    <p className='valores-content-title'>{langText_values.values.reactivity.title[lang]}</p>
+                                    <p className='valores-content-title'>{langText.values.values.reactivity.title[lang]}</p>
                                     <img src={valores2} alt="Valores" />
                                 </div>
-                                <p>{langText_values.values.reactivity.text_1[lang]}
+                                <p>{langText.values.values.reactivity.text_1[lang]}
                                     <br/>
                                     <br/>
-                                    {langText_values.values.reactivity.text_2[lang]}</p>
+                                    {langText.values.values.reactivity.text_2[lang]}</p>
                             </div>
                             <div className='valores-content-card'>
                                 <div>
-                                    <p className='valores-content-title'>{langText_values.values.confidence.title[lang]}</p>
+                                    <p className='valores-content-title'>{langText.values.values.confidence.title[lang]}</p>
                                     <img src={valores3} alt="Valores" />
                                 </div>
-                                <p>{langText_values.values.confidence.text[lang]}</p>
+                                <p>{langText.values.values.confidence.text[lang]}</p>
                             </div>
                             <div className='valores-content-card'>
                                 <div>
-                                    <p className='valores-content-title'>{langText_values.values.experience.title[lang]}</p>
+                                    <p className='valores-content-title'>{langText.values.values.experience.title[lang]}</p>
                                     <img src={valores4} alt="Valores" />
                                 </div>
-                                <p>{langText_values.values.experience.text[lang]}</p>
+                                <p>{langText.values.values.experience.text[lang]}</p>
                             </div>
                             <div className='valores-content-card'>
                                 <div>
-                                    <p className='valores-content-title'>{langText_values.values.sustainability.title[lang]}</p>
+                                    <p className='valores-content-title'>{langText.values.values.sustainability.title[lang]}</p>
                                     <img src={valores5} alt="Valores" />
                                 </div>
-                                <p>{langText_values.values.sustainability.text[lang]}</p>
+                                <p>{langText.values.values.sustainability.text[lang]}</p>
                             </div>
                         </div>
                     </div>
@@ -83,9 +83,9 @@ const Valores = () => {
         <>
             <Navbar width='214px' />
             {renderHeader()}
-            <TextCentered>{langText_values.centered[lang]}</TextCentered>
+            <TextCentered>{langText.values.centered[lang]}</TextCentered>
             {renderContent()}
-            <Button style='red-button' width='270px' goTo='/Contacto'>{langText_values.button[lang]}</Button>
+            <Button style='red-button' width='270px' goTo='/Contacto'>{langText.values.button[lang]}</Button>
             <Footer />
 
         </>

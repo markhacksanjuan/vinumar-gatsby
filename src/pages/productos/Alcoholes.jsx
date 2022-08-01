@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -10,63 +10,67 @@ import alcoholesHeaderImg from '../../images/DEF/BL8A4092.jpg'
 
 import alcoholesProductoImg from '../../images/DEF/BL8A9307.jpg'
 
+import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { langText } from '../../lang'
+
 
 const Alcoholes = () => {
+    const { lang } = useContext(LangStateContext)
 
     const renderAlcoholesHeader = () => {
         return(
             <>
                 <div className='alcoholes-container-header'>
                     <div className='alcoholes-container-header-title'>
-                        <h4>Alcoholes</h4>
-                        <p>Desde nuestros inicios, la fabricación de alcoholes ha estado permanentemente presente en las distintas actividades desarrolladas por Vinumar, por lo que es todo un clásico.
+                        <h4>{langText.alcohols.header.title[lang]}</h4>
+                        <p>{langText.alcohols.header.text_1[lang]}
                         <span className="parrafo">
-                            Todos los alcoholes que fabricamos en nuestras instalaciones son de procedencia exclusivamente vínica, y se obtienen en columnas de flujo continuo a partir del vino o de los subproductos de vinificación.
+                        {langText.alcohols.header.text_2[lang]}
                         </span>
                         <span className="parrafo">
-                            Los alcoholes vínicos reciben distintas denominaciones según sea su proceso de obtención, su purificación o refinado, su graduación alcohólica o las características organolépticas del alcohol obtenido.
+                        {langText.alcohols.header.text_3[lang]}
                         </span>
                         </p>
                     </div>
                     <div className='alcoholes-header-apli-carac-img-container'>
                         <div className='alcoholes-header-apli-carac-container'>
                             <div className='alcoholes-header-carac-container'>
-                                <p className='alcoholes-header-apli-carac-title'>Aplicaciones</p>
+                                <p className='alcoholes-header-apli-carac-title'>{langText.alcohols.header.applications.title[lang]}</p>
                                 <div>
                                     <ul>
                                         <li>
-                                            <p>Uso energético</p>
-                                            <p>Biocombustible</p>
+                                            <p>{langText.alcohols.header.applications.energy.title[lang]}</p>
+                                            <p>{langText.alcohols.header.applications.energy.name[lang]}</p>
                                         </li>
                                         <li>
-                                            <p>Industria química</p>
+                                            <p>{langText.alcohols.header.applications.chemical.title[lang]}</p>
                                             <ul>
-                                                <li>Productos de limpieza</li>
+                                                <li>{langText.alcohols.header.applications.chemical.clean[lang]}</li>
                                                 <li>Perfumes</li>
-                                                <li>Desinfectantes</li>
+                                                <li>{langText.alcohols.header.applications.chemical.desinfectant[lang]}</li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>Industria farmacéutica</p>
+                                            <p>{langText.alcohols.header.applications.pharmaceutical.title[lang]}</p>
                                             <ul>
-                                                <li>Geles hidroalcóholicos</li>
-                                                <li>Alcoholes sanitarios</li>
+                                                <li>{langText.alcohols.header.applications.pharmaceutical.gel[lang]}</li>
+                                                <li>{langText.alcohols.header.applications.pharmaceutical.medical[lang]}</li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p>Uso alimentario</p>
+                                            <p>{langText.alcohols.header.applications.food.title[lang]}</p>
                                             <ul>
-                                                <li>Bebidas y licores</li>
+                                                <li>{langText.alcohols.header.applications.food.drinks[lang]}</li>
                                                 <li>Mistelas</li>
-                                                <li>Vermut</li>
+                                                <li>{langText.alcohols.header.applications.food.vermouth[lang]}</li>
                                                 <li>Brandy</li>
-                                                <li>Vinos de Oporto</li>
-                                                <li>Vinos de Jerez</li>
+                                                <li>{langText.alcohols.header.applications.food.oporto[lang]}</li>
+                                                <li>{langText.alcohols.header.applications.food.jerez[lang]}</li>
                                             </ul>
                                         </li>
                                     </ul>
                                         <p>
-                                        Los alcoholes de origen vínico se caracterizan por sus diferentes cualidades organolépticas (su sabor, aroma, etc.) respecto al resto de alcoholes. El uso de alcoholes procedentes del vino y sus subproductos confiere a los diversos productos a los que se incorporan soluciones más saludables y naturales.
+                                        {langText.alcohols.header.applications.text[lang]}
                                         </p>
                                 </div>
                             </div>
@@ -83,28 +87,28 @@ const Alcoholes = () => {
         return(
             <>
                 <div className="alcoholes-productos-container">
-                    <h4>Nuestra gama de alcoholes</h4>
+                    <h4>{langText.alcohols.products.title[lang]}</h4>
                     <div>
                         <ul>
                             <li>
-                                <p>Alcohol bruto</p>
-                                <p>Fabricado a partir de subproductos de origen vínico con una graduación de 92,0º a 92,5º.</p>
+                                <p>{langText.alcohols.products.raw.title[lang]}</p>
+                                <p>{langText.alcohols.products.raw.text[lang]}</p>
                             </li>
                             <li>
-                                <p>Alcohol rectificado</p>
-                                <p>Fabricado a partir de subproductos de origen vínico con una graduación de 96º a 96,5º.</p>
+                                <p>{langText.alcohols.products.rectified.title[lang]}</p>
+                                <p>{langText.alcohols.products.rectified.text[lang]}</p>
                             </li>
                             <li>
-                                <p>Alcohol parcialmente desnaturalizado</p>
-                                <p>Fabricado a partir de alcohol bruto o rectificado, se desnaturaliza en nuestras instalaciones conforme a la legislación vigente.</p>
+                                <p>{langText.alcohols.products.denatured.title[lang]}</p>
+                                <p>{langText.alcohols.products.denatured.text[lang]}</p>
                             </li>
                             <li>
-                                <p>Destilado de vino</p>
-                                <p>Fabricado con vinos previamente seleccionados y con una graduación de 94,0º a 95,9º.</p>
+                                <p>{langText.alcohols.products.distillate.title[lang]}</p>
+                                <p>{langText.alcohols.products.distillate.text[lang]}</p>
                             </li>
                             <li>
-                                <p>Aguardiente de vino</p>
-                                <p>Fabricado con vinos previamente seleccionados y con una graduación de entre 65º y 77º.</p>
+                                <p>{langText.alcohols.products.spirit.title[lang]}</p>
+                                <p>{langText.alcohols.products.spirit.text[lang]}</p>
                             </li>
                         </ul>
                         <img src={alcoholesProductoImg} alt="Alcoholes" />
@@ -122,8 +126,8 @@ const Alcoholes = () => {
 
             {renderProductos()}
 
-            <TextCentered width='925px' margin='60px'>Realizamos todas las fabricaciones exclusivamente bajo pedido.</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
+            <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
+            <Button style='red-button' width='270' goTo='/Contacto'>{langText.alcohols.button[lang]}</Button>
 
             <EntornoNatural type='alcohol' />
             <Footer />

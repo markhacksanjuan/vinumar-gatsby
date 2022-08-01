@@ -10,7 +10,7 @@ import sostenibilidad2 from '../images/DEF/BL8A8775.jpg'
 import Button from '../components/button/Button'
 
 import { LangStateContext } from '../components/GlobalContextProvider/GlobalContextProvider'
-import { langText_sustain } from '../lang/lang_sustain'
+import { langText } from '../lang'
 
 const SostenibilidadPage = () => {
     const { lang } = useContext(LangStateContext)
@@ -19,7 +19,7 @@ const SostenibilidadPage = () => {
             <>
                 <div className="sostenibilidad-container-header">
                     <img src={headerImg} alt="Sostenibilidad header" />
-                    <p>{langText_sustain.header[lang]}</p>
+                    <p>{langText.sustain.header[lang]}</p>
                 </div>
             </>
         )
@@ -28,16 +28,16 @@ const SostenibilidadPage = () => {
         return(
             <>
                 <div className='sostenibilidad-container-main'>
-                    <h4>{langText_sustain.sustainability.title[lang]}</h4>
+                    <h4>{langText.sustain.sustainability.title[lang]}</h4>
                     <div>
-                        <p>{langText_sustain.sustainability.parr_1[lang]}
-                        <span className="parrafo">{langText_sustain.sustainability.parr_2[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_3[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_4[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_5[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_6[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_7[lang]}</span>
-                        <span className="parrafo">{langText_sustain.sustainability.parr_8[lang]}</span></p>
+                        <p>{langText.sustain.sustainability.parr_1[lang]}
+                        <span className="parrafo">{langText.sustain.sustainability.parr_2[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_3[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_4[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_5[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_6[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_7[lang]}</span>
+                        <span className="parrafo">{langText.sustain.sustainability.parr_8[lang]}</span></p>
                         
                         
                         
@@ -48,8 +48,8 @@ const SostenibilidadPage = () => {
                     </div>
                     <div>
                         <img src={sostenibilidad2} alt="sostenibilidad 2" />
-                        <p className='sostenibilidad-main-title'>{langText_sustain.chain.title[lang]}</p>
-                        <p>{langText_sustain.chain.text[lang]}</p>
+                        <p className='sostenibilidad-main-title'>{langText.sustain.chain.title[lang]}</p>
+                        <p>{langText.sustain.chain.text[lang]}</p>
                     </div>
                 </div>
             </>

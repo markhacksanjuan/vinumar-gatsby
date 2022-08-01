@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -13,42 +13,46 @@ import vinoProducto2 from '../../images/DEF/BL8A9269.jpg'
 import vinoProducto3 from '../../images/DEF/BL8A9953_2.jpg'
 import vinoProducto4 from '../../images/DEF/BL8A9427.jpg'
 
+import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { langText } from '../../lang'
+
 
 const ExtractosVino = () => {
+    const { lang } = useContext(LangStateContext)
 
     const renderExtractosHeader = () => {
         return(
             <>
                 <div className='uva-container-header'>
                     <div className='uva-container-header-title'>
-                        <h4>Extractos de vino</h4>
-                        <p>Se trata de sustancias naturales obtenidas por concentración de vinos tintos o blancos seleccionados y convenientemente desalcoholizados. Se utilizan en bebidas sin alcohol y son básicos para preparados alimentarios, porque sus propiedades aromatizantes y saborizantes les confieren un alto valor gastronómico añadido. Tanto en su formato en polvo como líquido, los extractos de vino Vinumar realzan comidas y bebidas.</p>
+                        <h4>{langText.wine.header.title[lang]}</h4>
+                        <p>{langText.wine.header.text[lang]}</p>
                     </div>
                     <div className='uva-header-apli-carac-img-container'>
                         <div className='uva-header-apli-carac-container'>
                             <div className='uva-header-apli-container'>
-                                <p className='uva-header-apli-carac-title'>Aplicaciones</p>
+                                <p className='uva-header-apli-carac-title'>{langText.wine.header.application.title[lang]}</p>
                                 <ul>
-                                    <li>Salsas</li>
+                                    <li>{langText.wine.header.application.li_1[lang]}</li>
                                     <li>Caldos</li>
-                                    <li>Platos cocinados (bases culinarias)</li>
-                                    <li>Marinados</li>
-                                    <li>Bebidas sin alcohol</li>
+                                    <li>{langText.wine.header.application.li_2[lang]}</li>
+                                    <li>{langText.wine.header.application.li_3[lang]}</li>
+                                    <li>{langText.wine.header.application.li_4[lang]}</li>
                                 </ul>
-                                <p className='uva-header-apli-definition'>La practicidad de uso de los extractos de vino, junto a sus cualidades organolépticas aportan mejor palatabilidad a los platos de cocina preparada, como demuestra su uso cada vez más extendido en todo el mundo.</p>
+                                <p className='uva-header-apli-definition'>{langText.wine.header.application.text[lang]}</p>
                             </div>
                             <div className='uva-header-carac-container'>
-                                <p className='uva-header-apli-carac-title'>Características</p>
+                                <p className='uva-header-apli-carac-title'>{langText.wine.header.characteristics.title[lang]}</p>
                                 <ul>
                                     <li className='uva-header-carac-li'>
-                                        <p>Nombre botánico</p>
-                                        <p className='italic'>Vitis Vinífera</p>
+                                        <p>{langText.wine.header.characteristics.botanic.title[lang]}</p>
+                                        <p className='italic'>{langText.wine.header.characteristics.botanic.name[lang]}</p>
                                     </li>
                                     <li className='uva-header-carac-li'>
-                                        <p>Etiquetado</p>
+                                        <p>{langText.wine.header.characteristics.labelling.title[lang]}</p>
                                         <ul>
-                                            <li>Extracto de vino tinto o vino blanco</li>
-                                            <li>Concentrado de vino desalcoholizado</li>
+                                            <li>{langText.wine.header.characteristics.labelling.extract[lang]}</li>
+                                            <li>{langText.wine.header.characteristics.labelling.concentrate[lang]}</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -67,21 +71,21 @@ const ExtractosVino = () => {
             <>
                 <div>
                     <div>
-                        <p>Líquido</p>
-                        <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración, filtración y pasteurización de vino tinto o blanco.</p>
+                        <p>{langText.wine.products.liquid.title[lang]}</p>
+                        <p>{langText.wine.products.liquid.text[lang]}</p>
                     </div>
                     <img className='fit-cover' src={vinoProducto1} alt="Liquido" />
                     <div className='uva-productos-carac'>
-                        <p className='uva-productos-subtitle'>Tinto</p>
+                        <p className='uva-productos-subtitle'>{langText.wine.products.liquid.red.title[lang]}</p>
                         <div>
                             <p>VINUWINE R55L</p>
                             <ul>
                                 <li>
-                                    <p>Color</p>
-                                    <p>Marrón rojo</p>
+                                    <p>{langText.wine.products.liquid.red.colour.title[lang]}</p>
+                                    <p>{langText.wine.products.liquid.red.colour.text[lang]}</p>
                                 </li>
                                 <li>
-                                    <p>E3/Color</p>
+                                    <p>E3/{langText.wine.products.liquid.red.colour.title[lang]}</p>
                                     <p>0,5 &#8212; 1,5</p>
                                 </li>
                                 <li>
@@ -93,11 +97,11 @@ const ExtractosVino = () => {
                                     <p>52 &#8212; 58 </p>
                                 </li>
                                 <li>
-                                    <p>Envases</p>
+                                    <p>{langText.wine.products.liquid.red.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>Cisterna alimentaria</li>
-                                        <li>Contenedor 1000 l</li>
-                                        <li>Garrafas 20l, 60 l, 220 l</li>
+                                        <li>{langText.wine.products.liquid.red.packaging.bulk[lang]}</li>
+                                        <li>{langText.wine.products.liquid.red.packaging.container[lang]}</li>
+                                        <li>{langText.wine.products.liquid.red.packaging.drums[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -106,17 +110,17 @@ const ExtractosVino = () => {
 
                     <img className='fit-cover' src={vinoProducto3} alt="Liquido" />
                     <div>
-                        <p className='uva-productos-subtitle'>Blanco</p>
+                        <p className='uva-productos-subtitle'>{langText.wine.products.liquid.white.title[lang]}</p>
                         <div>
                             <p>VINUWINE B55L</p>
                             <ul>
                                 <li>
-                                    <p>Índice color</p>
+                                    <p>{langText.wine.products.liquid.white.colour.title[lang]}</p>
                                     <p>&lt; 60</p>
                                 </li>
                                 <li>
-                                    <p>Color</p>
-                                    <p>Marrón amarillento</p>
+                                    <p>{langText.wine.products.liquid.white.colour.colour[lang]}</p>
+                                    <p>{langText.wine.products.liquid.white.colour.name[lang]}</p>
                                 </li>
                                 <li>
                                     <p>pH</p>
@@ -127,11 +131,11 @@ const ExtractosVino = () => {
                                     <p>52 &#8212; 58 </p>
                                 </li>
                                 <li>
-                                    <p>Envases</p>
+                                    <p>{langText.wine.products.liquid.white.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>Cisterna alimentaria</li>
-                                        <li>Contenedor 1000 l</li>
-                                        <li>Garrafas 60 l, 220 l</li>
+                                        <li>{langText.wine.products.liquid.white.packaging.truck[lang]}</li>
+                                        <li>{langText.wine.products.liquid.white.packaging.container[lang]}</li>
+                                        <li>{langText.wine.products.liquid.white.packaging.drums[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -147,35 +151,35 @@ const ExtractosVino = () => {
             <>
                 <div>
                     <div>
-                        <p>Polvo</p>
-                        <p>Aromatizante y saborizante 100% natural, sin aditivos añadidos. Se obtiene por desalcoholización, concentración y filtración de vino tinto o blanco, y se deshidrata por atomización, con o sin soporte de secado (maltodextrina).</p>
+                        <p>{langText.wine.products.powder.title[lang]}</p>
+                        <p>{langText.wine.products.powder.text[lang]}</p>
                     </div>
                     <img className='fit-none' src={vinoProducto2} alt="Liquido" />
                     <div className='uva-productos-carac'>
-                        <p className='uva-productos-subtitle'>Tinto</p>
+                        <p className='uva-productos-subtitle'>{langText.wine.products.powder.red.title[lang]}</p>
                         <div>
                             <p>VINUWINE RP</p>
                             <ul>
                                 <li>
-                                    <p>Color</p>
-                                    <p>Marrón rojo</p>
+                                    <p>{langText.wine.products.powder.red.colour.title[lang]}</p>
+                                    <p>{langText.wine.products.powder.red.colour.name[lang]}</p>
                                 </li>
                                 <li>
                                     <p>pH</p>
                                     <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
-                                    <p>Humedad</p>
+                                    <p>{langText.wine.products.powder.red.moisture[lang]}</p>
                                     <p>&lt; 7 %</p>
                                 </li>
                                 <li>
-                                    <p>Soporte de secado</p>
-                                    <p>Maltodextrina</p>
+                                    <p>{langText.wine.products.powder.red.carrier.title[lang]}</p>
+                                    <p>{langText.wine.products.powder.red.carrier.name[lang]}</p>
                                 </li>
                                 <li>
-                                    <p>Envases</p>
+                                    <p>{langText.wine.products.powder.red.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
+                                        <li>{langText.wine.products.powder.red.packaging.name[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -184,30 +188,30 @@ const ExtractosVino = () => {
 
                     <img className='fit-none' src={vinoProducto4} alt="Liquido" />
                     <div>
-                        <p className='uva-productos-subtitle'>Blanco</p>
+                        <p className='uva-productos-subtitle'>{langText.wine.products.powder.white.title[lang]}</p>
                         <div>
                             <p>VINUWINE BP</p>
                             <ul>
                                 <li>
-                                    <p>Color</p>
-                                    <p>Amarillo paja</p>
+                                    <p>{langText.wine.products.powder.white.colour.title[lang]}</p>
+                                    <p>{langText.wine.products.powder.white.colour.name[lang]}</p>
                                 </li>
                                 <li>
                                     <p>pH</p>
                                     <p>&#8804; 3,80</p>
                                 </li>
                                 <li>
-                                    <p>Humedad</p>
+                                    <p>{langText.wine.products.powder.white.moisture[lang]}</p>
                                     <p>&lt; 7 %</p>
                                 </li>
                                 <li>
-                                    <p>Soporte de secado</p>
-                                    <p>Maltodextrina</p>
+                                    <p>{langText.wine.products.powder.white.carrier.title[lang]}</p>
+                                    <p>{langText.wine.products.powder.white.carrier.name[lang]}</p>
                                 </li>
                                 <li>
-                                    <p>Envases</p>
+                                    <p>{langText.wine.products.powder.white.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>Bolsa de aluminio 25 Kg termosoldada al vacío</li>
+                                        <li>{langText.wine.products.powder.white.packaging.name[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -222,7 +226,7 @@ const ExtractosVino = () => {
         return(
             <>
                 <div className="uva-productos-container">
-                    <h4>Nuestra gama de extractos de vino</h4>
+                    <h4>{langText.wine.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardLiquido()}
                         {renderProductosCardPolvo()}
@@ -240,8 +244,8 @@ const ExtractosVino = () => {
 
             {renderProductos()}
 
-            <TextCentered width='925px' margin='60px'>También ofrecemos productos personalizados, según las necesidades requeridas. Como el extracto de vino en polvo Vinuwine SM ideal para uso alimentario y nutracéutico, sin maltodextrina y rico en polifenoles (&gt;30%).</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>CONTACTA CON NOSOTROS</Button>
+            <TextCentered width='925px' margin='60px'>{langText.wine.centered[lang]} (&gt;30%).</TextCentered>
+            <Button style='red-button' width='270' goTo='/Contacto'>{langText.wine.button[lang]}</Button>
 
             <EntornoNatural type='vino' />
 

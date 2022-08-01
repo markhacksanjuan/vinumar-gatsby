@@ -20,7 +20,7 @@ import imgInst3 from '../../images/DEF/BL8A7156.jpg'
 import imgInst4 from '../../images/DEF/DJI_0551.jpg'
 
 import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
-import { langText_history } from '../../lang/lang_history'
+import { langText } from '../../lang'
 
 
 const Historia = () => {
@@ -66,7 +66,7 @@ const Historia = () => {
             <>
                 <div className="historia-container-header">
                     <img src={headerImg} alt="historia" />
-                    <p>{langText_history.header[lang]}</p>
+                    <p>{langText.history.header[lang]}</p>
                 </div>
             </>
         )
@@ -76,9 +76,9 @@ const Historia = () => {
             <>
                 <div className="historia-vinumar-container">
                     <div>
-                        <h4>{langText_history.vinumar.title[lang]}</h4>
-                        <p>{langText_history.vinumar.text_1[lang]}
-                            <span className="parrafo">{langText_history.vinumar.text_2[lang]}</span>
+                        <h4>{langText.history.vinumar.title[lang]}</h4>
+                        <p>{langText.history.vinumar.text_1[lang]}
+                            <span className="parrafo">{langText.history.vinumar.text_2[lang]}</span>
                         </p>
                     </div>
                     {/* {images && <SimpleImageSlider 
@@ -107,63 +107,63 @@ const Historia = () => {
             <>
                 <div className="historia-crono-container">
                     <div>
-                        <h4>{langText_history.chronology.title[lang]}</h4>
+                        <h4>{langText.history.chronology.title[lang]}</h4>
                     </div>
                     <div>
                         <div>
                             <div style={{ height: '130px' }}>
-                                <p>{langText_history.chronology.text_1955[lang]}</p>
+                                <p>{langText.history.chronology.text_1955[lang]}</p>
                                 <p>1955</p>
                             </div>
                             <div className='two-years' style={{ height: '130px' }}>
-                                <p>{langText_history.chronology.text_1970[lang]}</p>
+                                <p>{langText.history.chronology.text_1970[lang]}</p>
                                 <p style={{ width: '50%'}}>1970-79</p>
                             </div>
                             <div style={{ height: '115px' }}>
-                                <p>{langText_history.chronology.text_1993[lang]}</p>
+                                <p>{langText.history.chronology.text_1993[lang]}</p>
                                 <p>1993</p>
                             </div>
                             <div style={{ height: '130px' }}> 
-                                <p>{langText_history.chronology.text_2005[lang]}</p>
+                                <p>{langText.history.chronology.text_2005[lang]}</p>
                                 <p>2005</p>
                             </div>
                             <div style={{ paddingBottom: '10px'}}>
-                                <p>{langText_history.chronology.text_2018[lang]}</p>
+                                <p>{langText.history.chronology.text_2018[lang]}</p>
                                 <p>2018</p>
                             </div>
                             <div style={{ paddingBottom: '10px', paddingTop: '10px'}}>
-                                <p>{langText_history.chronology.text_2020_1[lang]}</p>
+                                <p>{langText.history.chronology.text_2020_1[lang]}</p>
                                 <p>2020</p>
                             </div>
                             <div style={{ borderRight: 'none' }}>
-                                <p>{langText_history.chronology.text_2021[lang]}</p>
+                                <p>{langText.history.chronology.text_2021[lang]}</p>
                                 <p>2021</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ height: '150px' }}>
                                 <p>1965</p>
-                                <p>{langText_history.chronology.text_1965[lang]}</p>
+                                <p>{langText.history.chronology.text_1965[lang]}</p>
                             </div>
                             <div style={{ height: '65px' }}>
                                 <p>1989</p>
-                                <p>{langText_history.chronology.text_1989[lang]}</p>
+                                <p>{langText.history.chronology.text_1989[lang]}</p>
                             </div>
                             <div style={{ height: '150px' }}>
                                 <p>1994</p>
-                                <p>{langText_history.chronology.text_1994[lang]}</p>
+                                <p>{langText.history.chronology.text_1994[lang]}</p>
                             </div>
                             <div style={{ height: '90px' }}>
                                 <p>2013</p>
-                                <p>{langText_history.chronology.text_2013[lang]}</p>
+                                <p>{langText.history.chronology.text_2013[lang]}</p>
                             </div>
                             <div style={{ height: '60px' }}>
                                 <p>2019</p>
-                                <p>{langText_history.chronology.text_2019[lang]}</p>
+                                <p>{langText.history.chronology.text_2019[lang]}</p>
                             </div>
                             <div>
                                 <p>2020</p>
-                                <p>{langText_history.chronology.text_2020_2[lang]}</p>
+                                <p>{langText.history.chronology.text_2020_2[lang]}</p>
                             </div>
                         </div>
 
@@ -178,9 +178,9 @@ const Historia = () => {
             <>
                 <div className="historia-historia-container">
                     <div>
-                        <h4>{langText_history.growth.title[lang]}</h4>
-                        <p>{langText_history.growth.text_1[lang]}
-                        <span>{langText_history.growth.text_2[lang]}</span>
+                        <h4>{langText.history.growth.title[lang]}</h4>
+                        <p>{langText.history.growth.text_1[lang]}
+                        <span>{langText.history.growth.text_2[lang]}</span>
                         </p>
                     </div>
                     {/* {imagesHist && <SimpleImageSlider 

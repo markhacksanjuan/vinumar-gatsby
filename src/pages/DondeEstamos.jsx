@@ -14,7 +14,7 @@ import TextCentered from '../components/textCentered/TextCentered'
 import Button from '../components/button/Button'
 
 import { LangStateContext } from '../components/GlobalContextProvider/GlobalContextProvider'
-import { langText_where } from '../lang/lang_where'
+import { langText } from '../lang'
 
 const DondePage = () => {
     const { lang } = useContext(LangStateContext)
@@ -24,7 +24,7 @@ const DondePage = () => {
                 <div className='donde-container-header'>
                     <img src={headerImg} alt="Donde estamos header" />
                     <div className='donde-container-header-h2'>
-                        <h2>{langText_where.header[lang]}</h2>
+                        <h2>{langText.where.header[lang]}</h2>
                     </div>
                 </div>
             </>
@@ -36,13 +36,13 @@ const DondePage = () => {
             <>
                 <div className='donde-container-estamos'>
                     <div>
-                        <h4>{langText_where.where.title[lang]}</h4>
+                        <h4>{langText.where.where.title[lang]}</h4>
                     </div>
                     <div className='donde-container-ubicacion'>
                         <div className='donde-container-ubicacion-text'>
                                 <p>ctra. Munera, 5 02600 Villarrobledo Albacete, España</p>
-                                <p>{langText_where.where.text_top[lang]}
-                                    <span className='parrafo'>{langText_where.where.text_bottom[lang]}</span>
+                                <p>{langText.where.where.text_top[lang]}
+                                    <span className='parrafo'>{langText.where.where.text_bottom[lang]}</span>
                                 </p>
                         </div>
                         <img src={dondeImg} alt="Donde estamos" />
@@ -55,18 +55,18 @@ const DondePage = () => {
         return(
             <>
                 <div className='donde-container-ventajas'>
-                    <h4>{langText_where.advantages.title[lang]}</h4>
+                    <h4>{langText.where.advantages.title[lang]}</h4>
                     <div className='donde-container-ventaja-card'>
                         <div className='donde-ventaja-card'>
-                            <p>{langText_where.advantages.proximity[lang]}</p>
+                            <p>{langText.where.advantages.proximity[lang]}</p>
                             <img src={ventaja1} alt="ventaja 1" />
                         </div>
                         <div className='donde-ventaja-card'>
-                            <p>{langText_where.advantages.speed[lang]}</p>
+                            <p>{langText.where.advantages.speed[lang]}</p>
                             <img src={ventaja2} alt="ventaja 2" />
                         </div>
                         <div className='donde-ventaja-card'>
-                            <p>{langText_where.advantages.innovation[lang]}</p>
+                            <p>{langText.where.advantages.innovation[lang]}</p>
                             <img src={ventaja3} alt="ventaja 3" />
                         </div>
                     </div>
@@ -80,12 +80,12 @@ const DondePage = () => {
             <Navbar width='214px' />
             <div className='donde-container'>
                 {renderHeader()}
-                <TextCentered>{langText_where.centered[lang]}</TextCentered>
+                <TextCentered>{langText.where.centered[lang]}</TextCentered>
                 
                 <Situacion />
 
                 {renderDonde()}
-                <Button style='red-button' goTo='/nosotros/Valores'>{langText_where.button[lang]}</Button>
+                <Button style='red-button' goTo='/nosotros/Valores'>{langText.where.button[lang]}</Button>
                 {renderVentajas()}
             </div>
 

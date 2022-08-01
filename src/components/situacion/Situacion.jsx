@@ -18,7 +18,7 @@ import img2 from '../../images/selected/DJI_0684-2_sit2.jpg'
 import img3 from '../../images/selected/DJI_0696-2_sit3.jpg'
 
 import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
-import { langText_where } from '../../lang/lang_where'
+import { langText } from '../../lang'
 
 
 const Situacion = ({ type, children, title }) => {
@@ -50,9 +50,9 @@ const Situacion = ({ type, children, title }) => {
             <>
                 <div className='situacion-container'>
                     <div className='situacion-text-container'>
-                        <h4>{langText_where.geographic.title[lang]}</h4>
-                        <p>{langText_where.geographic.sub_title[lang]}</p>
-                        <p>{langText_where.geographic.text[lang]}</p>
+                        <h4>{langText.where.geographic.title[lang]}</h4>
+                        <p>{langText.where.geographic.sub_title[lang]}</p>
+                        <p>{langText.where.geographic.text[lang]}</p>
                     </div>
                     {/* <SimpleImageSlider
                         images={images}
