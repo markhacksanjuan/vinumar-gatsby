@@ -42,7 +42,7 @@ export const langText_tannins = {
                 },
                 name: {
                     es: 'Vitis Vinífera',
-                    en: 'itis Vinifera (grape)'
+                    en: 'Vitis Vinifera (grape)'
                 }
             }
         }

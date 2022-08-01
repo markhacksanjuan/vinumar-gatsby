@@ -50,5 +50,9 @@ export const langText_sustain = {
             es: 'Custodiar el medio, el paisaje y las personas que nos permiten realizar nuestras actividades económicas es el legado que hemos heredado y que queremos transmitir, como queda patente en nuestra apuesta por la sostenibilidad y el fomento de la economía circular.',
             en: 'Protecting the environment, the landscape and the people that allow us to carry out our economic activities is the legacy that we have inherited and that we want to transmit, as is evident in our commitment to sustainability and the promotion of the circular economy. '
         }
+    },
+    button: {
+        es: 'CONTACTA CON NOSOTROS',
+        en: 'CONTACT US'
     }
 }

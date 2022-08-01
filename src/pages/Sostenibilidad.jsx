@@ -61,7 +61,7 @@ const SostenibilidadPage = () => {
             <div className='sostenibilidad-container'>
                 {renderHeader()}
                 {renderSostenibilidad()}
-                <Button goTo='/Contacto' style='red-button'>CONTACTA CON NOSOTROS</Button>
+                <Button goTo='/Contacto' style='red-button'>{langText.sustain.button[lang]}</Button>
             </div>
             <Footer/>
         </>
