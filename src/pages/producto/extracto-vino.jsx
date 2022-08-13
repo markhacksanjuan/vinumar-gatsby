@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -13,12 +13,26 @@ import vinoProducto2 from '../../images/DEF/BL8A9269.jpg'
 import vinoProducto3 from '../../images/DEF/BL8A9953_2.jpg'
 import vinoProducto4 from '../../images/DEF/BL8A9427.jpg'
 
-import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
+import { historyState } from '../../helpers/historyState'
 
-
-const ExtractosVino = () => {
+const ExtractosVino = (props) => {
     const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+
+    useEffect(() =>{
+        // historyState(window.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/product/wine-extract')
+            }else {
+                window.history.pushState({}, '', props.uri)
+            }
+        }
+    }, [lang])
 
     const renderExtractosHeader = () => {
         return(

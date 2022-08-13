@@ -23,7 +23,7 @@ const reducer = (state, action) => {
     }
 }
 
-const GlobalContextProvider = ({ children}) => {
+const GlobalContextProvider = ({ children }) => {
     const [lang, dispatch] = useReducer(reducer, initialState)
     return(
         <LangStateContext.Provider value={lang}>

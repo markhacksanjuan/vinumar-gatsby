@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import '../styles/pages/sostenibilidad.css'
@@ -9,11 +9,28 @@ import sostenibilidad2 from '../images/DEF/BL8A8775.jpg'
 
 import Button from '../components/button/Button'
 
-import { LangStateContext } from '../components/GlobalContextProvider/GlobalContextProvider'
+import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../lang'
+import { historyState } from '../helpers/historyState'
 
-const SostenibilidadPage = () => {
+const SostenibilidadPage = (props) => {
     const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+
+    console.log(window.history.state)
+    useEffect(() =>{
+        // historyState(window.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/sustainability')
+            }else {
+                window.history.pushState({}, '', props.uri)
+            }
+        }
+    }, [lang])
+
     const renderHeader = () => {
         return(
             <>

@@ -34,11 +34,11 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.products.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link to='/productos/ExtractosPiel'>{langText.footer.products.grape_skin[lang]}</Link></li>
-                            <li><Link to='/productos/ExtractosVino'>{langText.footer.products.wine_extracts[lang]}</Link></li>
-                            <li><Link to='/productos/Taninos'>{langText.footer.products.tannins[lang]}</Link></li>
-                            <li><Link to='/productos/Alcoholes'>{langText.footer.products.alcohols[lang]}</Link></li>
-                            <li><Link to='/productos/Pepita'>{langText.footer.products.grape_seed[lang]}</Link></li>
+                            <li><Link to='/producto/extracto-piel-uva'>{langText.footer.products.grape_skin[lang]}</Link></li>
+                            <li><Link to='/producto/extracto-vino'>{langText.footer.products.wine_extracts[lang]}</Link></li>
+                            <li><Link to='/producto/taninos-uva'>{langText.footer.products.tannins[lang]}</Link></li>
+                            <li><Link to='/producto/alcoholes'>{langText.footer.products.alcohols[lang]}</Link></li>
+                            <li><Link to='/producto/pepita-de-uva'>{langText.footer.products.grape_seed[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -46,17 +46,17 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.about.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link to='/nosotros/Recursos'>{langText.footer.about.resources[lang]}</Link></li>
-                            <li><Link to='/nosotros/Historia'>{langText.footer.about.history[lang]}</Link></li>
-                            <li><Link to='/nosotros/Valores'>{langText.footer.about.values[lang]}</Link></li>
+                            <li><Link to='/sobre-nosotros/instalaciones'>{langText.footer.about.resources[lang]}</Link></li>
+                            <li><Link to='/sobre-nosotros/nuestra-historia'>{langText.footer.about.history[lang]}</Link></li>
+                            <li><Link to='/sobre-nosotros/valores'>{langText.footer.about.values[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link to='/DondeEstamos'>{langText.footer.where[lang]}</Link></p>
+                    <p className='footer-title-no-bottom'><Link to='/donde-estamos'>{langText.footer.where[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link to='/Sostenibilidad'>{langText.footer.sustainability[lang]}</Link></p>
+                    <p className='footer-title-no-bottom'><Link to='/sostenibilidad'>{langText.footer.sustainability[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
                     <p className='footer-title'>{langText.footer.policy.title[lang]}</p>

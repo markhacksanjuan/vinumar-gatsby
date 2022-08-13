@@ -13,7 +13,7 @@ export const langText_index = {
         },
         products: {
             title: {
-                es:'Productos',
+                es: 'Productos',
                 en: 'Products'
             },
             grape_skin: {
@@ -68,7 +68,7 @@ export const langText_index = {
             },
             button_more: {
                 es: 'DESCUBRE MÁS',
-                en: 'Find out more'
+                en: 'FIND OUT MORE'
             }
         },
         where: {
@@ -86,7 +86,7 @@ export const langText_index = {
             },
             button_where: {
                 es: 'DÓNDE ESTAMOS',
-                en: 'Where we are'
+                en: 'WHERE WE ARE'
             }
         },
         text_centered_bottom: {
@@ -95,6 +95,6 @@ export const langText_index = {
         },
         button_know_more: {
             es: 'SABER MÁS SOBRE VINUMAR',
-            en: 'Find out more about Vinumar'
+            en: 'FIND OUT MORE ABOUT VINUMAR'
         }
 }

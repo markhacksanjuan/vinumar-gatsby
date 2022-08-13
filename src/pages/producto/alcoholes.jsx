@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -10,12 +10,28 @@ import alcoholesHeaderImg from '../../images/DEF/BL8A4092.jpg'
 
 import alcoholesProductoImg from '../../images/DEF/BL8A9307.jpg'
 
-import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
+import { historyState } from '../../helpers/historyState'
 
 
-const Alcoholes = () => {
+const Alcoholes = (props) => {
     const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+
+    useEffect(() =>{
+        // historyState(window.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/product/alcohol')
+            }else {
+                window.history.pushState({}, '', props.uri)
+            }
+        }
+    }, [lang])
+
 
     const renderAlcoholesHeader = () => {
         return(

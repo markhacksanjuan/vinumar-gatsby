@@ -149,6 +149,6 @@ export const langText_alcohols = {
     },
     button: {
         es: 'CONTACTA CON NOSOTROS',
-        en: 'Contact us.'
+        en: 'CONTACT US'
     }
 }

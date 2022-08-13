@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Situacion from '../components/situacion/Situacion'
@@ -13,11 +13,27 @@ import ventaja3 from '../images/ilustraciones/Vinumar_Ilustraciones_Innovacion.j
 import TextCentered from '../components/textCentered/TextCentered'
 import Button from '../components/button/Button'
 
-import { LangStateContext } from '../components/GlobalContextProvider/GlobalContextProvider'
+import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../lang'
+import { historyState } from '../helpers/historyState'
 
-const DondePage = () => {
+
+const DondePage = ({ uri, location}) => {
     const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+    useEffect(() => {
+        // historyState(props.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/where-we-are')
+            }else {
+                window.history.pushState({}, '', uri)
+            }
+        }
+    }, [lang])
+
     const renderHeader = () => {
         return(
             <>

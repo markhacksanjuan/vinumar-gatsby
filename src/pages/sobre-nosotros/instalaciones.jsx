@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import Button from '../../components/button/Button'
@@ -24,11 +24,27 @@ import imgInst2 from '../../images/DEF/BL8A8569.jpg'
 import imgInst3 from '../../images/DEF/BL8A7860.jpg'
 import imgInst4 from '../../images/DEF/BL8A8586.jpg'
 
-import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
+import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
+import { historyState } from '../../helpers/historyState'
 
-const Recursos = () => {
+const Recursos = (props) => {
     const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+
+    useEffect(() =>{
+        // historyState(window.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/about-us/resources')
+            }else {
+                window.history.pushState({}, '', props.uri)
+            }
+        }
+    }, [lang])
+
     const images = [
         { 
             original: img1, 

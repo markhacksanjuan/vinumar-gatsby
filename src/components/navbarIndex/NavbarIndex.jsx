@@ -58,11 +58,11 @@ const NavbarIndex = ({ scrollPage }) => {
         return(
             <>
               <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
-                    <li className='no-border'><Link className='navbar-list-sub-menu' to='/productos/ExtractosPiel'>{langText.navbar.products.grape_skin[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/ExtractosVino'>{langText.navbar.products.wine_extracts[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/Taninos'>{langText.navbar.products.tannins[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/Alcoholes'>{langText.navbar.products.alcohols[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/productos/Pepita'>{langText.navbar.products.grape_seed[lang]}</Link></li>
+                    <li className='no-border'><Link className='navbar-list-sub-menu' to='/producto/extracto-piel-uva'>{langText.navbar.products.grape_skin[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/producto/extracto-vino'>{langText.navbar.products.wine_extracts[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/producto/taninos-uva'>{langText.navbar.products.tannins[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/producto/alcoholes'>{langText.navbar.products.alcohols[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/producto/pepita-de-uva'>{langText.navbar.products.grape_seed[lang]}</Link></li>
                 </ul>  
             </>
         )
@@ -76,9 +76,9 @@ const NavbarIndex = ({ scrollPage }) => {
         return(
             <>
                 <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()}>
-                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/nosotros/Recursos'>{langText.navbar.about.resources[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/nosotros/Historia'>{langText.navbar.about.history[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/nosotros/Valores'>{langText.navbar.about.values[lang]}</Link></li>
+                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/sobre-nosotros/instalaciones'>{langText.navbar.about.resources[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/sobre-nosotros/nuestra-historia'>{langText.navbar.about.history[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to='/sobre-nosotros/valores'>{langText.navbar.about.values[lang]}</Link></li>
                 </ul> 
             </>
         )
@@ -130,9 +130,9 @@ const NavbarIndex = ({ scrollPage }) => {
                     <p className='navbar-list-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>{langText.navbar.about.title[lang]}</p>
                     {showNosotros && renderNosotros()}
                 </li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/DondeEstamos'>{langText.navbar.where[lang]}</Link></li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/Sostenibilidad'>{langText.navbar.sustainability[lang]}</Link></li>
-                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/Contacto'>{langText.navbar.contact[lang]}</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/donde-estamos'>{langText.navbar.where[lang]}</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/sostenibilidad'>{langText.navbar.sustainability[lang]}</Link></li>
+                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/contacto'>{langText.navbar.contact[lang]}</Link></li>
                 <li className='navbar-list-element-lang'>
                     <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
                         {showLang && renderLang()}

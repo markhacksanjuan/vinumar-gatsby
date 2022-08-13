@@ -95,6 +95,6 @@ export const langText_tannins = {
     },
     button: {
         es: 'CONTACTA CON NOSOTROS',
-        en: 'Contact us.'
+        en: 'CONTACT US'
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Gmap from '../components/gmap/Gmap'
@@ -6,7 +6,27 @@ import Button from '../components/button/Button'
 
 import '../styles/pages/contacto.css'
 
-const ContactoPage = () => {
+import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
+import { langText } from '../lang'
+import { historyState } from '../helpers/historyState'
+
+const ContactoPage = (props) => {
+    const { lang } = useContext(LangStateContext)
+    const dispatch = useContext(LangDispatchContext)
+
+    useEffect(() =>{
+        historyState(window.location.state, dispatch)
+    }, [])
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+            if(lang === 'en'){
+                window.history.pushState({}, '', '/contact')
+            }else {
+                window.history.pushState({}, '', props.uri)
+            }
+        }
+    }, [lang])
+
     const renderForm = () => {
         return(
             <>

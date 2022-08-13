@@ -55,6 +55,6 @@ export const langText_where = {
     },
     button: {
         es: 'SABER MÁS SOBRE VINUMAR',
-        en: 'Find out more about Vinumar'
+        en: 'FIND OUT MORE ABOUT VINUMAR'
     }
 }
