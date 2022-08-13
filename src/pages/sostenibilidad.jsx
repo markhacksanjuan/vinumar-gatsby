@@ -17,7 +17,6 @@ const SostenibilidadPage = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
 
-    console.log(window.history.state)
     useEffect(() =>{
         // historyState(window.location.state, dispatch)
     }, [])
