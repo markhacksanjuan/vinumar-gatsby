@@ -1,0 +1,26 @@
+.navbar-burger-general {
+    text-decoration: none;
+    list-style: none;
+}
+.navbar-burger-general-element {
+    color: black
+}
+.navbar-burger-element:visited {
+    color: black
+}
+.navbar-burger-element {
+    padding-top: 0.8rem;
+    color: black
+}
+
+.navbar-menu-burger {
+    margin-left: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: black
+}
+.navbar-list-sub-menu-burger {
+    margin-top: 0.5rem;
+    display: block;
+    color: black
+}
