@@ -137,3 +137,35 @@ img.fit-cover {
     height: 600px;
     width: 100% !important
 }
+
+/* BURGER */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+}
+.bm-burger-bars {
+    background-color: #A02E33;
+}
+.bm-cross-button {
+    height: 36px;
+    width: 36px;
+}
+.bm-cross {
+    background: #bdc3c7;
+}
+.bm-menu {
+    background: #E7CBCC;
+    /* opacity: 0.8; */
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+.bm-menu-wrap {
+    width: 50% !important
+}
+.bm-item {
+    display: inline-block;
+    color:black
+}

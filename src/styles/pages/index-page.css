@@ -41,7 +41,8 @@
 }
 .index-card {
     border-top: solid 1px black;
-    width: 49.21%;
+    /* width: 49.21%; */
+    width: 709px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,7 +63,7 @@
 }
 .index-container-product {
     border-top: solid 1px black;
-    width: 72.82%;
+    width: 1440px;
     margin: auto;
     margin-bottom: 300px;
     margin-top: 100%;

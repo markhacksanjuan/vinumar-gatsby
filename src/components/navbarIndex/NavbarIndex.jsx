@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
+import { slide as Menu } from 'react-burger-menu'
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
+import './navbarIndex-media.css'
 import {LangStateContext, LangDispatchContext} from '../GlobalContextProvider/GlobalContextProvider'
 
 import { langText } from '../../lang'
@@ -14,6 +16,17 @@ const NavbarIndex = ({ scrollPage }) => {
     const [showLang, setShowLang] = useState(false)
     const [scroll, setScroll] = useState('451px')
 
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+
+    useEffect(() => {
+        if(typeof window !== 'undefined'){
+
+            window.addEventListener('resize', e => {
+                setScreenWidth(window.screen.width)
+            })
+        }
+    }, [])
+
     useEffect(() => {
         window.addEventListener('scroll', e => {
             if(window.scrollY > 215 ){
@@ -24,20 +37,6 @@ const NavbarIndex = ({ scrollPage }) => {
                 setScroll(`${newScroll}px`)
             }
         })
-        // if(typeof window !== 'undefined'){
-        //     console.log('hola')
-        //         window.onscroll = () => {
-        //             console.log('hola')
-        //             if(window.scrollY > 215 ){
-        //                 setScroll('214px')
-        //             }else {
-        //                 console.log(window.scrollY)
-        //                 const factor = window.scrollY
-        //                 const newScroll = 451 - factor
-        //                 setScroll(`${newScroll}px`)
-        //             }
-        //         }
-        // }
     }, [])
 
     const renderLogo = () => {
@@ -120,7 +119,7 @@ const NavbarIndex = ({ scrollPage }) => {
     }
     const renderListGeneral = () => {
         return(
-            <ul className='navbar-list-general'>
+            <ul id='page-wrap' className='navbar-list-general'>
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/'>{langText.navbar.home[lang]}</Link></li>
                 <li className='navbar-list-element navbar-relative'>
                     <p className='navbar-list-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >{langText.navbar.products.title[lang]}</p>
@@ -141,14 +140,53 @@ const NavbarIndex = ({ scrollPage }) => {
         )
     }
 
-    return(
-        <>
-            <div className='navbar-container'>
-                {renderLogo()}
-                {renderListGeneral()}
-            </div>
-        </>
-    )
+    const renderBurger = () => {
+        return(
+            <>
+                <Menu right pageWrapId={'page-wrap'} outerContainerId={"outer-container"}>
+                    <ul id='page-wrap' className='navbar-burger-general'>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/'>{langText.navbar.home[lang]}</Link></li>
+                        <li className='navbar-burger-element navbar-relative'>
+                            <p className='navbar-burger-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >{langText.navbar.products.title[lang]}</p>
+                            {showProd && renderProd()}
+                        </li>
+                        <li className='navbar-burger-element navbar-relative'>
+                            <p className='navbar-burger-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>{langText.navbar.about.title[lang]}</p>
+                            {showNosotros && renderNosotros()}
+                        </li>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/donde-estamos'>{langText.navbar.where[lang]}</Link></li>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/sostenibilidad'>{langText.navbar.sustainability[lang]}</Link></li>
+                        <li className='navbar-burger-element-contact'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/contacto'>{langText.navbar.contact[lang]}</Link></li>
+                        <li className='navbar-burger-element-lang'>
+                            <p className='navbar-burger-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
+                                {showLang && renderLang()}
+                            </li>
+                    </ul>  
+                </Menu>
+            </>
+        )
+    }
+
+    if(screenWidth > 1100) {
+        return(
+            <>
+                <div id="outer-container" className='navbar-container'>
+                    {renderLogo()}
+                    {renderListGeneral()}
+                </div>
+            </>
+        )
+    }else {
+        return (
+            <>
+                <div id='outer-container' className='navbar-container'>
+                    {renderLogo()}
+                    {renderBurger()}
+                </div>
+            </>
+        )
+    }
+
 
 }
 export default NavbarIndex

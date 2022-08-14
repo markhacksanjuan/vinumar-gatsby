@@ -9,6 +9,7 @@ import Layout from "../components/Layout/Layout"
 // IMPORT STYLES
 import '../styles/index.css'
 import '../styles/pages/index-page.css'
+import '../styles/pages/index-page-media.css'
 
 // IMPORT PICTURES
 import headerImg from '../images/selected/DJI_0698 (principal).jpg'
@@ -37,6 +38,12 @@ const IndexPage = () => {
   const [scrollPepita, setScrollPepita] = useState(false)
   const [scrollButton, setScrollButton] = useState(false)
   const [scrollDonde, setScrollDonde] = useState(false)
+
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+      console.log(window.screen)
+    }
+  }, [])
 
   useEffect(() => {
     if(typeof window !== 'undefined'){
