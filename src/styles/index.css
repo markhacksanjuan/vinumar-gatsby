@@ -144,7 +144,7 @@ img.fit-cover {
     width: 36px;
     height: 30px;
     right: 36px;
-    top: 17px;
+    top: 20px;
 }
 .bm-burger-bars {
     background-color: #A02E33;
@@ -168,4 +168,9 @@ img.fit-cover {
 .bm-item {
     display: inline-block;
     color:black
+}
+@media only screen and (max-width: 541px) {
+    .bm-burger-button {
+        top: 27px
+    }
 }

@@ -1,9 +1,0 @@
-@media (max-width: 1520px) {
-    .index-container-product {
-        margin: 100% 5% 300px 5%;
-        width: auto
-    }
-    .index-container-cards {
-        justify-content: center;
-    }
-}

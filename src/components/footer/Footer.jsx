@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import './footer.css'
+import './footer-media.css'
 
 import avisoLegal from '../../legal/AVISO_LEGAL.pdf'
 import cookies from '../../legal/COOKIES.pdf'

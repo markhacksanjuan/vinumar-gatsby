@@ -26,8 +26,7 @@
     line-height: 4rem;
     position: absolute;
     bottom: 232px;
-    /* width: 48.07%; */
-    width: 49.07%;
+    width: 942px;
     margin: auto;
 }
 .index-text-title {
@@ -82,7 +81,7 @@
 }
 .index-container-donde {
     border-top: solid 1px black;
-    width: 72.82%;
+    width: 1440px;
     margin: auto;
     margin-bottom: 300px;
     display: flex;
@@ -98,7 +97,7 @@
     justify-content: space-between;
 }
 .index-card-donde {
-    width: 66.34%;
+    width: 955px;
 }
 .index-donde-direccion {
     width: 89.35%;

@@ -9,7 +9,7 @@ import Layout from "../components/Layout/Layout"
 // IMPORT STYLES
 import '../styles/index.css'
 import '../styles/pages/index-page.css'
-import '../styles/pages/index-page-media.css'
+import '../styles/pages/mediaQueries/index-page-media.css'
 
 // IMPORT PICTURES
 import headerImg from '../images/selected/DJI_0698 (principal).jpg'
