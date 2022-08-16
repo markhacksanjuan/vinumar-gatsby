@@ -7,7 +7,7 @@
     margin-top: 250px;
     margin-bottom: 300px;
     justify-content: center;
-    width: 72.82%
+    width: 1440px
 }
 .situacion-text-container {
     display: flex;
@@ -18,18 +18,22 @@
 .situacion-text-container h4 {
     font-size: 37px;
     margin: 0;
-    margin-right: 132px
+    /* margin-right: 132px; */
+    width: 480px
 }
-.situacion-container p {
+.situacion-card {
+    display: flex;
+    flex-direction: row;
+    width: 65.8%
+}
+.situacion-card > p {
     font-weight: bold;
 }
-.situacion-container > p:first-child {
-    width: 31%
+.situacion-card > p:first-child {
+    width: 82%
 }
-.situacion-text-container > p:last-child {
-    width: 49.45%;
+.situacion-card > p:last-child {
     font-weight: normal;
-    margin-left: 22px
 }
 .situacion-slider {
     position: relative

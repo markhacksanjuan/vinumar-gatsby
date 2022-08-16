@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './situacion.css'
+import './situacion-media.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
 import ImageGallery from 'react-image-gallery'
@@ -51,8 +52,10 @@ const Situacion = ({ type, children, title }) => {
                 <div className='situacion-container'>
                     <div className='situacion-text-container'>
                         <h4>{langText.where.geographic.title[lang]}</h4>
-                        <p>{langText.where.geographic.sub_title[lang]}</p>
-                        <p>{langText.where.geographic.text[lang]}</p>
+                        <div className='situacion-card'>
+                            <p>{langText.where.geographic.sub_title[lang]}</p>
+                            <p>{langText.where.geographic.text[lang]}</p>
+                        </div>
                     </div>
                     {/* <SimpleImageSlider
                         images={images}

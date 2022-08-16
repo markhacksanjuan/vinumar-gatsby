@@ -1,0 +1,84 @@
+@media (max-width: 1520px) {
+    .historia-crono-container, .historia-vinumar-container,
+    .historia-historia-container {
+        margin: 300px 5% 300px 5%;
+        width: auto
+    }
+    #div-1970 {
+        height: 130px;
+    }
+}
+@media (max-width: 1440px) {
+    #div-2020-2, #div-1994 {
+        margin-top: 15px
+    }
+}
+@media (max-width: 1225px) {
+    #div-1955 {
+        height: 155px !important;
+    }
+}
+@media (max-width: 1180px) {
+    #div-1993, #div-1970 {
+        height: 145px !important;
+    }
+}
+@media (max-width: 1100px) {
+    #div-2020-2, #div-1994, #div-2019 {
+        margin-top: 45px
+    }
+    .historia-container-header p {
+        margin: auto 5% auto 5%;
+        width: auto;
+        left: 0
+    }
+}
+@media (max-width: 1025px) {
+    #div-1993 {
+        height: 165px !important;
+    }
+}
+@media (max-width: 966px) {
+    #div-1993, #div-1955 {
+        height: 180px !important;
+    }
+    #div-1970 {
+        height: 160px !important;
+    }
+}
+@media (max-width: 850px) {
+    #div-2020-2, #div-1994, #div-2019 {
+        margin-top: 60px
+    }
+    #div-1993, #div-1955, #div-1970 {
+        height: 200px !important;
+    }
+    .historia-vinumar-container > div,
+    .historia-historia-container > div {
+        flex-direction: column;
+    }
+    .historia-vinumar-container h4,
+    .historia-historia-container h4 {
+        margin-bottom: 15px
+    }
+    .historia-vinumar-container div:first-child > p,
+    .historia-historia-container div:first-child > p {
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    #div-2020-2, #div-1994, #div-2019 {
+        margin-top: 90px
+    }
+}
+@media (max-width: 490px) {
+    .historia-container-header p {
+        top: 43%
+    }
+}
+@media (max-width: 391px) {
+    .historia-container-header p {
+        top: 57%;
+        font-size: 3rem;
+    }
+}

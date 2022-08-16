@@ -1,0 +1,32 @@
+@media (max-width: 1500px) {
+    .situacion-container {
+        margin: 250px 5% 300px 5%;
+        width: auto
+    }
+}
+@media (max-width: 1440px) {
+    .situacion-text-container {
+        flex-direction: column;
+    }
+    .situacion-container h4 {
+        margin-bottom: 15px
+    }
+    .situacion-card {
+        width: 100%
+    }
+    .situacion-card > p:first-child {
+        width: 300px
+    }
+    .situacion-card > p:last-child {
+        width: 100%;
+        margin-left: 0
+    }
+}
+@media (max-width: 720px) {
+    .situacion-card {
+        flex-direction: column;
+    }
+    .situacion-card > p:first-child {
+        margin-bottom: 15px
+    }
+}

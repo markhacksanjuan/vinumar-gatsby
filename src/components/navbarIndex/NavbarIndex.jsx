@@ -30,12 +30,16 @@ const NavbarIndex = ({ scrollPage }) => {
 
     useEffect(() => {
         window.addEventListener('scroll', e => {
-            if(window.scrollY > 215 ){
-                setScroll('214px')
+            if(screenWidth > 1200){
+                if(window.scrollY > 215 ){
+                    setScroll('214px')
+                }else {
+                    const factor = window.scrollY
+                    const newScroll = 451 - factor
+                    setScroll(`${newScroll}px`)
+                }
             }else {
-                const factor = window.scrollY
-                const newScroll = 451 - factor
-                setScroll(`${newScroll}px`)
+                setScroll('214px')
             }
         })
     }, [])

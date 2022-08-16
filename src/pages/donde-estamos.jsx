@@ -3,6 +3,7 @@ import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Situacion from '../components/situacion/Situacion'
 import '../styles/pages/dondeEstamos.css'
+import '../styles/pages/mediaQueries/donde-media.css'
 
 import headerImg from '../images/DEF/DJI_0705-2.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'

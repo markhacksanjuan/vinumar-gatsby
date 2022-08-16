@@ -1,0 +1,42 @@
+@media (max-width: 1520px) {
+    .donde-container-estamos {
+        margin: auto 5% 60px 5%;
+        width: auto
+    }
+    .donde-container-ventajas {
+        margin: 200px 5% auto 5%;
+        width: auto
+    }
+}
+@media (max-width: 1440px) {
+    .donde-container-estamos {
+        flex-direction: column
+    }
+    .donde-container-estamos > div {
+        margin-bottom: 15px
+    }
+    .donde-container-ubicacion {
+        width: 100%
+    }
+}
+@media (max-width: 1474px) {
+    .donde-container-ventaja-card {
+        justify-content: space-around;
+    }
+}
+@media (max-width: 720px) {
+    .donde-container-ubicacion-text {
+        flex-direction: column;
+    }
+    .donde-container-ubicacion-text p:first-child {
+        margin-bottom: 15px
+    }
+    .donde-container-ubicacion-text p:last-child {
+        margin: 0
+    }
+}
+@media (max-width: 500px) {
+    .donde-ventaja-card {
+        width: 100%
+    }
+}
