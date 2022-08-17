@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/recursos.css'
+import '../../styles/pages/mediaQueries/recursos-media.css'
 
 import recursos1 from '../../images/DEF/BL8A7254.jpg'
 import atomizacion from '../../images/DEF/BL8A8625.jpg'

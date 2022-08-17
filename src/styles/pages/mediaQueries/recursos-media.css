@@ -1,0 +1,40 @@
+@media (max-width: 1520px) {
+    .recursos-recursos-container {
+        margin: 286px 5% 0 5%;
+        width: auto
+    }
+    .recursos-equipo-container,
+    .recursos-instalaciones-container {
+        margin: 300px 5% 0 5%;
+        width: auto
+    }
+}
+@media (max-width: 1100px) {
+    .recursos-recursos-container > div:first-child,
+    .recursos-recursos-container > div,
+    .recursos-equipo-container > div {
+        flex-direction: column;
+    }
+    .recursos-recursos-container div:first-child > p, 
+    .recursos-recursos-tecnicos img,
+    .recursos-recursos-automatizacion > p:last-of-type,
+    .recursos-recursos-automatizacion img,
+    .recursos-equipo-container div:first-child > p {
+        width: 100%;
+        margin-top: 15px
+    }
+    .recursos-recursos-tecnicos > div {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 700px) {
+    .recursos-instalaciones-container > div:first-child {
+        flex-direction: column;
+    }
+    .recursos-instalaciones-container div:first-child > p {
+        width: 100%;
+        margin-top: 15px
+    }
+}

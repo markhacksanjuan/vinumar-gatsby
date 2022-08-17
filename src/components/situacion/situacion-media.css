@@ -29,4 +29,7 @@
     .situacion-card > p:first-child {
         margin-bottom: 15px
     }
+    .situacion-text-container h4 {
+        width: 100%
+    }
 }

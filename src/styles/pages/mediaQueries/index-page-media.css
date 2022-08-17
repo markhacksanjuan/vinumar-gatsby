@@ -38,7 +38,8 @@
 }
 @media (max-width: 481px) {
     .index-container-header h2 {
-        top: -550px
+        top: -515px;
+        font-size: 3rem
     }
 }
 @media (max-width: 391px) {

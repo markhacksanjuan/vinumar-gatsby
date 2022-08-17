@@ -28,6 +28,12 @@
     }
     .sostenibilidad-img {
         flex-direction: column-reverse;
+    }   
+}
+@media (max-width: 500px) {
+    .sostenibilidad-container-header p {
+        font-size: 3rem;
+        width: 90%;
+        left: 3%
     }
-    
 }

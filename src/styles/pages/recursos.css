@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 72.82%;
+    width: 1440px;
     margin: auto;
     margin-top: 286px;
     border-top: 1px solid black;
@@ -44,7 +44,7 @@
 .recursos-recursos-tecnicos img {
     object-fit: cover;
     width: 49.3%;
-    height: 49.3%;
+    height: 473px;
 }
 .recursos-recursos-automatizacion {
     border-top: 1px solid black;
@@ -68,7 +68,7 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 72.82%;
+    width: 1440px;
     margin-top: 300px;
     border-top: 1px solid black;
     padding-top: 15px
@@ -93,10 +93,10 @@
     flex-direction: column;
     margin: auto;
     justify-content: center;
-    width: 72.82%;
+    width: 1440px;
     margin-top: 300px;
     border-top: 1px solid black;
-    margin-bottom: 70px
+    margin-bottom: 70px !important
 }
 .recursos-instalaciones-container > div:first-child {
     display: flex;

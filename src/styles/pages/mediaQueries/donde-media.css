@@ -39,4 +39,8 @@
     .donde-ventaja-card {
         width: 100%
     }
+    .donde-container-header h2 {
+        font-size: 3rem;
+        width: 90%
+    }
 }

@@ -38,6 +38,8 @@ const IndexPage = () => {
   const [scrollPepita, setScrollPepita] = useState(false)
   const [scrollButton, setScrollButton] = useState(false)
   const [scrollDonde, setScrollDonde] = useState(false)
+  
+  const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
   useEffect(() => {
     if(typeof window !== 'undefined'){
@@ -99,7 +101,7 @@ const IndexPage = () => {
           <div className="view">
             <img src={image} className='index-card-img' alt={title} />
             <div className="mask">
-              <Button className='index-card-button' style='white-button' width='164' goTo={goTo}>{langText.index.products.button_more[lang]}</Button>
+              <Button className='index-card-button' style='white-button-product' width='164' goTo={goTo}>{langText.index.products.button_more[lang]}</Button>
             </div>
           </div>
         {/* </div> */}
@@ -117,7 +119,7 @@ const IndexPage = () => {
                 title={langText.index.products.grape_skin.title[lang]}
                 text={langText.index.products.grape_skin.text[lang]}
                 image={extPiel}
-                goTo='/productos/ExtractosPiel'
+                goTo='/producto/extracto-piel-uva'
               />
             </div>
             <div className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
@@ -125,7 +127,7 @@ const IndexPage = () => {
                 title={langText.index.products.wine_extracts.title[lang]}
                 text={langText.index.products.wine_extracts.text[lang]}
                 image={extVino}
-                goTo='/productos/ExtractosVino'
+                goTo='/producto/extracto-vino'
               />
             </div>
             <div className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
@@ -133,7 +135,7 @@ const IndexPage = () => {
                 title={langText.index.products.grape_tannins.title[lang]}
                 text={langText.index.products.grape_tannins.text[lang]}
                 image={taninosUva}
-                goTo='/productos/Taninos'
+                goTo='/producto/taninos-uva'
               />
             </div>
             <div className={`index-card ${scrollAlcoholes && 'index-card-animated-bottom'}`}>
@@ -141,7 +143,7 @@ const IndexPage = () => {
                 title={langText.index.products.alcohols.title[lang]}
                 text={langText.index.products.alcohols.text[lang]}
                 image={alcohol}
-                goTo='/productos/Alcoholes'
+                goTo='/producto/alcoholes'
               />
             </div>
             <div className={`index-card ${scrollPepita && 'index-card-animated-bottom'}`}>
@@ -149,7 +151,7 @@ const IndexPage = () => {
                 title={langText.index.products.grape_seed.title[lang]}
                 text={langText.index.products.grape_seed.text[lang]}
                 image={pepitas}
-                goTo='/productos/Pepita'
+                goTo='/producto/pepita-de-uva'
               />
             </div>
           </div>
@@ -178,7 +180,7 @@ const IndexPage = () => {
               <div className="view-donde">
                 <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={dondeImg} alt='Donde estamos' />
                 <div className="mask-donde">
-                  <Button className='index-card-button' style='white-button' width='164' goTo='/DondeEstamos'>{langText.index.where.button_where[lang]}</Button>
+                  <Button className='index-card-button' style='white-button'  width='164' goTo='/DondeEstamos'>{langText.index.where.button_where[lang]}</Button>
                 </div>
               </div>
           </div>

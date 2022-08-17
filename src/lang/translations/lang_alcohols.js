@@ -33,7 +33,7 @@ export const langText_alcohols = {
             },
             chemical: {
                 title: {
-                    es: 'Industria química<',
+                    es: 'Industria química',
                     en: 'Chemical industry'
                 },
                 clean: {
