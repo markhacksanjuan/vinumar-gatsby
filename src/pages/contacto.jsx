@@ -5,6 +5,7 @@ import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
 
 import '../styles/pages/contacto.css'
+import '../styles/pages/mediaQueries/contacto-media.css'
 
 import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../lang'
@@ -38,8 +39,10 @@ const ContactoPage = (props) => {
                         <textarea name="mensaje" id="mensaje" cols="48" rows="15" placeholder='Mensaje...'></textarea>
                     </div>
                     <div id='checkbox' >
-                        <input type="checkbox" name='rgpd' />
-                        <label for="rgpd">Acepto RGPD</label>
+                        <div className='send-div'>
+                            <input type="checkbox" name='rgpd' />
+                            <label for="rgpd">Acepto RGPD</label>
+                        </div>
                         <Button style='send-button'>ENVIAR</Button>
                     </div>
                 </form>

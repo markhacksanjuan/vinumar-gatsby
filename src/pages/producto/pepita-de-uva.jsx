@@ -5,6 +5,7 @@ import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/pepita.css'
+import '../../styles/pages/mediaQueries/producto-media.css'
 
 import pepitaHeaderImg from '../../images/DEF/BL8A9687.jpg'
 

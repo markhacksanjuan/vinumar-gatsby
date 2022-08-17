@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import '../../styles/pages/valores.css'
+import '../../styles/pages/mediaQueries/valores-media.css'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 

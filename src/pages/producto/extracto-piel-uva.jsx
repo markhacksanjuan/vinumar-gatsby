@@ -15,6 +15,7 @@ import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
 
 import '../../styles/pages/extractos-piel.css'
+import '../../styles/pages/mediaQueries/producto-media.css'
 
 const ExtractosPiel = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -94,9 +95,9 @@ const ExtractosPiel = (props) => {
                             <img className='fit-cover' src={pielProductoLiquido} alt="Liquido" />
                             <div>
                                 <p>VINUPER 3</p>
-                                <div>
+                                <div className='producto-div'>
                                     <p>{langText.skin.products.liquid.text[lang]}</p>
-                                    <ul>
+                                    <ul >
                                         <li>
                                             <p>E3/{langText.skin.products.liquid.colour.title[lang]}</p>
                                             <p>2,9 &#8212; 3,1</p>
@@ -132,7 +133,7 @@ const ExtractosPiel = (props) => {
                     <img className='fit-cover' src={pielProducto1} alt="Polvo" />
                     <div>
                         <p>VINUCAP 12</p>
-                        <div>
+                        <div className='producto-div'>
                             <p>{langText.skin.products.powder.text[lang]}</p>
                             <ul>
                                 <li>

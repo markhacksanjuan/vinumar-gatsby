@@ -6,6 +6,7 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/extractos-uva.css'
+import '../../styles/pages/mediaQueries/producto-media.css'
 
 import uvaHeaderImg from '../../images/DEF/BL8A9790.jpg'
 import vinoProducto1 from '../../images/DEF/BL8A9852.jpg'

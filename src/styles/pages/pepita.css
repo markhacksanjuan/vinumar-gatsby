@@ -5,8 +5,8 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 72.82%;
-    margin-bottom: 60px
+    width: 1440px;
+    margin-bottom: 60px !important
 }
 .pepita-container-header-title {
     display: flex;

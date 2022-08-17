@@ -6,6 +6,7 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/alcoholes.css'
+import '../../styles/pages/mediaQueries/producto-media.css'
 import alcoholesHeaderImg from '../../images/DEF/BL8A4092.jpg'
 
 import alcoholesProductoImg from '../../images/DEF/BL8A9307.jpg'

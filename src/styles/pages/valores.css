@@ -21,11 +21,11 @@
 }
 .valores-content-container {
     border-top: 1px solid black;
-    width: 72.82%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-bottom: 60px
+    margin-bottom: 60px !important
 }
 .valores-content-container h4 {
     margin: 0;

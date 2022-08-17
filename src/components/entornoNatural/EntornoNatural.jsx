@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './entornoNatural.css'
+import './entornoNatural-media.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 
 

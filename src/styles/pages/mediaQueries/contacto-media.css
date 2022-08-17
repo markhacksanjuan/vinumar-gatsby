@@ -1,0 +1,58 @@
+@media (max-width: 1520px) {
+    .contact-content-container {
+        margin: 300px 5% 0 5%;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #gmap_canvas {
+        width: 100% !important
+    }
+    .contact-content-container form,
+    .contact-content-container > div {
+        width: 670px
+    }
+    .contact-content-container > div {
+        margin-top: 15px
+    }
+}
+
+@media (max-width: 760px) {
+    .contact-content-container > div,
+    .contact-content-container form {
+        width: 100%
+    }
+    .contact-content-container form > div > textarea {
+        width: 100% !important
+    }
+    .gmap_canvas {
+        width: 100% !important
+    }
+    .mapouter {
+        height: auto !important;
+        width: auto !important
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-content-container > div > div:first-child {
+        flex-direction: column;
+    }
+    .contact-content-container > div > div:first-child p {
+        margin-top: 15px;
+        width: 100%
+    }
+}
+@media (max-width: 420px) {
+    /* .send-div {
+        display: flex;
+        flex-direction: column;
+    } */
+    .contact-content-container form > div:last-child {
+        flex-direction: column;
+    }
+    .contact-content-container button {
+        margin-left: 0;
+        margin-top: 15px
+    }
+}

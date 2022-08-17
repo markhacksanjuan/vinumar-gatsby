@@ -1,0 +1,28 @@
+@media (max-width: 1520px) {
+    .valores-content-container {
+        margin: 0 5%;
+        width:auto
+    }
+}
+@media (max-width: 1100px) {
+    .valores-content-container > div > div {
+        flex-direction: column;
+    }
+    .valores-content-container > div > div > img,
+    .valores-content-description {
+        width: 100%;
+        margin-top: 15px
+    }
+    .valores-content-container > div > div:last-child {
+        justify-content: center;
+    }
+    .valores-content-card {
+        width: 100%;
+        flex-direction: column;
+    }
+    .valores-content-card img {
+        width: auto;
+        height: 250px;
+        margin: 0 0 15px 0
+    }
+}

@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import '../styles/pages/sostenibilidad.css'
+import '../styles/pages/mediaQueries/sostenibilidad-media.css'
 
 import headerImg from '../images/DEF/DJI_0722-2.jpg'
 import sostenibilidad1 from '../images/DEF/BL8A7152.jpg'
@@ -45,7 +46,7 @@ const SostenibilidadPage = (props) => {
             <>
                 <div className='sostenibilidad-container-main'>
                     <h4>{langText.sustain.sustainability.title[lang]}</h4>
-                    <div>
+                    <div className='sostenibilidad-text'>
                         <p>{langText.sustain.sustainability.parr_1[lang]}
                         <span className="parrafo">{langText.sustain.sustainability.parr_2[lang]}</span>
                         <span className="parrafo">{langText.sustain.sustainability.parr_3[lang]}</span>
@@ -62,10 +63,12 @@ const SostenibilidadPage = (props) => {
                         
                         <img src={sostenibilidad1} alt="sostenibilidad 1" />
                     </div>
-                    <div>
+                    <div className='sostenibilidad-img'>
                         <img src={sostenibilidad2} alt="sostenibilidad 2" />
-                        <p className='sostenibilidad-main-title'>{langText.sustain.chain.title[lang]}</p>
-                        <p>{langText.sustain.chain.text[lang]}</p>
+                        <div>
+                            <p className='sostenibilidad-main-title'>{langText.sustain.chain.title[lang]}</p>
+                            <p>{langText.sustain.chain.text[lang]}</p>
+                        </div>
                     </div>
                 </div>
             </>

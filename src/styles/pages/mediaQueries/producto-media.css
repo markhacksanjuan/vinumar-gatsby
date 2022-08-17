@@ -1,0 +1,125 @@
+@media (max-width: 1520px) {
+    .alcoholes-container-header,
+    .alcoholes-productos-container,
+    .piel-container-header,
+    .piel-productos-container,
+    .uva-container-header,
+    .uva-productos-container,
+    .taninos-container-header,
+    .taninos-productos-container,
+    .pepita-container-header {
+        margin: 300px 5% 0 5%;
+        width: auto
+    }
+    .piel-productos-container > div,
+    .uva-productos-container > div {
+        align-items: center;
+        flex-direction: column;
+    }
+    .taninos-productos-container > div {
+        justify-content: center;
+    }
+}
+@media (max-width: 1100px) {
+    .alcoholes-container-header-title,
+    .alcoholes-header-apli-carac-img-container,
+    .alcoholes-productos-container > div,
+    .piel-container-header-title,
+    .piel-header-apli-carac-img-container,
+    .uva-container-header-title,
+    .uva-header-apli-carac-img-container,
+    .taninos-container-header-title,
+    .taninos-header-apli-carac-img-container,
+    .pepita-container-header-title,
+    .pepita-header-apli-carac-img-container {
+        flex-direction: column;
+    }
+    .alcoholes-container-header-title p,
+    .piel-container-header-title p,
+    .piel-header-img,
+    .uva-container-header-title p,
+    .taninos-container-header-title p,
+    .pepita-container-header-title p {
+        width: 100%;
+        margin-top: 15px
+    }
+    .alcoholes-header-apli-carac-container,
+    .alcoholes-productos-container > div ul,
+    .alcoholes-productos-container > div img,
+    .piel-header-apli-carac-container,
+    .uva-header-apli-carac-container,
+    .taninos-header-apli-carac-container,
+    .pepita-header-apli-carac-container {
+        width: 100%
+    }
+    .alcoholes-header-img,
+    .piel-header-img,
+    .uva-header-img,
+    .taninos-header-img,
+    .pepita-header-img {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0
+    }
+}
+
+@media (max-width: 766px) {
+    .piel-productos-container > div > div,
+    .uva-productos-container > div > div {
+        width: 100%
+    }
+}
+
+@media (max-width: 650px) {
+    .piel-productos-container > div > div > div,
+    .uva-productos-container > div > div > div:first-child,
+    .uva-productos-container > div > div > div > div,
+    .taninos-productos-container > div > div > div {
+        flex-direction: column;
+    }
+    .producto-div {
+        margin-top: 15px
+    }
+    .uva-productos-container > div > div > div > div > ul {
+        width: 100%
+    }
+}
+
+@media (max-width: 600px) {
+    .alcoholes-header-carac-container,
+    .alcoholes-productos-container li,
+    .piel-header-carac-container,
+    .piel-header-apli-container,
+    .taninos-header-apli-container,
+    .taninos-header-carac-container,
+    .pepita-header-apli-container,
+    .pepita-header-carac-container,
+    .uva-header-apli-container,
+    .uva-header-carac-container {
+        flex-direction: column;
+    }
+    .alcoholes-header-carac-container > div,
+    .alcoholes-productos-container li > p:last-child,
+    .piel-header-carac-container > ul,
+    .piel-header-apli-container > ul,
+    .taninos-header-apli-container > ul,
+    .taninos-header-apli-definition,
+    .taninos-header-carac-container > ul,
+    .pepita-header-apli-container > ul,
+    .pepita-header-apli-definition ,
+    .pepita-header-carac-container > ul,
+    .uva-header-apli-container > ul,
+    .uva-header-apli-container > p:last-child,
+    .uva-header-carac-container > ul{
+        width: 100%;
+        margin-top: 15px
+    }
+    .piel-header-apli-definition {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0
+    }
+    .piel-productos-container > div > div > div > div > ul {
+        margin-top: 15px
+    }
+}

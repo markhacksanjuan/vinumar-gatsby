@@ -5,7 +5,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 72.82%;
+    width: 1440px;
 }
 .taninos-container-header-title {
     display: flex;
@@ -89,7 +89,7 @@
 
 .taninos-productos-container {
     border-top: 1px solid black;
-    width: 72.82%;
+    width: 1440px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -110,7 +110,7 @@
     justify-content: space-between;
 }
 .taninos-productos-container > div > div {
-    width: 49%;
+    width: 705px;
     border-top: 1px solid black;
     padding-top: 5px;
 }

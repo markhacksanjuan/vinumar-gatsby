@@ -5,7 +5,7 @@
     justify-content: center;
     margin: auto;
     margin-top: 302px;
-    width: 72.82%;
+    width: 1440px;
 }
 .alcoholes-container-header-title {
     display: flex;
@@ -79,7 +79,7 @@
 }
 
 .alcoholes-productos-container {
-    width: 72.82%;
+    width: 1440px;
     border-top: 1px solid black;
     margin: auto;
     margin-top: 300px;

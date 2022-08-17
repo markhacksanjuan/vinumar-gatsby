@@ -6,6 +6,7 @@ import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 
 import '../../styles/pages/taninos.css'
+import '../../styles/pages/mediaQueries/producto-media.css'
 import taninosHeaderImg from '../../images/DEF/BL8A9614.jpg'
 
 import taninosProductoImg from '../../images/DEF/BL8A9520_2.jpg'
@@ -82,7 +83,7 @@ const Taninos = (props) => {
                     <img className='fit-none' src={taninosProductoImg} alt="Polvo" />
                     <div>
                         <p>VINUPEB P</p>
-                        <div className='taninos-productos-carac'>
+                        <div className='producto-div taninos-productos-carac'>
                             <p>{langText.tannins.products.powder.text[lang]}</p>
                             <ul>
                                 <li>
