@@ -10,6 +10,9 @@
     }
 }
 @media (max-width: 1100px) {
+    .recursos-recursos-container {
+        margin-top: 200px
+    }
     .recursos-recursos-container > div:first-child,
     .recursos-recursos-container > div,
     .recursos-equipo-container > div {
@@ -36,5 +39,10 @@
     .recursos-instalaciones-container div:first-child > p {
         width: 100%;
         margin-top: 15px
+    }
+}
+@media (max-width: 390px) {
+    .recursos-recursos-container {
+        margin-top: 150px
     }
 }

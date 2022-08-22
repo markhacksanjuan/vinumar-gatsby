@@ -188,7 +188,7 @@ const ExtractosPiel = (props) => {
             {renderProductos()}
 
             <TextCentered width='925px' margin='60px'>{langText.skin.centered[lang]}</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>{langText.skin.button[lang]}</Button>
+            <Button style='red-button' width='270' goTo='/contacto'>{langText.skin.button[lang]}</Button>
 
             <EntornoNatural type='piel' />
             <Footer />

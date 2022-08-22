@@ -303,7 +303,7 @@ const Historia = (props) => {
             {renderVinumar()}
             {screenWidth > 800 ? renderCronologia() : renderCronologia2()}
             {renderHistoria()}
-            <Button style='red-button' goTo='/Contacto' >CONTACTA CON NOSOTROS</Button>
+            <Button style='red-button' goTo='/contacto' >{langText.history.button[lang]}</Button>
             <Footer />
 
         </>

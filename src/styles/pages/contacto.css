@@ -52,3 +52,11 @@
 .contact-content-container button {
     margin-left: 130px
 }
+
+.send-div {
+    display: flex;
+    align-items: center;
+}
+.send-div label {
+    align-self: flex-start;
+}

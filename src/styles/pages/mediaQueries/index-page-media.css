@@ -15,8 +15,11 @@
     .index-container-donde {
         flex-direction: column
     }
-    .index-card-donde {
+    /* .index-card-donde {
         margin: auto
+    } */
+    .index-container-header img {
+        margin-top: 200px
     }
 }
 @media (max-width: 1049px) {
@@ -36,10 +39,18 @@
         width: 90%
     }
 }
+@media (max-width: 900px) {
+    .index-donde-img {
+        height: 300px;
+    }
+}
 @media (max-width: 481px) {
     .index-container-header h2 {
         top: -515px;
         font-size: 3rem
+    }
+    .index-container-header img {
+        margin-top: 150px;
     }
 }
 @media (max-width: 391px) {

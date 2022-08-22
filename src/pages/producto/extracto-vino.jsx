@@ -260,7 +260,7 @@ const ExtractosVino = (props) => {
             {renderProductos()}
 
             <TextCentered width='925px' margin='60px'>{langText.wine.centered[lang]} (&gt;30%).</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>{langText.wine.button[lang]}</Button>
+            <Button style='red-button' width='270' goTo='/contacto'>{langText.wine.button[lang]}</Button>
 
             <EntornoNatural type='vino' />
 

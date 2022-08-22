@@ -52,7 +52,7 @@ const IndexPage = () => {
       window.onscroll = () => {
         const factor = window.scrollY
         setScroll(factor)
-        if(factor > 80) { setScrollTextCentered_1(true) }
+        if(factor > 100) { setScrollTextCentered_1(true) }
         if(factor > 400) { setScrollProductos(true) }
         if(factor > 500) { setScrollPiel(true) }
         if(factor > 600) { setScrollVino(true) }
@@ -83,7 +83,7 @@ const IndexPage = () => {
           </div>
           {/* <Button className='index-card-button button-fade-in' style='white-button' goTo='#productos'>VER PRODUCTOS</Button> */}
           <div className="button-fade-in">
-            <Button style='white-button' goTo='#productos'>{langText.index.button_view_products[lang]}</Button>
+            <Button style='white-button-header' goTo='#productos'>{langText.index.button_view_products[lang]}</Button>
           </div>
 
         </div>
@@ -194,7 +194,7 @@ const IndexPage = () => {
       <Layout>
         <div className='index-container'>
           {renderHeader()}
-          <div className={`text-centered-bottom ${scrollTextCentered_1  && 'text-centered-animated-bottom'}`}>
+          <div className={`text-centered-bottom ${scrollTextCentered_1  ? 'text-centered-animated-bottom' : ''}`}>
             <TextCentered>{langText.index.text_centered_top[lang]}</TextCentered>
           </div>
           {renderProductos()}

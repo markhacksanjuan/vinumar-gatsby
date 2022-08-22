@@ -21,6 +21,17 @@
     }
 }
 @media (max-width: 1100px) {
+    .alcoholes-container-header,
+    .alcoholes-productos-container,
+    .piel-container-header,
+    .piel-productos-container,
+    .uva-container-header,
+    .uva-productos-container,
+    .taninos-container-header,
+    .taninos-productos-container,
+    .pepita-container-header {
+        margin-top: 200px
+    }
     .alcoholes-container-header-title,
     .alcoholes-header-apli-carac-img-container,
     .alcoholes-productos-container > div,
@@ -66,7 +77,13 @@
 @media (max-width: 766px) {
     .piel-productos-container > div > div,
     .uva-productos-container > div > div {
-        width: 100%
+        width: 100%;
+        margin-top: 20px
+    }
+    .piel-productos-container > div > div:first-child,
+    .uva-productos-container > div > div:first-child {
+        width: 100%;
+        margin-top: 0
     }
 }
 
@@ -121,5 +138,18 @@
     }
     .piel-productos-container > div > div > div > div > ul {
         margin-top: 15px
+    }
+}
+@media (max-width: 390px) {
+    .alcoholes-container-header,
+    .alcoholes-productos-container,
+    .piel-container-header,
+    .piel-productos-container,
+    .uva-container-header,
+    .uva-productos-container,
+    .taninos-container-header,
+    .taninos-productos-container,
+    .pepita-container-header {
+        margin-top: 150px
     }
 }

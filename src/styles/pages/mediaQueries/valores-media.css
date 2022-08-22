@@ -5,6 +5,9 @@
     }
 }
 @media (max-width: 1100px) {
+    .valores-container-header img {
+        margin-top: 200px
+    }
     .valores-content-container > div > div {
         flex-direction: column;
     }
@@ -24,5 +27,20 @@
         width: auto;
         height: 250px;
         margin: 0 0 15px 0
+    }
+    .valores-container-header p {
+        left: 0;
+        margin: auto 5%;
+        width: auto;
+        top: 440px
+    }
+}
+@media (max-width: 390px) {
+    .valores-container-header img {
+        margin-top: 150px
+    }
+    .valores-container-header p {
+        font-size: 3rem;
+        top: 320px
     }
 }

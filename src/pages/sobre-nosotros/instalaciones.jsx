@@ -191,7 +191,7 @@ const Recursos = (props) => {
             {renderRecursos()}
             {renderEquipo()}
             {renderInstalaciones()}
-            <Button style='red-button' goTo='/Contacto'  >{langText.resources.button[lang]}</Button>
+            <Button style='red-button' goTo='/contacto'  >{langText.resources.button[lang]}</Button>
             <Footer />
         </>
     )

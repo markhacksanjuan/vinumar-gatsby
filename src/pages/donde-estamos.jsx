@@ -102,7 +102,7 @@ const DondePage = ({ uri, location}) => {
                 <Situacion />
 
                 {renderDonde()}
-                <Button style='red-button' goTo='/nosotros/Valores'>{langText.where.button[lang]}</Button>
+                <Button style='red-button' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
                 {renderVentajas()}
             </div>
 

@@ -4,6 +4,7 @@
         margin: 300px 5% 300px 5%;
         width: auto
     }
+
     #div-1970 {
         height: 130px;
     }
@@ -28,9 +29,13 @@
         margin-top: 45px
     }
     .historia-container-header p {
-        margin: auto 5% auto 5%;
+        left: 0;
+        margin: auto 5%;
         width: auto;
-        left: 0
+        top: 440px
+    }
+    .historia-container-header img {
+        margin-top: 200px
     }
 }
 @media (max-width: 1025px) {
@@ -76,9 +81,12 @@
         top: 43%
     }
 }
-@media (max-width: 391px) {
+@media (max-width: 390px) {
     .historia-container-header p {
-        top: 57%;
+        top: 43%;
         font-size: 3rem;
+    }
+    .historia-container-header img {
+        margin-top: 150px
     }
 }

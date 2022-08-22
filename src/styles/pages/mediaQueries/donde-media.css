@@ -24,6 +24,11 @@
         justify-content: space-around;
     }
 }
+@media (max-width: 1100px) {
+    .donde-container-header img {
+        margin-top: 200px
+    }
+}
 @media (max-width: 720px) {
     .donde-container-ubicacion-text {
         flex-direction: column;
@@ -36,6 +41,9 @@
     }
 }
 @media (max-width: 500px) {
+    .donde-container-header img {
+        margin-top: 150px
+    }
     .donde-ventaja-card {
         width: 100%
     }

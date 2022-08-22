@@ -138,7 +138,7 @@ const Taninos = (props) => {
             {renderProductos()}
 
             <TextCentered width='925px' margin='60px'>{langText.tannins.centered[lang]}</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>{langText.tannins.button[lang]}</Button>
+            <Button style='red-button' width='270' goTo='/contacto'>{langText.tannins.button[lang]}</Button>
 
             <EntornoNatural type='taninos' />
             <Footer />

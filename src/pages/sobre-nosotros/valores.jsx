@@ -102,7 +102,7 @@ const Valores = (props) => {
             {renderHeader()}
             <TextCentered>{langText.values.centered[lang]}</TextCentered>
             {renderContent()}
-            <Button style='red-button' width='270px' goTo='/Contacto'>{langText.values.button[lang]}</Button>
+            <Button style='red-button' width='270px' goTo='/contacto'>{langText.values.button[lang]}</Button>
             <Footer />
 
         </>

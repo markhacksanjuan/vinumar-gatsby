@@ -144,7 +144,7 @@ const Alcoholes = (props) => {
             {renderProductos()}
 
             <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
-            <Button style='red-button' width='270' goTo='/Contacto'>{langText.alcohols.button[lang]}</Button>
+            <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
 
             <EntornoNatural type='alcohol' />
             <Footer />

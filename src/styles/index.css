@@ -127,7 +127,7 @@ img.fit-cover {
 }
 
 .image-gallery-bullet {
-    height: 15px !important;
+    height: 12px !important;
 }
 .image-gallery-play-button {
     padding: 0 0 50px 30px
@@ -137,6 +137,19 @@ img.fit-cover {
     height: 600px;
     width: 100% !important
 }
+@media (max-width: 768px) {
+    .image-gallery-bullet {
+        height: 8px !important;
+    }
+}
+@media (max-width: 480px) {
+    .image-gallery-bullet {
+        height: 8px !important;
+        width: 8px !important;
+    }
+}
+
+
 
 /* BURGER */
 .bm-burger-button {

@@ -28,12 +28,28 @@
     }
     .sostenibilidad-img {
         flex-direction: column-reverse;
-    }   
+    }
+    .sostenibilidad-container-header img {
+        margin-top: 200px
+    }
+    .sostenibilidad-container-header p {
+        margin: auto 5%;
+        width: auto;
+        left: 0;
+        font-size: 3rem;
+        top: 450px
+    }
 }
 @media (max-width: 500px) {
     .sostenibilidad-container-header p {
-        font-size: 3rem;
-        width: 90%;
-        left: 3%
+        top: 370px
+    }
+    .sostenibilidad-container-header img {
+        margin-top: 150px
+    }
+}
+@media (max-width: 390px) {
+    .sostenibilidad-container-header p {
+        top: 345px
     }
 }

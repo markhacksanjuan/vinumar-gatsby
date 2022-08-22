@@ -89,7 +89,7 @@ const Pepita = (props) => {
 
             {renderPepitaHeader()}
 
-            <Button style='red-button' width='270' goTo='/Contacto'>{langText.seed.button[lang]}</Button>
+            <Button style='red-button' width='270' goTo='/contacto'>{langText.seed.button[lang]}</Button>
 
             <EntornoNatural type='pepita' />
             <Footer />
