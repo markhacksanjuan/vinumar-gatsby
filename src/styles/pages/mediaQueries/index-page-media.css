@@ -52,6 +52,9 @@
     .index-container-header img {
         margin-top: 150px;
     }
+    .view, .mask {
+        height: 300px !important;
+    }
 }
 @media (max-width: 391px) {
     .index-container-text-card {

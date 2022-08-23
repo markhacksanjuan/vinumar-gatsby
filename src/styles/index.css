@@ -167,7 +167,7 @@ img.fit-cover {
     width: 36px;
 }
 .bm-cross {
-    background: #bdc3c7;
+    background: #555555;
 }
 .bm-menu {
     background: #E7CBCC;
@@ -176,7 +176,7 @@ img.fit-cover {
     font-size: 1.15em;
 }
 .bm-menu-wrap {
-    width: 50% !important
+    width: 60% !important
 }
 .bm-item {
     display: inline-block;
@@ -185,5 +185,16 @@ img.fit-cover {
 @media only screen and (max-width: 541px) {
     .bm-burger-button {
         top: 18px
+    }
+}
+@media (max-width: 280px) {
+    .bm-burger-button {
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 20px;
+    }
+    .bm-menu-wrap {
+        width: 100% !important
     }
 }

@@ -20,3 +20,8 @@
         align-items: center;
     }
 }
+@media (max-width: 280px) {
+    .footer-block {
+        width: 100%
+    }
+}

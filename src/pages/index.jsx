@@ -204,7 +204,7 @@ const IndexPage = () => {
           </div>
         </div>
           <div className={`index-button-mas ${scrollButton && 'fade-in'}`}>
-            <Button text='SABER MÁS SOBRE VINUMAR' goTo='/nosotros/Valores' style='red-button' width='292px'>{langText.index.button_know_more[lang]}</Button>
+            <Button text='SABER MÁS SOBRE VINUMAR' goTo='/sobre-nosotros/valores' style='red-button' width='292px'>{langText.index.button_know_more[lang]}</Button>
           </div>
       </Layout>
     </>

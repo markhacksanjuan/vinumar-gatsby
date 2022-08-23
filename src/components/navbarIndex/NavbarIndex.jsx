@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
 import './navbarIndex-media.css'

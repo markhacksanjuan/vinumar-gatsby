@@ -53,3 +53,8 @@
         top: 345px
     }
 }
+@media (max-width: 280px) {
+    .sostenibilidad-container-header p {
+        font-size: 2rem;
+    }
+}

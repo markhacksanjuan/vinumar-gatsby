@@ -50,7 +50,8 @@
 }
 .donde-container-ubicacion img {
     width: 100%;
-    margin-top: 28px
+    margin-top: 28px;
+    object-fit: cover
 }
 .donde-container-ubicacion-text {
     display: flex;

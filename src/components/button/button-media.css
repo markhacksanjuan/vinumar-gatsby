@@ -16,3 +16,11 @@
         bottom: 215px
     }
 }
+@media (max-width: 280px) {
+    .button-component {
+        margin: auto 5%
+    }
+    .red-button {
+        height: auto;
+    }
+}
