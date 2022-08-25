@@ -43,3 +43,6 @@
 .footer-email {
     margin-top: 0.3rem
 }
+.footer-link:hover, .footer-link-black:hover {
+    color: #A02E33
+}

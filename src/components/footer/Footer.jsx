@@ -35,11 +35,11 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.products.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link to='/producto/extracto-piel-uva'>{langText.footer.products.grape_skin[lang]}</Link></li>
-                            <li><Link to='/producto/extracto-vino'>{langText.footer.products.wine_extracts[lang]}</Link></li>
-                            <li><Link to='/producto/taninos-uva'>{langText.footer.products.tannins[lang]}</Link></li>
-                            <li><Link to='/producto/alcoholes'>{langText.footer.products.alcohols[lang]}</Link></li>
-                            <li><Link to='/producto/pepita-de-uva'>{langText.footer.products.grape_seed[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/producto/extracto-piel-uva'>{langText.footer.products.grape_skin[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/producto/extracto-vino'>{langText.footer.products.wine_extracts[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/producto/taninos-uva'>{langText.footer.products.tannins[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/producto/alcoholes'>{langText.footer.products.alcohols[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/producto/pepita-de-uva'>{langText.footer.products.grape_seed[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -47,26 +47,26 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.about.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link to='/sobre-nosotros/instalaciones'>{langText.footer.about.resources[lang]}</Link></li>
-                            <li><Link to='/sobre-nosotros/nuestra-historia'>{langText.footer.about.history[lang]}</Link></li>
-                            <li><Link to='/sobre-nosotros/valores'>{langText.footer.about.values[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/sobre-nosotros/instalaciones'>{langText.footer.about.resources[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/sobre-nosotros/nuestra-historia'>{langText.footer.about.history[lang]}</Link></li>
+                            <li><Link className='footer-link' to='/sobre-nosotros/valores'>{langText.footer.about.values[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link to='/donde-estamos'>{langText.footer.where[lang]}</Link></p>
+                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to='/donde-estamos'>{langText.footer.where[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link to='/sostenibilidad'>{langText.footer.sustainability[lang]}</Link></p>
+                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to='/sostenibilidad'>{langText.footer.sustainability[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
                     <p className='footer-title'>{langText.footer.policy.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><a href={cookies} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
-                            <li><a href={privacidad} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
-                            <li><a href={avisoLegal} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
-                            <li><a href={fondo} target='_blank'>Fondo Europeo de Desarrollo Regional</a></li>
+                            <li><a className='footer-link' href={cookies} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
+                            <li><a className='footer-link' href={privacidad} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
+                            <li><a className='footer-link' href={avisoLegal} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
+                            <li><a className='footer-link' href={fondo} target='_blank'>Fondo Europeo de Desarrollo Regional</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>
