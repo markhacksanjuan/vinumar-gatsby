@@ -1,7 +1,7 @@
 @media (max-width: 1520px) {
     .historia-crono-container, .historia-vinumar-container,
     .historia-historia-container {
-        margin: 300px 5% 300px 5%;
+        margin: 300px 5% 0 5%;
         width: auto
     }
 
@@ -12,6 +12,16 @@
 @media (max-width: 1440px) {
     #div-2020-2, #div-1994 {
         margin-top: 15px
+    }
+}
+@media (max-width: 1270px) {
+    .historia-container-header img {
+        margin-top: 92px
+    }
+    .historia-h2 {
+        top: 390px;
+        width: 100%;
+        left: 0
     }
 }
 @media (max-width: 1225px) {
@@ -28,15 +38,7 @@
     #div-2020-2, #div-1994, #div-2019 {
         margin-top: 45px
     }
-    .historia-container-header p {
-        left: 0;
-        margin: auto 5%;
-        width: auto;
-        top: 440px
-    }
-    .historia-container-header img {
-        margin-top: 200px
-    }
+
 }
 @media (max-width: 1025px) {
     #div-1993 {
@@ -71,22 +73,46 @@
         width: 100%;
     }
 }
+@media (max-width: 768px) {
+    .historia-vinumar-container, .historia-historia-container {
+        margin-top: 200px
+    }
+    .historia-crono2-container {
+        margin: 200px 5% 0 5% !important
+    }
+    .historia-historia-container {
+        margin-bottom: 150px
+    }
+
+}
 @media (max-width: 700px) {
     #div-2020-2, #div-1994, #div-2019 {
         margin-top: 90px
     }
 }
-@media (max-width: 490px) {
-    .historia-container-header p {
-        top: 43%
+@media (max-width: 600px) {
+    .historia-container-header img {
+        margin-top: 62px
+    }
+    .historia-h2 {
+        top: 350px;
     }
 }
-@media (max-width: 390px) {
-    .historia-container-header p {
-        top: 43%;
-        font-size: 3rem;
+@media (max-width: 470px) {
+    .historia-h2 {
+        font-size: 3rem
     }
+}
+
+@media (max-width: 390px) {
+    .historia-h2 {
+        top: 360px;
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+}
+@media (max-width: 340px) {
     .historia-container-header img {
-        margin-top: 150px
+        margin-top: 39px
     }
 }

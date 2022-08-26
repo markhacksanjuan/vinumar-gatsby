@@ -22,5 +22,6 @@
     }
     .red-button {
         height: auto;
+        border-radius: 35px;
     }
 }

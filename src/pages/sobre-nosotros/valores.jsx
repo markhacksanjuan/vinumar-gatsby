@@ -1,10 +1,11 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import '../../styles/pages/valores.css'
 import '../../styles/pages/mediaQueries/valores-media.css'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
+import ReadMore from '../../components/readMore/ReadMore'
 
 import headerImg from '../../images/selected/Principal DSC00902.jpg'
 import valores1 from '../../images/ilustraciones/Vinumar_Ilustraciones_Tecnologia.jpg'
@@ -20,10 +21,20 @@ import { historyState } from '../../helpers/historyState'
 const Valores = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
-    
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
     useEffect(() =>{
-        // historyState(window.location.state, dispatch)
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize', resizeFunction)
+          }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
     }, [])
+    
     useEffect(() => {
         if(typeof window !== 'undefined'){
             if(lang === 'en'){
@@ -53,10 +64,13 @@ const Valores = (props) => {
                         <div>
                             <p className='valores-content-title'>{langText.values.values.tech.title[lang]}</p>
                             <img src={valores1} alt="Valores" />
-                            <p className='valores-content-description'>{langText.values.values.tech.text_1[lang]}
-                            <br/>
-                            <br/>
-                            {langText.values.values.tech.text_2[lang]}</p>
+                            <ReadMore width={screenWidth} className='valores-content-description'>
+                                <p className='valores-content-description'>{langText.values.values.tech.text_1[lang]}
+                                    <br/>
+                                    <br/>
+                                    {langText.values.values.tech.text_2[lang]}
+                                </p>
+                            </ReadMore>
                         </div>
                         <div>
                             <div className='valores-content-card'>
@@ -64,17 +78,23 @@ const Valores = (props) => {
                                     <p className='valores-content-title'>{langText.values.values.reactivity.title[lang]}</p>
                                     <img src={valores2} alt="Valores" />
                                 </div>
-                                <p>{langText.values.values.reactivity.text_1[lang]}
-                                    <br/>
-                                    <br/>
-                                    {langText.values.values.reactivity.text_2[lang]}</p>
+                                <ReadMore width={screenWidth}>
+                                    <p>
+                                        {langText.values.values.reactivity.text_1[lang]}
+                                        <br/>
+                                        <br/>
+                                        {langText.values.values.reactivity.text_2[lang]}
+                                    </p>
+                                </ReadMore>
                             </div>
                             <div className='valores-content-card'>
                                 <div>
                                     <p className='valores-content-title'>{langText.values.values.confidence.title[lang]}</p>
                                     <img src={valores3} alt="Valores" />
                                 </div>
-                                <p>{langText.values.values.confidence.text[lang]}</p>
+                                <ReadMore width={screenWidth}>
+                                    {langText.values.values.confidence.text[lang]}
+                                </ReadMore>
                             </div>
                             <div className='valores-content-card'>
                                 <div>

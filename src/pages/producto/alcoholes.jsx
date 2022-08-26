@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
@@ -19,9 +19,18 @@ import { historyState } from '../../helpers/historyState'
 const Alcoholes = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
     useEffect(() =>{
-        // historyState(window.location.state, dispatch)
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize', resizeFunction)
+          }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
     }, [])
     useEffect(() => {
         if(typeof window !== 'undefined'){
@@ -146,7 +155,7 @@ const Alcoholes = (props) => {
             <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
             <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
 
-            <EntornoNatural type='alcohol' />
+            <EntornoNatural type='alcohol' width={screenWidth} />
             <Footer />
 
         </>

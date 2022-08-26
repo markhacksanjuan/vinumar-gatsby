@@ -10,7 +10,7 @@
         width: 100%
     }
     .navbar-logo {
-        width: 65% !important
+        width: 214px !important
     }
     .navbar-list-general {
         width: 20%;
@@ -18,10 +18,13 @@
     }
 }
 @media only screen and (max-width: 391px) {
-    .navbar-logo {
-        width: 40% !important
-    }
     .navbar-container > div {
         width: 100%
+    }
+}
+@media (max-width: 340px) {
+    .navbar-logo {
+        width: 150px !important;
+        margin-top: 10px
     }
 }

@@ -39,6 +39,14 @@
         height: 300px;
     }
 }
+@media (max-width: 800px) {
+    .read-more-div {
+        width: 100%
+    }
+    .donde-container-ubicacion-text p:last-child {
+        width: 100%
+    }
+}
 @media (max-width: 720px) {
     .donde-container-ubicacion-text {
         flex-direction: column;

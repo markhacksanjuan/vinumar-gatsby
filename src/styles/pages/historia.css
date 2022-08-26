@@ -7,14 +7,14 @@
     object-fit: cover;
     margin-top: 266px;
 }
-.historia-container-header p {
+.historia-h2 {
     color: white;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
     line-height: 4rem;
     position: absolute;
-    top: 500px;
+    top: 550px;
     width: 40%;
     margin: auto;
     left: 30%

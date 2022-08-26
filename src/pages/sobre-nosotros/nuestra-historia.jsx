@@ -6,6 +6,7 @@ import '../../styles/pages/mediaQueries/historia-media.css'
 import '../../styles/pages/historia-crono2.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 import Button from '../../components/button/Button'
+import ReadMore from '../../components/readMore/ReadMore'
 
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -31,12 +32,16 @@ const Historia = (props) => {
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
     useEffect(() =>{
         if(typeof window !== 'undefined') {
-            window.addEventListener('resize', e => {
-                setScreenWidth(window.screen.width)
-            })
+            window.addEventListener('resize', resizeFunction)
         }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
     }, [])
     useEffect(() => {
         if(typeof window !== 'undefined'){
@@ -89,7 +94,7 @@ const Historia = (props) => {
             <>
                 <div className="historia-container-header">
                     <img src={headerImg} alt="historia" />
-                    <p>{langText.history.header[lang]}</p>
+                    <h2 className='historia-h2'>{langText.history.header[lang]}</h2>
                 </div>
             </>
         )
@@ -100,9 +105,12 @@ const Historia = (props) => {
                 <div className="historia-vinumar-container">
                     <div>
                         <h4>{langText.history.vinumar.title[lang]}</h4>
-                        <p>{langText.history.vinumar.text_1[lang]}
-                            <span className="parrafo">{langText.history.vinumar.text_2[lang]}</span>
-                        </p>
+                        <ReadMore width={screenWidth}>
+                            <p>
+                                {langText.history.vinumar.text_1[lang]}
+                                <span className="parrafo">{langText.history.vinumar.text_2[lang]}</span>
+                            </p>
+                        </ReadMore>
                     </div>
                     {/* {images && <SimpleImageSlider 
                         images={images}
@@ -291,6 +299,8 @@ const Historia = (props) => {
                         showFullscreenButton={false}
                         showBullets={true}
                         autoPlay={true}
+                        slideDuration={1000}
+                        slideInterval={4500}
                     />}
                 </div>
             </>

@@ -1,7 +1,8 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './entornoNatural.css'
 import './entornoNatural-media.css'
 import SimpleImageSlider from 'react-simple-image-slider'
+import ReadMore from '../readMore/ReadMore'
 
 
 import img1 from '../../images/selected/173236994.jpg'
@@ -19,18 +20,15 @@ import imgPepita from '../../images/DEF/BL8A8730.jpg'
 import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 
-const EntornoNatural = ({ type, children, title }) => {
+const EntornoNatural = ({ type, children, title, width }) => {
     const { lang } = useContext(LangStateContext)
     const images = [
         { url: img1 },
         { url: img2 },
         { url: img3 }
     ]
-    // const imagesSlider = [
-    //     { url: sliderImg1 },
-    //     { url: sliderImg2 },
-    //     { url: sliderImg3 }
-    // ]
+    useEffect(() => {
+    }, [])
 
     const titleLang = langText.natural.title[lang]
     const text = langText.natural.text[lang]
@@ -42,7 +40,9 @@ const EntornoNatural = ({ type, children, title }) => {
                 <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <SimpleImageSlider
                         images={images}
@@ -63,7 +63,9 @@ const EntornoNatural = ({ type, children, title }) => {
                 <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -79,7 +81,9 @@ const EntornoNatural = ({ type, children, title }) => {
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -94,7 +98,9 @@ const EntornoNatural = ({ type, children, title }) => {
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -109,7 +115,9 @@ const EntornoNatural = ({ type, children, title }) => {
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />
@@ -124,7 +132,9 @@ const EntornoNatural = ({ type, children, title }) => {
                     <div className='entorno-container'>
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
-                        <p>{text}</p>
+                        <ReadMore width={width}>
+                            {text}
+                        </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
                         <img src={imgAlcohol1} alt="image" />

@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
+import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/sostenibilidad.css'
 import '../styles/pages/mediaQueries/sostenibilidad-media.css'
 
@@ -17,6 +18,19 @@ import { historyState } from '../helpers/historyState'
 const SostenibilidadPage = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
+    useEffect(() =>{
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize', resizeFunction)
+          }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
+    }, [])
 
     useEffect(() =>{
         // historyState(window.location.state, dispatch)
@@ -47,14 +61,18 @@ const SostenibilidadPage = (props) => {
                 <div className='sostenibilidad-container-main'>
                     <h4>{langText.sustain.sustainability.title[lang]}</h4>
                     <div className='sostenibilidad-text'>
-                        <p>{langText.sustain.sustainability.parr_1[lang]}
-                        <span className="parrafo">{langText.sustain.sustainability.parr_2[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_3[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_4[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_5[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_6[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_7[lang]}</span>
-                        <span className="parrafo">{langText.sustain.sustainability.parr_8[lang]}</span></p>
+                        <ReadMore width={screenWidth}>
+                            <p>
+                                {langText.sustain.sustainability.parr_1[lang]}
+                                <span className="parrafo">{langText.sustain.sustainability.parr_2[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_3[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_4[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_5[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_6[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_7[lang]}</span>
+                                <span className="parrafo">{langText.sustain.sustainability.parr_8[lang]}</span>
+                            </p>
+                        </ReadMore>
                         
                         
                         
@@ -80,7 +98,7 @@ const SostenibilidadPage = (props) => {
             <div className='sostenibilidad-container'>
                 {renderHeader()}
                 {renderSostenibilidad()}
-                <Button goTo='/Contacto' style='red-button'>{langText.sustain.button[lang]}</Button>
+                <Button goTo='/contacto' style='red-button'>{langText.sustain.button[lang]}</Button>
             </div>
             <Footer/>
         </>

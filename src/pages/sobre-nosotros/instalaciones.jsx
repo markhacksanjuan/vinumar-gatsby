@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import Button from '../../components/button/Button'
+import ReadMore from '../../components/readMore/ReadMore'
 
 import '../../styles/pages/recursos.css'
 import '../../styles/pages/mediaQueries/recursos-media.css'
@@ -32,10 +33,20 @@ import { historyState } from '../../helpers/historyState'
 const Recursos = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
     useEffect(() =>{
-        // historyState(window.location.state, dispatch)
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize', resizeFunction)
+          }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
     }, [])
+
     useEffect(() => {
         if(typeof window !== 'undefined'){
             if(lang === 'en'){
@@ -91,10 +102,14 @@ const Recursos = (props) => {
                 <div className="recursos-recursos-container">
                     <div>
                         <h4>{langText.resources.technical.title[lang]}</h4>
-                        <p>{langText.resources.technical.text_1[lang]}
-                            <br/>
-                            <br/>
-                            {langText.resources.technical.text_2[lang]}</p>
+                        <ReadMore width={screenWidth}>
+                            <p>
+                                {langText.resources.technical.text_1[lang]}
+                                <br/>
+                                <br/>
+                                {langText.resources.technical.text_2[lang]}
+                            </p>
+                        </ReadMore>
                     </div>
                     <div className='recursos-recursos-tecnicos'>
                         <p>{langText.resources.resources.title[lang]}</p>
@@ -152,6 +167,8 @@ const Recursos = (props) => {
                         showFullscreenButton={false}
                         showBullets={true}
                         autoPlay={true}
+                        slideDuration={1000}
+                        slideInterval={4500}
                     />}
                 </div>
             </>
@@ -180,6 +197,8 @@ const Recursos = (props) => {
                         showFullscreenButton={false}
                         showBullets={true}
                         autoPlay={true}
+                        slideDuration={1000}
+                        slideInterval={4500}
                     />}
                 </div>
             </>

@@ -40,7 +40,7 @@ const ContactoPage = (props) => {
                     </div>
                     <div id='checkbox' >
                         <div className='send-div'>
-                            <input type="checkbox" name='rgpd' />
+                            <input className='input-checkbox' type="checkbox" name='rgpd' />
                             <label for="rgpd">Acepto RGPD</label>
                         </div>
                         <Button style='send-button'>ENVIAR</Button>
@@ -57,8 +57,8 @@ const ContactoPage = (props) => {
                         <h4>Contacta con nosotros</h4>
                         {renderForm()}
                     </div>
-                    <div>
-                        <div>
+                    <div >
+                        <div className='contact-info'>
                             <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, España</p>
                             <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>

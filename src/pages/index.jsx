@@ -5,6 +5,7 @@ import Button from '../components/button/Button'
 import TextCentered from "../components/textCentered/TextCentered"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout/Layout"
+import ReadMore from "../components/readMore/ReadMore"
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -43,7 +44,9 @@ const IndexPage = () => {
 
   useEffect(() => {
     if(typeof window !== 'undefined'){
-      console.log(window.screen)
+      window.addEventListener('resize', e => {
+        setScreenWidth(window.screen.width)
+      })
     }
   }, [])
 
@@ -172,9 +175,12 @@ const IndexPage = () => {
                 <span>Albacete, España</span>
               </p>
               <div className={`index-donde-text ${scrollDonde && 'index-donde-text-animated'}`}>
-                <p>{langText.index.where.text_top[lang]}
-                <span className="parrafo">{langText.index.where.text_bottom[lang]}</span>
-                </p>
+                <ReadMore width={screenWidth}>
+                  <div>
+                    {langText.index.where.text_top[lang]}
+                    <span className='parrafo'>{langText.index.where.text_bottom[lang]}</span>
+                  </div>
+                </ReadMore>
               </div>
             </div>
               <div className="view-donde">

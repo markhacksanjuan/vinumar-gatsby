@@ -17,40 +17,55 @@ const NavbarIndex = ({ scrollPage }) => {
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
     const [showLang, setShowLang] = useState(false)
-    const [scroll, setScroll] = useState('451px')
+    const [scroll, setScroll] = useState()
+    const [size, setSize] = useState('415px')
 
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
+    const scrollFunction = () => {
+        setScroll(window.scrollY)
+        if(window.scrollY > 215) {
+            setSize('214px')
+        }else {
+            const factor = window.scrollY
+            const newScroll = 415 - factor
+            setSize(`${newScroll}px`)
+        }
+    }
+
     useEffect(() => {
         if(typeof window !== 'undefined'){
-
             window.addEventListener('resize', e => {
                 setScreenWidth(window.screen.width)
+                // if(window.screen.width < 1270) {
+                //     setSize('214px')
+                // }else {
+                //     setSize('415px')
+                // }
             })
         }
     }, [])
-
+    
     useEffect(() => {
-        window.addEventListener('scroll', e => {
-            if(screenWidth > 1200){
-                if(window.scrollY > 215 ){
-                    setScroll('214px')
-                }else {
-                    const factor = window.scrollY
-                    const newScroll = 451 - factor
-                    setScroll(`${newScroll}px`)
-                }
-            }else {
-                setScroll('214px')
-            }
-        })
+        // if(screenWidth < 1270) {
+        //     setSize('214px')
+        // }
+        window.addEventListener('scroll', scrollFunction)
     }, [])
+
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined') {
+    //         if(screenWidth < 1270) {
+    //             window.removeEventListener('scroll', scrollFunction)
+    //         }
+    //     }
+    // }, [screenWidth])
 
     const renderLogo = () => {
         return(
             <div>
                 <Link  to='/'>
-                    <img className='navbar-logo' onScroll={onScroll}  src={logo} width={scroll} alt='Logo'/>
+                    <img className='navbar-logo' onScroll={onScroll}  src={logo} width={size} alt='Logo'/>
                 </Link>
             </div>
         )
@@ -217,7 +232,7 @@ const NavbarIndex = ({ scrollPage }) => {
         )
     }
 
-    if(screenWidth > 1100) {
+    if(screenWidth > 1270) {
         return(
             <>
                 <div id="outer-container" className='navbar-container'>

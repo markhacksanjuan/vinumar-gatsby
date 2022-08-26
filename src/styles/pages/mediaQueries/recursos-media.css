@@ -46,3 +46,8 @@
         margin-top: 150px
     }
 }
+@media (max-width: 280px) {
+    .recursos-equipo-container, .recursos-instalaciones-container {
+        margin-top: 200px
+    }
+}

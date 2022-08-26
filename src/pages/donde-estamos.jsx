@@ -1,7 +1,8 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Situacion from '../components/situacion/Situacion'
+import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/dondeEstamos.css'
 import '../styles/pages/mediaQueries/donde-media.css'
 
@@ -22,8 +23,18 @@ import { historyState } from '../helpers/historyState'
 const DondePage = ({ uri, location}) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
-    useEffect(() => {
-        // historyState(props.location.state, dispatch)
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+
+    const resizeFunction = () => {
+        setScreenWidth(window.screen.width)
+    }
+    useEffect(() =>{
+        if(typeof window !== 'undefined'){
+            window.addEventListener('resize', resizeFunction)
+          }
+        return(() => {
+            window.removeEventListener('resize', resizeFunction)
+        })
     }, [])
     useEffect(() => {
         if(typeof window !== 'undefined'){
@@ -58,9 +69,12 @@ const DondePage = ({ uri, location}) => {
                     <div className='donde-container-ubicacion'>
                         <div className='donde-container-ubicacion-text'>
                                 <p>ctra. Munera, 5 02600 Villarrobledo Albacete, España</p>
-                                <p>{langText.where.where.text_top[lang]}
-                                    <span className='parrafo'>{langText.where.where.text_bottom[lang]}</span>
-                                </p>
+                                <ReadMore width={screenWidth}>
+                                    <div className='read-more-div'>
+                                        {langText.where.where.text_top[lang]}
+                                        <span className='parrafo'>{langText.where.where.text_bottom[lang]}</span>
+                                    </div>
+                                </ReadMore>
                         </div>
                         <img src={dondeImg} alt="Donde estamos" />
                     </div>

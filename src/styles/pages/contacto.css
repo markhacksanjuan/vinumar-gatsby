@@ -50,7 +50,7 @@
     margin-right: 12px
 }
 .contact-content-container button {
-    margin-left: 130px
+    margin-left: 320px
 }
 
 .send-div {
@@ -59,4 +59,7 @@
 }
 .send-div label {
     align-self: flex-start;
+}
+.send-div input {
+    accent-color: #A02E33;
 }
