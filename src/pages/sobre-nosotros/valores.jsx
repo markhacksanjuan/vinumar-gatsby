@@ -35,15 +35,15 @@ const Valores = (props) => {
         })
     }, [])
     
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/about-us/values')
-            }else {
-                window.history.pushState({}, '', props.uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/about-us/values')
+    //         }else {
+    //             window.history.pushState({}, '', props.uri)
+    //         }
+    //     }
+    // }, [lang])
 
     const renderHeader = () => {
         return(

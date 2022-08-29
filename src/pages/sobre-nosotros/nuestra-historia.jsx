@@ -43,15 +43,15 @@ const Historia = (props) => {
             window.removeEventListener('resize', resizeFunction)
         })
     }, [])
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/about-us/our-history')
-            }else {
-                window.history.pushState({}, '', props.uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/about-us/our-history')
+    //         }else {
+    //             window.history.pushState({}, '', props.uri)
+    //         }
+    //     }
+    // }, [lang])
 
     const images = [
         { 

@@ -35,15 +35,15 @@ const SostenibilidadPage = (props) => {
     useEffect(() =>{
         // historyState(window.location.state, dispatch)
     }, [])
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/sustainability')
-            }else {
-                window.history.pushState({}, '', props.uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/sustainability')
+    //         }else {
+    //             window.history.pushState({}, '', props.uri)
+    //         }
+    //     }
+    // }, [lang])
 
     const renderHeader = () => {
         return(

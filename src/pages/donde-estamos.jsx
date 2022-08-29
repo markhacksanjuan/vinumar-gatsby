@@ -36,15 +36,15 @@ const DondePage = ({ uri, location}) => {
             window.removeEventListener('resize', resizeFunction)
         })
     }, [])
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/where-we-are')
-            }else {
-                window.history.pushState({}, '', uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/where-we-are')
+    //         }else {
+    //             window.history.pushState({}, '', uri)
+    //         }
+    //     }
+    // }, [lang])
 
     const renderHeader = () => {
         return(

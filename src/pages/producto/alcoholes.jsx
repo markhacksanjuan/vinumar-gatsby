@@ -32,15 +32,15 @@ const Alcoholes = (props) => {
             window.removeEventListener('resize', resizeFunction)
         })
     }, [])
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/product/alcohol')
-            }else {
-                window.history.pushState({}, '', props.uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/product/alcohol')
+    //         }else {
+    //             window.history.pushState({}, '', props.uri)
+    //         }
+    //     }
+    // }, [lang])
 
 
     const renderAlcoholesHeader = () => {

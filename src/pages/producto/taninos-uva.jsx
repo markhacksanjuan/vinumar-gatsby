@@ -32,15 +32,15 @@ const Taninos = (props) => {
         })
     }, [])
 
-    useEffect(() => {
-        if(typeof window !== 'undefined'){
-            if(lang === 'en'){
-                window.history.pushState({}, '', '/product/grape-tannins')
-            }else {
-                window.history.pushState({}, '', props.uri)
-            }
-        }
-    }, [lang])
+    // useEffect(() => {
+    //     if(typeof window !== 'undefined'){
+    //         if(lang === 'en'){
+    //             window.history.pushState({}, '', '/product/grape-tannins')
+    //         }else {
+    //             window.history.pushState({}, '', props.uri)
+    //         }
+    //     }
+    // }, [lang])
 
     const renderTaninosHeader = () => {
         return(
