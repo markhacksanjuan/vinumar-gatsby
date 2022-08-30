@@ -42,8 +42,7 @@
     padding-top: 10px;
     margin-bottom: 70px
 }
-.sostenibilidad-text > img,
-.sostenibilidad-img > img {
+.sostenibilidad-text > img {
     width: 49.3%;
     height: 688px;
     object-fit: cover;
@@ -53,6 +52,10 @@
 }
 .sostenibilidad-img > img {
     margin-right: 22px;
+    object-fit: cover;
+    height: 400px;
+    max-width: 49.3%;
+    min-width: 49.3%
 }
 .sostenibilidad-img div {
     display: flex;

@@ -96,7 +96,8 @@ const Alcoholes = (props) => {
                                         </li>
                                     </ul>
                                         <p>
-                                        {langText.alcohols.header.applications.text[lang]}
+                                            {langText.alcohols.header.applications.text[lang]}
+                                            <span className='block'>{langText.alcohols.header.applications.span[lang]}</span>
                                         </p>
                                 </div>
                             </div>

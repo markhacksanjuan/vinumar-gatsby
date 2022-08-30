@@ -31,7 +31,8 @@ const EntornoNatural = ({ type, children, title, width }) => {
     }, [])
 
     const titleLang = langText.natural.title[lang]
-    const text = langText.natural.text[lang]
+    const text1 = langText.natural.text1[lang]
+    const text2 = langText.natural.text2[lang]
 
     switch(type) {
         case 'slider': 
@@ -41,7 +42,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <SimpleImageSlider
@@ -64,7 +68,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
@@ -82,7 +89,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
@@ -99,7 +109,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
@@ -116,7 +129,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <div className='entorno-img-container'>
@@ -133,7 +149,10 @@ const EntornoNatural = ({ type, children, title, width }) => {
                     <div className='entorno-text-container'>
                         <h4>{titleLang}</h4>
                         <ReadMore width={width}>
-                            {text}
+                            <div>
+                                {text1}
+                                <span className='block'>{text2}</span>
+                            </div>
                         </ReadMore>
                     </div>
                     <div className='entorno-img-container'>

@@ -82,7 +82,7 @@ export const langText_history = {
         },
         text_1: {
             es: 'El recorrido de Vinumar es la histora de una empresa familiar que ha conseguido pasar de ser una empresa local a una compañía de alcance internacional con tesón, valentía y visión.',
-            en: "Vinumar's tour is the story of a family business that has managed to grow from a local company to an international company with tenacity, courage and vision"
+            en: "Vinumar's tour is the story of a family business that has managed to grow from a local company to an international company with tenacity, courage and vision."
         },
         text_2: {
             es: 'La base de nuestro crecimiento es el respeto por el producto, el conocimiento tecnológico y de gestión de los recursos y, fundamentalmente, haber situado siempre en el centro a nuestros clientes.',

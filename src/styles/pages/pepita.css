@@ -54,6 +54,9 @@
     padding-top: 7px;
     padding-bottom: 10px
 }
+.pepita-header-apli-container > ul > li:first-child {
+    padding-top: 0px
+}
 .pepita-header-apli-container > ul > li:last-child {
     border: none
 }
@@ -72,6 +75,9 @@
 }
 .pepita-header-carac-container > ul {
     width: 80%
+}
+.pepita-header-carac-container > ul > li:first-child {
+    padding-top: 0px
 }
 .pepita-header-carac-container > ul > li:last-child {
     border: none

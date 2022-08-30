@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 442px;
+    height: 453px;
     margin-top: 60px;
     padding-top: 10px;
     opacity: 0
@@ -138,6 +138,16 @@
     position: relative
 } */
 
+.index-card-vino {
+    object-position: left -24px;
+}
+.index-card-tanino {
+    object-position: left -86px;
+}
+.index-card-alcohol {
+    object-position: left 0;
+}
+
 
 .view {
     overflow: hidden;
@@ -189,6 +199,7 @@
     position: relative;
     text-align: center;
     cursor: default;
+    margin-top: 28px
     /* width: 60% !important;
     margin-left: 30% */
 }

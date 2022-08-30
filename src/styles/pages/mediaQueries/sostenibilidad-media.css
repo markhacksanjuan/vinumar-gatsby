@@ -29,7 +29,8 @@
     .sostenibilidad-text > img,
     .sostenibilidad-img > img {
         width: 100%;
-        margin: 15px 0 0 0
+        margin: 15px 0 0 0;
+        max-width: 100%;
     }
     .sostenibilidad-img {
         flex-direction: column-reverse;

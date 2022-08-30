@@ -82,7 +82,9 @@ const SostenibilidadPage = (props) => {
                         <img src={sostenibilidad1} alt="sostenibilidad 1" />
                     </div>
                     <div className='sostenibilidad-img'>
-                        <img src={sostenibilidad2} alt="sostenibilidad 2" />
+                            <img src={sostenibilidad2} alt="sostenibilidad 2" />
+                        {/* <div>
+                        </div> */}
                         <div>
                             <p className='sostenibilidad-main-title'>{langText.sustain.chain.title[lang]}</p>
                             <p>{langText.sustain.chain.text[lang]}</p>

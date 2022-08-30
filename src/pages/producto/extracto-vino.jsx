@@ -105,12 +105,12 @@ const ExtractosVino = (props) => {
                             <p>VINUWINE R55L</p>
                             <ul>
                                 <li>
-                                    <p>{langText.wine.products.liquid.red.colour.title[lang]}</p>
+                                    <p>{langText.wine.products.liquid.red.colour.name[lang]}</p>
                                     <p>{langText.wine.products.liquid.red.colour.text[lang]}</p>
                                 </li>
                                 <li>
-                                    <p>E3/{langText.wine.products.liquid.red.colour.title[lang]}</p>
-                                    <p>0,5 &#8212; 1,5</p>
+                                    <p>{langText.wine.products.liquid.red.colour.title[lang]}</p>
+                                    <p>0,50 &#8212; 1,50</p>
                                 </li>
                                 <li>
                                     <p>pH</p>
@@ -118,7 +118,7 @@ const ExtractosVino = (props) => {
                                 </li>
                                 <li>
                                     <p>Brix</p>
-                                    <p>52 &#8212; 58 </p>
+                                    <p>{langText.wine.products.liquid.red.brix.value.v1[lang]} &#8212; {langText.wine.products.liquid.red.brix.value.v2[lang]}</p>
                                 </li>
                                 <li>
                                     <p>{langText.wine.products.liquid.red.packaging.title[lang]}</p>
@@ -152,7 +152,7 @@ const ExtractosVino = (props) => {
                                 </li>
                                 <li>
                                     <p>Brix</p>
-                                    <p>52 &#8212; 58 </p>
+                                    <p>{langText.wine.products.liquid.red.brix.value.v1[lang]} &#8212; {langText.wine.products.liquid.red.brix.value.v2[lang]}</p>
                                 </li>
                                 <li>
                                     <p>{langText.wine.products.liquid.white.packaging.title[lang]}</p>

@@ -45,7 +45,7 @@ export const langText_seed = {
                     en: 'Botanical name'
                 },
                 name: {
-                    es: 'Vitis Vinífera',
+                    es: 'Vitis Vinifera',
                     en: 'Vitis Vinifera (grape)'
                 }
             },

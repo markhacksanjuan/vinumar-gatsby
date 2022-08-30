@@ -45,7 +45,7 @@ export const langText_wine = {
                     en: 'Botanical name'
                 },
                 name: {
-                    es: 'Vitis Vinífera',
+                    es: 'Vitis Vinifera',
                     en: 'Vitis Vinifera (grape)'
                 }
             },
@@ -86,12 +86,28 @@ export const langText_wine = {
                 },
                 colour: {
                     title: {
-                        es: 'Color',
-                        en: 'Colour'
+                        es: 'E3/Color',
+                        en: 'Colour (E3)'
                     },
                     text: {
                         es: 'Marrón rojo',
                         en: 'Brown Red'
+                    },
+                    name: {
+                        es: 'Color',
+                        en: 'Colour'
+                    }
+                },
+                brix : {
+                    value: {
+                        v1: {
+                            es: '52',
+                            en: '52,0'
+                        },
+                        v2: {
+                            es: '58',
+                            en: '58,0'
+                        }
                     }
                 },
                 packaging: {
@@ -108,8 +124,8 @@ export const langText_wine = {
                         en: 'Container	1000 l'
                     },
                     drums: {
-                        es: 'Garrafas 20l, 60 l, 220 l',
-                        en: 'Drums 25l 60l 220l'
+                        es: 'Garrafas 20 l, 60 l, 220 l',
+                        en: 'Drums 25 l, 60 l, 220 l'
                     }
                 }
 
@@ -147,8 +163,8 @@ export const langText_wine = {
                         en: 'Container 1000 l'
                     },
                     drums: {
-                        es: 'Garrafas 60 l, 220 l',
-                        en: 'Drums 25l 60l 220l'
+                        es: 'Garrafas 20 l, 60 l, 220 l',
+                        en: 'Drums 25 l, 60 l, 220 l'
                     }
                 }
             }
@@ -219,7 +235,7 @@ export const langText_wine = {
                 },
                 moisture: {
                     es: 'Humedad',
-                    en: 'Moisutre'
+                    en: 'Moisture'
                 },
                 carrier: {
                     title: {

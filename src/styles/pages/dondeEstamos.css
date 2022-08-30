@@ -74,6 +74,7 @@
 .donde-container-ventajas h4 {
     font-size: 37px;
     margin: 0;
+    padding-top: 15px
 }
 .donde-container-ventaja-card {
     display: flex;

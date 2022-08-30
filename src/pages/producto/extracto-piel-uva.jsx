@@ -74,7 +74,7 @@ const ExtractosPiel = (props) => {
                                         <p>{langText.skin.header.characteristics.botanic.title[lang]}</p>
                                         <p className='italic'>{langText.skin.header.characteristics.botanic.name[lang]}</p>
                                     </li>
-                                    <li className='piel-header-carac-li'>
+                                    <li className='piel-header-carac-li padding-top-10'>
                                         <p>{langText.skin.header.characteristics.labelling.title[lang]}</p>
                                         <ul>
                                             <li>{langText.skin.header.characteristics.labelling.extract[lang]}</li>
@@ -82,7 +82,7 @@ const ExtractosPiel = (props) => {
                                             <li>E-163</li>
                                         </ul>
                                     </li>
-                                    <li className='piel-header-carac-li'>
+                                    <li className='piel-header-carac-li padding-top-10'>
                                         <p>{langText.skin.header.characteristics.solubility.title[lang]}</p>
                                         <p>{langText.skin.header.characteristics.solubility.text[lang]}</p>
                                     </li>
@@ -109,11 +109,11 @@ const ExtractosPiel = (props) => {
                                     <p>{langText.skin.products.liquid.text[lang]}</p>
                                     <ul >
                                         <li>
-                                            <p>E3/{langText.skin.products.liquid.colour.title[lang]}</p>
+                                            <p>{langText.skin.products.liquid.colour.title[lang]}</p>
                                             <p>2,9 &#8212; 3,1</p>
                                         </li>
                                         <li>
-                                            <p>{langText.skin.products.liquid.colour.title[lang]}</p>
+                                            <p>{langText.skin.products.liquid.colour.name[lang]}</p>
                                             <p>{langText.skin.products.liquid.colour.text[lang]}</p>
                                         </li>
                                         <li>
@@ -147,11 +147,11 @@ const ExtractosPiel = (props) => {
                             <p>{langText.skin.products.powder.text[lang]}</p>
                             <ul>
                                 <li>
-                                    <p>E3/{langText.skin.products.powder.colour.title[lang]}</p>
+                                    <p>{langText.skin.products.powder.colour.title[lang]}</p>
                                     <p>11,4 &#8212; 12,6</p>
                                 </li>
                                 <li>
-                                    <p>{langText.skin.products.powder.colour.title[lang]}</p>
+                                    <p>{langText.skin.products.powder.colour.name[lang]}</p>
                                     <p>{langText.skin.products.powder.colour.text[lang]}</p>
                                 </li>
                                 <li>

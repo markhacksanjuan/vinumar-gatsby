@@ -118,7 +118,7 @@ const Recursos = (props) => {
                             <ul className='circle'>
                                 <li>140.000 m<sup>2</sup> {langText.resources.resources.li_1[lang]}</li>
                                 <li>15.000 m<sup>2</sup> {langText.resources.resources.li_2[lang]}</li>
-                                <li>{langText.resources.resources.li_3[lang]}</li>
+                                <li>1.000.000 Hl {langText.resources.resources.li_3[lang]}</li>
                                 <li>{langText.resources.resources.li_4[lang]}</li>
                                 <li>{langText.resources.resources.li_5[lang]}</li>
                                 <li>{langText.resources.resources.li_6[lang]}</li>

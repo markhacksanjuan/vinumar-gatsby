@@ -105,7 +105,7 @@ const Taninos = (props) => {
                                 </li>
                                 <li>
                                     <p>{langText.tannins.products.powder.iron[lang]}</p>
-                                    <p>&gt; 50 ppm</p>
+                                    <p>&lt; 50 ppm</p>
                                 </li>
                                 <li>
                                     <p>{langText.tannins.products.powder.moisture[lang]}</p>

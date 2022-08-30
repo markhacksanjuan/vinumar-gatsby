@@ -74,6 +74,16 @@ const IndexPage = () => {
     } 
   }, [])
 
+  const onClickButtonHeader = () => {
+    setScrollProductos(true)
+    if(typeof window !== 'undefined') {
+      window.scrollBy({
+        top: 1460,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
 
 
   const renderHeader = () => {
@@ -86,14 +96,14 @@ const IndexPage = () => {
           </div>
           {/* <Button className='index-card-button button-fade-in' style='white-button' goTo='#productos'>VER PRODUCTOS</Button> */}
           <div className="button-fade-in">
-            <Button style='white-button-header' goTo='#productos'>{langText.index.button_view_products[lang]}</Button>
+            <Button style='white-button-header' onClickButton={onClickButtonHeader}>{langText.index.button_view_products[lang]}</Button>
           </div>
 
         </div>
       </>
     )
   }
-  const ProductoCard = ({ title, text, image, goTo }) => {
+  const ProductoCard = ({ title, text, image, goTo, className }) => {
     return(
       <>
         {/* <div className={`index-card`}> */}
@@ -102,7 +112,7 @@ const IndexPage = () => {
             <p className='index-text-card'>{text}</p>
           </div>
           <div className="view">
-            <img src={image} className='index-card-img' alt={title} />
+            <img src={image} className={`index-card-img ${className ? className : ''}`} alt={title} />
             <div className="mask">
               <Button className='index-card-button' style='white-button-product' width='164' goTo={goTo}>{langText.index.products.button_more[lang]}</Button>
             </div>
@@ -131,6 +141,7 @@ const IndexPage = () => {
                 text={langText.index.products.wine_extracts.text[lang]}
                 image={extVino}
                 goTo='/producto/extracto-vino'
+                className={'index-card-vino'}
               />
             </div>
             <div className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
@@ -139,6 +150,7 @@ const IndexPage = () => {
                 text={langText.index.products.grape_tannins.text[lang]}
                 image={taninosUva}
                 goTo='/producto/taninos-uva'
+                className={'index-card-tanino'}
               />
             </div>
             <div className={`index-card ${scrollAlcoholes && 'index-card-animated-bottom'}`}>
@@ -147,6 +159,7 @@ const IndexPage = () => {
                 text={langText.index.products.alcohols.text[lang]}
                 image={alcohol}
                 goTo='/producto/alcoholes'
+                className={'index-card-alcohol'}
               />
             </div>
             <div className={`index-card ${scrollPepita && 'index-card-animated-bottom'}`}>

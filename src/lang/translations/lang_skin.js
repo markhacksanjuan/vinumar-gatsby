@@ -57,7 +57,7 @@ export const langText_skin = {
                     en: 'Botanical name'
                 },
                 name: {
-                    es: 'Vitis Vinífera',
+                    es: 'Vitis Vinifera',
                     en: 'Vitis Vinifera (grape)'
                 }
             },
@@ -81,7 +81,7 @@ export const langText_skin = {
                     en: 'Solubility'
                 },
                 text: {
-                    es: 'Los extractos de piel de uva son totalmente solubles en agua y alcohol',
+                    es: 'Los extractos de piel de uva son totalmente solubles en agua y alcohol.',
                     en: 'Grape skin extracts are totally soluble in water and alcohol. '
                 }
             }
@@ -103,12 +103,16 @@ export const langText_skin = {
             },
             colour: {
                 title: {
-                    es: 'Color',
-                    en: 'Colour'
+                    es: 'E3/Color',
+                    en: 'Colour (E3)'
                 },
                 text: {
                     es: 'Rojo oscuro a violeta',
                     en: 'Dark red to violet'
+                },
+                name: {
+                    es: 'Color',
+                    en: 'Colour'
                 }
             },
             packaging: {
@@ -122,11 +126,11 @@ export const langText_skin = {
                 },
                 container: {
                     es: 'Contenedor 1000 l',
-                    en: 'Container	1000l'
+                    en: 'Container	1000 l'
                 },
                 drums: {
-                    es: 'Garrafas 25l, 60 l, 220 l',
-                    en: 'Drums 25l   60l  220l'
+                    es: 'Garrafas 25 l, 60 l, 220 l',
+                    en: 'Drums 25 l, 60 l, 220 l'
                 }
             }
         },
@@ -141,12 +145,16 @@ export const langText_skin = {
             },
             colour: {
                 title: {
-                    es: 'Color',
-                    en: 'Colour'
+                    es: 'E3/Color',
+                    en: 'Colour (E3)'
                 },
                 text: {
                     es: 'Rojo oscuro',
                     en: 'Dark red'
+                },
+                name: {
+                    es: 'Color',
+                    en: 'Colour'
                 }
             },
             moisture: {

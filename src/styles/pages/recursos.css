@@ -44,7 +44,8 @@
 .recursos-recursos-tecnicos img {
     object-fit: cover;
     width: 49.3%;
-    height: 473px;
+    height: 688px;
+    object-position: -133px 0;
 }
 .recursos-recursos-automatizacion {
     border-top: 1px solid black;
