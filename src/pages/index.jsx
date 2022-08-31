@@ -231,3 +231,12 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = (props) => {
+  console.log(props)
+  return (
+    <>
+      <title>Vinumar</title>
+    </>
+  )
+}

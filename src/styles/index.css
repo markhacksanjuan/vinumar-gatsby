@@ -5,6 +5,9 @@
     /* src: url('../public/fonts/ABCDiatype-Light.woff') format('woff'),
         url('../public/fonts/ABCDiatype-Light.woff2') format('woff2') */
 }
+title {
+    display: contents
+}
 body {
     font-family: 'DiatypeLight' !important;
     letter-spacing: 0;

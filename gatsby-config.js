@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "vinumar-web",
+    title: "VINUMAR",
+    description: 'Página oficial de VINUMAR',
+    siteUrl: 'http://www.vinumar.com'
   },
   plugins: [`gatsby-theme-material-ui`, `gatsby-plugin-material-ui`],
 };

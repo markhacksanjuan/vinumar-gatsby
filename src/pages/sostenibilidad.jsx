@@ -107,3 +107,16 @@ const SostenibilidadPage = (props) => {
     )
 }
 export default SostenibilidadPage
+
+export const Head = ({ location, params, data, pageContext }) => {
+    console.log(pageContext)
+    console.log(params)
+    console.log(location)
+    console.log(data)
+    return (
+      <>
+        <title>Vinumar</title>
+        <meta name='description' content='Página oficial de VINUMAR' />
+      </>
+    )
+  }
