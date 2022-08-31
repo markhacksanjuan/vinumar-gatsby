@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import SEO from '../../components/SEO/SEO'
 
 // import images
 import pielHeaderImg from '../../images/DEF/BL8A9583.jpg'
@@ -207,3 +208,10 @@ const ExtractosPiel = (props) => {
     )
 }
 export default ExtractosPiel
+
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
+    return (
+      <SEO pageTitle={langText.head.skin[lang]} />
+    )
+  }

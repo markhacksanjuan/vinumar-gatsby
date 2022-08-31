@@ -3,6 +3,7 @@ import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
+import SEO from '../components/SEO/SEO'
 
 import '../styles/pages/contacto.css'
 import '../styles/pages/mediaQueries/contacto-media.css'
@@ -80,3 +81,10 @@ const ContactoPage = (props) => {
     )
 }
 export default ContactoPage
+
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
+    return (
+      <SEO pageTitle={langText.head.contact[lang]} />
+    )
+  }

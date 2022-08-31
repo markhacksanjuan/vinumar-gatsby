@@ -3,6 +3,7 @@ import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import Button from '../../components/button/Button'
+import SEO from '../../components/SEO/SEO'
 
 import '../../styles/pages/pepita.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -107,3 +108,10 @@ const Pepita = (props) => {
     )
 }
 export default Pepita
+
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
+    return (
+      <SEO pageTitle={langText.head.seed[lang]} />
+    )
+  }

@@ -5,6 +5,7 @@ import Situacion from '../components/situacion/Situacion'
 import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/dondeEstamos.css'
 import '../styles/pages/mediaQueries/donde-media.css'
+import SEO from '../components/SEO/SEO'
 
 import headerImg from '../images/DEF/DJI_0705-2.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
@@ -125,3 +126,10 @@ const DondePage = ({ uri, location}) => {
     )
 }
 export default DondePage
+
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
+    return (
+      <SEO pageTitle={langText.head.where[lang]} />
+    )
+  }

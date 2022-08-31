@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer'
 import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/sostenibilidad.css'
 import '../styles/pages/mediaQueries/sostenibilidad-media.css'
+import SEO from '../components/SEO/SEO'
 
 import headerImg from '../images/DEF/DJI_0722-2.jpg'
 import sostenibilidad1 from '../images/DEF/BL8A7152.jpg'
@@ -108,15 +109,9 @@ const SostenibilidadPage = (props) => {
 }
 export default SostenibilidadPage
 
-export const Head = ({ location, params, data, pageContext }) => {
-    console.log(pageContext)
-    console.log(params)
-    console.log(location)
-    console.log(data)
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
     return (
-      <>
-        <title>Vinumar</title>
-        <meta name='description' content='Página oficial de VINUMAR' />
-      </>
+      <SEO pageTitle={langText.head.sustain[lang]} />
     )
   }

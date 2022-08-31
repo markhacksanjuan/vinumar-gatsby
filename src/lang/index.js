@@ -12,6 +12,7 @@ import { langText_tannins } from './translations/lang_tannins'
 import { langText_values } from './translations/lang_values'
 import { langText_where } from './translations/lang_where'
 import { langText_wine } from'./translations/lang_wine'
+import { langText_head } from "./translations/lang_head";
 
 export const langText = {
     alcohols: langText_alcohols,
@@ -27,5 +28,6 @@ export const langText = {
     tannins: langText_tannins,
     values: langText_values,
     where: langText_where,
-    wine: langText_wine
+    wine: langText_wine,
+    head: langText_head
 }

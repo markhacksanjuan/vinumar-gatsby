@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
+import SEO from '../../components/SEO/SEO'
 
 import '../../styles/pages/taninos.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -156,3 +157,10 @@ const Taninos = (props) => {
     )
 }
 export default Taninos
+
+export const Head = () => {
+    const { lang } = useContext(LangStateContext)
+    return (
+      <SEO pageTitle={langText.head.tannins[lang]} />
+    )
+  }

@@ -6,6 +6,7 @@ import TextCentered from "../components/textCentered/TextCentered"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout/Layout"
 import ReadMore from "../components/readMore/ReadMore"
+import SEO from "../components/SEO/SEO"
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -232,11 +233,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = (props) => {
-  console.log(props)
+export const Head = () => {
   return (
-    <>
-      <title>Vinumar</title>
-    </>
+    <SEO />
   )
 }
