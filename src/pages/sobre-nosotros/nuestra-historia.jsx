@@ -105,7 +105,7 @@ const Historia = (props) => {
                 <div className="historia-vinumar-container">
                     <div>
                         <h4>{langText.history.vinumar.title[lang]}</h4>
-                        <ReadMore width={screenWidth}>
+                        <ReadMore width={screenWidth} lang={lang}>
                             <p>
                                 {langText.history.vinumar.text_1[lang]}
                                 <span className="parrafo">{langText.history.vinumar.text_2[lang]}</span>

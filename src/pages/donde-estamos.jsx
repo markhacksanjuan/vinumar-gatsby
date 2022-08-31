@@ -69,7 +69,7 @@ const DondePage = ({ uri, location}) => {
                     <div className='donde-container-ubicacion'>
                         <div className='donde-container-ubicacion-text'>
                                 <p>ctra. Munera, 5 02600 Villarrobledo Albacete, España</p>
-                                <ReadMore width={screenWidth}>
+                                <ReadMore width={screenWidth} lang={lang}>
                                     <div className='read-more-div'>
                                         {langText.where.where.text_top[lang]}
                                         <span className='parrafo'>{langText.where.where.text_bottom[lang]}</span>

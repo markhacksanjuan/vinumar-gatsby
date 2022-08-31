@@ -1,7 +1,7 @@
 @media (max-width: 1520px) {
     .historia-crono-container, .historia-vinumar-container,
     .historia-historia-container {
-        margin: 300px 5% 0 5%;
+        margin: 300px 5% 100px 5%;
         width: auto
     }
 

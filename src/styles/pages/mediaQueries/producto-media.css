@@ -100,6 +100,9 @@
     .uva-productos-container > div > div > div > div > ul {
         width: 100%
     }
+    .rp {
+        margin-top: 40px
+    }
 }
 
 @media (max-width: 600px) {
@@ -140,6 +143,11 @@
         margin-top: 15px
     }
 }
+@media (max-width: 480px) {
+    .uva-productos-container > div > div > div:first-child {
+        margin-bottom: 15px
+    }
+}
 @media (max-width: 390px) {
     .alcoholes-container-header,
     .alcoholes-productos-container,
@@ -151,5 +159,22 @@
     .taninos-productos-container,
     .pepita-container-header {
         margin-top: 150px
+    }
+    .rp, .b55l {
+        margin-top: 50px
+    }
+    .r55l {
+        margin-top: 30px
+    }
+}
+@media (max-width: 280px) {
+    .r55l, .b55l {
+        margin-top: 45px
+    }
+    .rp {
+        margin-top: 100px
+    }
+    .bp {
+        margin-top: 30px
     }
 }

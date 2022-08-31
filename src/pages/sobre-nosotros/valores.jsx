@@ -64,7 +64,7 @@ const Valores = (props) => {
                         <div>
                             <p className='valores-content-title'>{langText.values.values.tech.title[lang]}</p>
                             <img src={valores1} alt="Valores" />
-                            <ReadMore width={screenWidth} className='valores-content-description'>
+                            <ReadMore width={screenWidth} className='valores-content-description' lang={lang}>
                                 <p className='valores-content-description'>{langText.values.values.tech.text_1[lang]}
                                     <br/>
                                     <br/>
@@ -78,7 +78,7 @@ const Valores = (props) => {
                                     <p className='valores-content-title'>{langText.values.values.reactivity.title[lang]}</p>
                                     <img src={valores2} alt="Valores" />
                                 </div>
-                                <ReadMore width={screenWidth}>
+                                <ReadMore width={screenWidth} lang={lang}>
                                     <p>
                                         {langText.values.values.reactivity.text_1[lang]}
                                         <br/>
@@ -92,7 +92,7 @@ const Valores = (props) => {
                                     <p className='valores-content-title'>{langText.values.values.confidence.title[lang]}</p>
                                     <img src={valores3} alt="Valores" />
                                 </div>
-                                <ReadMore width={screenWidth}>
+                                <ReadMore width={screenWidth} lang={lang}>
                                     {langText.values.values.confidence.text[lang]}
                                 </ReadMore>
                             </div>

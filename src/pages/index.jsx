@@ -188,7 +188,7 @@ const IndexPage = () => {
                 <span>Albacete, España</span>
               </p>
               <div className={`index-donde-text ${scrollDonde && 'index-donde-text-animated'}`}>
-                <ReadMore width={screenWidth}>
+                <ReadMore width={screenWidth} lang={lang}>
                   <div>
                     {langText.index.where.text_top[lang]}
                     <span className='parrafo'>{langText.index.where.text_bottom[lang]}</span>
@@ -199,7 +199,7 @@ const IndexPage = () => {
               <div className="view-donde">
                 <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={dondeImg} alt='Donde estamos' />
                 <div className="mask-donde">
-                  <Button className='index-card-button' style='white-button'  width='164' goTo='/DondeEstamos'>{langText.index.where.button_where[lang]}</Button>
+                  <Button className='index-card-button' style='white-button'  width='164' goTo='/donde-estamos'>{langText.index.where.button_where[lang]}</Button>
                 </div>
               </div>
           </div>

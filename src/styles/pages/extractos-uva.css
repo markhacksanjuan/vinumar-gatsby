@@ -125,7 +125,8 @@
     border-top: 1px solid black
 }
 .uva-productos-container li:first-child{
-    border-top: none
+    border-top: none;
+    padding-top: 0px
 }
 .uva-productos-container > div {
     display: flex;
@@ -213,4 +214,10 @@
 .uva-productos-subtitle {
     padding-top: 10px;
     padding-bottom: 7px
+}
+.r55l {
+    object-position: 0px -40px;
+}
+.b55l {
+    object-position: 0px -54px
 }

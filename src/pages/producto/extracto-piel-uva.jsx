@@ -110,7 +110,7 @@ const ExtractosPiel = (props) => {
                                     <ul >
                                         <li>
                                             <p>{langText.skin.products.liquid.colour.title[lang]}</p>
-                                            <p>2,9 &#8212; 3,1</p>
+                                            <p>{langText.skin.products.liquid.colour.value.v1[lang]} &#8212; {langText.skin.products.liquid.colour.value.v2[lang]}</p>
                                         </li>
                                         <li>
                                             <p>{langText.skin.products.liquid.colour.name[lang]}</p>
@@ -118,7 +118,7 @@ const ExtractosPiel = (props) => {
                                         </li>
                                         <li>
                                             <p>pH</p>
-                                            <p>&lt; 3,0</p>
+                                            <p>&lt; {langText.skin.products.liquid.ph[lang]}</p>
                                         </li>
                                         <li>
                                             <p>{langText.skin.products.liquid.packaging.title[lang]}</p>
@@ -148,7 +148,7 @@ const ExtractosPiel = (props) => {
                             <ul>
                                 <li>
                                     <p>{langText.skin.products.powder.colour.title[lang]}</p>
-                                    <p>11,4 &#8212; 12,6</p>
+                                    <p>{langText.skin.products.powder.colour.value.v1[lang]} &#8212; {langText.skin.products.powder.colour.value.v2[lang]}</p>
                                 </li>
                                 <li>
                                     <p>{langText.skin.products.powder.colour.name[lang]}</p>
@@ -156,7 +156,7 @@ const ExtractosPiel = (props) => {
                                 </li>
                                 <li>
                                     <p>pH</p>
-                                    <p>&lt; 3,5</p>
+                                    <p>&lt; {langText.skin.products.powder.ph[lang]}</p>
                                 </li>
                                 <li>
                                     <p>{langText.skin.products.powder.moisture[lang]}</p>

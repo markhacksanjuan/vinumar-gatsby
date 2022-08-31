@@ -63,7 +63,7 @@ export const langText_tannins = {
             },
             tannins: {
                 es: 'Taninos',
-                en: 'Tannins'
+                en: 'Total Phenols'
             },
             ashes: {
                 es: 'Cenizas',

@@ -34,6 +34,18 @@
         height: auto;
     }
 }
+@media (max-width: 970px) {
+    .donde-container-ubicacion-text {
+        flex-direction: column;
+    }
+    .donde-container-ubicacion-text p:first-child {
+        margin-bottom: 15px;
+    }
+    .donde-container-ubicacion-text p:last-child {
+        margin: 0;
+        width: 100%
+    }
+}
 @media (max-width: 900px) {
     .donde-container-ubicacion img {
         height: 300px;
@@ -48,9 +60,6 @@
     }
 }
 @media (max-width: 720px) {
-    .donde-container-ubicacion-text {
-        flex-direction: column;
-    }
     .donde-container-ubicacion-text p:first-child {
         margin-bottom: 15px
     }

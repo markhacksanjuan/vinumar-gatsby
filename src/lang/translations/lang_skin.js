@@ -106,6 +106,16 @@ export const langText_skin = {
                     es: 'E3/Color',
                     en: 'Colour (E3)'
                 },
+                value: {
+                    v1: {
+                        es: '2,9',
+                        en: '2,90'
+                    },
+                    v2: {
+                        es: '3,1',
+                        en: '3,10'
+                    }
+                },
                 text: {
                     es: 'Rojo oscuro a violeta',
                     en: 'Dark red to violet'
@@ -114,6 +124,10 @@ export const langText_skin = {
                     es: 'Color',
                     en: 'Colour'
                 }
+            },
+            ph: {
+                es: '3,0',
+                en: '3,00'
             },
             packaging: {
                 title: {
@@ -148,6 +162,16 @@ export const langText_skin = {
                     es: 'E3/Color',
                     en: 'Colour (E3)'
                 },
+                value: {
+                    v1: {
+                        es: '11,4',
+                        en: '11,40'
+                    },
+                    v2: {
+                        es: '12,6',
+                        en: '12,60'
+                    }
+                },
                 text: {
                     es: 'Rojo oscuro',
                     en: 'Dark red'
@@ -156,6 +180,10 @@ export const langText_skin = {
                     es: 'Color',
                     en: 'Colour'
                 }
+            },
+            ph: {
+                es: '3,5',
+                en: '3,50'
             },
             moisture: {
                 es: 'Humedad',

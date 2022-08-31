@@ -102,7 +102,7 @@ const Recursos = (props) => {
                 <div className="recursos-recursos-container">
                     <div>
                         <h4>{langText.resources.technical.title[lang]}</h4>
-                        <ReadMore width={screenWidth}>
+                        <ReadMore width={screenWidth} lang={lang}>
                             <p>
                                 {langText.resources.technical.text_1[lang]}
                                 <br/>

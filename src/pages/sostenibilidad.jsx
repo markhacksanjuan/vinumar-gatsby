@@ -61,7 +61,7 @@ const SostenibilidadPage = (props) => {
                 <div className='sostenibilidad-container-main'>
                     <h4>{langText.sustain.sustainability.title[lang]}</h4>
                     <div className='sostenibilidad-text'>
-                        <ReadMore width={screenWidth}>
+                        <ReadMore width={screenWidth} lang={lang}>
                             <p>
                                 {langText.sustain.sustainability.parr_1[lang]}
                                 <span className="parrafo">{langText.sustain.sustainability.parr_2[lang]}</span>

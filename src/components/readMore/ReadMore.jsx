@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import './readMore.css'
 
-const ReadMore = ({ children, width, className }) => {
+const ReadMore = ({ children, width, className, lang }) => {
     const [isReadMore, setIsReadMore] = useState(false)
     const [isComplex, setIsComplex] = useState(false)
     const [isShort, setIsShort] = useState(false)
     const toggleReadMore = () => {
         setIsReadMore(!isReadMore)
+    }
+    const textMore = {
+        es: '...ver más',
+        en: '... read more'
+    }
+    const textLess = {
+        es: 'ver menos',
+        en: 'show less'
     }
 
     useEffect(() => {
@@ -27,7 +35,7 @@ const ReadMore = ({ children, width, className }) => {
     const renderIsShort = () => {
         return (
             <>
-                <span onClick={toggleReadMore} className='read-more'> ...read more</span>
+                <span onClick={toggleReadMore} className='read-more'> {textMore[lang]}</span>
             </>
         )
     }
@@ -35,7 +43,7 @@ const ReadMore = ({ children, width, className }) => {
         return (
             <>
                 <br/>
-                <span onClick={toggleReadMore} className='read-more'>show less</span>
+                <span onClick={toggleReadMore} className='read-more'>{textLess[lang]}</span>
             </>
         )
     }
