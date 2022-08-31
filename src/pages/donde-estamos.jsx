@@ -17,7 +17,7 @@ import Button from '../components/button/Button'
 
 import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../lang'
-import { historyState } from '../helpers/historyState'
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const DondePage = ({ uri, location}) => {
@@ -110,7 +110,7 @@ const DondePage = ({ uri, location}) => {
         <>
             <Navbar width='214px' />
             <div className='donde-container'>
-                {renderHeader()}
+                {headerImg ? renderHeader() : <CircularProgress />}
                 <TextCentered>{langText.where.centered[lang]}</TextCentered>
                 
                 <Situacion />
