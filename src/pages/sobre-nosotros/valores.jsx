@@ -6,7 +6,7 @@ import '../../styles/pages/mediaQueries/valores-media.css'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
-import SEO from '../../components/SEO/SEO'
+import Head from '../../components/Head/Head'
 
 import headerImg from '../../images/selected/Principal DSC00902.jpg'
 import valores1 from '../../images/ilustraciones/Vinumar_Ilustraciones_Tecnologia.jpg'
@@ -119,6 +119,7 @@ const Valores = (props) => {
     }
     return(
         <>
+            <Head pageTitle={langText.head.values[lang]}/>
             <Navbar width='214px' />
             {renderHeader()}
             <TextCentered>{langText.values.centered[lang]}</TextCentered>
@@ -130,10 +131,3 @@ const Valores = (props) => {
     )
 }
 export default Valores
-
-// export const Head = () => {
-//     const { lang } = useContext(LangStateContext)
-//     return (
-//       <SEO pageTitle={langText.head.values[lang]} />
-//     )
-//   }

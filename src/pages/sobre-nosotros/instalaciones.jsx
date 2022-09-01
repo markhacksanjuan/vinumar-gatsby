@@ -3,7 +3,7 @@ import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
-import SEO from '../../components/SEO/SEO'
+import Head from '../../components/Head/Head'
 
 import '../../styles/pages/recursos.css'
 import '../../styles/pages/mediaQueries/recursos-media.css'
@@ -207,6 +207,7 @@ const Recursos = (props) => {
     }
     return(
         <>
+            <Head pageTitle={langText.head.resources[lang]}/>
             <Navbar width='214px' />
             {renderRecursos()}
             {renderEquipo()}
@@ -217,10 +218,3 @@ const Recursos = (props) => {
     )
 }
 export default Recursos
-
-// export const Head = () => {
-//     const { lang } = useContext(LangStateContext)
-//     return (
-//       <SEO pageTitle={langText.head.resources[lang]} />
-//     )
-//   }

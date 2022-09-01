@@ -7,7 +7,7 @@ import '../../styles/pages/historia-crono2.css'
 import SimpleImageSlider from 'react-simple-image-slider'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
-import SEO from '../../components/SEO/SEO'
+import Head from '../../components/Head/Head'
 
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -309,6 +309,7 @@ const Historia = (props) => {
     }
     return(
         <>
+            <Head pageTitle={langText.head.history[lang]}/>
             <Navbar width='214px' />
             {renderHeader()}
             {renderVinumar()}
@@ -321,10 +322,3 @@ const Historia = (props) => {
     )
 }
 export default Historia
-
-// export const Head = () => {
-//     const { lang } = useContext(LangStateContext)
-//     return (
-//       <SEO pageTitle={langText.head.history[lang]} />
-//     )
-//   }

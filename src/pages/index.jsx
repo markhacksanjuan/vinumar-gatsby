@@ -6,7 +6,7 @@ import TextCentered from "../components/textCentered/TextCentered"
 import { Link } from 'gatsby'
 import Layout from "../components/Layout/Layout"
 import ReadMore from "../components/readMore/ReadMore"
-import SEO from "../components/SEO/SEO"
+import Head from "../components/Head/Head"
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -211,6 +211,7 @@ const IndexPage = () => {
 
   return (
     <>
+      <Head/>
       <Layout>
         <div className='index-container'>
           {renderHeader()}

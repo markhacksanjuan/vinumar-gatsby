@@ -1,11 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../components/navbarIndex/NavbarIndex'
-import Footer from '../components/footer/Footer'
 import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/sostenibilidad.css'
 import '../styles/pages/mediaQueries/sostenibilidad-media.css'
-import SEO from '../components/SEO/SEO'
 import Head from '../components/Head/Head'
+// import Head from '../components/Head/Head'
 import Layout from '../components/Layout/Layout'
 
 import headerImg from '../images/DEF/DJI_0722-2.jpg'
@@ -16,7 +14,6 @@ import Button from '../components/button/Button'
 
 import { LangStateContext, LangDispatchContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../lang'
-import { historyState } from '../helpers/historyState'
 
 const SostenibilidadPage = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -99,7 +96,8 @@ const SostenibilidadPage = (props) => {
     }
     return(
         <>
-            <Head lang={lang} />
+            {/* <Head lang={lang} /> */}
+            <Head pageTitle={langText.head.sustain[lang]}/>
             <Layout>
             <div className='sostenibilidad-container'>
                 {renderHeader()}
@@ -111,12 +109,3 @@ const SostenibilidadPage = (props) => {
     )
 }
 export default SostenibilidadPage
-
-// export const Head = () => {
-//     const context = useContext(LangStateContext)
-//     return (
-//         <>
-//             <SEO/>
-//         </>
-//     )
-// }

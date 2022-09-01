@@ -23,11 +23,13 @@
     "@mui/styles": "^5.0.2",
     "gatsby": "^4.22.0",
     "gatsby-plugin-material-ui": "^4.0.2",
+    "gatsby-plugin-react-helmet": "^5.22.0",
     "gatsby-theme-material-ui": "^5.1.0",
     "hamburger-react": "^2.4.1",
     "react": "^17.0.1",
     "react-burger-menu": "^3.0.8",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-image-gallery": "^1.2.8",
     "react-router-dom": "^5.3.0",
     "react-simple-image-slider": "^2.3.0"
