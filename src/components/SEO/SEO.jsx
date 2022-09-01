@@ -25,7 +25,6 @@ const SEO = ({ title, description, pathname, children, pageTitle }) => {
             </>
         }
     }
-    console.log(pageTitle)
 
     return (
         <>
