@@ -5,6 +5,8 @@ import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/sostenibilidad.css'
 import '../styles/pages/mediaQueries/sostenibilidad-media.css'
 import SEO from '../components/SEO/SEO'
+import Head from '../components/Head/Head'
+import Layout from '../components/Layout/Layout'
 
 import headerImg from '../images/DEF/DJI_0722-2.jpg'
 import sostenibilidad1 from '../images/DEF/BL8A7152.jpg'
@@ -97,21 +99,24 @@ const SostenibilidadPage = (props) => {
     }
     return(
         <>
-            <Navbar/>
+            <Head lang={lang} />
+            <Layout>
             <div className='sostenibilidad-container'>
                 {renderHeader()}
                 {renderSostenibilidad()}
                 <Button goTo='/contacto' style='red-button'>{langText.sustain.button[lang]}</Button>
             </div>
-            <Footer/>
+            </Layout>
         </>
     )
 }
 export default SostenibilidadPage
 
 // export const Head = () => {
-//     const { lang } = useContext(LangStateContext)
+//     const context = useContext(LangStateContext)
 //     return (
-//       <SEO pageTitle={langText.head.sustain[lang]} />
+//         <>
+//             <SEO/>
+//         </>
 //     )
-//   }
+// }
