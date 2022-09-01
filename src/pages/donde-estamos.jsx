@@ -127,9 +127,9 @@ const DondePage = ({ uri, location}) => {
 }
 export default DondePage
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.where[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.where[lang]} />
+//     )
+//   }

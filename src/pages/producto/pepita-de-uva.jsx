@@ -109,9 +109,9 @@ const Pepita = (props) => {
 }
 export default Pepita
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.seed[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.seed[lang]} />
+//     )
+//   }

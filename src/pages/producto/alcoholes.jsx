@@ -165,9 +165,9 @@ const Alcoholes = (props) => {
 }
 export default Alcoholes
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.alcohols[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.alcohols[lang]} />
+//     )
+//   }

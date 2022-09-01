@@ -82,9 +82,9 @@ const ContactoPage = (props) => {
 }
 export default ContactoPage
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.contact[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.contact[lang]} />
+//     )
+//   }

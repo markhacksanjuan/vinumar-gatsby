@@ -322,9 +322,9 @@ const Historia = (props) => {
 }
 export default Historia
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.history[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.history[lang]} />
+//     )
+//   }

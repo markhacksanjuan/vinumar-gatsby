@@ -109,9 +109,9 @@ const SostenibilidadPage = (props) => {
 }
 export default SostenibilidadPage
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.sustain[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.sustain[lang]} />
+//     )
+//   }

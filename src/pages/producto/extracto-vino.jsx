@@ -281,9 +281,9 @@ const ExtractosVino = (props) => {
 }
 export default ExtractosVino
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.wine[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.wine[lang]} />
+//     )
+//   }

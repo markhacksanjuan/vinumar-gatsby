@@ -209,9 +209,9 @@ const ExtractosPiel = (props) => {
 }
 export default ExtractosPiel
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.skin[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.skin[lang]} />
+//     )
+//   }

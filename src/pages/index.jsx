@@ -233,8 +233,8 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => {
-  return (
-    <SEO />
-  )
-}
+// export const Head = () => {
+//   return (
+//     <SEO />
+//   )
+// }

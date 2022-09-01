@@ -131,9 +131,9 @@ const Valores = (props) => {
 }
 export default Valores
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.values[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.values[lang]} />
+//     )
+//   }

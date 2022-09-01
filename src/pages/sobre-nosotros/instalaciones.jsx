@@ -218,9 +218,9 @@ const Recursos = (props) => {
 }
 export default Recursos
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.resources[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.resources[lang]} />
+//     )
+//   }

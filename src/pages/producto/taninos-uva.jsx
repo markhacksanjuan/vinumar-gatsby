@@ -158,9 +158,9 @@ const Taninos = (props) => {
 }
 export default Taninos
 
-export const Head = () => {
-    const { lang } = useContext(LangStateContext)
-    return (
-      <SEO pageTitle={langText.head.tannins[lang]} />
-    )
-  }
+// export const Head = () => {
+//     const { lang } = useContext(LangStateContext)
+//     return (
+//       <SEO pageTitle={langText.head.tannins[lang]} />
+//     )
+//   }
