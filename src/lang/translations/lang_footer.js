@@ -71,6 +71,14 @@ export const langText_footer = {
         legal: {
             es: 'Aviso legal',
             en: 'Legal Notice'
+        },
+        found: {
+            es: 'Fondo Europeo Agrícola de Desarrollo Rural',
+            en: 'European Agricultural Fund for Rural Development'
         }
+    },
+    spain: {
+        es: 'España',
+        en: 'Spain'
     }
 }

@@ -11,7 +11,7 @@ export const langText_wine = {
         application: {
             title: {
                 es: 'Aplicaciones',
-                en: 'Application'
+                en: 'Applications'
             },
             li_1: {
                 es: 'Salsas',
@@ -125,7 +125,7 @@ export const langText_wine = {
                     },
                     drums: {
                         es: 'Garrafas 20 l, 60 l, 220 l',
-                        en: 'Drums 25 l, 60 l, 220 l'
+                        en: 'Drums 20 l, 60 l, 220 l'
                     }
                 }
 
@@ -146,7 +146,7 @@ export const langText_wine = {
                     },
                     name: {
                         es: 'Marrón amarillento',
-                        en: 'Light brown'
+                        en: 'Yellowish-Light brown'
                     }
                 },
                 packaging: {
@@ -164,7 +164,7 @@ export const langText_wine = {
                     },
                     drums: {
                         es: 'Garrafas 20 l, 60 l, 220 l',
-                        en: 'Drums 25 l, 60 l, 220 l'
+                        en: 'Drums 20 l, 60 l, 220 l'
                     }
                 }
             }

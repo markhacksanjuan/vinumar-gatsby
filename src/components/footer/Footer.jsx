@@ -8,6 +8,8 @@ import cookies from '../../legal/COOKIES.pdf'
 import fondo from '../../legal/FONDO.pdf'
 import privacidad from '../../legal/PRIVACIDAD.pdf'
 
+import eu from '../../images/eu.png'
+
 import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 
@@ -22,7 +24,7 @@ const Footer = () => {
                         <ul className='footer-list-contact'>
                             <li>ctra. Munera, 5</li>
                             <li>02600 Villarrobledo</li>
-                            <li>Albacete, España</li>
+                            <li>Albacete, {langText.footer.spain[lang]}</li>
                         </ul>
                         <ul className='footer-list-contact'>
                             <li>T +34 967141500</li>
@@ -66,7 +68,7 @@ const Footer = () => {
                             <li><a className='footer-link' href={cookies} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
                             <li><a className='footer-link' href={privacidad} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
                             <li><a className='footer-link' href={avisoLegal} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
-                            <li><a className='footer-link' href={fondo} target='_blank'>Fondo Europeo de Desarrollo Regional</a></li>
+                            <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{langText.footer.policy.found[lang]}</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>

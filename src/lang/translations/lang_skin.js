@@ -15,7 +15,7 @@ export const langText_skin = {
         application: {
             title: {
                 es: 'Aplicaciones',
-                en: 'Application'
+                en: 'Applications'
             },
             li_1: {
                 es: 'Bebidas y licores',
@@ -202,7 +202,7 @@ export const langText_skin = {
         }
     },
     centered: {
-        es: 'También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.',
+        es: 'También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas, con o sin maltodextrina.',
         en: 'We also offer customized products, adapting the level of concentration according to the required needs, with or without maltodextrin.'
     },
     button: {

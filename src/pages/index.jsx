@@ -78,11 +78,48 @@ const IndexPage = () => {
   const onClickButtonHeader = () => {
     setScrollProductos(true)
     if(typeof window !== 'undefined') {
-      window.scrollBy({
-        top: 1460,
-        left: 0,
-        behavior: 'smooth'
-      })
+      if(screenWidth < 281) {
+        window.scrollBy({
+          top: 1260,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+      else if(screenWidth < 426) {
+        window.scrollBy({
+          top: 1580,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+      else if(screenWidth < 769) {
+        window.scrollBy({
+          top: 1380,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+      else if(screenWidth < 1025) {
+        window.scrollBy({
+          top: 1280,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+      else if(screenWidth < 1441) {
+        window.scrollBy({
+          top: 1460,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
+      else {
+        window.scrollBy({
+          top: 1460,
+          left: 0,
+          behavior: 'smooth'
+        })
+      }
     }
   }
 
@@ -186,7 +223,7 @@ const IndexPage = () => {
             <div className={`index-container-donde-text `}>
               <p className={`index-donde-direccion ${scrollDonde && 'index-donde-direccion-animated'}`}>ctra. Munera, 5
                 <span>02600 Villarrobledo</span>
-                <span>Albacete, España</span>
+                <span>Albacete, {langText.index.spain[lang]}</span>
               </p>
               <div className={`index-donde-text ${scrollDonde && 'index-donde-text-animated'}`}>
                 <ReadMore width={screenWidth} lang={lang}>

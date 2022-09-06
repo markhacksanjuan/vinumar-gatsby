@@ -23,7 +23,7 @@ export const langText_index = {
                 },
                 text: {
                     es: 'Es uno de los colorantes naturales más destacados en el mundo de la alimentación. El extracto de piel de uva permite una amplia variedad de usos en todos sus tonos de color.',
-                    en: 'It is one of the most distinguished natural colourants in the world of food. Grape skin extract allows a wide variety of uses in all its colour tones.'
+                    en: 'It is one of the most distinguished natural colourings in the world of food. Grape skin extract allows a wide variety of uses in all its colour tones.'
                 }
             },
             wine_extracts: {
@@ -96,5 +96,9 @@ export const langText_index = {
         button_know_more: {
             es: 'SABER MÁS SOBRE VINUMAR',
             en: 'FIND OUT MORE ABOUT VINUMAR'
+        },
+        spain: {
+            es: 'España',
+            en: 'Spain'
         }
 }

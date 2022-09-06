@@ -56,7 +56,7 @@ export const langText_history = {
         },
         text_1989: {
             es: 'Primeros ensayos en investigación sobre la extracción de colorantes a partir de la piel de uva.',
-            en: 'First tests in research on the colourant extraction from grape skins.'
+            en: 'First tests in research on the colour extraction from grape skins.'
         },
         text_1994: {
             es: 'Implantación de la primera Estación depuradora de aguas residuales (EDAR).',

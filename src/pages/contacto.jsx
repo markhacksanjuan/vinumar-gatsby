@@ -33,18 +33,18 @@ const ContactoPage = (props) => {
         return(
             <>
                 <form action="submit">
-                    <p>Formulario</p>
-                    <input type="text" name='name' placeholder="Nombre y Apellidos" />
-                    <input type="email" placeholder="correo@electronico.com" />
+                    <p>{langText.contact.form.title[lang]}</p>
+                    <input type="text" name='name' placeholder={langText.contact.form.name[lang]} />
+                    <input type="email" placeholder={langText.contact.form.email[lang]} />
                     <div>
-                        <textarea name="mensaje" id="mensaje" cols="48" rows="15" placeholder='Mensaje...'></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
                     </div>
                     <div id='checkbox' >
                         <div className='send-div'>
                             <input className='input-checkbox' type="checkbox" name='rgpd' />
-                            <label for="rgpd">Acepto RGPD</label>
+                            <label for="rgpd">{langText.contact.form.accept[lang]}</label>
                         </div>
-                        <Button style='send-button'>ENVIAR</Button>
+                        <Button style='send-button'>{langText.contact.form.send[lang]}</Button>
                     </div>
                 </form>
             </>
@@ -55,12 +55,12 @@ const ContactoPage = (props) => {
             <>
                 <div className='contact-content-container'>
                     <div>
-                        <h4>Contacta con nosotros</h4>
+                        <h4>{langText.contact.title[lang]}</h4>
                         {renderForm()}
                     </div>
                     <div >
                         <div className='contact-info'>
-                            <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, España</p>
+                            <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, {langText.contact.spain[lang]}</p>
                             <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>
                         </div>

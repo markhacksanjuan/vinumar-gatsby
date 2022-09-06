@@ -59,7 +59,6 @@ const ExtractosVino = (props) => {
                                 <p className='uva-header-apli-carac-title'>{langText.wine.header.application.title[lang]}</p>
                                 <ul>
                                     <li>{langText.wine.header.application.li_1[lang]}</li>
-                                    <li>Caldos</li>
                                     <li>{langText.wine.header.application.li_2[lang]}</li>
                                     <li>{langText.wine.header.application.li_3[lang]}</li>
                                     <li>{langText.wine.header.application.li_4[lang]}</li>

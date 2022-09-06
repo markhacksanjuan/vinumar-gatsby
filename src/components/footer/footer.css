@@ -46,3 +46,9 @@
 .footer-link:hover, .footer-link-black:hover {
     color: #A02E33
 }
+.eu-logo {
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+    margin-top: 3px
+}
