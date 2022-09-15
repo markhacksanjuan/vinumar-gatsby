@@ -22,7 +22,7 @@ export const langText_contact = {
         },
         accept: {
             es: 'Soy mayor de 14 y he leído y acepto la Política de privacidad',
-            en: 'Accept GDPR'
+            en: 'I am over 14 and I have read and accept the Privacy Policy'
         },
         send: {
             es: 'Enviar',
