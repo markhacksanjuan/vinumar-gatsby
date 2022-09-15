@@ -159,6 +159,8 @@ const Alcoholes = (props) => {
             <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
 
             <EntornoNatural type='alcohol' width={screenWidth} />
+
+            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
             <Footer />
 
         </>

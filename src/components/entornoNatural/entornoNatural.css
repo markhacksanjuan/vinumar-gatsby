@@ -24,7 +24,8 @@
 .entorno-img-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 90px
 }
 .entorno-img-container img {
     width: 49.2%;

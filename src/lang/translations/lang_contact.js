@@ -21,7 +21,7 @@ export const langText_contact = {
             en: 'Message...'
         },
         accept: {
-            es: 'Acepto RGPD',
+            es: 'Soy mayor de 14 y he leído y acepto la Política de privacidad',
             en: 'Accept GDPR'
         },
         send: {

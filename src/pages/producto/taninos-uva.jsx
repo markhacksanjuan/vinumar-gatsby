@@ -152,6 +152,9 @@ const Taninos = (props) => {
             <Button style='red-button' width='270' goTo='/contacto'>{langText.tannins.button[lang]}</Button>
 
             <EntornoNatural type='taninos' width={screenWidth} />
+
+            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+
             <Footer />
 
         </>

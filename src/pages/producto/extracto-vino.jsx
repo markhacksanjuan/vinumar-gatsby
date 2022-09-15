@@ -274,6 +274,8 @@ const ExtractosVino = (props) => {
 
             <EntornoNatural type='vino' width={screenWidth} />
 
+            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+
             <Footer />
 
         </>

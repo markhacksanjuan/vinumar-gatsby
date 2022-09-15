@@ -103,6 +103,9 @@ const Pepita = (props) => {
             <Button style='red-button' width='270' goTo='/contacto'>{langText.seed.button[lang]}</Button>
 
             <EntornoNatural type='pepita' width={screenWidth} />
+
+            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+
             <Footer />
 
         </>

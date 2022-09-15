@@ -16,7 +16,7 @@
         margin-top: 15px
     }
     .contact-info {
-        margin-top: 50px
+        margin-top: 130px
     }
 }
 @media (max-width: 1270px) {
@@ -52,19 +52,21 @@
     }
 }
 @media (max-width: 460px) {
-    .contact-content-container button {
-        margin-left: 150px
+    .send-div label {
+        padding-top: 0px
     }
 }
 @media (max-width: 420px) {
-    .contact-info {
-        margin-top: 100px
-    }
     .contact-content-container form > div:last-child {
         flex-direction: column;
     }
+
+}
+@media (max-width: 280px) {
     .contact-content-container button {
-        margin-left: 0;
-        margin-top: 15px
+        margin-top: 70px
+    }
+    .contact-info {
+        margin-top: 170px
     }
 }

@@ -21,6 +21,7 @@ import taninosUva from '../images/DEF/BL8A9520_1.jpg'
 import alcohol from '../images/DEF/BL8A9307.jpg'
 import pepitas from '../images/DEF/BL8A9093.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
+import dondeImg_en from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3.jpg'
 
 import { LangStateContext } from '../components/GlobalContextProvider/GlobalContextProvider'
 
@@ -235,7 +236,7 @@ const IndexPage = () => {
               </div>
             </div>
               <div className="view-donde">
-                <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={dondeImg} alt='Donde estamos' />
+                <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={lang === 'es' ? dondeImg : dondeImg_en} alt='Donde estamos' />
                 <div className="mask-donde">
                   <Button className='index-card-button' style='white-button'  width='164' goTo='/donde-estamos'>{langText.index.where.button_where[lang]}</Button>
                 </div>

@@ -9,6 +9,7 @@ import Head from '../components/Head/Head'
 
 import headerImg from '../images/DEF/DJI_0705-2.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
+import dondeImg_en from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3.jpg'
 import ventaja1 from '../images/ilustraciones/Vinumar_Ilustraciones_Cercania.jpg'
 import ventaja2 from '../images/ilustraciones/Vinumar_Ilustraciones_Rapidez.jpg'
 import ventaja3 from '../images/ilustraciones/Vinumar_Ilustraciones_Innovacion.jpg'
@@ -77,7 +78,7 @@ const DondePage = ({ uri, location}) => {
                                     </div>
                                 </ReadMore>
                         </div>
-                        <img src={dondeImg} alt="Donde estamos" />
+                        <img src={lang === 'es' ? dondeImg : dondeImg_en} alt="Donde estamos" />
                     </div>
                 </div>
             </>
