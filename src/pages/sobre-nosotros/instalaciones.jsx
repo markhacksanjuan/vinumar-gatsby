@@ -16,7 +16,7 @@ import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
 
 import img1 from '../../images/DEF/BL8A8997.jpg'
-import img2 from '../../images/DEF/BL8A8603.jpg'
+import img2 from '../../images/DEF/BL8A7656.jpg'
 import img3 from '../../images/DEF/BL8A8820.jpg'
 // import img4 from '../../images/selected/Nuestroequipo4DSC06860.jpg'
 // import img5 from '../../images/selected/Nuestroequipo5DSC06804.jpg'

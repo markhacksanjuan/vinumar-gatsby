@@ -2,6 +2,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '../../hook/useSiteMetadata'
 
+import favicon from '../../images/favicon/favicon.ico'
+
 const Head = ({ title, description, pathname, children, pageTitle }) => {
     const {
         title: defaultTitle,
@@ -35,6 +37,8 @@ const Head = ({ title, description, pathname, children, pageTitle }) => {
                 {/* {renderTitle()} */}
                 {pageTitle ? <title>{seo.title} - {pageTitle}</title> : <title>{seo.title}</title>}
                 <meta name='description' content={seo.description} />
+                <link rel='icon' href={favicon} />
+                <meta name='icon' href={favicon} />
             </Helmet>
         </>
     )

@@ -3,10 +3,15 @@ import { Link } from 'gatsby'
 import './footer.css'
 import './footer-media.css'
 
-import avisoLegal from '../../legal/AVISO_LEGAL.pdf'
-import cookies from '../../legal/COOKIES.pdf'
-import fondo from '../../legal/FONDO.pdf'
-import privacidad from '../../legal/PRIVACIDAD.pdf'
+import avisoLegal from '../../legal/spanish/Aviso_legal_PDF.pdf'
+import cookies from '../../legal/spanish/Política_de_cookies_PDF.pdf'
+import privacidad from '../../legal/spanish/Política de privacidad_2_PDF.pdf'
+
+import fondo from '../../legal/Fondo_Europeo_de_Desarrollo_Regional_PDF.pdf'
+
+import legalNotice from '../../legal/english/Legal_Notice_PDF.pdf'
+import cookiesPolicy from '../../legal/english/Cookies_Policy_PDF.pdf'
+import privacyPolicy from '../../legal/english/Privacy_Policy_2_PDF.pdf'
 
 import eu from '../../images/eu.png'
 
@@ -65,9 +70,9 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.policy.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><a className='footer-link' href={cookies} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
-                            <li><a className='footer-link' href={privacidad} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
-                            <li><a className='footer-link' href={avisoLegal} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? cookies : cookiesPolicy} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
                             <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{langText.footer.policy.found[lang]}</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
