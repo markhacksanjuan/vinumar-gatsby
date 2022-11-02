@@ -58,8 +58,8 @@ export const langText_tannins = {
                 en: 'Powder'
             },
             text: {
-                es: 'Taninos condensados de alto peso molecular extraídos exclusivamente de la piel de uva blanca seleccionada.',
-                en: 'Condensed tannins of high molecular weight extracted exclusively from selected white grape skins.'
+                es: 'Taninos condensados de bajo peso molecular extraídos exclusivamente de la pepita de uva blanca seleccionada.',
+                en: 'Condensed tannins of low molecular weight extracted exclusively from selected white grape seeds.'
             },
             tannins: {
                 es: 'Taninos',
@@ -90,8 +90,8 @@ export const langText_tannins = {
     }
     },
     centered: {
-        es: 'También ofrecemos productos personalizados, adaptando el nivel de concentración según las necesidades requeridas.',
-        en: 'We also offer customized products, adapting the level of concentration according to the required needs.'
+        es: 'También ofrecemos taninos de piel de uva blanca seleccionada, de alto peso molecular.',
+        en: 'We also offer selected white grape skin tannins of high molecular weight.'
     },
     button: {
         es: 'CONTACTA CON NOSOTROS',

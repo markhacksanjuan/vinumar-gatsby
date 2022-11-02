@@ -92,7 +92,7 @@ const Taninos = (props) => {
                     <p>{langText.tannins.products.powder.title[lang]}</p>
                     <img className='tanin fit-cover' src={taninosProductoImg} alt="Polvo" />
                     <div>
-                        <p>VINUPEB P</p>
+                        <p>VINUPEP P</p>
                         <div className='producto-div taninos-productos-carac'>
                             <p>{langText.tannins.products.powder.text[lang]}</p>
                             <ul>
