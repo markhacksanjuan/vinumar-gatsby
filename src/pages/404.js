@@ -12,7 +12,8 @@ const NotFoundPage = (props) => {
   //   }
   // }, [])
 
-  if(redirection){
+  if(props.location.pathname === '/productos/avialsa/enocianina'){
+      navigate('/producto/extracto-piel-uva')
     return (
       <>
       </>
