@@ -3,6 +3,10 @@ export const navigateTo = (pathname, navigate) => {
         navigate('/donde-estamos')
         return true
       }
+    if(pathname === '/productos/avialsa/enocianina') {
+      navigate('/producto/extracto-piel-uva')
+      return true
+    }
     if(pathname === '/sustainability'){
     navigate('/sostenibilidad')
     return true
