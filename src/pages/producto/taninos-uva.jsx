@@ -138,10 +138,15 @@ const Taninos = (props) => {
         )
     }
 
+    const key_tanin_esp = 'taninos, taninos de uva'
+    const key_tanin_eng = 'tannins, grape tannins'
+    const key_tanin = key_tanin_eng + ', ' + key_tanin_esp
+
+
 
     return(
         <>
-            <Head pageTitle={langText.head.tannins[lang]}/>
+            <Head keywordsPage={key_tanin} pageTitle={langText.head.tannins[lang]}/>
             <Navbar width='214px' />
 
             {renderTaninosHeader()}

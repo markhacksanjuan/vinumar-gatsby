@@ -29,22 +29,27 @@ const ContactoPage = (props) => {
     //     }
     // }, [lang])
 
+    const onClick = e => {
+        console.log('clic')
+        e.preventDefault()
+    }
+
     const renderForm = () => {
         return(
             <>
-                <form action="submit">
+                <form method="POST" action='https://formspree.io/f/xqkjallg'>
                     <p>{langText.contact.form.title[lang]}</p>
                     <input type="text" name='name' placeholder={langText.contact.form.name[lang]} />
-                    <input type="email" placeholder={langText.contact.form.email[lang]} />
+                    <input type="email" name='email' placeholder={langText.contact.form.email[lang]} />
                     <div>
-                        <textarea name="mensaje" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
+                        <textarea name="message" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
                     </div>
                     <div id='checkbox' >
                         <div className='send-div'>
                             <input className='input-checkbox' type="checkbox" name='rgpd' />
                             <label for="rgpd">{langText.contact.form.accept[lang]}</label>
                         </div>
-                        <Button style='send-button'>{langText.contact.form.send[lang]}</Button>
+                        <Button type='submit' style='send-button' onClickButton={onClick}>{langText.contact.form.send[lang]}</Button>
                     </div>
                 </form>
             </>

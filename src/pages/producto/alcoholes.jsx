@@ -146,9 +146,13 @@ const Alcoholes = (props) => {
         )
     }
 
+    const key_alcohol_esp = 'alcohol bruto, alcohol rectificado, alcohol desnaturalizado, destilado de vino, aguardiente'
+    const key_alcohol_eng = 'raw alcohol, rectified alcohol, denatured alcohol, wine distillate, wine spirit'
+    const key_alcohol = key_alcohol_esp + ', ' + key_alcohol_eng
+
     return(
         <>
-        <Head pageTitle={langText.head.alcohols[lang]}/>
+        <Head pageTitle={langText.head.alcohols[lang]} keywordsPage={key_alcohol}/>
             <Navbar width='214px' />
 
             {renderAlcoholesHeader()}

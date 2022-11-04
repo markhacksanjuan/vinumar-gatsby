@@ -4,12 +4,12 @@ import useStyles from './button.style'
 import './button.css'
 import './button-media.css'
 
-const Button = ({ goTo, style, width, children, onClickButton }) => {
+const Button = ({ goTo, style, width, children, onClickButton, type }) => {
     const classes = useStyles()
 
-    const onClick = () => {
+    const onClick = (e) => {
         if(onClickButton) {
-            onClickButton()
+            onClickButton(e)
         } else {
             navigate(goTo)
         }
@@ -17,7 +17,10 @@ const Button = ({ goTo, style, width, children, onClickButton }) => {
     return(
         <>
             <div className='button-component'>
-                <button  className={`${style}`}  onClick={() => onClick()}>{children}</button>
+                {type 
+                ? <button type={type}  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button>
+                : <button  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button> }
+                {/* <button  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button> */}
             </div>
         </>
     )
