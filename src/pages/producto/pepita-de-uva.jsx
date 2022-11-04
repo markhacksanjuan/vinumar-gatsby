@@ -92,10 +92,14 @@ const Pepita = (props) => {
         )
     }
 
+    const key_grape_esp = 'pepita de uva, granilla'
+    const key_grape_eng = 'grape seed'
+    const key_grape = key_grape_eng + ', ' + key_grape_esp
+
 
     return(
         <>
-            <Head pageTitle={langText.head.seed[lang]}/>
+            <Head keywordsPage={key_grape} pageTitle={langText.head.seed[lang]}/>
             <Navbar width='214px' />
 
             {renderPepitaHeader()}

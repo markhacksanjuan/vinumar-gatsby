@@ -260,9 +260,14 @@ const ExtractosVino = (props) => {
         )
     }
 
+    const key_wine_esp = 'extracto vino, concentrado vino, vinuwine'
+    const key_wine_eng = 'wine extracts, wine concentrate'
+    const key_wine = key_wine_esp + ', ' + key_wine_eng
+
+
     return(
         <>
-        <Head pageTitle={langText.head.wine[lang]}/>
+        <Head keywordsPage={key_wine} pageTitle={langText.head.wine[lang]}/>
             <Navbar width='214px' />
 
             {renderExtractosHeader()}
