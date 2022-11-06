@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[883],{4393:function(u,e,n){n.r(e);n(7294);var r=n(845);e.default=function(u){return(0,r.c4)("/")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-69b4476f3f836784a0f8.js.map

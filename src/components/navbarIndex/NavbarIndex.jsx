@@ -20,7 +20,8 @@ const NavbarIndex = ({ scrollPage }) => {
     const [scroll, setScroll] = useState()
     const [size, setSize] = useState('415px')
 
-    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+    // const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
+    const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' && window.screen.width)
 
     const scrollFunction = () => {
         setScroll(window.scrollY)

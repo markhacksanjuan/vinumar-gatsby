@@ -4,7 +4,7 @@ import { navigateTo } from "../helpers/navigateTo"
 
 const NotFoundPage = (props) => {
 
-  return navigate('/')
+  // return navigate('/')
 
   if(props.location.pathname === '/productos/avialsa/enocianina'){
       return navigate('/producto/extracto-piel-uva')

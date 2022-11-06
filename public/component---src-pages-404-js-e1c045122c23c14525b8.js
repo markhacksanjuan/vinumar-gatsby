@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[883],{4393:function(e,n,a){a.r(n);var t=a(7294),u=a(845);n.default=function(e){return"/productos/avialsa/enocianina"===e.location.pathname?(0,u.c4)("/producto/extracto-piel-uva"):t.createElement("main",null,t.createElement("title",null,"Not found"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-e1c045122c23c14525b8.js.map

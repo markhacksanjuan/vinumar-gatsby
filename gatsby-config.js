@@ -4,5 +4,15 @@ module.exports = {
     description: 'Página oficial de VINUMAR',
     siteUrl: 'http://www.vinumar.com'
   },
-  plugins: [`gatsby-theme-material-ui`, `gatsby-plugin-material-ui`, 'gatsby-plugin-react-helmet'],
+  plugins: [`gatsby-theme-material-ui`, `gatsby-plugin-material-ui`, 'gatsby-plugin-react-helmet', {
+    resolve: 'gatsby-plugin-preload',
+    options: {
+      preloaders: [
+        {
+          href: "/src/styles/pages/mediaQueries/mediaAll.css",
+          as: "style"
+        }
+      ]
+    }
+  }],
 };
