@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: 'http://www.vinumar.com'
   },
   plugins: [`gatsby-theme-material-ui`, `gatsby-plugin-material-ui`, 'gatsby-plugin-react-helmet', {
-    resolve: 'gatsby-plugin-preload',
+    resolve: `gatsby-plugin-preload`,
     options: {
       preloaders: [
         {
@@ -14,5 +14,15 @@ module.exports = {
         }
       ]
     }
-  }],
+  },
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      trackingIds: [
+        "G-7S5GWG9HHF",
+        "GTM-N84V5XM"
+      ]
+    }
+  }
+],
 };
