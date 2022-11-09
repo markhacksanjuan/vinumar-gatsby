@@ -15,14 +15,14 @@ module.exports = {
       ]
     }
   },
-  {
-    resolve: `gatsby-plugin-google-gtag`,
-    options: {
-      trackingIds: [
-        "G-7S5GWG9HHF",
-        "GTM-N84V5XM"
-      ]
-    }
-  }
+  // {
+  //   resolve: `gatsby-plugin-google-gtag`,
+  //   options: {
+  //     trackingIds: [
+  //       "G-7S5GWG9HHF",
+  //       "GTM-N84V5XM"
+  //     ]
+  //   }
+  // }
 ],
 };
