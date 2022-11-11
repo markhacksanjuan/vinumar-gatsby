@@ -43,11 +43,12 @@ const ContactoPage = (props) => {
         try{
             const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
                 method: 'POST',
-                body: data,
+                // body: data,
                 mode: 'cors',
                 headers: {
                     'Access-Control-Allow-Origin': '*'
-                }
+                },
+                body: new URLSearchParams(data)
             })
             console.log(response)
         }catch(err) {
