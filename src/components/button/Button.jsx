@@ -18,7 +18,7 @@ const Button = ({ goTo, style, width, children, onClickButton, type }) => {
         <>
             <div className='button-component'>
                 {type 
-                ? <button type={type}  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button>
+                ? <button type={type}  className={`${style}`}>{children}</button>
                 : <button  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button> }
                 {/* <button  className={`${style}`}  onClick={(e) => onClick(e)}>{children}</button> */}
             </div>

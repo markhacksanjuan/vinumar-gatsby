@@ -33,18 +33,13 @@ const ContactoPage = (props) => {
     //     }
     // }, [lang])
 
-    const onClick = e => {
-        console.log('clic')
-        e.preventDefault()
-        // navigate('/')
-    }
     const onSubmit = async (data) => {
+        console.log('onSubmit')
         console.log(data)
         if(data.rgpd){
             try{
                 const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
                     method: 'POST',
-                    // body: data,
                     mode: 'cors',
                     headers: {
                         'Access-Control-Allow-Origin': '*'
