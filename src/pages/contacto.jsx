@@ -40,19 +40,24 @@ const ContactoPage = (props) => {
     }
     const onSubmit = async (data) => {
         console.log(data)
-        try{
-            const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
-                method: 'POST',
-                // body: data,
-                mode: 'cors',
-                headers: {
-                    'Access-Control-Allow-Origin': '*'
-                },
-                body: new URLSearchParams(data)
-            })
-            console.log(response)
-        }catch(err) {
-            console.error(err)
+        if(data.rgpd){
+            try{
+                const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+                    method: 'POST',
+                    // body: data,
+                    mode: 'cors',
+                    headers: {
+                        'Access-Control-Allow-Origin': '*'
+                    },
+                    body: new URLSearchParams(data)
+                })
+                console.log(response)
+                if(response.status === 200) {
+                    navigate('/')
+                }
+            }catch(err) {
+                console.error(err)
+            }
         }
         // navigate('/')
     }
