@@ -215,3 +215,30 @@ img.fit-cover {
         width: 100% !important
     }
 }
+
+
+/* COOKIES CONSENT CLASSES */
+.CookieConsent {
+    align-items: center !important
+}
+.consent-container-btn {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 50px
+}
+.consent-btn-accept {
+    background-color: white !important;
+    border-radius: 20px !important;
+    width: 180px;
+    font-weight: bold;
+}
+.consent-btn-decline {
+    border-radius: 20px !important;
+    width: 180px
+}
+.consent-btn-accept:hover {
+    background-color: #b4e8b6 !important;
+}
+.consent-btn-decline:hover {
+    background-color: #9e2026 !important;
+}
