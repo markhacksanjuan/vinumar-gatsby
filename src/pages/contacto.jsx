@@ -1,8 +1,9 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form'
 import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
+import Layout from '../components/Layout/Layout'
 import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
 import Head from '../components/Head/Head'
@@ -17,8 +18,9 @@ import { historyState } from '../helpers/historyState'
 const ContactoPage = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
+    const [open, setOpen] = useState(false)
 
-    const { handleSubmit, register } = useForm({})
+    const { handleSubmit, register, reset } = useForm({})
 
     useEffect(() =>{
         historyState(window.location.state, dispatch)
@@ -33,27 +35,59 @@ const ContactoPage = (props) => {
     //     }
     // }, [lang])
 
+    const renderAlert = () => {
+        return (
+            <>
+                <div onClick={e => onClose(e)} className='alert-background'>
+                    <div className='alert-container'>
+                        <span onClick={e => onClose(e)} className='alert-close'>&times;</span>
+                        <h4 className='alert-title'>{langText.alert.messageSuccess.title[lang]}</h4>
+                        <p className='alert-message'>{langText.alert.messageSuccess.message[lang]}</p>
+                    </div>
+                </div>
+            </>
+        )
+    }
+    const renderError = () => {
+        return (
+            <>
+                <div className='alert-container'>
+                    <p className='alert-message'>{langText.alert.messageError[lang]}</p>
+                </div>
+            </>
+        )
+    }
+    const onClose = (e) => {
+        if(e.target.className === 'alert-background'){
+            setOpen(false)
+        }else if(e.target.className === 'alert-close') {
+            setOpen(false)
+        }
+    }
+
     const onSubmit = async (data) => {
         console.log('onSubmit')
         console.log(data)
-        if(data.rgpd){
-            try{
-                const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
-                    method: 'POST',
-                    mode: 'cors',
-                    headers: {
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                    body: new URLSearchParams(data)
-                })
-                console.log(response)
-                if(response.status === 200) {
-                    navigate('/')
-                }
-            }catch(err) {
-                console.error(err)
-            }
-        }
+        // if(data.rgpd){
+        //     try{
+        //         const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+        //             method: 'POST',
+        //             mode: 'cors',
+        //             headers: {
+        //                 'Access-Control-Allow-Origin': '*'
+        //             },
+        //             body: new URLSearchParams(data)
+        //         })
+        //         console.log(response)
+        //         if(response.status === 200) {
+        //             navigate('/')
+        //         }
+        //     }catch(err) {
+        //         console.error(err)
+        //     }
+        // }
+        setOpen(true)
+        reset()
         // navigate('/')
     }
 
@@ -81,7 +115,7 @@ const ContactoPage = (props) => {
     const renderContent = () => {
         return(
             <>
-                <div className='contact-content-container'>
+                <div onClick={onClose} className='contact-content-container'>
                     <div>
                         <h4>{langText.contact.title[lang]}</h4>
                         {renderForm()}
@@ -103,9 +137,12 @@ const ContactoPage = (props) => {
     return(
         <>
             <Head pageTitle={langText.head.contact[lang]}/>
-            <Navbar width='214px' />
-            {renderContent()}
-            <Footer />
+            <Layout>
+                {open && renderAlert()}
+            {/* <Navbar width='214px' /> */}
+                {renderContent()}
+            </Layout>
+            {/* <Footer /> */}
         </>
     )
 }

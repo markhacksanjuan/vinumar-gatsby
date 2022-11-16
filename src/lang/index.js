@@ -14,6 +14,7 @@ import { langText_where } from './translations/lang_where'
 import { langText_wine } from'./translations/lang_wine'
 import { langText_head } from "./translations/lang_head";
 import { langText_contact } from "./translations/lang_contact";
+import { langText_alert } from "./translations/lang_alert";
 
 export const langText = {
     alcohols: langText_alcohols,
@@ -31,5 +32,6 @@ export const langText = {
     where: langText_where,
     wine: langText_wine,
     head: langText_head,
-    contact: langText_contact
+    contact: langText_contact,
+    alert: langText_alert
 }
