@@ -91,10 +91,10 @@ const ContactoPage = (props) => {
             // }catch(err) {
             //     console.error(err)
             // }
+            reset()
         }else {
             setError(true)
         }
-        reset()
         // navigate('/')
     }
 

@@ -15,23 +15,27 @@ module.exports = {
       ]
     }
   },
-  {
-    resolve: `gatsby-plugin-google-gtag`,
-    options: {
-      trackingIds: [
-        "G-7S5GWG9HHF",
-        "GTM-N84V5XM"
-      ]
-    }
-  },
+  // {
+  //   resolve: `gatsby-plugin-google-gtag`,
+  //   options: {
+  //     trackingIds: [
+  //       "G-7S5GWG9HHF",
+  //       "GTM-N84V5XM"
+  //     ]
+  //   }
+  // },
   {
     resolve: `gatsby-plugin-gdpr-cookies`,
     options: {
       googleAnalytics: {
-        trackingId: 'G-7S5GWG9HHF'
+        trackingId: 'G-7S5GWG9HHF',
+        anonymize: true,
+        cookieName: 'gatsby-gdpr-google-analytics'
       },
       googleTagManager: {
-        trackingId: 'GTM-N84V5XM'
+        trackingId: 'GTM-N84V5XM',
+        anonymize: true,
+        cookieName: 'gatsby-gdpr-google-tagmanager'
       }
     }
   }
