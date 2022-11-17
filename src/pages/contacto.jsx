@@ -19,6 +19,7 @@ const ContactoPage = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [open, setOpen] = useState(false)
+    const [error, setError] = useState(false)
 
     const { handleSubmit, register, reset } = useForm({})
 
@@ -51,8 +52,11 @@ const ContactoPage = (props) => {
     const renderError = () => {
         return (
             <>
-                <div className='alert-container'>
-                    <p className='alert-message'>{langText.alert.messageError[lang]}</p>
+                <div onClick={e => onClose(e)} className='alert-background'>
+                    <div className='alert-container'>
+                        <span onClick={e => onClose(e)} className='alert-close'>&times;</span>
+                        <p className='alert-message'>{langText.alert.messageError[lang]}</p>
+                    </div>
                 </div>
             </>
         )
@@ -60,33 +64,36 @@ const ContactoPage = (props) => {
     const onClose = (e) => {
         if(e.target.className === 'alert-background'){
             setOpen(false)
+            setError(false)
         }else if(e.target.className === 'alert-close') {
             setOpen(false)
+            setError(false)
         }
     }
 
     const onSubmit = async (data) => {
         console.log('onSubmit')
         console.log(data)
-        // if(data.rgpd){
-        //     try{
-        //         const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
-        //             method: 'POST',
-        //             mode: 'cors',
-        //             headers: {
-        //                 'Access-Control-Allow-Origin': '*'
-        //             },
-        //             body: new URLSearchParams(data)
-        //         })
-        //         console.log(response)
-        //         if(response.status === 200) {
-        //             navigate('/')
-        //         }
-        //     }catch(err) {
-        //         console.error(err)
-        //     }
-        // }
-        setOpen(true)
+        if(data.rgpd){
+            // try{
+            //     const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+            //         method: 'POST',
+            //         mode: 'cors',
+            //         headers: {
+            //             'Access-Control-Allow-Origin': '*'
+            //         },
+            //         body: new URLSearchParams(data)
+            //     })
+            //     console.log(response)
+            //     if(response.status === 200) {
+                setOpen(true)
+            //     }
+            // }catch(err) {
+            //     console.error(err)
+            // }
+        }else {
+            setError(true)
+        }
         reset()
         // navigate('/')
     }
@@ -96,10 +103,10 @@ const ContactoPage = (props) => {
             <>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <p>{langText.contact.form.title[lang]}</p>
-                    <input {...register('name')} type="text" name='name' placeholder={langText.contact.form.name[lang]} />
-                    <input {...register('email')} type="email" name='email' placeholder={langText.contact.form.email[lang]} />
+                    <input required {...register('name')} type="text" name='name' placeholder={langText.contact.form.name[lang]} />
+                    <input required {...register('email')} type="email" name='email' placeholder={langText.contact.form.email[lang]} />
                     <div>
-                        <textarea {...register('message')} name="message" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
+                        <textarea required {...register('message')} name="message" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
                     </div>
                     <div id='checkbox' >
                         <div className='send-div'>
@@ -115,7 +122,7 @@ const ContactoPage = (props) => {
     const renderContent = () => {
         return(
             <>
-                <div onClick={onClose} className='contact-content-container'>
+                <div className='contact-content-container'>
                     <div>
                         <h4>{langText.contact.title[lang]}</h4>
                         {renderForm()}
@@ -139,6 +146,7 @@ const ContactoPage = (props) => {
             <Head pageTitle={langText.head.contact[lang]}/>
             <Layout>
                 {open && renderAlert()}
+                {error && renderError()}
             {/* <Navbar width='214px' /> */}
                 {renderContent()}
             </Layout>
