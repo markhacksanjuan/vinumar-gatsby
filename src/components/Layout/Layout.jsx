@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
             buttonWrapperClasses='consent-container-btn'
             buttonClasses='consent-btn-accept'
             declineButtonClasses='consent-btn-decline'
-            cookieName='gatsby-gdpr-google-tagmanager gatsby-gdpr-google-analytics'
+            cookieName={['gatsby-gdpr-google-tagmanager', 'gatsby-gdpr-google-analytics']}
             >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
             <Footer />
