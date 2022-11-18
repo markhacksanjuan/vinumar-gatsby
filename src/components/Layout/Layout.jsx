@@ -11,15 +11,17 @@ const Layout = ({ children }) => {
     const renderCookiesText = () => {
         return (
             <>
-                <h4>Esta página web usa cookies</h4>
-                <p>Utilizamos cookies propias para fines estrictamente funcionales (navegar por la página, visitar secciones), así como cookies analíticas propias y de terceros para reconocerte, conocer tus preferencias y ofrecerte información personalizada. 
-                    Algunas de estas cookies de terceros son utilizadas para personalizar el contenido y los anuncios.  Si nos otorgas tu consentimiento a través del botón aceptar, se almacenarán en tu dispositivo. Además, puedes rechazarlas a través del botón Rechazar. 
-                    Dispones de más información en nuestra Política de Cookies.
-                </p>
-                <br />
-                <p>
-                   Este banner se mantendrá activo hasta que indiques o decidas su aceptación o deshabilitación. 
-                </p>
+                <div className='consent-container'>
+                    <p className='consent-title'>Esta página web usa cookies</p>
+                    <p>Utilizamos cookies propias para fines estrictamente funcionales (navegar por la página, visitar secciones), así como cookies analíticas propias y de terceros para reconocerte, conocer tus preferencias y ofrecerte información personalizada. 
+                        Algunas de estas cookies de terceros son utilizadas para personalizar el contenido y los anuncios.  Si nos otorgas tu consentimiento a través del botón aceptar, se almacenarán en tu dispositivo. Además, puedes rechazarlas a través del botón Rechazar. 
+                        Dispones de más información en nuestra Política de Cookies.
+                    </p>
+                    <br />
+                    <p>
+                    Este banner se mantendrá activo hasta que indiques o decidas su aceptación o deshabilitación. 
+                    </p>
+                </div>
             </>
         )
     }
@@ -41,7 +43,7 @@ const Layout = ({ children }) => {
             buttonWrapperClasses='consent-container-btn'
             buttonClasses='consent-btn-accept'
             declineButtonClasses='consent-btn-decline'
-            cookieName={['gatsby-gdpr-google-tagmanager', 'gatsby-gdpr-google-analytics']}
+            cookieName='gatsby-gdpr'
             >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
             <Footer />

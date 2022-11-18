@@ -53,7 +53,7 @@ const ContactoPage = (props) => {
         return (
             <>
                 <div onClick={e => onClose(e)} className='alert-background'>
-                    <div className='alert-container'>
+                    <div className='alert-container-error'>
                         <span onClick={e => onClose(e)} className='alert-close'>&times;</span>
                         <p className='alert-message'>{langText.alert.messageError[lang]}</p>
                     </div>

@@ -30,12 +30,12 @@ module.exports = {
       googleAnalytics: {
         trackingId: 'G-7S5GWG9HHF',
         anonymize: true,
-        cookieName: 'gatsby-gdpr-google-analytics'
+        cookieName: 'gatsby-gdpr'
       },
       googleTagManager: {
         trackingId: 'GTM-N84V5XM',
         anonymize: true,
-        cookieName: 'gatsby-gdpr-google-tagmanager'
+        cookieName: 'gatsby-gdpr'
       }
     }
   }

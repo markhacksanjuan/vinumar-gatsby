@@ -218,6 +218,15 @@ img.fit-cover {
 
 
 /* COOKIES CONSENT CLASSES */
+.consent-container {
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+.consent-title {
+    font-weight: bold;
+    margin-bottom: 20px
+}
 .CookieConsent {
     align-items: center !important
 }
@@ -230,15 +239,17 @@ img.fit-cover {
     background-color: white !important;
     border-radius: 20px !important;
     width: 180px;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 .consent-btn-decline {
     border-radius: 20px !important;
-    width: 180px
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: black !important;
 }
 .consent-btn-accept:hover {
     background-color: #b4e8b6 !important;
 }
 .consent-btn-decline:hover {
-    background-color: #9e2026 !important;
+    background-color: none !important;
 }
