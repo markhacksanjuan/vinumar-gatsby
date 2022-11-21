@@ -244,12 +244,12 @@ img.fit-cover {
 .consent-btn-decline {
     border-radius: 20px !important;
     width: 180px;
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: #A02E33 !important;
     color: black !important;
 }
 .consent-btn-accept:hover {
     background-color: #b4e8b6 !important;
 }
 .consent-btn-decline:hover {
-    background-color: none !important;
+    background-color: #9d3d41 !important;
 }
