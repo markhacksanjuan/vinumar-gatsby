@@ -38,6 +38,34 @@ module.exports = {
         cookieName: 'gatsby-gdpr'
       }
     }
+  },
+  {
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      query: `
+      {
+        allSitePage {
+          nodes {
+            path
+          }
+        }
+      }
+      `,
+      resolveSiteUrl: () => siteUrl,
+      resolvePages: ({
+        allSitePage: { nodes: allPages }
+      }) => {
+        return allPages.map(page => {
+          return { ...page }
+        })
+      },
+      serialize: ({ path, modifiedGmt }) => {
+        return {
+          url: path,
+          lastmod: modifiedGmt
+        }
+      }
+    }
   }
 ],
 };

@@ -29,11 +29,14 @@ const Layout = ({ children }) => {
         initializeAndTrack(location)
         // Cookies.set("gatsby-gdpr-google-tagmanager", true)
     }
+    const onDecline = () => {
+
+    }
     return(
         <>
             <Navbar />
             <CookieConsent
-            declineButtonText='Rechazar'
+            declineButtonText='Gestionar'
             enableDeclineButton
             buttonText='Aceptar'
             style={{
@@ -44,6 +47,8 @@ const Layout = ({ children }) => {
             buttonClasses='consent-btn-accept'
             declineButtonClasses='consent-btn-decline'
             cookieName='gatsby-gdpr'
+            setDeclineCookie={false}
+            onDecline={onDecline}
             >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
             <Footer />
