@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     return(
         <>
             <Navbar />
-            <CookieConsent
+            {/* <CookieConsent
             declineButtonText='Gestionar'
             enableDeclineButton
             buttonText='Aceptar'
@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
             cookieName='gatsby-gdpr'
             setDeclineCookie={false}
             onDecline={onDecline}
-            >{renderCookiesText()}</CookieConsent>
+            >{renderCookiesText()}</CookieConsent> */}
             <main>{children}</main>
             <Footer />
         </>
