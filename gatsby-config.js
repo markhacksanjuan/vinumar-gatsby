@@ -51,7 +51,7 @@ module.exports = {
         }
       }
       `,
-      resolveSiteUrl: () => siteUrl,
+      resolveSiteUrl: () => 'https://vinumar.es',
       resolvePages: ({
         allSitePage: { nodes: allPages }
       }) => {
