@@ -75,22 +75,22 @@ const ContactoPage = (props) => {
         console.log('onSubmit')
         console.log(data)
         if(data.rgpd){
-            // try{
-            //     const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
-            //         method: 'POST',
-            //         mode: 'cors',
-            //         headers: {
-            //             'Access-Control-Allow-Origin': '*'
-            //         },
-            //         body: new URLSearchParams(data)
-            //     })
-            //     console.log(response)
-            //     if(response.status === 200) {
+            try{
+                const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Access-Control-Allow-Origin': '*'
+                    },
+                    body: new URLSearchParams(data)
+                })
+                console.log(response)
+                if(response.status === 200) {
                 setOpen(true)
-            //     }
-            // }catch(err) {
-            //     console.error(err)
-            // }
+                }
+            }catch(err) {
+                console.error(err)
+            }
             reset()
         }else {
             setError(true)
