@@ -7,9 +7,10 @@ import favicon from '../../images/favicon/favicon.ico'
 const Head = ({ title, description, pathname, children, pageTitle, keywordsPage }) => {
     const {
         title: defaultTitle,
-        description: defaultDescription,
+        // description: defaultDescription,
         siteUrl
     } = useSiteMetadata()
+    const defaultDescription = 'Página oficial de VINUMAR, AVIALSA: Polifenoles, orujo de uva, compuestos fenólicos, extracto de uva, productos derivados de la uva - polyphenols, grapre marc, phenolic compounds, grape extract, products derived from grape'
     const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription
