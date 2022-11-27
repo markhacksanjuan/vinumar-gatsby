@@ -152,7 +152,7 @@ const Alcoholes = (props) => {
 
     return(
         <>
-        <Head pageTitle={langText.head.alcohols[lang]} keywordsPage={key_alcohol}/>
+        <Head pageTitle={langText.head.alcohols[lang]} keywordsPage={key_alcohol} description='Alcohol bruto, rectificado, desnaturalizado, aguardiente, destilado del vino - Raw alcohol'/>
             <Navbar width='214px' />
 
             {renderAlcoholesHeader()}

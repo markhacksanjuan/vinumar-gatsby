@@ -31,7 +31,7 @@ const Head = ({ title, description, pathname, children, pageTitle, keywordsPage 
         }
     }
 
-    const keyword_esp = 'polifenoles, orujo, vinumar, avialsa, compuestos fenolicos, productos derivados uva, extracto uva'
+    const keyword_esp = 'polifenoles, orujo de uva, vinumar, avialsa, compuestos fenolicos, productos derivados uva, extracto uva'
     const keyword_eng = 'polyphenols, grape marc, phenolic compounds, products derived from grape, grape extract'
     const keywords_general = keyword_esp + ', ' + keyword_eng
 

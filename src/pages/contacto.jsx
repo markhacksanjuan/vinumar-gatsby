@@ -95,7 +95,6 @@ const ContactoPage = (props) => {
         }else {
             setError(true)
         }
-        // navigate('/')
     }
 
     const renderForm = () => {

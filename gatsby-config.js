@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "VINUMAR",
-    description: 'Página oficial de VINUMAR',
+    description: 'Página oficial de VINUMAR, AVIALSA: Polifenoles, orujo de uva, compuestos fenólicos, extracto de uva, productos derivados de la uva - polyphenols, grapre marc, phenolic compounds, grape extract, products derived from grape',
     siteUrl: 'https://vinumar.es'
   },
   plugins: [`gatsby-plugin-sitemap`, `gatsby-theme-material-ui`, `gatsby-plugin-material-ui`, 'gatsby-plugin-react-helmet', {

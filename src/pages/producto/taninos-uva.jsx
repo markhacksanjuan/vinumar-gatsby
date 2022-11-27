@@ -146,7 +146,7 @@ const Taninos = (props) => {
 
     return(
         <>
-            <Head keywordsPage={key_tanin} pageTitle={langText.head.tannins[lang]}/>
+            <Head keywordsPage={key_tanin} pageTitle={langText.head.tannins[lang]} description='Taninos de uva - grape tannins'/>
             <Navbar width='214px' />
 
             {renderTaninosHeader()}

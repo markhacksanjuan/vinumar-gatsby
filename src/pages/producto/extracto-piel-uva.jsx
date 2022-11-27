@@ -190,14 +190,14 @@ const ExtractosPiel = (props) => {
         )
     }
 
-    const key_color_esp = 'enocianina, extracto piel uva, antocianinas, antocianinos, e-163, vinuper, vinucap'
-    const key_color_eng = 'enocyanin, grape skin extracts, anthocyanin'
+    const key_color_esp = 'enocianina, extracto piel uva, antocianinas, antocianinos, e-163, vinuper, vinucap, colorantes naturales'
+    const key_color_eng = 'enocyanin, grape skin extracts, anthocyanin, natural colourings'
     const key_color = key_color_esp + ', ' + key_color_eng
 
 
     return(
         <>
-            <Head keywordsPage={key_color} pageTitle={langText.head.skin[lang]}/>
+            <Head keywordsPage={key_color} pageTitle={langText.head.skin[lang]} description='VINUPER - VINUCAP - Producto extracto piel de uva, enocianina, antocianinas, antocianos, E-163, colorantes naturales - Enocyanin, anthocyanin, grape skin extracts; natural colourings'/>
             <Navbar width='214px' />
 
             {renderExtractosHeader()}
