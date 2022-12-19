@@ -6,6 +6,8 @@ import { useLocation } from '@reach/router'
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import { } from 'gatsby-plugin-google-gtag'
 
+import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF.pdf'
+
 const Layout = ({ children }) => {
     const location = useLocation()
     const renderCookiesText = () => {
@@ -15,11 +17,11 @@ const Layout = ({ children }) => {
                     <p className='consent-title'>Esta página web usa cookies</p>
                     <p>Utilizamos cookies propias para fines estrictamente funcionales (navegar por la página, visitar secciones), así como cookies analíticas propias y de terceros para reconocerte, conocer tus preferencias y ofrecerte información personalizada. 
                         Algunas de estas cookies de terceros son utilizadas para personalizar el contenido y los anuncios.  Si nos otorgas tu consentimiento a través del botón aceptar, se almacenarán en tu dispositivo. Además, puedes rechazarlas a través del botón Rechazar. 
-                        Dispones de más información en nuestra Política de Cookies.
+                        Dispones de más información en nuestra <a href={cookiesPolicy} target='_blank'>Política de Cookies</a>.
                     </p>
                     <br />
                     <p>
-                    Este banner se mantendrá activo hasta que indiques o decidas su aceptación o deshabilitación. 
+                    Este banner se mantendrá activo hasta que indiques o decidas su aceptación o deshabilitación. Al rechazar, solo se aceptan las cookies funcionales.
                     </p>
                 </div>
             </>
@@ -35,8 +37,8 @@ const Layout = ({ children }) => {
     return(
         <>
             <Navbar />
-            {/* <CookieConsent
-            declineButtonText='Gestionar'
+            <CookieConsent
+            declineButtonText='Rechazar'
             enableDeclineButton
             buttonText='Aceptar'
             style={{
@@ -49,7 +51,7 @@ const Layout = ({ children }) => {
             cookieName='gatsby-gdpr'
             setDeclineCookie={false}
             onDecline={onDecline}
-            >{renderCookiesText()}</CookieConsent> */}
+            >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
             <Footer />
         </>

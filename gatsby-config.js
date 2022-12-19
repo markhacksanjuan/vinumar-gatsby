@@ -24,21 +24,21 @@ module.exports = {
   //     ]
   //   }
   // },
-  // {
-  //   resolve: `gatsby-plugin-gdpr-cookies`,
-  //   options: {
-  //     googleAnalytics: {
-  //       trackingId: 'G-7S5GWG9HHF',
-  //       anonymize: true,
-  //       cookieName: 'gatsby-gdpr'
-  //     },
-  //     googleTagManager: {
-  //       trackingId: 'GTM-N84V5XM',
-  //       anonymize: true,
-  //       cookieName: 'gatsby-gdpr'
-  //     }
-  //   }
-  // },
+  {
+    resolve: `gatsby-plugin-gdpr-cookies`,
+    options: {
+      googleAnalytics: {
+        trackingId: 'G-7S5GWG9HHF',
+        anonymize: true,
+        cookieName: 'gatsby-gdpr'
+      },
+      // googleTagManager: {
+      //   trackingId: 'GTM-N84V5XM',
+      //   anonymize: true,
+      //   cookieName: 'gatsby-gdpr'
+      // }
+    }
+  },
   // {
   //   resolve: `gatsby-source-filesystem`,
   //   options: {
