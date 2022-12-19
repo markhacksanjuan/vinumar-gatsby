@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
             buttonClasses='consent-btn-accept'
             declineButtonClasses='consent-btn-decline'
             cookieName='gatsby-gdpr'
-            setDeclineCookie={false}
+            // setDeclineCookie={false}
             onDecline={onDecline}
             >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
