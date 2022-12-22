@@ -104,9 +104,9 @@ const Alcoholes = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <Suspense fallback={<Loading />}>
+                        {/* <Suspense fallback={<Loading />}> */}
                             <img className='alcoholes-header-img' src={alcoholesHeaderImg} alt="Extracto de uva" />
-                        </Suspense>
+                        {/* </Suspense> */}
 
                     </div>
                 </div>

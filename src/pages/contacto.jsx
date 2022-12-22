@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form'
 import Layout from '../components/Layout/Layout'
-// import Gmap from '../components/gmap/Gmap'
+import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
 import Head from '../components/Head/Head'
 import Loading from '../components/Loading/Loading'
@@ -14,7 +14,7 @@ import { LangStateContext, LangDispatchContext } from '../components/GlobalConte
 import { langText } from '../lang'
 import { historyState } from '../helpers/historyState'
 
-const Gmap = React.lazy(() => import('../components/gmap/Gmap'))
+// const Gmap = React.lazy(() => import('../components/gmap/Gmap'))
 
 const ContactoPage = (props) => {
     const { lang } = useContext(LangStateContext)
