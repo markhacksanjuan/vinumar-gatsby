@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
 import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form'
-import Navbar from '../components/navbarIndex/NavbarIndex'
-import Footer from '../components/footer/Footer'
 import Layout from '../components/Layout/Layout'
-import Gmap from '../components/gmap/Gmap'
+// import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
 import Head from '../components/Head/Head'
+import Loading from '../components/Loading/Loading'
 
 import '../styles/pages/contacto.css'
 import '../styles/pages/mediaQueries/contacto-media.css'
@@ -15,11 +14,14 @@ import { LangStateContext, LangDispatchContext } from '../components/GlobalConte
 import { langText } from '../lang'
 import { historyState } from '../helpers/historyState'
 
+const Gmap = React.lazy(() => import('../components/gmap/Gmap'))
+
 const ContactoPage = (props) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [open, setOpen] = useState(false)
     const [error, setError] = useState(false)
+    const [loading, setLoading] = useState(false)
 
     const { handleSubmit, register, reset } = useForm({})
 
@@ -35,7 +37,17 @@ const ContactoPage = (props) => {
     //         }
     //     }
     // }, [lang])
-
+    const renderLoading = () => {
+        return (
+            <>
+                <div className='alert-background'>
+                    <div className='alert-container loading-container'>
+                        <Loading />
+                    </div>
+                </div>
+            </>
+        )
+    }
     const renderAlert = () => {
         return (
             <>
@@ -72,8 +84,7 @@ const ContactoPage = (props) => {
     }
 
     const onSubmit = async (data) => {
-        console.log('onSubmit')
-        console.log(data)
+        setLoading(true)
         if(data.rgpd){
             try{
                 const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
@@ -86,7 +97,8 @@ const ContactoPage = (props) => {
                 })
                 console.log(response)
                 if(response.status === 200) {
-                setOpen(true)
+                    setLoading(false)
+                    setOpen(true)
                 }
             }catch(err) {
                 console.error(err)
@@ -94,6 +106,7 @@ const ContactoPage = (props) => {
             reset()
         }else {
             setError(true)
+            setLoading(false)
         }
     }
 
@@ -132,7 +145,9 @@ const ContactoPage = (props) => {
                             <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>
                         </div>
-                        <Gmap />
+                        <Suspense fallback={<Loading/>}>
+                            <Gmap />
+                        </Suspense>
 
                     </div>
 
@@ -144,6 +159,7 @@ const ContactoPage = (props) => {
         <>
             <Head pageTitle={langText.head.contact[lang]}/>
             <Layout>
+                {loading && renderLoading()}
                 {open && renderAlert()}
                 {error && renderError()}
             {/* <Navbar width='214px' /> */}

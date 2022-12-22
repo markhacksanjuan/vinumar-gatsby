@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 import '../../styles/pages/recursos.css'
 import '../../styles/pages/mediaQueries/recursos-media.css'
@@ -11,7 +10,6 @@ import '../../styles/pages/mediaQueries/recursos-media.css'
 import recursos1 from '../../images/DEF/BL8A7254.jpg'
 import atomizacion from '../../images/DEF/BL8A8625.jpg'
 
-import SimpleImageSlider from 'react-simple-image-slider'
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
 
@@ -208,12 +206,14 @@ const Recursos = (props) => {
     return(
         <>
             <Head pageTitle={langText.head.resources[lang]}/>
-            <Navbar width='214px' />
-            {renderRecursos()}
-            {renderEquipo()}
-            {renderInstalaciones()}
-            <Button style='red-button' goTo='/contacto'  >{langText.resources.button[lang]}</Button>
-            <Footer />
+            <Layout>
+                {renderRecursos()}
+                {renderEquipo()}
+                {renderInstalaciones()}
+                <Button style='red-button' goTo='/contacto'  >{langText.resources.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
+            <Footer /> */}
         </>
     )
 }

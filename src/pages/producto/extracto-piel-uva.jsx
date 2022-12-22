@@ -1,10 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
-import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 // import images
 import pielHeaderImg from '../../images/DEF/BL8A9583.jpg'
@@ -13,10 +12,11 @@ import pielProductoLiquido from '../../images/DEF/BL8A4185.jpg'
 
 import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
-import { historyState } from '../../helpers/historyState'
 
 import '../../styles/pages/extractos-piel.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
+
+const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const ExtractosPiel = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -198,20 +198,24 @@ const ExtractosPiel = (props) => {
     return(
         <>
             <Head keywordsPage={key_color} pageTitle={langText.head.skin[lang]} description='VINUPER - VINUCAP - Producto extracto piel de uva, enocianina, antocianinas, antocianos, E-163, colorantes naturales - Enocyanin, anthocyanin, grape skin extracts; natural colourings'/>
-            <Navbar width='214px' />
+            <Layout>
+                {renderExtractosHeader()}
 
-            {renderExtractosHeader()}
+                {renderProductos()}
 
-            {renderProductos()}
+                <TextCentered width='925px' margin='60px'>{langText.skin.centered[lang]}</TextCentered>
+                <Button style='red-button' width='270' goTo='/contacto'>{langText.skin.button[lang]}</Button>
+                
+                <Suspense fallback={<p>...</p>}>
+                    <EntornoNatural type='piel' width={screenWidth} />
+                </Suspense>
 
-            <TextCentered width='925px' margin='60px'>{langText.skin.centered[lang]}</TextCentered>
-            <Button style='red-button' width='270' goTo='/contacto'>{langText.skin.button[lang]}</Button>
+                <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
 
-            <EntornoNatural type='piel' width={screenWidth} />
 
-            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
-
-            <Footer />
+            <Footer /> */}
 
         </>
     )

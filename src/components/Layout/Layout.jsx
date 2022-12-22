@@ -6,7 +6,7 @@ import { useLocation } from '@reach/router'
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import { } from 'gatsby-plugin-google-gtag'
 
-import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF.pdf'
+import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 
 const Layout = ({ children }) => {
     const location = useLocation()

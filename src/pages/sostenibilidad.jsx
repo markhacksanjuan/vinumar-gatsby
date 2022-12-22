@@ -6,6 +6,8 @@ import Head from '../components/Head/Head'
 // import Head from '../components/Head/Head'
 import Layout from '../components/Layout/Layout'
 
+import Loading from '../components/Loading/Loading'
+
 import headerImg from '../images/DEF/DJI_0722-2.jpg'
 import sostenibilidad1 from '../images/DEF/BL8A7152.jpg'
 import sostenibilidad2 from '../images/DEF/BL8A8775.jpg'
@@ -101,6 +103,7 @@ const SostenibilidadPage = (props) => {
             <Layout>
             <div className='sostenibilidad-container'>
                 {renderHeader()}
+                <Loading />
                 {renderSostenibilidad()}
                 <Button goTo='/contacto' style='red-button'>{langText.sustain.button[lang]}</Button>
             </div>

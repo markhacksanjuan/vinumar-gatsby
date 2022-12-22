@@ -1,9 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
-import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
+// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 import '../../styles/pages/pepita.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -12,7 +11,8 @@ import pepitaHeaderImg from '../../images/DEF/BL8A9687.jpg'
 
 import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
-import { historyState } from '../../helpers/historyState'
+
+const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const Pepita = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -100,17 +100,21 @@ const Pepita = (props) => {
     return(
         <>
             <Head keywordsPage={key_grape} pageTitle={langText.head.seed[lang]} description='Granilla - pepita de uva - grape seed'/>
-            <Navbar width='214px' />
+            <Layout>
+                {renderPepitaHeader()}
 
-            {renderPepitaHeader()}
+                <Button style='red-button' width='270' goTo='/contacto'>{langText.seed.button[lang]}</Button>
 
-            <Button style='red-button' width='270' goTo='/contacto'>{langText.seed.button[lang]}</Button>
+                <Suspense fallback={<p>...</p>}>
+                    <EntornoNatural type='pepita' width={screenWidth} />
+                </Suspense>
 
-            <EntornoNatural type='pepita' width={screenWidth} />
+                <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
 
-            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
 
-            <Footer />
+            <Footer /> */}
 
         </>
     )

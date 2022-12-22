@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
 import '../../styles/pages/valores.css'
 import '../../styles/pages/mediaQueries/valores-media.css'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 import headerImg from '../../images/selected/Principal DSC00902.jpg'
 import valores1 from '../../images/ilustraciones/Vinumar_Ilustraciones_Tecnologia.jpg'
@@ -17,9 +16,8 @@ import valores5 from '../../images/ilustraciones/Vinumar_Ilustraciones_Sostenibi
 
 import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
-import { historyState } from '../../helpers/historyState'
 
-const Valores = (props) => {
+const Valores = ({}) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
@@ -120,12 +118,14 @@ const Valores = (props) => {
     return(
         <>
             <Head pageTitle={langText.head.values[lang]}/>
-            <Navbar width='214px' />
-            {renderHeader()}
-            <TextCentered>{langText.values.centered[lang]}</TextCentered>
-            {renderContent()}
-            <Button style='red-button' width='270px' goTo='/contacto'>{langText.values.button[lang]}</Button>
-            <Footer />
+            <Layout>
+                {renderHeader()}
+                <TextCentered>{langText.values.centered[lang]}</TextCentered>
+                {renderContent()}
+                <Button style='red-button' width='270px' goTo='/contacto'>{langText.values.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
+            <Footer /> */}
 
         </>
     )

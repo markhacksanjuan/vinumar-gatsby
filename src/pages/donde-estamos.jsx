@@ -6,6 +6,7 @@ import ReadMore from '../components/readMore/ReadMore'
 import '../styles/pages/dondeEstamos.css'
 import '../styles/pages/mediaQueries/donde-media.css'
 import Head from '../components/Head/Head'
+import Layout from '../components/Layout/Layout'
 
 import headerImg from '../images/DEF/DJI_0705-2.jpg'
 import dondeImg from '../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
@@ -111,19 +112,21 @@ const DondePage = ({ uri, location}) => {
     return(
         <>
             <Head pageTitle={langText.head.where[lang]}/>
-            <Navbar width='214px' />
-            <div className='donde-container'>
-                {headerImg ? renderHeader() : <CircularProgress />}
-                <TextCentered>{langText.where.centered[lang]}</TextCentered>
-                
-                <Situacion />
+            <Layout>
+                <div className='donde-container'>
+                    {headerImg ? renderHeader() : <CircularProgress />}
+                    <TextCentered>{langText.where.centered[lang]}</TextCentered>
+                    
+                    <Situacion />
 
-                {renderDonde()}
-                <Button style='red-button' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
-                {renderVentajas()}
-            </div>
+                    {renderDonde()}
+                    <Button style='red-button' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+                    {renderVentajas()}
+                </div>
+            </Layout>
+            {/* <Navbar width='214px' />
 
-            <Footer />
+            <Footer /> */}
         </>
     )
 }

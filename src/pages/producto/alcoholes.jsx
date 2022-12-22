@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
-import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
+// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
+import Loading from '../../components/Loading/Loading'
 
 import '../../styles/pages/alcoholes.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -16,6 +16,7 @@ import { LangStateContext, LangDispatchContext } from '../../components/GlobalCo
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
 
+const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const Alcoholes = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -103,7 +104,9 @@ const Alcoholes = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <img className='alcoholes-header-img' src={alcoholesHeaderImg} alt="Extracto de uva" />
+                        <Suspense fallback={<Loading />}>
+                            <img className='alcoholes-header-img' src={alcoholesHeaderImg} alt="Extracto de uva" />
+                        </Suspense>
 
                     </div>
                 </div>
@@ -153,19 +156,24 @@ const Alcoholes = (props) => {
     return(
         <>
         <Head pageTitle={langText.head.alcohols[lang]} keywordsPage={key_alcohol} description='Alcohol bruto, rectificado, desnaturalizado, aguardiente, destilado del vino - Raw alcohol'/>
-            <Navbar width='214px' />
+            <Layout>
+                {renderAlcoholesHeader()}
 
-            {renderAlcoholesHeader()}
+                {renderProductos()}
 
-            {renderProductos()}
+                <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
+                <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
 
-            <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
-            <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
+                <Suspense fallback={<Loading/>}>
+                    <EntornoNatural type='alcohol' width={screenWidth} />
+                </Suspense>
 
-            <EntornoNatural type='alcohol' width={screenWidth} />
+                <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
 
-            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
-            <Footer />
+            </Layout>
+            {/* <Navbar width='214px' />
+
+            <Footer /> */}
 
         </>
     )

@@ -1,10 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
-import Navbar from '../../components/navbarIndex/NavbarIndex'
-import Footer from '../../components/footer/Footer'
-import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState, Suspense } from 'react'
+// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 import '../../styles/pages/extractos-uva.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -18,6 +17,8 @@ import vinoProducto4 from '../../images/DEF/BL8A9427.jpg'
 import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
+
+const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const ExtractosVino = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -268,20 +269,24 @@ const ExtractosVino = (props) => {
     return(
         <>
         <Head keywordsPage={key_wine} pageTitle={langText.head.wine[lang]} description='VINUWINE - Extracto de vino, concentrado de vino - wine extracts, wine concentrate'/>
-            <Navbar width='214px' />
+            <Layout>
+                {renderExtractosHeader()}
 
-            {renderExtractosHeader()}
+                {renderProductos()}
 
-            {renderProductos()}
+                <TextCentered width='925px' margin='60px'>{langText.wine.centered[lang]} (&gt;30%).</TextCentered>
+                <Button style='red-button' width='270' goTo='/contacto'>{langText.wine.button[lang]}</Button>
 
-            <TextCentered width='925px' margin='60px'>{langText.wine.centered[lang]} (&gt;30%).</TextCentered>
-            <Button style='red-button' width='270' goTo='/contacto'>{langText.wine.button[lang]}</Button>
+                <Suspense fallback={<p>...</p>}>
+                    <EntornoNatural type='vino' width={screenWidth} />
+                </Suspense>
 
-            <EntornoNatural type='vino' width={screenWidth} />
+                <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
 
-            <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
 
-            <Footer />
+            <Footer /> */}
 
         </>
     )

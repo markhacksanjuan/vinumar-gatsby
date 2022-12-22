@@ -1,0 +1,19 @@
+.loader-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.loader {
+    border: 10px solid #e8e8e8;
+    border-top: 10px solid #A02E33;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1.2s linear infinite
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+}

@@ -8,6 +8,7 @@ import SimpleImageSlider from 'react-simple-image-slider'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
 import Head from '../../components/Head/Head'
+import Layout from '../../components/Layout/Layout'
 
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -310,13 +311,15 @@ const Historia = (props) => {
     return(
         <>
             <Head pageTitle={langText.head.history[lang]}/>
-            <Navbar width='214px' />
-            {renderHeader()}
-            {renderVinumar()}
-            {screenWidth > 800 ? renderCronologia() : renderCronologia2()}
-            {renderHistoria()}
-            <Button style='red-button' goTo='/contacto' >{langText.history.button[lang]}</Button>
-            <Footer />
+            <Layout>
+                {renderHeader()}
+                {renderVinumar()}
+                {screenWidth > 800 ? renderCronologia() : renderCronologia2()}
+                {renderHistoria()}
+                <Button style='red-button' goTo='/contacto' >{langText.history.button[lang]}</Button>
+            </Layout>
+            {/* <Navbar width='214px' />
+            <Footer /> */}
 
         </>
     )

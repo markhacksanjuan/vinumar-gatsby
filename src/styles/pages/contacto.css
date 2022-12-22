@@ -89,6 +89,9 @@
     box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.3);
     border-radius: 20px;
 }
+.loading-container {
+    padding-top: 50px
+}
 .alert-container-error {
     width: 70%;
     background-color: white;
