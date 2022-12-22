@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { navigate } from 'gatsby'
 import { useForm } from 'react-hook-form'
 import Layout from '../components/Layout/Layout'
@@ -145,9 +145,9 @@ const ContactoPage = (props) => {
                             <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>
                         </div>
-                        <Suspense fallback={<Loading/>}>
+                        {/* <Suspense fallback={<Loading/>}> */}
                             <Gmap />
-                        </Suspense>
+                        {/* </Suspense> */}
 
                     </div>
 

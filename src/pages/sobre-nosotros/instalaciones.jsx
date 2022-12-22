@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
 import Head from '../../components/Head/Head'

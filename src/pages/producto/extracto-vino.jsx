@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
-// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState } from 'react'
+import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
@@ -18,9 +18,9 @@ import { LangStateContext, LangDispatchContext } from '../../components/GlobalCo
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
 
-const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
+// const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
-const ExtractosVino = (props) => {
+const ExtractosVino = ({}) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
@@ -277,9 +277,9 @@ const ExtractosVino = (props) => {
                 <TextCentered width='925px' margin='60px'>{langText.wine.centered[lang]} (&gt;30%).</TextCentered>
                 <Button style='red-button' width='270' goTo='/contacto'>{langText.wine.button[lang]}</Button>
 
-                <Suspense fallback={<p>...</p>}>
+                {/* <Suspense fallback={<p>...</p>}> */}
                     <EntornoNatural type='vino' width={screenWidth} />
-                </Suspense>
+                {/* </Suspense> */}
 
                 <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
             </Layout>

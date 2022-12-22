@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
-// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState } from 'react'
+import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
@@ -16,7 +16,7 @@ import { LangStateContext, LangDispatchContext } from '../../components/GlobalCo
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
 
-const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
+// const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const Alcoholes = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -164,9 +164,9 @@ const Alcoholes = (props) => {
                 <TextCentered width='925px' margin='60px'>{langText.alcohols.centered[lang]}</TextCentered>
                 <Button style='red-button' width='270' goTo='/contacto'>{langText.alcohols.button[lang]}</Button>
 
-                <Suspense fallback={<Loading/>}>
+                {/* <Suspense fallback={<Loading/>}> */}
                     <EntornoNatural type='alcohol' width={screenWidth} />
-                </Suspense>
+                {/* </Suspense> */}
 
                 <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
 

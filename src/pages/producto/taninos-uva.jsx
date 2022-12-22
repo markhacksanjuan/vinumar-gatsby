@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
-// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import React, { useContext, useEffect, useState } from 'react'
+import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
@@ -14,8 +14,9 @@ import taninosProductoImg from '../../images/DEF/BL8A9520_2.jpg'
 import { LangStateContext, LangDispatchContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 
-const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
-const Taninos = (props) => {
+// const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
+
+const Taninos = ({}) => {
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
@@ -154,9 +155,9 @@ const Taninos = (props) => {
                 <TextCentered width='925px' margin='60px'>{langText.tannins.centered[lang]}</TextCentered>
                 <Button style='red-button' width='270' goTo='/contacto'>{langText.tannins.button[lang]}</Button>
 
-                <Suspense fallback={<p>...</p>}>
+                {/* <Suspense fallback={<Loading/>}> */}
                     <EntornoNatural type='taninos' width={screenWidth} />
-                </Suspense>
+                {/* </Suspense> */}
 
                 <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
             </Layout>

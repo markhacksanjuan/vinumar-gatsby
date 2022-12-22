@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
-// import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
+import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import Head from '../../components/Head/Head'
 import Layout from '../../components/Layout/Layout'
 
@@ -16,7 +16,7 @@ import { langText } from '../../lang'
 import '../../styles/pages/extractos-piel.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
 
-const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
+// const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const ExtractosPiel = (props) => {
     const { lang } = useContext(LangStateContext)
@@ -206,9 +206,9 @@ const ExtractosPiel = (props) => {
                 <TextCentered width='925px' margin='60px'>{langText.skin.centered[lang]}</TextCentered>
                 <Button style='red-button' width='270' goTo='/contacto'>{langText.skin.button[lang]}</Button>
                 
-                <Suspense fallback={<p>...</p>}>
+                {/* <Suspense fallback={<p>...</p>}> */}
                     <EntornoNatural type='piel' width={screenWidth} />
-                </Suspense>
+                {/* </Suspense> */}
 
                 <Button style='red-button' width='270' goTo='/sobre-nosotros/valores'>{langText.where.button[lang]}</Button>
             </Layout>

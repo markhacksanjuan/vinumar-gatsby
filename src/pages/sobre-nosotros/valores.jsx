@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, Suspense } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import '../../styles/pages/valores.css'
 import '../../styles/pages/mediaQueries/valores-media.css'
 import TextCentered from '../../components/textCentered/TextCentered'
