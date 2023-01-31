@@ -75,6 +75,10 @@ export const langText_footer = {
         found: {
             es: 'Fondo Europeo Agrícola de Desarrollo Rural',
             en: 'European Agricultural Fund for Rural Development'
+        },
+        safety: {
+            es: 'Política de inocuidad alimentaria',
+            en: 'Food Safety Policy'
         }
     },
     spain: {

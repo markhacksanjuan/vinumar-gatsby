@@ -79,11 +79,11 @@ const Recursos = (props) => {
             originalHeight: 600,
             originalClass: 'slideClass',
         },
-        { 
-            original: imgInst2,
-            originalHeight: 600,
-            originalClass: 'slideClass',
-         },
+        // { 
+        //     original: imgInst2,
+        //     originalHeight: 600,
+        //     originalClass: 'slideClass',
+        //  },
         { 
             original: imgInst3,
             originalHeight: 600,
