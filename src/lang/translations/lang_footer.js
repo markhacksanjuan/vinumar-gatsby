@@ -77,8 +77,8 @@ export const langText_footer = {
             en: 'European Agricultural Fund for Rural Development'
         },
         safety: {
-            es: 'Política de inocuidad alimentaria',
-            en: 'Food Safety Policy'
+            es: 'Política de Calidad e Inocuidad Alimentaria',
+            en: 'Quality and Food Safety Policy'
         }
     },
     spain: {
