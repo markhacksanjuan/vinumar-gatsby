@@ -1,0 +1,188 @@
+.piel-container-header {
+    border-top: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 302px;
+    width: 1440px;
+}
+.piel-container-header-title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.piel-container-header-title h4 {
+    font-size: 37px;
+    margin: 0;
+}
+.piel-container-header-title p {
+    width: 50%;
+}
+.piel-header-apli-carac-img-container {
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px black;
+    margin-top: 60px;
+    padding-top: 10px
+}
+
+.piel-header-apli-carac-container {
+    width: 60%
+}
+.piel-header-apli-carac-title {
+    font-weight: bold;
+    width: 30%
+}
+.piel-header-apli-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.piel-header-apli-container > ul {
+    width: 31.7%;
+    list-style: none;
+}
+.piel-header-apli-container > ul > li {
+    border-bottom: solid 1px black;
+    padding-top: 10px;
+    padding-bottom: 7px
+}
+.piel-header-apli-container > ul > li:first-child {
+    padding-top: 0px
+}
+.piel-header-apli-container > ul > li:last-child {
+    border: none
+}
+.piel-header-apli-definition {
+    width: 31.7%;
+    margin-bottom: 60px;
+    margin-left: 23px
+}
+.piel-header-apli-definition ul {
+    margin-top: 10px;
+    list-style-type: "-";
+    margin-left: 1rem;
+    list-style-position: inside;
+}
+.li-span{
+    padding-left: 1rem
+}
+.piel-header-carac-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: solid 1px black;
+    padding-top: 10px
+}
+.piel-header-carac-container > ul {
+    width: 70%;
+}
+.piel-header-carac-container > ul > li {
+    /* padding-top: 10px; */
+    padding-bottom: 7px
+}
+.piel-header-carac-container > ul > li:last-child {
+    border: none
+}
+.piel-header-carac-container > ul > li:last-child > p:last-child {
+    width: 52%
+}
+.piel-header-carac-li > .italic {
+    width: 52%
+}
+.piel-header-carac-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px black
+}
+.piel-header-carac-li > ul {
+    width: 47%
+}
+.piel-header-img {
+    width: 60%;
+    height: 688px;
+    object-fit: cover;
+    margin-left: 20px
+}
+
+
+.piel-productos-container {
+    border-top: 1px solid black;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 315px;
+    margin-bottom: 60px;
+    padding-bottom: 60px
+}
+.piel-productos-container h4 {
+    font-size: 37px;
+    margin: 0;
+    margin-top: 15px
+}
+.piel-productos-container li {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 7px
+}
+.piel-productos-container > div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+.piel-productos-container > div > div {
+    width: 705px;
+    border-top: 1px solid black;
+    padding-top: 5px;
+}
+.piel-productos-container > div > div > p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px
+}
+.piel-productos-container > div > div > img {
+    border-radius: 15px 15px 15px 0;
+    height: 300px;
+    width: 100%;
+    object-position: left 10%;
+}
+.piel-productos-container > div > div > div {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding-top: 7px;
+    margin-top: 15px
+}
+.piel-productos-container > div > div > div > p {
+    margin-right: 20%;
+    width: 45%
+}
+.piel-productos-container > div > div > div > div > ul {
+    list-style: none;
+}
+.piel-productos-container > div > div > div > div > ul > li {
+    display: flex;
+    flex-direction: row;
+}
+.piel-productos-container > div > div > div > div > ul > li > p:first-child {
+    margin-right: 25%;
+    width: 30%
+}
+.piel-productos-container > div > div > div > div > ul > li > p {
+    width: 49%
+}
+.piel-productos-container > div > div > div > div > ul > li > ul > li:first-child {
+    border-top: none
+}
+.piel-productos-container > div > div > div > div > ul > li > ul{
+    width: 49%;
+    list-style: none;
+}
+.piel-productos-container > div > div > div > div > ul > li > ul > li:first-child{
+    padding-top: 0px
+}

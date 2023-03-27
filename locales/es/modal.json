@@ -1,0 +1,7 @@
+{
+    "mensaje_exito": {
+        "titulo": "¡Muchas gracias!",
+        "mensaje": "Su mensaje ha sido enviado."
+    },
+    "mensaje_error": "Debes aceptar la Política de Privacidad para enviar el mensaje."
+}

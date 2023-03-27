@@ -5,6 +5,7 @@ import CookieConsent, { Cookies } from 'react-cookie-consent'
 import { useLocation } from '@reach/router'
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import { } from 'gatsby-plugin-google-gtag'
+import { graphql } from 'gatsby'
 
 import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 
@@ -58,3 +59,17 @@ const Layout = ({ children }) => {
     )
 }
 export default Layout
+
+export const query = graphql`
+    query ($language: String!) {
+        locale: allLocale(filter: {ns: {in: ["common"]}, language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`

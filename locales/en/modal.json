@@ -1,0 +1,7 @@
+{
+    "mensaje_exito": {
+        "titulo": "Thank you!",
+        "mensaje": "Your message has vent sent."
+    },
+    "mensaje_error": "Privacy Policy must be accepted to send the message"
+}

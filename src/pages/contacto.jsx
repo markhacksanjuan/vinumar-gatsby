@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { navigate } from 'gatsby'
+import { navigate, graphql } from 'gatsby'
 import { useForm } from 'react-hook-form'
 import Layout from '../components/Layout/Layout'
 import Gmap from '../components/gmap/Gmap'
 import Button from '../components/button/Button'
 import Head from '../components/Head/Head'
 import Loading from '../components/Loading/Loading'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 import '../styles/pages/contacto.css'
 import '../styles/pages/mediaQueries/contacto-media.css'
@@ -17,6 +18,7 @@ import { historyState } from '../helpers/historyState'
 // const Gmap = React.lazy(() => import('../components/gmap/Gmap'))
 
 const ContactoPage = (props) => {
+    const { t } = useTranslation()
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [open, setOpen] = useState(false)
@@ -114,18 +116,18 @@ const ContactoPage = (props) => {
         return(
             <>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <p>{langText.contact.form.title[lang]}</p>
-                    <input required {...register('name')} type="text" name='name' placeholder={langText.contact.form.name[lang]} />
-                    <input required {...register('email')} type="email" name='email' placeholder={langText.contact.form.email[lang]} />
+                    <p>{t('formulario.titulo')}</p>
+                    <input required {...register('name')} type="text" name='name' placeholder={t('formulario.nombre_apellidos')} />
+                    <input required {...register('email')} type="email" name='email' placeholder={t('formulario.email')} />
                     <div>
-                        <textarea required {...register('message')} name="message" id="mensaje" cols="48" rows="15" placeholder={langText.contact.form.message[lang]}></textarea>
+                        <textarea required {...register('message')} name="message" id="mensaje" cols="48" rows="15" placeholder={t('formulario.mensaje')}></textarea>
                     </div>
                     <div id='checkbox' >
                         <div className='send-div'>
                             <input {...register('rgpd')} className='input-checkbox' type="checkbox" name='rgpd' />
-                            <label for="rgpd">{langText.contact.form.accept[lang]}</label>
+                            <label for="rgpd">{t('formulario.acepto')}</label>
                         </div>
-                        <Button type='submit' style='send-button'>{langText.contact.form.send[lang]}</Button>
+                        <Button type='submit' style='send-button'>{t('formulario.enviar')}</Button>
                     </div>
                 </form>
             </>
@@ -136,12 +138,12 @@ const ContactoPage = (props) => {
             <>
                 <div className='contact-content-container'>
                     <div>
-                        <h4>{langText.contact.title[lang]}</h4>
+                        <h4>{t('titulo')}</h4>
                         {renderForm()}
                     </div>
                     <div >
                         <div className='contact-info'>
-                            <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, {langText.contact.spain[lang]}</p>
+                            <p>ctra. Munera, 5<br/>02600 Villarrobledo Albacete, {t('pais')}</p>
                             <p>T +34 967141500<br/> F +34 967144111</p>
                             <p>vinumar@vinumar.es</p>
                         </div>
@@ -170,3 +172,17 @@ const ContactoPage = (props) => {
     )
 }
 export default ContactoPage
+
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {ns: {in: ["common", "contacto"]}, language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`

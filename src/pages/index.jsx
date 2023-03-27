@@ -3,10 +3,11 @@ import Navbar from '../components/navbarIndex/NavbarIndex'
 import Footer from '../components/footer/Footer'
 import Button from '../components/button/Button'
 import TextCentered from "../components/textCentered/TextCentered"
-import { Link } from 'gatsby'
+import { graphql, Link as GatsbyLink } from 'gatsby'
 import Layout from "../components/Layout/Layout"
 import ReadMore from "../components/readMore/ReadMore"
 import Head from "../components/Head/Head"
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next'
 
 // IMPORT STYLES
 import '../styles/index.css'
@@ -30,6 +31,7 @@ import { langText } from '../lang'
 // markup
 const IndexPage = () => {
   const { lang } = useContext(LangStateContext)
+  const {t} = useTranslation()
   const [scroll, setScroll] = useState()
   const [scrollTextCentered_1, setScrollTextCentered_1] = useState(false)
   const [scrollTextCentered_2, setScrollTextCentered_2] = useState(false)
@@ -37,6 +39,7 @@ const IndexPage = () => {
   const [scrollPiel, setScrollPiel] = useState(false)
   const [scrollVino, setScrollVino] = useState(false)
   const [scrollTaninos, setScrollTaninos] = useState(false)
+  const [scrollSemillas, setScrollSemillas] = useState(false)
   const [scrollAlcoholes, setScrollAlcoholes] = useState(false)
   const [scrollPepita, setScrollPepita] = useState(false)
   const [scrollButton, setScrollButton] = useState(false)
@@ -62,8 +65,9 @@ const IndexPage = () => {
         if(factor > 500) { setScrollPiel(true) }
         if(factor > 600) { setScrollVino(true) }
         if(factor > 1000) { setScrollTaninos(true) }
-        if(factor > 1100) { setScrollAlcoholes(true) }
-        if(factor > 1500) { setScrollPepita(true) }
+        if(factor > 1100) { setScrollSemillas(true)}
+        if(factor > 1500) { setScrollAlcoholes(true) }
+        if(factor > 1600) { setScrollPepita(true) }
         if(factor > 3000) { setScrollTextCentered_2(true) }
         if(factor > 3200) { setScrollButton(true) }
         if(factor > 2400) { setScrollDonde(true) }
@@ -131,11 +135,11 @@ const IndexPage = () => {
         <div className='index-container-header'>
           <img src={headerImg} alt='Vinumar' />
           <div className="index-container-header-h2">
-            <h2 className="index-h2">{langText.index.head_title[lang]}</h2>
+            <h2 className="index-h2">{t('title')}</h2>
           </div>
           {/* <Button className='index-card-button button-fade-in' style='white-button' goTo='#productos'>VER PRODUCTOS</Button> */}
           <div className="button-fade-in">
-            <Button style='white-button-header' onClickButton={onClickButtonHeader}>{langText.index.button_view_products[lang]}</Button>
+            <Button style='white-button-header' onClickButton={onClickButtonHeader}>{t('ver_productos')}</Button>
           </div>
 
         </div>
@@ -153,7 +157,7 @@ const IndexPage = () => {
           <div className="view">
             <img src={image} className={`index-card-img ${className ? className : ''}`} alt={title} />
             <div className="mask">
-              <Button className='index-card-button' style='white-button-product' width='164' goTo={goTo}>{langText.index.products.button_more[lang]}</Button>
+              <Button className='index-card-button' style='white-button-product' width='164' goTo={goTo}>{t('descubre')}</Button>
             </div>
           </div>
         {/* </div> */}
@@ -164,20 +168,20 @@ const IndexPage = () => {
     return(
       <>
         <div id='productos' className={`index-container-product ${scrollProductos && 'index-container-product-animated'}`}>
-          <h2>{langText.index.products.title[lang]}</h2>
+          <h2>{t('productos.title')}</h2>
           <div className='index-container-cards'>
             <div className={`index-card ${scrollPiel && 'index-card-animated-bottom'}`}>
               <ProductoCard 
-                title={langText.index.products.grape_skin.title[lang]}
-                text={langText.index.products.grape_skin.text[lang]}
+                title={t('productos.extractos_uva')}
+                text={t('productos.extractos_uva_desc')}
                 image={extPiel}
                 goTo='/producto/extracto-piel-uva'
               />
             </div>
             <div className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
               <ProductoCard 
-                title={langText.index.products.wine_extracts.title[lang]}
-                text={langText.index.products.wine_extracts.text[lang]}
+                title={t('productos.extractos_vino')}
+                text={t('productos.extractos_vino_desc')}
                 image={extVino}
                 goTo='/producto/extracto-vino'
                 className={'index-card-vino'}
@@ -185,17 +189,26 @@ const IndexPage = () => {
             </div>
             <div className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
               <ProductoCard 
-                title={langText.index.products.grape_tannins.title[lang]}
-                text={langText.index.products.grape_tannins.text[lang]}
+                title={t('productos.taninos')}
+                text={t('productos.taninos_desc')}
                 image={taninosUva}
                 goTo='/producto/taninos-uva'
                 className={'index-card-tanino'}
               />
             </div>
+            <div className={`index-card ${scrollSemillas && 'index-card-animated-bottom'}`}>
+              <ProductoCard 
+                title={t('productos.extractos_semilla')}
+                text={t('productos.extractos_semilla_desc')}
+                image={taninosUva}
+                goTo='/producto/extracto-de-semilla-de-uva'
+                className={'index-card-semillas'}
+              />
+            </div>
             <div className={`index-card ${scrollAlcoholes && 'index-card-animated-bottom'}`}>
               <ProductoCard 
-                title={langText.index.products.alcohols.title[lang]}
-                text={langText.index.products.alcohols.text[lang]}
+                title={t('productos.alcoholes')}
+                text={t('productos.alcoholes_desc')}
                 image={alcohol}
                 goTo='/producto/alcoholes'
                 className={'index-card-alcohol'}
@@ -203,8 +216,8 @@ const IndexPage = () => {
             </div>
             <div className={`index-card ${scrollPepita && 'index-card-animated-bottom'}`}>
               <ProductoCard 
-                title={langText.index.products.grape_seed.title[lang]}
-                text={langText.index.products.grape_seed.text[lang]}
+                title={t('productos.pepita')}
+                text={t('productos.pepita_desc')}
                 image={pepitas}
                 goTo='/producto/pepita-de-uva'
               />
@@ -219,18 +232,18 @@ const IndexPage = () => {
     return(
       <>
         <div className={`index-container-donde ${scrollDonde && 'donde-animated'}`}>
-          <h2>{langText.index.where.title[lang]}</h2>
+          <h2>{t('donde_estamos.title')}</h2>
           <div className={`index-card-donde `}>
             <div className={`index-container-donde-text `}>
               <p className={`index-donde-direccion ${scrollDonde && 'index-donde-direccion-animated'}`}>ctra. Munera, 5
                 <span>02600 Villarrobledo</span>
-                <span>Albacete, {langText.index.spain[lang]}</span>
+                <span>Albacete, {t('pais')}</span>
               </p>
               <div className={`index-donde-text ${scrollDonde && 'index-donde-text-animated'}`}>
                 <ReadMore width={screenWidth} lang={lang}>
                   <div>
-                    {langText.index.where.text_top[lang]}
-                    <span className='parrafo'>{langText.index.where.text_bottom[lang]}</span>
+                    {t('donde_estamos.desc')}
+                    <span className='parrafo'>{t('donde_estamos.desc_2')}</span>
                   </div>
                 </ReadMore>
               </div>
@@ -238,7 +251,7 @@ const IndexPage = () => {
               <div className="view-donde">
                 <img className={`index-donde-img ${scrollDonde && 'index-donde-img-animated'}`} src={lang === 'es' ? dondeImg : dondeImg_en} alt='Donde estamos' />
                 <div className="mask-donde">
-                  <Button className='index-card-button' style='white-button'  width='164' goTo='/donde-estamos'>{langText.index.where.button_where[lang]}</Button>
+                  <Button className='index-card-button' style='white-button'  width='164' goTo='/donde-estamos'>{t('donde_estamos.title').toUpperCase()}</Button>
                 </div>
               </div>
           </div>
@@ -254,16 +267,16 @@ const IndexPage = () => {
         <div className='index-container'>
           {renderHeader()}
           <div className={`text-centered-bottom ${scrollTextCentered_1  ? 'text-centered-animated-bottom' : ''}`}>
-            <TextCentered>{langText.index.text_centered_top[lang]}</TextCentered>
+            <TextCentered>{t('frase1')}</TextCentered>
           </div>
           {renderProductos()}
           {renderDonde()}
           <div className={`text-centered-fade-in ${scrollTextCentered_2 && 'fade-in'}`}>
-            <TextCentered width='960px' margin='60px'>{langText.index.text_centered_bottom[lang]}</TextCentered>
+            <TextCentered width='960px' margin='60px'>{t('frase2')}</TextCentered>
           </div>
         </div>
           <div className={`index-button-mas ${scrollButton && 'fade-in'}`}>
-            <Button text='SABER MÁS SOBRE VINUMAR' goTo='/sobre-nosotros/valores' style='red-button' width='292px'>{langText.index.button_know_more[lang]}</Button>
+            <Button text='SABER MÁS SOBRE VINUMAR' goTo='/sobre-nosotros/valores' style='red-button' width='292px'>{t('saber_mas')}</Button>
           </div>
       </Layout>
     </>
@@ -272,8 +285,16 @@ const IndexPage = () => {
 
 export default IndexPage
 
-// export const Head = () => {
-//   return (
-//     <SEO />
-//   )
-// }
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {ns: {in: ["index", "common"]}, language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`

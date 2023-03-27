@@ -1,0 +1,11 @@
+{
+    "titulo": "Contact us",
+    "formulario": {
+        "titulo": "Contact form",
+        "nombre_apellidos": "Name",
+        "email": "email@address.com",
+        "mensaje": "Message...",
+        "acepto": "I am over 14 and I have read and accept the Privacy Policy",
+        "enviar": "Send"
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { graphql } from 'gatsby'
 import Navbar from '../../components/navbarIndex/NavbarIndex'
 import Footer from '../../components/footer/Footer'
 import '../../styles/pages/historia.css'
@@ -9,6 +10,7 @@ import Button from '../../components/button/Button'
 import ReadMore from '../../components/readMore/ReadMore'
 import Head from '../../components/Head/Head'
 import Layout from '../../components/Layout/Layout'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -30,6 +32,7 @@ import { historyState } from '../../helpers/historyState'
 
 
 const Historia = (props) => {
+    const { t } = useTranslation()
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
@@ -96,7 +99,7 @@ const Historia = (props) => {
             <>
                 <div className="historia-container-header">
                     <img src={headerImg} alt="historia" />
-                    <h2 className='historia-h2'>{langText.history.header[lang]}</h2>
+                    <h2 className='historia-h2'>{t('header')}</h2>
                 </div>
             </>
         )
@@ -106,11 +109,11 @@ const Historia = (props) => {
             <>
                 <div className="historia-vinumar-container">
                     <div>
-                        <h4>{langText.history.vinumar.title[lang]}</h4>
+                        <h4>{t('vinumar.titulo')}</h4>
                         <ReadMore width={screenWidth} lang={lang}>
                             <p>
-                                {langText.history.vinumar.text_1[lang]}
-                                <span className="parrafo">{langText.history.vinumar.text_2[lang]}</span>
+                                {t('vinumar.texto_1')}
+                                <span className="parrafo">{t('vinumar.texto_2')}</span>
                             </p>
                         </ReadMore>
                     </div>
@@ -140,63 +143,63 @@ const Historia = (props) => {
             <>
                 <div className="historia-crono-container">
                     <div>
-                        <h4>{langText.history.chronology.title[lang]}</h4>
+                        <h4>{t('cronologia.titulo')}</h4>
                     </div>
                     <div>
                         <div>
                             <div id='div-1955' style={{ height: '130px' }}>
-                                <p>{langText.history.chronology.text_1955[lang]}</p>
+                                <p>{t('cronologia.1955')}</p>
                                 <p>1955</p>
                             </div>
                             <div id='div-1970' className='two-years' style={{ height: '130px' }}>
-                                <p>{langText.history.chronology.text_1970[lang]}</p>
+                                <p>{t('cronologia.1970')}</p>
                                 <p style={{ width: '50%'}}>1970-79</p>
                             </div>
                             <div id='div-1993' style={{ height: '115px' }}>
-                                <p>{langText.history.chronology.text_1993[lang]}</p>
+                                <p>{t('cronologia.1993')}</p>
                                 <p>1993</p>
                             </div>
                             <div id='div-2005' style={{ height: '130px' }}> 
-                                <p>{langText.history.chronology.text_2005[lang]}</p>
+                                <p>{t('cronologia.2005')}</p>
                                 <p>2005</p>
                             </div>
                             <div style={{ paddingBottom: '10px'}}>
-                                <p>{langText.history.chronology.text_2018[lang]}</p>
+                                <p>{t('cronologia.2018')}</p>
                                 <p>2018</p>
                             </div>
                             <div style={{ paddingBottom: '10px', paddingTop: '10px'}}>
-                                <p>{langText.history.chronology.text_2020_1[lang]}</p>
+                                <p>{t('cronologia.2020_1')}</p>
                                 <p>2020</p>
                             </div>
                             <div style={{ borderRight: 'none' }}>
-                                <p>{langText.history.chronology.text_2021[lang]}</p>
+                                <p>{t('cronologia.2021')}</p>
                                 <p>2021</p>
                             </div>
                         </div>
                         <div>
                             <div style={{ height: '150px' }}>
                                 <p>1965</p>
-                                <p>{langText.history.chronology.text_1965[lang]}</p>
+                                <p>{t('cronologia.1965')}</p>
                             </div>
                             <div id='div-1989' style={{ height: '65px' }}>
                                 <p>1989</p>
-                                <p>{langText.history.chronology.text_1989[lang]}</p>
+                                <p>{t('cronologia.1989')}</p>
                             </div>
                             <div id='div-1994' style={{ height: '150px' }}>
                                 <p>1994</p>
-                                <p>{langText.history.chronology.text_1994[lang]}</p>
+                                <p>{t('cronologia.1994')}</p>
                             </div>
                             <div style={{ height: '90px' }}>
                                 <p>2013</p>
-                                <p>{langText.history.chronology.text_2013[lang]}</p>
+                                <p>{t('cronologia.2013')}</p>
                             </div>
                             <div id='div-2019' style={{ height: '60px' }}>
                                 <p>2019</p>
-                                <p>{langText.history.chronology.text_2019[lang]}</p>
+                                <p>{t('cronologia.2019')}</p>
                             </div>
                             <div id='div-2020-2'>
                                 <p>2020</p>
-                                <p>{langText.history.chronology.text_2020_2[lang]}</p>
+                                <p>{t('cronologia.2020_2')}</p>
                             </div>
                         </div>
 
@@ -210,61 +213,61 @@ const Historia = (props) => {
             <>
                 <div className="historia-crono2-container">
                     <div>
-                        <h4>{langText.history.chronology.title[lang]}</h4>
+                        <h4>{t('cronologia.titulo')}</h4>
                     </div>
                     <div>
                         <div>
                             <div className='crono2-div'>
                                 <p>1955</p>
-                                <p>{langText.history.chronology.text_1955[lang]}</p>
+                                <p>{t('cronologia.1955')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>1965</p>
-                                <p>{langText.history.chronology.text_1965[lang]}</p>
+                                <p>{t('cronologia.1965')}</p>
                             </div>
                             <div className='two-years crono2-div'>
                                 <p style={{ width: '50%'}}>1970-79</p>
-                                <p>{langText.history.chronology.text_1970[lang]}</p>
+                                <p>{t('cronologia.1970')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>1989</p>
-                                <p>{langText.history.chronology.text_1989[lang]}</p>
+                                <p>{t('cronologia.1989')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>1993</p>
-                                <p>{langText.history.chronology.text_1993[lang]}</p>
+                                <p>{t('cronologia.1993')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>1994</p>
-                                <p>{langText.history.chronology.text_1994[lang]}</p>
+                                <p>{t('cronologia.1994')}</p>
                             </div>
                             <div className='crono2-div'> 
                                 <p>2005</p>
-                                <p>{langText.history.chronology.text_2005[lang]}</p>
+                                <p>{t('cronologia.2005')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2013</p>
-                                <p>{langText.history.chronology.text_2013[lang]}</p>
+                                <p>{t('cronologia.2013')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2018</p>
-                                <p>{langText.history.chronology.text_2018[lang]}</p>
+                                <p>{t('cronologia.2018')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2019</p>
-                                <p>{langText.history.chronology.text_2019[lang]}</p>
+                                <p>{t('cronologia.2019')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2020</p>
-                                <p>{langText.history.chronology.text_2020_1[lang]}</p>
+                                <p>{t('cronologia.2020_1')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2020</p>
-                                <p>{langText.history.chronology.text_2020_2[lang]}</p>
+                                <p>{t('cronologia.2020_2')}</p>
                             </div>
                             <div className='crono2-div'>
                                 <p>2021</p>
-                                <p>{langText.history.chronology.text_2021[lang]}</p>
+                                <p>{t('cronologia.2021')}</p>
                             </div>
                         </div>
                         <div>
@@ -281,9 +284,9 @@ const Historia = (props) => {
             <>
                 <div className="historia-historia-container">
                     <div>
-                        <h4>{langText.history.growth.title[lang]}</h4>
-                        <p>{langText.history.growth.text_1[lang]}
-                        <span>{langText.history.growth.text_2[lang]}</span>
+                        <h4>{t('crecimiento.titulo')}</h4>
+                        <p>{t('crecimiento.texto_1')}
+                        <span>{t('crecimiento.texto_2')}</span>
                         </p>
                     </div>
                     {/* {imagesHist && <SimpleImageSlider 
@@ -325,3 +328,17 @@ const Historia = (props) => {
     )
 }
 export default Historia
+
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {ns: {in: ["historia", "common"]}, language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`

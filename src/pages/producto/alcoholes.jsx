@@ -1,10 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { graphql } from 'gatsby'
 import EntornoNatural from '../../components/entornoNatural/EntornoNatural'
 import TextCentered from '../../components/textCentered/TextCentered'
 import Button from '../../components/button/Button'
 import Head from '../../components/Head/Head'
 import Layout from '../../components/Layout/Layout'
 import Loading from '../../components/Loading/Loading'
+import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 import '../../styles/pages/alcoholes.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
@@ -19,6 +21,7 @@ import { historyState } from '../../helpers/historyState'
 // const EntornoNatural = React.lazy(() => import('../../components/entornoNatural/EntornoNatural'))
 
 const Alcoholes = (props) => {
+    const { t } = useTranslation()
     const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
@@ -50,7 +53,7 @@ const Alcoholes = (props) => {
             <>
                 <div className='alcoholes-container-header'>
                     <div className='alcoholes-container-header-title'>
-                        <h4>{langText.alcohols.header.title[lang]}</h4>
+                        <h4>{t('titulo')}</h4>
                         <p>{langText.alcohols.header.text_1[lang]}
                         <span className="parrafo">
                         {langText.alcohols.header.text_2[lang]}
@@ -179,3 +182,17 @@ const Alcoholes = (props) => {
     )
 }
 export default Alcoholes
+
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {ns: {in: ["common", "alcoholes"]}, language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`

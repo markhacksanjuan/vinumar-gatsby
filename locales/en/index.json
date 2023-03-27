@@ -1,0 +1,29 @@
+{
+    "title": "More than 60 years of tradition and innovation in the world of grape.",
+    "ver_productos": "VIEW PRODUCTS",
+    "frase1": "At Vinumar, we are specialists in products derived from grape. We combine technology, agility and tradition, with the sole purpose of extracting the highest quality from an exceptional fruit: grape from Castilla-La Mancha.",
+    "productos": {
+        "title": "Products",
+        "extractos_uva": "Grape skin extracts",
+        "extractos_uva_desc": "It is one of the most distinguished natural colourings in the world of food. Grape skin extract allows a wide variety of uses in all its colour tones.",
+        "extractos_vino": "Wine extracts",
+        "extractos_vino_desc": "Concentrated and dealcoholized aromatic and flavouring made from selected red and white wines. Wine extract is the secret ingredient of sauces, prepared dishes, non-alcoholic drinks, etc. of very frequent use in food.",
+        "taninos": "Taninos de uva",
+        "taninos_desc": "These are natural phenolic compounds extracted from the skin and seeds of grapes. In addition to being flavour enhancers, tannins provide multiple qualities in the field of oenology.",
+        "extractos_semilla": "Grape seed extracts",
+        "extractos_semilla_desc": "These are natural phenolic compounds extracted from the seeds of white grapes. There are known for their high antioxidant properties.",
+        "alcoholes": "Alcohols",
+        "alcoholes_desc": "Made from wine or by-products of winemaking, alcohols range from wine spirits to those used by the chemical and pharmaceutical industries, the health sector or even the energy sector.",
+        "pepita": "Grape seed",
+        "pepita_desc": "The fruit of the drying of grape marc and its subsequent separation, grape seed is the basis of oil which contains vitamin E as well as omega 3 and omega 6 essential fatty acids."
+    },
+    "descubre": "FIND OUT MORE",
+    "donde_estamos": {
+        "title": "Where we are",
+        "desc": "We are in a strategic location: Castilla-La Mancha, one of the largest regions producing high quality grapes on a global scale. This proximity to the raw material guarantees us an abundance of supply and a large production capacity, to respond as quickly as possible, to the demands of our customers.",
+        "desc_2": "In addition, we have a long-range logistics network by highway, rail, air and sea transport, which allows us to reach where necessary. From where we are, everything is an advantage."
+    },
+    "frase2": "More than 60 years making history in the world of grape",
+    "saber_mas": "FIND OUT MORE ABOUT VINUMAR",
+    "pais": "Spain"
+}
