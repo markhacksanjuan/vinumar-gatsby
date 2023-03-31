@@ -1,0 +1,29 @@
+{
+    "header": "A story of family, tradition and innovation",
+    "vinumar": {
+        "titulo": "Vinumar comes from far away.",
+        "texto_1": "Our origins date back to 1855, specifically to a family from Mora la Nova in Catalonia, with a long tradition in the distillation of alcohols. A century later, in 1955, the family decided to settle in Castilla-La Mancha, attracted by its large extensions of vineyards, constituting the embryo of the current company.",
+        "texto_2": "Today, we are a third-generation family business that has evolved at the pace of different moments in history to consolidate itself with the recycling, treatment, valorisation and marketing of products derived from viticulture, offering services to multiple industries."
+    },
+    "cronologia": {
+        "titulo": "Chronology",
+        "1955": "The first generation settles definitively in Castilla -La Mancha, beginning its roots in the land of wine, which will be consolidated in 1957 with the purchase of an alcohol factory in Villarrobledo.",
+        "1965": "Construction of the new distillery at Villarrobledo factory.",
+        "1970": "Decade of great expansion with successive expansions and modernizations of the concentrate's sections, storage and grape seeds, as well as the wine cellar.",
+        "1989": "First tests in research on the colour extraction from grape skins.",
+        "1993": "Inauguration of the new plant for the extraction and production of colouring material, a historic event that will mark the future of the company and its reinvention towards grape-derived products.",
+        "1994": "Implementation of the first wastewater treatment plant (WWTP).",
+        "2005": "Expansion of the grape marc drying facilities and implementation of a new WWTP.",
+        "2013": "Implementation of the effluent agricultural valorisation system, favouring circular economy and sustainability.",
+        "2018": "Start of new R&D&I application processes to obtain different products derived from grapes.",
+        "2019": "Expansion of the plant for the extraction of colouring material, to increase its capacity tenfold (x10).",
+        "2020_1": "Acquisition of a new purification plant for colouring material.",
+        "2020_2": "Construction of the new high-capacity spray dryer.",
+        "2021": "New plant for ultra-refined grape extracts that acts at the molecular level, providing greater added value."
+    },
+    "crecimiento": {
+        "titulo": "Story of growth",
+        "texto_1": "Vinumar's tour is the story of a family business that has managed to grow from a local company to an international company with tenacity, courage and vision.",
+        "texto_2": "The basis of our growth is the respect for the product, the technological knowledge and resource management and, fundamentally, having always placed our customers at the centre."
+    }
+}

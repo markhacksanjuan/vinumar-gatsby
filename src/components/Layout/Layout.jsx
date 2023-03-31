@@ -5,10 +5,11 @@ import CookieConsent, { Cookies } from 'react-cookie-consent'
 import { useLocation } from '@reach/router'
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import { } from 'gatsby-plugin-google-gtag'
+import { graphql } from 'gatsby'
 
 import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageLocation }) => {
     const location = useLocation()
     const renderCookiesText = () => {
         return (
@@ -36,7 +37,7 @@ const Layout = ({ children }) => {
     }
     return(
         <>
-            <Navbar />
+            <Navbar location={pageLocation} />
             <CookieConsent
             declineButtonText='Rechazar'
             enableDeclineButton

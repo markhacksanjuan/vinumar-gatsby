@@ -42,5 +42,9 @@ export const langText_head = {
     contact: {
         es: 'Contacto',
         en: 'Contact'
+    },
+    semillas: {
+        es: 'Productos - Extractos de semilla de uva',
+        en: 'Products - Grape skin extracts'
     }
 }

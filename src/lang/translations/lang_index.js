@@ -46,6 +46,16 @@ export const langText_index = {
                     en: 'These are natural phenolic compounds extracted from the skin and seeds of grapes. In addition to being flavour enhancers, tannins provide multiple qualities in the field of oenology.	'
                 }
             },
+            semillas: {
+                title: {
+                    es: 'Extractos de semilla de uva',
+                    en: 'Grape seed extracts'
+                },
+                text: {
+                    es: 'Se tratan de compuestos fenólicos naturales extraídos de las semillas de la uva blanca. Son conocidos por sus importantes propiedades antioxidantes.',
+                    en: 'These are natural phenolic compounds extracted from the seeds of white grapes. There are known for their high antioxidant properties.'
+                }
+            },
             alcohols: {
                 title: {
                     es: 'Alcoholes',

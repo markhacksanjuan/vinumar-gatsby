@@ -1,0 +1,29 @@
+{
+    "header": "Una historia de familia, tradición e innovación.",
+    "vinumar": {
+        "titulo": "Vinumar viene de lejos",
+        "texto_1": "Nuestros orígenes se remontan a 1855, concretamente a una familia de Mora la Nova en Cataluña, de larga tradición en la destilación de alcoholes. Un siglo más tarde, en 1955, la familia decidió establecerse en Castilla-La Mancha atraída por sus grandes extensiones de viñedos, constituyendo el embrión de la actual empresa.",
+        "texto_2": "Hoy, somos una empresa familiar de tercera generación que ha evolucionado al ritmo de los distintos momentos de la historia para consolidarse con el reciclaje, tratamiento, valorización y comercialización de los productos derivados de la viticultura, ofreciendo servicio a múltiples industrias."
+    },
+    "cronologia": {
+        "titulo": "Cronología",
+        "1955": "La primera generación se asienta definitivamente en Castilla-La Mancha, iniciando su arraigo a la Tierra del vino, que se consolidará en 1957 con la compra de una fábrica de alcohol en Villarrobledo.",
+        "1965": "Construcción de la nueva destilería en la fábrica de Villarrobledo.",
+        "1970": "Década de gran expansión con sucesivas ampliaciones y modernizaciones de las secciones de concentrados, almacenamiento y granilla de uva, así como de la bodega de vinos.",
+        "1989": "Primeros ensayos en investigación sobre la extracción de colorantes a partir de la piel de uva.",
+        "1993": "Inauguración de la nueva planta de extracción y producción de materia colorante, hecho histórico que marcará el futuro de la empresa y su reinvención hacia los productos derivados de la uva.",
+        "1994": "Implantación de la primera Estación depuradora de aguas residuales (EDAR).",
+        "2005": "Ampliación de las instalaciones de secado de orujo de uva y puesta en marcha de una nueva EDAR.",
+        "2013": "Implantación del Sistema de valorización agrícola de los efluentes, favoreciendo la economía circular y la sostenibilidad.",
+        "2018": "Inicio de nuevos procesos de aplicación de I+D+i para la obtención de distintos productos derivados de la uva.",
+        "2019": "Ampliación de la planta de extracción de materia colorante, hasta decuplicar (x10) su capacidad.",
+        "2020_1": "Adquisición de la nueva planta de purificacón de la materia colorante.",
+        "2020_2": "Construcción de la nueva Torre de atomización de alta capacidad.",
+        "2021": "Nueva planta de ultra-refinado de extractos de la uva que actúa a nivel molecular, aportando un mayor valor añadido."
+    },
+    "crecimiento": {
+        "titulo": "Una historia de crecimiento",
+        "texto_1": "El recorrido de Vinumar es la histora de una empresa familiar que ha conseguido pasar de ser una empresa local a una compañía de alcance internacional con tesón, valentía y visión.",
+        "texto_2": "La base de nuestro crecimiento es el respeto por el producto, el conocimiento tecnológico y de gestión de los recursos y, fundamentalmente, haber situado siempre en el centro a nuestros clientes."
+    }
+}

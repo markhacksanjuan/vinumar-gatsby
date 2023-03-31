@@ -1,3 +1,5 @@
+const { languages, defaultLanguage } = require('./languages')
+
 module.exports = {
   siteMetadata: {
     title: "VINUMAR",
@@ -39,6 +41,40 @@ module.exports = {
       // }
     }
   },
+  // {
+  //   resolve: `gatsby-source-filesystem`,
+  //   options: {
+  //     path: `${__dirname}/locales`,
+  //     name: `locale`
+  //   }
+  // },
+  // {
+  //   resolve: `gatsby-plugin-react-i18next`,
+  //   options: {
+  //     languages,
+  //     defaultLanguage,
+  //     siteUrl: 'https://www.vinumar.es',
+  //     i18nextOptions: {
+  //       keySeparator: '.',
+  //       nsSeparator: ':'
+  //       // defaultNS: [],
+  //       //debug: true,
+  //       // lowerCaseLng: true,
+  //       // saveMissing: false,
+  //       // interpolation: {
+  //         // escapeValue: false // not needed for react as it escapes by default
+  //       // }
+  //     },
+  //     // pages: [
+  //     //   {
+  //     //     matchPath: '/'
+  //     //   },
+  //     //   {
+  //     //     matchPath: '/contacto'
+  //     //   }
+  //     // ]
+  //   }
+  // }
   // {
   //   resolve: `gatsby-source-filesystem`,
   //   options: {

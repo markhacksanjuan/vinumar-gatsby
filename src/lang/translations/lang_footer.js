@@ -27,6 +27,10 @@ export const langText_footer = {
         grape_seed: {
             es: 'Pepita de uva',
             en: 'Grape seed'
+        },
+        seed_extract: {
+            es: 'Extractos de semilla de uva',
+            en: 'Grape seed extract'
         }
     },
     about: {

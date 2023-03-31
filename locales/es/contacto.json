@@ -1,0 +1,11 @@
+{
+    "titulo": "Contacta con nosotros",
+    "formulario": {
+        "titulo": "Formulario",
+        "nombre_apellidos": "Nombre y Apellidos",
+        "email": "correo@electronico.com",
+        "mensaje": "Mensaje...",
+        "acepto": "Soy mayor de 14 y he leído y acepto la Política de privacidad",
+        "enviar": "Enviar"
+    }
+}
