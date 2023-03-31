@@ -16,6 +16,8 @@ import { langText_head } from "./translations/lang_head";
 import { langText_contact } from "./translations/lang_contact";
 import { langText_modal } from "./translations/lang_modal";
 import { langText_semillas } from './translations/lang_semillas'
+import { langText_common } from "./translations/lang_common";
+import { langText_routing } from "./translations/lang_routing";
 
 export const langText = {
     alcohols: langText_alcohols,
@@ -35,5 +37,7 @@ export const langText = {
     head: langText_head,
     contact: langText_contact,
     alert: langText_modal,
-    semillas: langText_semillas
+    semillas: langText_semillas,
+    common: langText_common,
+    routing: langText_routing
 }

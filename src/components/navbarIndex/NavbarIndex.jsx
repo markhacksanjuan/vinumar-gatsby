@@ -1,22 +1,15 @@
 import React, { useState, useEffect, useContext } from 'react'
-import { Link as GatsbyLink, graphql } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { slide as Menu } from 'react-burger-menu'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import logo from '../../images/img/VIN_Logo_V2.svg'
 import './navbarIndex.css'
 import './navbarIndex-media.css'
 import './navbarIndex-burger.css'
 import {LangStateContext, LangDispatchContext} from '../GlobalContextProvider/GlobalContextProvider'
 
-import { Link, useI18next, Trans, useTranslation } from 'gatsby-plugin-react-i18next'
-
 import { langText } from '../../lang'
 
-const NavbarIndex = ({ scrollPage }) => {
-    const { languages, originalPath, language, t } = useI18next()
-    // const { t } = useTranslation()
-    console.log('languages:', languages)
+const NavbarIndex = ({ location }) => {
     const dispatch = useContext(LangDispatchContext)
     const { lang } = useContext(LangStateContext)
     const [showProd, setShowProd] = useState(false)
@@ -25,7 +18,6 @@ const NavbarIndex = ({ scrollPage }) => {
     const [scroll, setScroll] = useState()
     const [size, setSize] = useState('415px')
 
-    // const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' && window.screen.width)
 
     const scrollFunction = () => {
@@ -43,29 +35,13 @@ const NavbarIndex = ({ scrollPage }) => {
         if(typeof window !== 'undefined'){
             window.addEventListener('resize', e => {
                 setScreenWidth(window.screen.width)
-                // if(window.screen.width < 1270) {
-                //     setSize('214px')
-                // }else {
-                //     setSize('415px')
-                // }
             })
         }
     }, [])
     
     useEffect(() => {
-        // if(screenWidth < 1270) {
-        //     setSize('214px')
-        // }
         window.addEventListener('scroll', scrollFunction)
     }, [])
-
-    // useEffect(() => {
-    //     if(typeof window !== 'undefined') {
-    //         if(screenWidth < 1270) {
-    //             window.removeEventListener('scroll', scrollFunction)
-    //         }
-    //     }
-    // }, [screenWidth])
 
     const renderLogo = () => {
         return(
@@ -77,21 +53,21 @@ const NavbarIndex = ({ scrollPage }) => {
         )
     }
     const onScroll = (e) => {
-        console.log('on scroll')
-        console.log(e)
-        console.log(e.target)
+        // console.log('on scroll')
+        // console.log(e)
+        // console.log(e.target)
     }
     const renderProd = () => {
         return(
             <>
               <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
                     {/* <li className='no-border'><Link className='navbar-list-sub-menu' to='/producto/extracto-piel-uva'>{t('Extractos de piel de uva')}</Link></li> */}
-                    <li className='no-border'><Link className='navbar-list-sub-menu' to='/producto/extracto-piel-uva'>{t('extractos_piel')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/producto/extracto-vino'>{t('extractos_vino')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/producto/taninos-uva'>{t('taninos')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/producto/extracto-de-semilla-de-uva'>{t('extractos_semilla')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/producto/alcoholes'>{t('alcoholes')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/producto/pepita-de-uva'>{t('pepita')}</Link></li>
+                    <li className='no-border'><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.navbar.products.grape_skin[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.navbar.products.tannins[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.navbar.products.seed_extract[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/alcoholes' : '/en/product/alcohols'}>{langText.navbar.products.alcohols[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/pepita-de-uva' : '/en/product/grape-seed'}>{langText.navbar.products.grape_seed[lang]}</Link></li>
                 </ul>  
             </>
         )
@@ -100,12 +76,12 @@ const NavbarIndex = ({ scrollPage }) => {
         return(
             <>
               <ul className='navbar-menu-burger' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
-                    <li className='no-border'><Link className='navbar-list-sub-menu-burger' to='/producto/extracto-piel-uva'>{t('extractos_piel')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/producto/extracto-vino'>{t('extractos_vino')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/producto/taninos-uva'>{t('taninos')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/producto/taninos-uva'>{t('extractos_semilla')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/producto/alcoholes'>{t('alcoholes')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/producto/pepita-de-uva'>{t('pepita')}</Link></li>
+                    <li className='no-border'><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.navbar.products.grape_skin[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.navbar.products.tannins[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.navbar.products.seed_extract[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/alcoholes' : '/en/product/alcohols'}>{langText.navbar.products.alcohols[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/pepita-de-uva' : '/en/product/grape-seed'}>{langText.navbar.products.grape_seed[lang]}</Link></li>
                 </ul>  
             </>
         )
@@ -119,9 +95,9 @@ const NavbarIndex = ({ scrollPage }) => {
         return(
             <>
                 <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()}>
-                    <li className='no-border' ><Link className='navbar-list-sub-menu' to='/sobre-nosotros/instalaciones'>{t('recursos')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/sobre-nosotros/nuestra-historia'>{t('historia')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to='/sobre-nosotros/valores'>{t('valores')}</Link></li>
+                    <li className='no-border' ><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/sobre-nosotros/instalaciones' : '/en/about-us/facilities'}>{langText.navbar.about.resources[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/sobre-nosotros/nuestra-historia' : '/en/about-us/history'}>{langText.navbar.about.history[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/sobre-nosotros/valores' : '/en/about-us/values'}>{langText.navbar.about.values[lang]}</Link></li>
                 </ul> 
             </>
         )
@@ -130,9 +106,9 @@ const NavbarIndex = ({ scrollPage }) => {
         return(
             <>
                 <ul className='navbar-menu-burger' onMouseLeave={() => closeSubMenu()}>
-                    <li className='no-border' ><Link className='navbar-list-sub-menu-burger' to='/sobre-nosotros/instalaciones'>{t('recursos')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/sobre-nosotros/nuestra-historia'>{t('historia')}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to='/sobre-nosotros/valores'>{t('valores')}</Link></li>
+                    <li className='no-border' ><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/sobre-nosotros/instalaciones' : '/en/about-us/facilities'}>{langText.navbar.about.resources[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/sobre-nosotros/nuestra-historia' : '/en/about-us/history'}>{langText.navbar.about.history[lang]}</Link></li>
+                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/sobre-nosotros/valores' : '/en/about-us/values'}>{langText.navbar.about.values[lang]}</Link></li>
                 </ul> 
             </>
         )
@@ -156,18 +132,25 @@ const NavbarIndex = ({ scrollPage }) => {
     
     const onClickLang = (e) => {
         dispatch({ type: e.target.innerText})
+
+        const newLoc = location.pathname
+
+        const langPath = newLoc.slice(0,3)
+
+
+        if(langPath === '/en') {
+            navigate(langText.routing[newLoc])
+        }else {
+
+            navigate(`/en${langText.routing[newLoc]}/`)
+        }
     }
     const renderLang = () => {
         return(
             <>
                 <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()}>
-                    {languages.map(lng => (
-                        <li key={lng} className='no-border navbar-list-sub-menu li-lang'><Link to={originalPath} language={lng}>
-                            {lng.toUpperCase()}
-                        </Link></li>
-                    ))}
-                    {/* <li className='no-border navbar-list-sub-menu li-lang' onClick={onClickLang}>ES</li>
-                    <li className='navbar-list-sub-menu li-lang' onClick={onClickLang}>EN</li> */}
+                    <li className='no-border navbar-list-sub-menu li-lang' onClick={onClickLang}>ES</li>
+                    <li className='navbar-list-sub-menu li-lang' onClick={onClickLang}>EN</li>
                 </ul> 
             </>
         )
@@ -190,21 +173,21 @@ const NavbarIndex = ({ scrollPage }) => {
     const renderListGeneral = () => {
         return(
             <ul id='page-wrap' className='navbar-list-general'>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/'>{t('Inicio')}</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/' : '/en'}>{langText.navbar.home[lang]}</Link></li>
                 <li className='navbar-list-element navbar-relative'>
-                    <p className='navbar-list-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >{t('Productos')}</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onClick={onHoverProd} onMouseOver={onHoverProd} >{langText.navbar.products.title[lang]}</p>
                     {showProd && renderProd()}
                 </li>
                 <li className='navbar-list-element navbar-relative'>
-                    <p className='navbar-list-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>{t('nosotros')}</p>
+                    <p className='navbar-list-general-element' tabIndex='0' onMouseOver={onClickNosotros} to='/Nosotros'>{langText.navbar.about.title[lang]}</p>
                     {showNosotros && renderNosotros()}
                 </li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/donde-estamos'>{t('donde')}</Link></li>
-                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/sostenibilidad'>{t('Sostenibilidad')}</Link></li>
-                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to='/contacto'>{t('Contacto')}</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/donde-estamos' : '/en/where-we-are'}>{langText.navbar.where[lang]}</Link></li>
+                <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
+                <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                 <li className='navbar-list-element-lang'>
-                    {/* <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p> */}
-                    <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{language.toUpperCase()}</p>
+                    <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
+                    {/* <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang.toUpperCase()}</p> */}
                         {showLang && renderLang()}
                 </li>
             </ul>
@@ -225,20 +208,20 @@ const NavbarIndex = ({ scrollPage }) => {
             <>
                 <Menu right pageWrapId={'page-wrap'} outerContainerId={"outer-container"}>
                     <ul id='page-wrap' className='navbar-burger-general'>
-                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/'>{t('home')}</Link></li>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/' : '/en'}>{langText.navbar.home[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-relative'>
-                            <p className='navbar-burger-general-element' tabIndex='0' onClick={onClickProdBurger} >{t('productos')}</p>
+                            <p className='navbar-burger-general-element' tabIndex='0' onClick={onClickProdBurger} >{langText.navbar.products.title[lang]}</p>
                             {showProd && renderProdBurger()}
                         </li>
                         <li className='navbar-burger-element navbar-relative'>
-                            <p className='navbar-burger-general-element' tabIndex='0' onClick={onClickNosotrosBurger} to='/Nosotros'>{t('nosotros')}</p>
+                            <p className='navbar-burger-general-element' tabIndex='0' onClick={onClickNosotrosBurger} to='/Nosotros'>{langText.navbar.about.title[lang]}</p>
                             {showNosotros && renderNosotrosBurger()}
                         </li>
-                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/donde-estamos'>{t('donde')}</Link></li>
-                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/sostenibilidad'>{t('sostenibilidad')}</Link></li>
-                        <li className='navbar-burger-element navbar-burger-element-contact'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to='/contacto'>{t('Contacto')}</Link></li>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/donde-estamos' : '/en/where-we-are'}>{langText.navbar.where[lang]}</Link></li>
+                        <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
+                        <li className='navbar-burger-element navbar-burger-element-contact'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-burger-element-lang'>
-                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{language.toUpperCase()}</p>
+                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
                                 {showLang && renderLangBurger()}
                             </li>
                     </ul>  
@@ -270,17 +253,3 @@ const NavbarIndex = ({ scrollPage }) => {
 
 }
 export default NavbarIndex
-
-export const query = graphql`
-    query ($language: String!) {
-        locale: allLocale(filter: {ns: {eq: "common"}, language: {eq: $language}}) {
-            edges {
-                node {
-                    ns
-                    data
-                    language
-                }
-            }
-        }
-    }
-`

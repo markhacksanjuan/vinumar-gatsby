@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link as GatsbyLink } from 'gatsby'
+import { Link } from 'gatsby'
 import './footer.css'
 import './footer-media.css'
 
@@ -20,24 +20,18 @@ import eu from '../../images/eu.png'
 import { LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 
-import { graphql } from 'gatsby'
-import { Link, useI18next, Trans } from 'gatsby-plugin-react-i18next'
-
 const Footer = () => {
     const { lang } = useContext(LangStateContext)
-    const { t } = useI18next()
-    console.log(t('footer:fondo'))
-    console.log(t('footer.fondo'))
     return(
         <>
             <div className='footer-container'>
                 <div className='footer-block'>
-                    <p className='footer-title'>{t('Contacto')}</p>
+                    <p className='footer-title'>{langText.footer.contact[lang]}</p>
                     <div>
                         <ul className='footer-list-contact'>
                             <li>ctra. Munera, 5</li>
                             <li>02600 Villarrobledo</li>
-                            <li>Albacete, {t('pais')}</li>
+                            <li>Albacete, {langText.common.country[lang]}</li>
                         </ul>
                         <ul className='footer-list-contact'>
                             <li>T +34 967141500</li>
@@ -47,43 +41,43 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title'>{t('Productos')}</p>
+                    <p className='footer-title'>{langText.footer.products.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link className='footer-link' to='/producto/extracto-piel-uva'>{t('data:extractos_piel')}</Link></li>
-                            <li><Link className='footer-link' to='/producto/extracto-vino'>{t('common:extractos_vino')}</Link></li>
-                            <li><Link className='footer-link' to='/producto/taninos-uva'>{t('taninos')}</Link></li>
-                            <li><Link className='footer-link' to='/producto/extracto-de-semilla-de-uva'>{t('extractos_semilla')}</Link></li>
-                            <li><Link className='footer-link' to='/producto/alcoholes'>{t('alcoholes')}</Link></li>
-                            <li><Link className='footer-link' to='/producto/pepita-de-uva'>{t('pepita')}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.footer.products.grape_skin[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.footer.products.wine_extracts[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.footer.products.tannins[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.footer.products.seed_extract[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/alcoholes' : '/en/product/alcohols'}>{langText.footer.products.alcohols[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/pepita-de-uva' : '/en/product/grape-seed'}>{langText.footer.products.grape_seed[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title'>{t('nosotros')}</p>
+                    <p className='footer-title'>{langText.footer.about.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><Link className='footer-link' to='/sobre-nosotros/instalaciones'>{t('recursos')}</Link></li>
-                            <li><Link className='footer-link' to='/sobre-nosotros/nuestra-historia'>{t('historia')}</Link></li>
-                            <li><Link className='footer-link' to='/sobre-nosotros/valores'>{t('valores')}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/instalaciones' : '/en/about-us/facilities'}>{langText.footer.about.resources[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/nuestra-historia' : '/en/about-us/history'}>{langText.footer.about.history[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/valores' : '/en/about-us/values'}>{langText.footer.about.values[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to='/donde-estamos'>{t('donde')}</Link></p>
+                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to={lang === 'es' ? '/donde-estamos' : '/en/where-we-are'}>{langText.footer.where[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to='/sostenibilidad'>{t('Sostenibilidad')}</Link></p>
+                    <p className='footer-title-no-bottom'><Link className='footer-link-black' to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.footer.sustainability[lang]}</Link></p>
                 </div>
                 <div className='footer-block'>
-                    <p className='footer-title'>{t('privacidad')}</p>
+                    <p className='footer-title'>{langText.footer.policy.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
-                            <li><a className='footer-link' href={lang === 'es' ? cookies : cookiesPolicy} target='_blank'>{t('cookies')}</a></li>
-                            <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{t('privacidad')}</a></li>
-                            <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{t('legal')}</a></li>
-                            <li><a className='footer-link' href={lang === 'es' ? inocuidad : safety} target='_blank'>{t('calidad')}</a></li>
-                            <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{t('common:fondo')}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? cookies : cookiesPolicy} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? inocuidad : safety} target='_blank'>{langText.footer.policy.safety[lang]}</a></li>
+                            <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{langText.footer.policy.safety[lang]}</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>
@@ -93,17 +87,3 @@ const Footer = () => {
     )
 }
 export default Footer
-
-export const query = graphql`
-    query ($language: String!) {
-        locale: allLocale(filter: {ns: {eq: "common"}, language: {eq: $language}}) {
-            edges {
-                node {
-                    ns
-                    data
-                    language
-                }
-            }
-        }
-    }
-`

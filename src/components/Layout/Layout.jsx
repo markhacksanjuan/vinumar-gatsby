@@ -9,7 +9,7 @@ import { graphql } from 'gatsby'
 
 import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageLocation }) => {
     const location = useLocation()
     const renderCookiesText = () => {
         return (
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
     }
     return(
         <>
-            <Navbar />
+            <Navbar location={pageLocation} />
             <CookieConsent
             declineButtonText='Rechazar'
             enableDeclineButton
@@ -59,17 +59,3 @@ const Layout = ({ children }) => {
     )
 }
 export default Layout
-
-export const query = graphql`
-    query ($language: String!) {
-        locale: allLocale(filter: {ns: {in: ["common"]}, language: {eq: $language}}) {
-            edges {
-                node {
-                    ns
-                    data
-                    language
-                }
-            }
-        }
-    }
-`
