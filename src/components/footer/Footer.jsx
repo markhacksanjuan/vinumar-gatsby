@@ -77,7 +77,7 @@ const Footer = () => {
                             <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? inocuidad : safety} target='_blank'>{langText.footer.policy.safety[lang]}</a></li>
-                            <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{langText.footer.policy.safety[lang]}</a></li>
+                            <li><img src={eu} className='eu-logo' /><a className='footer-link' href={fondo} target='_blank'>{langText.footer.policy.found[lang]}</a></li>
                             <li>&copy; 2022 Vinumar</li>
                         </ul>
                     </div>
