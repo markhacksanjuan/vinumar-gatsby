@@ -29,6 +29,8 @@ export const langText_routing = {
     '/en/contact-us/': '/contacto',
     '/en/where-we-are': '/donde-estamos',
     '/en/where-we-are/': '/donde-estamos',
+    '/en/sustainability': '/sostenibilidad',
+    '/en/sustainability/': '/sostenibilidad',
     '/en/product/alcohols': '/producto/alcoholes',
     '/en/product/alcohols/': '/producto/alcoholes',
     '/en/product/grape-skin-extracts': '/producto/extracto-piel-uva',
