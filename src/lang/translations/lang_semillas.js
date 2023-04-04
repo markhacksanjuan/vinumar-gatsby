@@ -5,7 +5,7 @@ export const langText_semillas = {
             en: 'Grape seed extracts'
         },
         text_1: {
-            es: 'Los extractos de semilla de uva, comúnmente conocidos como OPC, son poderosos antioxidantes usados en las industrias de la alimentación y la nutracéutica. Las procianidinas oligoméricas (OPC) contenidas en los extractos de semilla de uva, tienen propiedades antioxidantes ampliamente demostradas por numerosos estudios científicos. Las procianidinas son polifonelos que pertenecen al grupo de los flavonoides, antioxidantes que protegen las células del cuerpo humano de los daños que causan los radicales libres. ',
+            es: 'Los extractos de semilla de uva, comúnmente conocidos como OPC, son poderosos antioxidantes usados en las industrias de la alimentación y la nutracéutica. Las procianidinas oligoméricas (OPC) contenidas en los extractos de semilla de uva, tienen propiedades antioxidantes ampliamente demostradas por numerosos estudios científicos. Las procianidinas son polifenoles que pertenecen al grupo de los flavonoides, antioxidantes que protegen las células del cuerpo humano de los daños que causan los radicales libres. ',
             en: 'Grape seed extracts, commonly called OPC, are powerful antioxidants, used in food and nutraceutical industries. Oligomeric procyanidins (OPC), contained in grape seed extracts, have antioxidant properties that have been widely demonstrated by numerous scientific studies. Procyanidins are polyphenols which belong to the group of flavonoids, antioxidants that protect the body\'s cells from damage caused by free radicals.'
         },
         text_2: {
