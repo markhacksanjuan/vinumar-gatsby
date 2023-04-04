@@ -23,7 +23,7 @@ export const langText_semillas = {
             },
             li_2: {
                 es: 'Bebidas funcionales',
-                en: 'BFunctional drinks'
+                en: 'Functional drinks'
             },
             li_3: {
                 es: 'Suplementos alimenticios',
@@ -31,7 +31,7 @@ export const langText_semillas = {
             },
             text: {
                 es: 'La eficacia de los polifenoles en los extractos de semilla de uva ha sido demostrada en diversos estudios científicos, teniendo un alto poder antioxidante.',
-                en: 'he efficacy of the polyphenols in grape seed extracts has been demonstrated in several scientific studies, having a high antioxidant power.'
+                en: 'The efficacy of the polyphenols in grape seed extracts has been demonstrated in several scientific studies, having a high antioxidant power.'
             },
             text_2: {
                 es: 'Nuestro extracto de semilla de uva está estandarizado en componentes fenólicos:',
@@ -57,7 +57,7 @@ export const langText_semillas = {
                     en: 'Botanical name'
                 },
                 name: {
-                    es: 'Vitis Vinifera',
+                    es: 'Vitis Vinifera (uva)',
                     en: 'Vitis Vinifera (grape)'
                 }
             },

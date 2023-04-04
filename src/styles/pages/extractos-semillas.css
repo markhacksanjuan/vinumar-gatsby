@@ -186,3 +186,6 @@
 .piel-productos-container > div > div > div > div > ul > li > ul > li:first-child{
     padding-top: 0px
 }
+.piel-productos-color {
+    margin-left: -6px
+}

@@ -57,7 +57,7 @@ export const langText_skin = {
                     en: 'Botanical name'
                 },
                 name: {
-                    es: 'Vitis Vinifera',
+                    es: 'Vitis Vinifera (uva)',
                     en: 'Vitis Vinifera (grape)'
                 }
             },

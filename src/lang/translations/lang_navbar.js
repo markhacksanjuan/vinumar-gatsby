@@ -30,7 +30,7 @@ export const langText_navbar = {
         },
         seed_extract: {
             es: 'Extractos de semilla de uva',
-            en: 'Grape seed extract'
+            en: 'Grape seed extracts'
         }
     },
     about: {

@@ -8,6 +8,7 @@ import Layout from '../Layout/Layout'
 // import images
 import semillaApliImg from '../../images/DEF/productos/semillas/BL8A9285.jpg'
 import semillaProducto from '../../images/DEF/productos/semillas/Recorte_pagina_producto.png'
+// import semillaProducto from '../../images/DEF/productos/semillas/BL8A9208_3.jpg'
 
 import { langText } from '../../lang'
 
@@ -77,7 +78,7 @@ const ExtractosPiel = ({ lang, location }) => {
                                 </ul>
                             </div>
                         </div>
-                        <img className='piel-header-img' src={semillaApliImg} alt="Extracto de piel" />
+                        <img className='piel-header-img' src={semillaApliImg} alt="Extracto de piel" style='width: 50%' />
 
                     </div>
                 </div>
@@ -102,7 +103,7 @@ const ExtractosPiel = ({ lang, location }) => {
                                 </li>
                                 <li>
                                     <p>{langText.semillas.products.powder.colour.name[lang]}</p>
-                                    <p>&gt; {langText.semillas.products.powder.colour.text[lang]} %</p>
+                                    <p className='piel-productos-color'>&gt; {langText.semillas.products.powder.colour.text[lang]} %</p>
                                 </li>
                                 <li>
                                     <p>{langText.semillas.products.powder.moisture[lang]}</p>
