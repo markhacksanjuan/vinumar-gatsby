@@ -15,7 +15,7 @@ import { langText } from '../../lang'
 import '../../styles/pages/extractos-semillas.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
 
-const ExtractosPiel = ({ lang, location }) => {
+const ExtractosSemillas = ({ lang, location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
 
@@ -78,7 +78,7 @@ const ExtractosPiel = ({ lang, location }) => {
                                 </ul>
                             </div>
                         </div>
-                        <img className='piel-header-img' src={semillaApliImg} alt="Extracto de piel" style='width: 50%' />
+                        <img className='semilla-header-img' src={semillaApliImg} alt="Extracto de piel"/>
 
                     </div>
                 </div>
@@ -157,4 +157,4 @@ const ExtractosPiel = ({ lang, location }) => {
         </>
     )
 }
-export default ExtractosPiel
+export default ExtractosSemillas
