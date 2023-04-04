@@ -20,7 +20,7 @@ import pepitas from '../../images/DEF/BL8A9093.jpg'
 import dondeImg from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jpg'
 import dondeImg_en from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3.jpg'
 // import semillaImg from '../../images/DEF/productos/semillas/Recorte_pagina_inicio.png'
-import semillaImg from '../../images/DEF/productos/semillas/BL8A9208_3.jpg'
+import semillaImg from '../../images/DEF/productos/semillas/BL8A9208.jpg'
 
 import { langText } from '../../lang'
 
