@@ -16,10 +16,7 @@ const Head = ({ title, description, pathname, children, pageTitle, keywordsPage 
         description: description || defaultDescription
     }
 
-    console.log(seo)
     const renderTitle = () => {
-        console.log(pageTitle)
-        console.log(seo.title)
         if(pageTitle) {
             return (
                 <>

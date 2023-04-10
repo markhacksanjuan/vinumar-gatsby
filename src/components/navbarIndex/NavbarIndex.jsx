@@ -53,9 +53,6 @@ const NavbarIndex = ({ location }) => {
         )
     }
     const onScroll = (e) => {
-        // console.log('on scroll')
-        // console.log(e)
-        // console.log(e.target)
     }
     const renderProd = () => {
         return(
