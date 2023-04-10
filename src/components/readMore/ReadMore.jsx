@@ -21,7 +21,6 @@ const ReadMore = ({ children, width, className, lang }) => {
         if(typeof children !== 'string'){
             setIsComplex(true)
         }
-        console.log(children)
     }, [])
     useEffect(() => {
         if(width < 800) {

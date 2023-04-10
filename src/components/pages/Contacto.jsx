@@ -84,7 +84,6 @@ const ContactoPage = ({ lang, location }) => {
                     },
                     body: new URLSearchParams(data)
                 })
-                console.log(response)
                 if(response.status === 200) {
                     setLoading(false)
                     setOpen(true)
