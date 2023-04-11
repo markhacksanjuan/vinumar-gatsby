@@ -15,10 +15,11 @@ import valores4 from '../../images/ilustraciones/Vinumar_Ilustraciones_Experienc
 import valores5 from '../../images/ilustraciones/Vinumar_Ilustraciones_Sostenibilidad.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const Valores = ({ location, lang }) => {
+const Valores = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

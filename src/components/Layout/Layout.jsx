@@ -1,4 +1,4 @@
-import React, { useState, createContext, useReducer } from 'react'
+import React, { useState, createContext, useReducer, useContext } from 'react'
 import Navbar from '../navbarIndex/NavbarIndex'
 import Footer from '../footer/Footer'
 import CookieConsent, { Cookies } from 'react-cookie-consent'
@@ -6,11 +6,16 @@ import { useLocation } from '@reach/router'
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import { } from 'gatsby-plugin-google-gtag'
 import { graphql } from 'gatsby'
+import { usePrefix } from '../../hook/usePathname'
+import { useLang } from '../../hook/useLang'
+import { LangDispatchContext, LangStateContext } from '../GlobalContextProvider/GlobalContextProvider'
 
 import cookiesPolicy from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 
 const Layout = ({ children, pageLocation }) => {
     const location = useLocation()
+    const lang = useLang(location)
+
     const renderCookiesText = () => {
         return (
             <>
@@ -37,7 +42,7 @@ const Layout = ({ children, pageLocation }) => {
     }
     return(
         <>
-            <Navbar location={pageLocation} />
+            <Navbar location={pageLocation} lang={lang} />
             <CookieConsent
             declineButtonText='Rechazar'
             enableDeclineButton
@@ -54,7 +59,7 @@ const Layout = ({ children, pageLocation }) => {
             onDecline={onDecline}
             >{renderCookiesText()}</CookieConsent>
             <main>{children}</main>
-            <Footer />
+            <Footer lang={lang} />
         </>
     )
 }

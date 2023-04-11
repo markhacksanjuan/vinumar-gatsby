@@ -8,15 +8,17 @@ import './navbarIndex-burger.css'
 import {LangStateContext, LangDispatchContext} from '../GlobalContextProvider/GlobalContextProvider'
 
 import { langText } from '../../lang'
+import { usePrefix } from '../../hook/usePathname'
 
-const NavbarIndex = ({ location }) => {
+const NavbarIndex = ({ location, lang }) => {
     const dispatch = useContext(LangDispatchContext)
-    const { lang } = useContext(LangStateContext)
+    // const { lang } = useContext(LangStateContext)
     const [showProd, setShowProd] = useState(false)
     const [showNosotros, setShowNosotros] = useState(false)
     const [showLang, setShowLang] = useState(false)
     const [scroll, setScroll] = useState()
     const [size, setSize] = useState('415px')
+    const prefix = usePrefix(location)
 
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' && window.screen.width)
 
@@ -128,6 +130,9 @@ const NavbarIndex = ({ location }) => {
     }
     
     const onClickLang = (e) => {
+        if(lang.toUpperCase() === e.target.innerText) {
+            return
+        }
         dispatch({ type: e.target.innerText})
 
         const newLoc = location.pathname
@@ -135,7 +140,7 @@ const NavbarIndex = ({ location }) => {
         const langPath = newLoc.slice(0,3)
 
 
-        if(langPath === '/en') {
+        if(prefix === 'en') {
             navigate(langText.routing[newLoc])
         }else {
 

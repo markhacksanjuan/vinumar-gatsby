@@ -8,7 +8,7 @@ import cookies from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 import privacidad from '../../legal/spanish/Política de privacidad_2_PDF.pdf'
 import inocuidad from '../../legal/spanish/POLITICA_INOCUIDAD_ALIMENTARIA_rev_03.pdf'
 
-import fondo from '../../legal/Fondo_Europeo_de_Desarrollo_Regional_PDF 21032023.pdf'
+import fondo from '../../legal/Fondo_Europeo_de_Desarrollo_Regional_PDF_2023.pdf'
 
 import legalNotice from '../../legal/english/Legal_Notice_PDF.pdf'
 import cookiesPolicy from '../../legal/english/Cookies_Policy_PDF_2.pdf'

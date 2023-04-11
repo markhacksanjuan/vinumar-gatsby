@@ -12,10 +12,13 @@ import alcoholesHeaderImg from '../../images/DEF/BL8A4092.jpg'
 import alcoholesProductoImg from '../../images/DEF/BL8A9307.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const Alcoholes = ({ lang, location }) => {
+const Alcoholes = ({
+    location
+}) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

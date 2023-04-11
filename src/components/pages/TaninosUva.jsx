@@ -12,10 +12,11 @@ import taninosHeaderImg from '../../images/DEF/BL8A9614.jpg'
 import taninosProductoImg from '../../images/DEF/BL8A9520_2.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const Taninos = ({ location, lang }) => {
+const Taninos = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

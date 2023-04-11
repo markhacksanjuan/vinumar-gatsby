@@ -18,11 +18,12 @@ import Button from '../button/Button'
 
 import { langText } from '../../lang'
 import CircularProgress from '@mui/material/CircularProgress';
+import { useLang } from '../../hook/useLang'
 
 
-const DondePage = ({ lang, location }) => {
+const DondePage = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

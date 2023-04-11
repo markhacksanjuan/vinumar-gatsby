@@ -22,11 +22,12 @@ import imgInst3 from '../../images/DEF/BL8A7156.jpg'
 import imgInst4 from '../../images/DEF/DJI_0551.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
 
-const Historia = ({ location, lang }) => {
+const Historia = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

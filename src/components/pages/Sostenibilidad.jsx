@@ -12,10 +12,11 @@ import sostenibilidad2 from '../../images/DEF/BL8A8775.jpg'
 import Button from '../button/Button'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const SostenibilidadPage = ({ lang, location }) => {
+const SostenibilidadPage = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

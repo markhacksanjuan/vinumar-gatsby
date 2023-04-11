@@ -10,10 +10,11 @@ import '../../styles/pages/mediaQueries/producto-media.css'
 import pepitaHeaderImg from '../../images/DEF/BL8A9687.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const Pepita = ({ lang, location }) => {
+const Pepita = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

@@ -26,10 +26,11 @@ import imgInst3 from '../../images/DEF/BL8A7860.jpg'
 import imgInst4 from '../../images/DEF/BL8A8586.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
-const Recursos = ({ location, lang }) => {
+const Recursos = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
     }

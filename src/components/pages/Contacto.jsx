@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { navigate, graphql } from 'gatsby'
 import { useForm } from 'react-hook-form'
 import Layout from '../Layout/Layout'
 import Gmap from '../gmap/Gmap'
@@ -13,12 +12,19 @@ import '../../styles/pages/mediaQueries/contacto-media.css'
 import { LangStateContext, LangDispatchContext } from '../GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
+import { usePrefix } from '../../hook/usePathname'
+import { useLang } from '../../hook/useLang'
 
-const ContactoPage = ({ lang, location }) => {
+const ContactoPage = ({
+    // lang,
+    location
+}) => {
+    // const { lang } = useContext(LangStateContext)
     const dispatch = useContext(LangDispatchContext)
     const [open, setOpen] = useState(false)
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
+    const lang = useLang(location)
 
     const { handleSubmit, register, reset } = useForm({})
 

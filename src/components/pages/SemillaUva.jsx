@@ -11,13 +11,14 @@ import semillaProducto from '../../images/DEF/productos/semillas/Recorte_pagina_
 // import semillaProducto from '../../images/DEF/productos/semillas/BL8A9208_3.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
 import '../../styles/pages/extractos-semillas.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
 
-const ExtractosSemillas = ({ lang, location }) => {
+const ExtractosSemillas = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
 
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)

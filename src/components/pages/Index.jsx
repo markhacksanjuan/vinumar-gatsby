@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState, useContext } from "react"
 import Button from '../button/Button'
 import TextCentered from "../textCentered/TextCentered"
 import Layout from "../Layout/Layout"
@@ -23,10 +23,17 @@ import dondeImg_en from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3
 import semillaImg from '../../images/DEF/productos/semillas/BL8A9208.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from "../../hook/useLang"
+
+import { LangStateContext } from "../GlobalContextProvider/GlobalContextProvider"
 
 // markup
-const IndexPage = ({ lang, location }) => {
-//   const { lang } = useContext(LangStateContext)
+const IndexPage = ({ 
+  // lang,
+  location
+}) => {
+  // const { lang } = useContext(LangStateContext)
+  const lang = useLang(location)
   const [scroll, setScroll] = useState()
   const [scrollTextCentered_1, setScrollTextCentered_1] = useState(false)
   const [scrollTextCentered_2, setScrollTextCentered_2] = useState(false)

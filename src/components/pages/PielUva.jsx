@@ -11,13 +11,14 @@ import pielProducto1 from '../../images/DEF/BL8A9509_2.jpg'
 import pielProductoLiquido from '../../images/DEF/BL8A4185.jpg'
 
 import { langText } from '../../lang'
+import { useLang } from '../../hook/useLang'
 
 import '../../styles/pages/extractos-piel.css'
 import '../../styles/pages/mediaQueries/producto-media.css'
 
-const ExtractosPiel = ({ location, lang }) => {
+const ExtractosPiel = ({ location }) => {
     const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
+    const lang = useLang(location)
 
     const resizeFunction = () => {
         setScreenWidth(window.screen.width)
