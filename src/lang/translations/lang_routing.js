@@ -5,6 +5,7 @@ export const langText_routing = {
     '/donde-estamos': '/where-we-are',
     '/donde-estamos/': '/where-we-are',
     '/sostenibilidad': '/sustainability',
+    '/sostenibilidad/': '/sustainability',
     '/producto/alcoholes': '/product/alcohols',
     '/producto/alcoholes/': '/product/alcohols',
     '/producto/extracto-de-semilla-de-uva': '/product/grape-seed-extract',
