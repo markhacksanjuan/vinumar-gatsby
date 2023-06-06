@@ -6,14 +6,14 @@ import './footer-media.css'
 import avisoLegal from '../../legal/spanish/Aviso_legal_PDF.pdf'
 import cookies from '../../legal/spanish/Política_de_cookies_PDF_2.pdf'
 import privacidad from '../../legal/spanish/Política de privacidad_2_PDF.pdf'
-import inocuidad from '../../legal/spanish/POLITICA_INOCUIDAD_ALIMENTARIA_rev_03.pdf'
+import inocuidad from '../../legal/spanish/POLITICA_INOCUIDAD_ALIMENTARIA_rev_04.pdf'
 
 import fondo from '../../legal/Fondo_Europeo_de_Desarrollo_Regional_PDF_2023.pdf'
 
 import legalNotice from '../../legal/english/Legal_Notice_PDF.pdf'
 import cookiesPolicy from '../../legal/english/Cookies_Policy_PDF_2.pdf'
 import privacyPolicy from '../../legal/english/Privacy_Policy_2_PDF.pdf'
-import safety from '../../legal/english/POLITICA_INOCUIDAD_ALIMENTARIA_rev_03_en.pdf'
+import safety from '../../legal/english/POLITICA_INOCUIDAD_ALIMENTARIA_rev_04_en.pdf'
 
 import eu from '../../images/eu.png'
 
