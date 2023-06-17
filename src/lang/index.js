@@ -19,6 +19,10 @@ import { langText_semillas } from './translations/lang_semillas'
 import { langText_common } from "./translations/lang_common";
 import { langText_routing } from "./translations/lang_routing";
 
+// NEWS
+
+import { lang_newsIndex } from "./translations/news/lang_newsIndex";
+
 export const langText = {
     alcohols: langText_alcohols,
     footer: langText_footer,
@@ -39,5 +43,8 @@ export const langText = {
     alert: langText_modal,
     semillas: langText_semillas,
     common: langText_common,
-    routing: langText_routing
+    routing: langText_routing,
+    news: {
+        index: lang_newsIndex
+    }
 }

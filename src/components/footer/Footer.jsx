@@ -60,6 +60,7 @@ const Footer = () => {
                             <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/instalaciones' : '/en/about-us/facilities'}>{langText.footer.about.resources[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/nuestra-historia' : '/en/about-us/history'}>{langText.footer.about.history[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/sobre-nosotros/valores' : '/en/about-us/values'}>{langText.footer.about.values[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/noticias' : '/en/news'}>{langText.footer.about.news[lang]}</Link></li>
                         </ul>
                     </div>
                 </div>

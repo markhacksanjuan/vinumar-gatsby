@@ -86,6 +86,9 @@ img.fit-none {
 img.fit-cover {
     object-fit: cover
 }
+.opacity-100 {
+    opacity: 100 !important
+}
 .italic {
     font-style: italic
 }

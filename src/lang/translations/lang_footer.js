@@ -49,6 +49,10 @@ export const langText_footer = {
         values: {
             es: 'Valores',
             en: 'Values'
+        },
+        news: {
+            es: 'Noticias',
+            en: 'News'
         }
     },
     where: {
