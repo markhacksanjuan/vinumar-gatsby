@@ -14,14 +14,16 @@
 }
 .news-index-card {
     border-top: solid 1px black;
-    /* width: 49.21%; */
-    width: 400px;
+    width: 90%;
+    /* width: auto; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    height: 370px;
+    flex-wrap: wrap;
+    min-height: 450px;
     margin-top: 60px;
     padding-top: 10px;
+    padding-left: 25px;
     opacity: 0;
 }
 .news-index-container-text-card {
@@ -29,7 +31,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0 1%;
-    width: 370px
+    width: 370px;
+    margin-bottom: 25px;
+    height: 445px;
 
 }
 .news-index-title {

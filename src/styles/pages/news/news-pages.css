@@ -20,6 +20,9 @@
 .news-page-header-title p {
     width: 50%;
 }
+.news-page-header-apli-container {
+    margin-bottom: 40px
+}
 .news-page-header-apli-carac-img-container {
     display: flex;
     flex-direction: row;
@@ -31,9 +34,13 @@
     width: 60%
 }
 
+.news-page-h1 {
+    margin: 0
+}
 .news-page-h2 {
     font-size: 25px;
     line-height: 28px;
+    margin: 0 0 25px 0
 }
 .news-page-button {
     margin-top: 60px
