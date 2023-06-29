@@ -51,8 +51,6 @@ const NoticiasIndex = ({
                     </div>
                     <img className='index-card-img opacity-100' src={image} alt={title} />
                 </div>
-                <div>
-                </div>
             </>
         )
     }
