@@ -52,7 +52,7 @@ const NewsPage = ({ location }) => {
     }
     return (
         <>
-            <Head pageTitle='OPC Uva - Vinumar' />
+            <Head pageTitle='Enocianina - Vinumar' description='En Vinumar somos especialistas en enocianina para diversas aplicaciones. Más de 60 años de experiencia. Contacta con nosotros.' />
             <LayoutNews pageLocation={location}>
                 {renderExtractos()}
                 {/* <div className='news-page-button'>

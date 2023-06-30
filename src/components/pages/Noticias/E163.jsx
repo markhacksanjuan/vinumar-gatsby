@@ -47,7 +47,7 @@ const NewsPage = ({ location }) => {
     }
     return (
         <>
-            <Head pageTitle='OPC Uva - Vinumar' />
+            <Head pageTitle='E-163 - Vinumar' description='En Vinumar somos especialistas en E-163 también conocido como antocianinas. Más de 60 años de experiencia. Contacta con nosotros.' />
             <LayoutNews pageLocation={location}>
                 {renderExtractos()}
                 {/* <div className='news-page-button'>

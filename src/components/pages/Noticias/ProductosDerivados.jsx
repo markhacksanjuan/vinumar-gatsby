@@ -62,7 +62,7 @@ const NewsPage = ({ location }) => {
     }
     return (
         <>
-            <Head pageTitle='OPC Uva - Vinumar' />
+            <Head pageTitle='Productos derivados de uva - Vinumar' description='En Vinumar somos especialistas en productos derivados de la uva para diversas aplicaciones. Más de 60 años de experiencia. Contacta con nosotros.' />
             <LayoutNews pageLocation={location}>
                 {renderExtractos()}
                 {/* <div className='news-page-button'>

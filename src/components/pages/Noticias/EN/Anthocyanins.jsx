@@ -1,13 +1,13 @@
 import React from 'react'
-import Head from '../../Head/Head'
-import LayoutNews from '../../Layout/LayoutNews'
-import Button from '../../button/Button'
+import Head from '../../../Head/Head'
+import LayoutNews from '../../../Layout/LayoutNews'
+import Button from '../../../button/Button'
 
-import semillaImg from '../../../images/DEF/productos/semillas/BL8A9285.jpg'
+import semillaImg from '../../../../images/DEF/productos/semillas/BL8A9285.jpg'
 
-import '../../../styles/pages/extractos-semillas.css'
-import '../../../styles/pages/news/news-pages.css'
-import '../../../styles/pages/news/news-mediaQueries.css'
+import '../../../../styles/pages/extractos-semillas.css'
+import '../../../../styles/pages/news/news-pages.css'
+import '../../../../styles/pages/news/news-mediaQueries.css'
 
 const Anthocyanins = ({ location }) => {
     const renderExtractos = () => {
@@ -48,7 +48,7 @@ const Anthocyanins = ({ location }) => {
     }
     return (
         <>
-            <Head pageTitle='OPC Uva - Vinumar' />
+            <Head pageTitle='Grape Anthocyanins - Vinumar' description='At Vinumar we are specialists in grape anthocyanins for various applications. More than 60 years of experience. Contact us.' />
             <LayoutNews pageLocation={location}>
                 {renderExtractos()}
                 {/* <div className='news-page-button'>
