@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[8212],{1745:function(e,n,t){t.r(n);var a=t(7294),u=t(539),l=t(1359);n.default=function(e){var n=e.location,t=(0,a.useContext)(l.Ie).lang;return a.createElement(a.Fragment,null,a.createElement(u.Z,{lang:t,location:n}))}}}]);
+//# sourceMappingURL=component---src-pages-en-about-us-history-jsx-f09ae6d700f864ce93ed.js.map

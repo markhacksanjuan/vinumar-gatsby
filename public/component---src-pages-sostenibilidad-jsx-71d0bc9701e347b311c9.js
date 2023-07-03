@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[8081],{2829:function(e,n,t){t.r(n);var a=t(7294),u=t(4983),l=t(1359);n.default=function(e){var n=e.location,t=(0,a.useContext)(l.Ie).lang;return a.createElement(a.Fragment,null,a.createElement(u.Z,{lang:t,location:n}))}}}]);
+//# sourceMappingURL=component---src-pages-sostenibilidad-jsx-71d0bc9701e347b311c9.js.map

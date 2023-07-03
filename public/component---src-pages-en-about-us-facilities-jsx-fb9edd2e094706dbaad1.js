@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[2721],{2341:function(e,n,t){t.r(n);var a=t(7294),u=t(448),l=t(1359);n.default=function(e){var n=e.location,t=(0,a.useContext)(l.Ie).lang;return a.createElement(a.Fragment,null,a.createElement(u.Z,{lang:t,location:n}))}}}]);
+//# sourceMappingURL=component---src-pages-en-about-us-facilities-jsx-fb9edd2e094706dbaad1.js.map

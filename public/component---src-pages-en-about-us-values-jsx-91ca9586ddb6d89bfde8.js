@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[2467],{8480:function(e,n,t){t.r(n);var a=t(7294),u=t(1330),l=t(1359);n.default=function(e){var n=e.location,t=(0,a.useContext)(l.Ie).lang;return a.createElement(a.Fragment,null,a.createElement(u.Z,{lang:t,location:n}))}}}]);
+//# sourceMappingURL=component---src-pages-en-about-us-values-jsx-91ca9586ddb6d89bfde8.js.map
