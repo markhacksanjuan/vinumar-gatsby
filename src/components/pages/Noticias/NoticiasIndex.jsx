@@ -54,7 +54,7 @@ const NoticiasIndex = ({
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
                         <p className='news-index-desc'>{text}</p>
                     </div>
-                    <img className='index-card-img opacity-100' src={image} alt={title} style={style || {}} />
+                    <img className='index-card-img opacity-100' src={image} alt={title} style={style} />
                 </div>
             </>
         )
@@ -63,7 +63,7 @@ const NoticiasIndex = ({
         return (
             <>
                 <div id='productos' className='news-index-container-products opacity-100'>
-                    <h1>Noticias</h1>
+                    <h1>{langText.news.index[lang]}</h1>
                         <div className='news-index-card opacity-100'>
                             {/* <ProductoCard 
                                 title='¿Qué es el OPC de uva?'
