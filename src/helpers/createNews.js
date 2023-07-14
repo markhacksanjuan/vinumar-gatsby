@@ -39,13 +39,21 @@ export function createNews(lang) {
             title: '¿Qué es la enocianina?',
             text: 'La enocianina se trata de un colorante 100% natural procedente de la uva Vitis Vinifera, concretamente de la piel de las uvas tintas.',
             image: enocianina,
-            link: '/enocianina'
+            link: '/enocianina',
+            style: {
+                objectFit: 'none',
+                objectPosition: 'center'
+            }
         },
         {
             title: '¿Qué es el extracto de uva?',
             text: 'Los extractos de semillas de uva son compuestos fenólicos que se encuentran en las semillas de las uvas blancas (Vitis Vinifera).',
             image: opc,
-            link: '/extracto-de-uva'
+            link: '/extracto-de-uva',
+            style: {
+                objectFit: 'none',
+
+            }
         },
         {
             title: '¿Qué es el extracto de piel de uva?',
@@ -57,25 +65,39 @@ export function createNews(lang) {
             title: '¿Qué es el extracto de semilla de uva?',
             text: 'Los extractos de semillas de uva son compuestos fenólicos que se encuentran en las semillas de las uvas blancas (Vitis Vinifera).',
             image: opc,
-            link: '/extracto-de-semilla-de-uva'
+            link: '/extracto-de-semilla-de-uva',
+            style: {
+                objectFit: 'none',
+                objectPosition: 'left'
+            }
         },
         {
             title: '¿Qué son los polifenoles de uva?',
             text: 'Los polifenoles de uva son sustancias antioxidantes que se encuentran en la composición de los distintos vegetales, existiendo miles de compuestos fenólicos diferentes en la naturaleza.',
             image: polifenoles,
-            link: '/polifenoles-de-uva'
+            link: '/polifenoles-de-uva',
+            style: {
+                objectPosition: 'right'
+            }
         },
         {
             title: '¿Qué son los productos derivados de la uva?',
             text: 'Los productos derivados de la uva son aquellos subproductos que resultan del procesamiento del fruto',
             image: polifenoles,
-            link: '/productos-derivados-de-uva'
+            link: '/productos-derivados-de-uva',
+            style: {
+                objectPosition: '0% 0%'
+            }
         },
         {
             title: '¿Qué es el extracto de semilla de uva?',
             text: 'Los extractos de semillas de uva son compuestos fenólicos que se encuentran en las semillas de las uvas blancas (Vitis Vinifera).',
             image: opc,
-            link: '/semilla-uva'
+            link: '/semilla-uva',
+            style: {
+                objectFit: 'none',
+                objectPosition: 'top'
+            }
         },
         {
             title: '¿Qué son los taninos de uva?',
