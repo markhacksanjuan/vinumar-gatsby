@@ -44,7 +44,7 @@ const NoticiasIndex = ({
     const ProductoCard = ({ title, text, image, link }) => {
         return (
             <>
-                <div className='news-index-container-text-card opacity-100'>
+                <div className='news-index-container-text-card opacity-100 box-shadow'>
                     <div>
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
                         <p className='news-index-desc'>{text}</p>
