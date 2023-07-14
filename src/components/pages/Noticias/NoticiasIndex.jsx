@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { navigate } from 'gatsby'
 import Layout from '../../Layout/Layout'
 import Head from '../../Head/Head'
 
@@ -29,6 +30,10 @@ const NoticiasIndex = ({
 
     }, [])
 
+    const onClick = link => {
+        navigate(link)
+    }
+
     const renderHeader = () => {
         return (
             <>
@@ -44,7 +49,7 @@ const NoticiasIndex = ({
     const ProductoCard = ({ title, text, image, link }) => {
         return (
             <>
-                <div className='news-index-container-text-card opacity-100 box-shadow'>
+                <div className='news-index-container-text-card opacity-100 box-shadow' onClick={() => onClick(link)}>
                     <div>
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
                         <p className='news-index-desc'>{text}</p>
