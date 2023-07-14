@@ -63,7 +63,7 @@ const NoticiasIndex = ({
         return (
             <>
                 <div id='productos' className='news-index-container-products opacity-100'>
-                    <h1>{langText.news.index[lang]}</h1>
+                    <h1>{langText.news.index.header_title[lang]}</h1>
                         <div className='news-index-card opacity-100'>
                             {/* <ProductoCard 
                                 title='¿Qué es el OPC de uva?'
