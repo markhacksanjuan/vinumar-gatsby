@@ -54,7 +54,7 @@ const NoticiasIndex = ({
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
                         <p className='news-index-desc'>{text}</p>
                     </div>
-                    <img className='index-card-img opacity-100' src={image} alt={title} style={style || ''} />
+                    <img className='index-card-img opacity-100' src={image} alt={title} style={style || {}} />
                 </div>
             </>
         )
