@@ -17,7 +17,7 @@ const NewsPage = ({ location }) => {
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>¿Qué es la enocianina?</h1>
                         <p>
-                            <b>La enocianina se trata de un colorante 100% natural procedente de la uva Vitis Vinifera, concretamente de la piel de las uvas tintas.</b> A través de una extracción acuosa conseguimos obtener el elemento principal de este producto, que son los antocianos o antocianinas, una sustancia perteneciente a la familia de los polifenoles, responsable de proporcionar las tonalidades de color rojo, violeta y azul. Este pigmento se encuentra clasificado en el listado de aditivos bajo la referencia E-163 con el nombre de “Antocianinas”. 
+                            <b>La enocianina se trata de un colorante 100% natural procedente de la uva <i>Vitis Vinifera</i>, concretamente de la piel de las uvas tintas.</b> A través de una extracción acuosa conseguimos obtener el elemento principal de este producto, que son los antocianos o antocianinas, una sustancia perteneciente a la familia de los polifenoles, responsable de proporcionar las tonalidades de color rojo, violeta y azul. Este pigmento se encuentra clasificado en el listado de aditivos bajo la referencia E-163 con el nombre de “Antocianinas”. 
                             <span className="parrafo">La presencia de antocianinas <b>otorga a la enocianina una máxima relevancia,</b> ya que estas sustancias son conocidas por sus múltiples propiedades beneficiosas para la salud. Por lo tanto, cuando el usuario adquiere enocianina, está obteniendo un colorante natural con un importante valor añadido. </span>
                             <span className="parrafo"></span>
                             <span className="parrafo"></span>
@@ -41,7 +41,7 @@ const NewsPage = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>MÁS INFORMACIÓN</Button>
+                                <Button style='red-button' width='270px' goTo='/producto/extracto-piel-uva'>MÁS INFORMACIÓN</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

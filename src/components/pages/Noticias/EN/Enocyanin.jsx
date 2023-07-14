@@ -16,7 +16,7 @@ const Enocyanin = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>What is enocyanin?</h1>
-                        <p><b>Enocyanin, also known as grape skin extract, is a 100% natural colouring, coming from the skin of the red grapes Vitis Vinifera.</b>
+                        <p><b>Enocyanin, also known as grape skin extract, is a 100% natural colouring, coming from the skin of the red grapes <i>Vitis Vinifera</i>. </b>
                         Through an aqueous extraction we obtain the main component of this product, which is anthocyanins, a substance belonging to the polyphenol family, responsible for providing the blue, purple and red shades. These pigments can be found on the approved additives and E numbers list under the reference E163 Anthocyanins. 
                         <span className="parrafo">The presence of anthocyanins highlights the power of enocyanin as these substances are well known for their multiple healthy properties. Therefore, the user of enocyanin is not only getting a natural colouring but also an important added value.</span>
                         <span className="parrafo"></span>
@@ -37,7 +37,7 @@ const Enocyanin = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>FIND OUT MORE</Button>
+                                <Button style='red-button' width='270px' goTo='/en/product/grape-skin-extracts'>FIND OUT MORE</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

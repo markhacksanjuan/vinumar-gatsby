@@ -18,7 +18,7 @@ const NewsPage = ({ location }) => {
                         <h1 className='news-page-h1'>¿Qué son los taninos de uva?</h1>
                         <p>
                         En general, los taninos son compuestos fenólicos naturales presentes en los árboles y las plantas, así como en sus frutos. Poseen un olor y sabor característico, predominando el amargor y la astringencia. 
-                            <span className="parrafo">Específicamente, los taninos de uva son compuestos fenólicos naturales que se encuentran en las diferentes partes de la vid Vitis Vinifera y su fruto, cobrando una especial importancia los taninos concentrados en la piel y en las pepitas de la uva. Estos polifenoles son obtenidos a través de una extracción acuosa de la piel y de las pepitas de las uvas blancas.</span>
+                            <span className="parrafo">Específicamente, los taninos de uva son compuestos fenólicos naturales que se encuentran en las diferentes partes de la vid <i>Vitis Vinifera</i> y su fruto, cobrando una especial importancia los taninos concentrados en la piel y en las pepitas de la uva. Estos polifenoles son obtenidos a través de una extracción acuosa de la piel y de las pepitas de las uvas blancas.</span>
                             <span className="parrafo">Los taninos poseen propiedades astringentes, antinflamatorias y antioxidantes, proporcionando un gran valor añadido a los productos que los contienen, lo que les convierten en un aditivo natural muy apreciado.</span>
                             <span className="parrafo"></span>
                         </p>
@@ -41,7 +41,7 @@ const NewsPage = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>MÁS INFORMACIÓN</Button>
+                                <Button style='red-button' width='270px' goTo='/producto/taninos-uva'>MÁS INFORMACIÓN</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

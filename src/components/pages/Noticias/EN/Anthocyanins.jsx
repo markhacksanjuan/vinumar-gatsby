@@ -16,10 +16,10 @@ const Anthocyanins = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>What are anthocyanins?</h1>
-                        <p><b>Anthocyanins are natural substances found in certain plants in nature.</b>
+                        <p><b>Anthocyanins are natural substances found in certain plants in nature. </b>
                         They are polyphenols belonging to the flavonoids family, responsible for providing red, violet and blue tones to flowers, leaves or fruits of plants, as well as to any product containing them. The clearest example is red wine, whose colour is due to the presence of anthocyanins in the red grapes from which it is made.
                         <span className="parrafo"><b>The extraction of anthocyanins allows the production of a 100% natural colouring which can be found on the approved additives and E numbers list under the reference E163 Anthocyanins.</b></span>
-                        <span className="parrafo">One of the most widely used fruits for obtaining anthocyanins is the red grape Vitis Vinifera. Through an aqueous extraction of the skin of red grapes we obtain this natural colouring called grape skin extract or enocyanin.</span>
+                        <span className="parrafo">One of the most widely used fruits for obtaining anthocyanins is the red grape <i>Vitis Vinifera</i>. Through an aqueous extraction of the skin of red grapes we obtain this natural colouring called grape skin extract or enocyanin.</span>
                         <span className="parrafo">The presence of anthocyanins highlights the power of enocyanin as these substances are well known for their multiple healthy properties. Therefore, the user of enocyanin is not only getting a natural colouring but also an important added value.</span></p>
                     </div>
                     <div className='news-page-header-apli-carac-img-container'>
@@ -37,7 +37,7 @@ const Anthocyanins = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>FIND OUT MORE</Button>
+                                <Button style='red-button' width='270px' goTo='/en/product/grape-skin-extracts'>FIND OUT MORE</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

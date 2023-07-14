@@ -9,17 +9,17 @@ import '../../../styles/pages/extractos-semillas.css'
 import '../../../styles/pages/news/news-pages.css'
 import '../../../styles/pages/news/news-mediaQueries.css'
 
-const Antocianinos = ({ location }) => {
+const Antocianos = ({ location }) => {
     const renderExtractos = () => {
         return (
             <>
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>¿Qué son los antocianos?</h1>
-                        <p><b>Los antocianos (o antocianinas) son sustancias naturales que se encuentran en determinados vegetales de la naturaleza.</b>
+                        <p><b>Los antocianos (o antocianinas) son sustancias naturales que se encuentran en determinados vegetales de la naturaleza. </b>
                         Se tratan de polifenoles pertenecientes a la familia de los flavonoides, responsables de proporcionar las tonalidades de color rojo, violeta y azul a las flores, hojas o frutos de las plantas, así como a cualquier producto que los contengan. El ejemplo más claro lo encontramos en el vino tinto, cuyo color se debe a la presencia de antocianinas en las uvas tintas a partir de las cuales se elabora el vino.
                         <span className="parrafo">Por lo tanto, la extracción de antocianos permite la elaboración de un colorante 100% natural que se encuentra recogido en el listado de aditivos alimentarios bajo el código E-163 y con el nombre de “Antocianinas”.</span>
-                        <span className="parrafo">Uno de los frutos más utilizados para la obtención de antocianos es la uva tinta Vitis Vinifera. Mediante la extracción acuosa de las pieles de las uvas tintas se obtiene el colorante E-163, también conocido como extracto de piel de uva o enocianina.</span>
+                        <span className="parrafo">Uno de los frutos más utilizados para la obtención de antocianos es la uva tinta <i>Vitis Vinifera</i>. Mediante la extracción acuosa de las pieles de las uvas tintas se obtiene el colorante E-163, también conocido como extracto de piel de uva o enocianina.</span>
                         <span className="parrafo">La presencia de antocianos otorga a los productos una máxima relevancia, ya que estas sustancias son conocidas por sus múltiples propiedades beneficiosas para la salud y, en especial, por su condición de antioxidante. Por lo tanto, cuando el usuario adquiere extracto de piel de uva, está obteniendo un colorante natural con un importante valor añadido gracias a las antocianinas que contiene.</span></p>
                     </div>
                     <div className='news-page-header-apli-carac-img-container'>
@@ -37,7 +37,7 @@ const Antocianinos = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>MÁS INFORMACIÓN</Button>
+                                <Button style='red-button' width='270px' goTo='/producto/extracto-piel-uva'>MÁS INFORMACIÓN</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />
@@ -58,4 +58,4 @@ const Antocianinos = ({ location }) => {
         </>
     )
 }
-export default Antocianinos
+export default Antocianos

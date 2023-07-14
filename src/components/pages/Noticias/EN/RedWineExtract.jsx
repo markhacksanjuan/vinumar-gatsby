@@ -16,7 +16,7 @@ const Enocyanin = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>What is red wine extract?</h1>
-                        <p><b>Red wine extract is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.</b>
+                        <p><b>Red wine extract is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised. </b>
                         Also known as wine concentrate, it is an aromatic ingredient highly appreciated in the food industry for its organoleptic qualities.
                         <span className="parrafo"></span>
                         <span className="parrafo"></span>
@@ -33,11 +33,11 @@ const Enocyanin = ({ location }) => {
                             <div className='news-page-header-carac-container'>
                                 <h2 className='news-page-h2'>What are the applications of red wine extract</h2>
                                 <p><b>Red wine extract can be used in different applications, but it is in the food and beverage industry where its use is most widespread.</b> Wine extracts are widely used as culinary bases in the preparation of sauces, marinades, or ready meals. It is also used in the formulation of beverages.
-                                    <span className="parrafo">Vinumar offers red and white wine extracts under the commercial brand VINUWINE</span>
+                                    <span className="parrafo">Vinumar offers red and white wine extracts under the commercial brand VINUWINE.</span>
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>FIND OUT MORE</Button>
+                                <Button style='red-button' width='270px' goTo='/en/product/wine-extracts'>FIND OUT MORE</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

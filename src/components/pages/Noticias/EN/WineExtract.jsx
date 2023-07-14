@@ -16,7 +16,7 @@ const Enocyanin = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>What is wine extracts?</h1>
-                        <p><b>Wine extracts are natural substances obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.</b>
+                        <p><b>Wine extracts are natural substances obtained from the concentration of red and white wines previously selected and conveniently dealcoholised. </b>
                         Also known as wine concentrate, it is an aromatic ingredient highly appreciated in the food industry for its organoleptic qualities.
                         <span className="parrafo"></span>
                         <span className="parrafo"></span>
@@ -37,7 +37,7 @@ const Enocyanin = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>FIND OUT MORE</Button>
+                                <Button style='red-button' width='270px' goTo='/en/product/wine-extracts'>FIND OUT MORE</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />

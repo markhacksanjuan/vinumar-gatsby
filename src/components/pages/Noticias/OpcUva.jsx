@@ -16,10 +16,10 @@ const OpcUva = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>¿Qué es el OPC de uva?</h1>
-                        <p><b>El OPC (procianidinas oligoméricas) es como comúnmente se conocen a los extractos de semillas de uva, los cuales son compuestos fenólicos que se encuentran en las semillas de las uvas blancas (Vitis Vinifera).</b>
+                        <p><b>El OPC (procianidinas oligoméricas) es como comúnmente se conocen a los extractos de semillas de uva, los cuales son compuestos fenólicos que se encuentran en las semillas de las uvas blancas <i>(Vitis Vinifera)</i>.</b>
                         Las procianidinas oligoméricas son uno de los principales compuestos que se encuentran en los extractos de semillas de uva, y están considerados como uno de los antioxidantes naturales más potentes que existen.
                         <span className="parrafo">Las procianidinas son polifenoles pertenecientes a la familia de los flavonoides y, gracias a su eficacia para combatir las moléculas encargadas de dañar el metabolismo humano (los llamados radicales libres), estos compuestos fenólicos son cada vez más demandados en las diferentes industrias con el fin de ofrecer productos con un importante valor añadido para sus consumidores, ya sean en nutrición humana o en nutrición animal.</span>
-                        <span className="parrafo">La obtención de estos polifenoles se consigue a través de la extracción acuosa de semillas de uvas blancas seleccionadas, obteniendo un ingrediente natural muy apreciado en la actualidad por sus propiedades beneficiosas para la salud</span></p>
+                        <span className="parrafo">La obtención de estos polifenoles se consigue a través de la extracción acuosa de semillas de uvas blancas seleccionadas, obteniendo un ingrediente natural muy apreciado en la actualidad por sus propiedades beneficiosas para la salud.</span></p>
                     </div>
                     <div className='news-page-header-apli-carac-img-container'>
                         <div className='news-page-header-apli-carac-container'>

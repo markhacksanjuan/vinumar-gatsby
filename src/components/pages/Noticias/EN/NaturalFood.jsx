@@ -16,7 +16,7 @@ const Enocyanin = ({ location }) => {
                 <div className='news-page-header'>
                     <div className='news-page-header-title'>
                         <h1 className='news-page-h1'>Vinumar: the importance of experience in natural food colors manufacturers. </h1>
-                        <p><b>Vinumar stands out in the production of grape skin extract E163 among natural food colors manufacturers.</b>
+                        <p><b>Vinumar stands out in the production of grape skin extract E163 among natural food colors manufacturers. </b>
                         We are specialists in the production of grape skin extracts or enocyanin. Our experience, together with our strong investment in high performance equipment, allows us to offer great flexibility, being able to adapt our production of grape skin extracts to our customers' needs.
                         <span className="parrafo">Furthermore, we are located in one of the world's main grape-producing areas, so access to the raw material is guaranteed. This proximity also allows us to process the raw material immediately, maintaining its properties and obtaining a pure product, of high quality.</span>
                         <span className="parrafo"></span>
@@ -26,7 +26,7 @@ const Enocyanin = ({ location }) => {
                         <div className='news-page-header-apli-carac-container'>
                             <div className='news-page-header-apli-container'>
                                 <h2 className='news-page-h2'>What are grape skin extracts made by natural food colors manufacturers?</h2>
-                                <p><b>Grape skin extracts, also known as enocyanin, is a 100% natural colouring, coming from the skin of the red grapes Vitis Vinifera.</b>  Through an aqueous extraction we obtain the main component of this product, which is anthocyanins, a substance belonging to the polyphenol family, responsible for providing the blue, purple and red shades. These pigments can be found on the approved additives and E numbers list under the reference E163 Anthocyanins. 
+                                <p><b>Grape skin extracts, also known as enocyanin, is a 100% natural colouring, coming from the skin of the red grapes <i>Vitis Vinifera</i>.</b>  Through an aqueous extraction we obtain the main component of this product, which is anthocyanins, a substance belonging to the polyphenol family, responsible for providing the blue, purple and red shades. These pigments can be found on the approved additives and E numbers list under the reference E163 Anthocyanins. 
                                 <span className="parrafo">The presence of anthocyanins highlights the power of grape skin extracts as these substances are well known for their multiple healthy properties. Therefore, the user of enocyanin is not only getting a natural colouring but also an important added value.</span>
                                 </p>
                             </div>
@@ -37,7 +37,7 @@ const Enocyanin = ({ location }) => {
                                 </p>
                             </div>
                             <div className='news-page-button'>
-                                <Button style='red-button' width='270px' goTo='/producto/extracto-de-semilla-de-uva'>FIND OUT MORE</Button>
+                                <Button style='red-button' width='270px' goTo='/en/product/grape-skin-extracts'>FIND OUT MORE</Button>
                             </div>
                         </div>
                         <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />
