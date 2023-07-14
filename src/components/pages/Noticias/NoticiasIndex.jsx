@@ -98,7 +98,7 @@ const NoticiasIndex = ({
             <Layout pageLocation={location}>
                 <div className='index-container opacity-100'>
                     {renderHeader()}
-                    {renderProductos()}
+                    {lang && renderProductos()}
                 </div>
             </Layout>
         </>
