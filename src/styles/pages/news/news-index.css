@@ -3,14 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1440px;
     margin: 100px auto auto;
     padding-top: 15px;
     border-top: 1px solid #000
 }
 .news-index-container-products h1 {
-    width: 709px;
-    font-size: 37px
+    margin: 0;
+    width: 100%;
+    font-size: 37px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
 }
 .news-index-container-header {
     /* margin-top: 266px */
@@ -26,7 +30,7 @@
     min-height: 450px;
     margin-top: 20px;
     padding-top: 10px;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     opacity: 0;
 }
 .news-index-container-text-card {
