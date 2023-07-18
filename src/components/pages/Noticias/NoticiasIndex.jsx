@@ -7,7 +7,9 @@ import Head from '../../Head/Head'
 import '../../../styles/index.css'
 import '../../../styles/pages/index-page.css'
 import '../../../styles/pages/news/news-index.css'
+import '../../../styles/pages/news/news-mediaQueries.css'
 import '../../../styles/pages/mediaQueries/index-page-media.css'
+
 
 import { langText } from '../../../lang'
 import { useLang } from '../../../hook/useLang'
