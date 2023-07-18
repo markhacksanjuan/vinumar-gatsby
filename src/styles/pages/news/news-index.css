@@ -63,3 +63,22 @@
 .index-link:hover {
     color: #A02E33
 }
+
+.object-fit-none {
+    object-fit: none;
+}
+.object-position-top {
+    object-position: top;
+}
+.object-position-center {
+    object-position: center;
+}
+.object-position-left {
+    object-position: left;
+}
+.object-position-right {
+    object-position: right;
+}
+.object-position-0-0 {
+    object-position: 0% 0%;
+}

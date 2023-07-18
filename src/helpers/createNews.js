@@ -43,7 +43,8 @@ export function createNews(lang) {
             style: {
                 objectFit: 'none',
                 objectPosition: 'center'
-            }
+            },
+            className: 'object-fit-none object-position-center'
         },
         {
             title: '¿Qué es el extracto de uva?',
@@ -53,7 +54,8 @@ export function createNews(lang) {
             style: {
                 objectFit: 'none',
 
-            }
+            },
+            className: 'object-fit-none'
         },
         {
             title: '¿Qué es el extracto de piel de uva?',
@@ -69,7 +71,8 @@ export function createNews(lang) {
             style: {
                 objectFit: 'none',
                 objectPosition: 'left'
-            }
+            },
+            className: 'object-fit-none object-position-left'
         },
         {
             title: '¿Qué son los polifenoles de uva?',
@@ -78,7 +81,8 @@ export function createNews(lang) {
             link: '/polifenoles-de-uva',
             style: {
                 objectPosition: 'right'
-            }
+            },
+            className: 'object-position-right'
         },
         {
             title: '¿Qué son los productos derivados de la uva?',
@@ -87,7 +91,8 @@ export function createNews(lang) {
             link: '/productos-derivados-de-uva',
             style: {
                 objectPosition: '0% 0%'
-            }
+            },
+            className: 'object-position-0-0'
         },
         {
             title: '¿Qué es el extracto de semilla de uva?',
@@ -97,7 +102,8 @@ export function createNews(lang) {
             style: {
                 objectFit: 'none',
                 objectPosition: 'top'
-            }
+            },
+            className: 'object-fit-none object-position-top'
         },
         {
             title: '¿Qué son los taninos de uva?',
