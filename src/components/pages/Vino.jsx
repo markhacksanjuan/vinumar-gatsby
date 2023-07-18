@@ -69,7 +69,7 @@ const ExtractosVino = ({ location }) => {
                                 </ul>
                             </div>
                         </div>
-                        <img className='uva-header-img no-click-events' src={uvaHeaderImg} alt="Extracto de uva" />
+                        <img className='uva-header-img' src={uvaHeaderImg} alt="Extracto de uva" />
 
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const ExtractosVino = ({ location }) => {
                         <p>{langText.wine.products.liquid.title[lang]}</p>
                         <p>{langText.wine.products.liquid.text[lang]}</p>
                     </div>
-                    <img className='r55l fit-cover no-click-events' src={vinoProducto1} alt="Liquido" />
+                    <img className='r55l fit-cover' src={vinoProducto1} alt="Liquido" />
                     <div className='uva-productos-carac'>
                         <p className='uva-productos-subtitle'>{langText.wine.products.liquid.red.title[lang]}</p>
                         <div>
@@ -119,7 +119,7 @@ const ExtractosVino = ({ location }) => {
                         </div>
                     </div>
 
-                    <img className='b55l fit-cover no-click-events' src={vinoProducto3} alt="Liquido" />
+                    <img className='b55l fit-cover' src={vinoProducto3} alt="Liquido" />
                     <div>
                         <p className='uva-productos-subtitle'>{langText.wine.products.liquid.white.title[lang]}</p>
                         <div>
@@ -165,7 +165,7 @@ const ExtractosVino = ({ location }) => {
                         <p>{langText.wine.products.powder.title[lang]}</p>
                         <p>{langText.wine.products.powder.text[lang]}</p>
                     </div>
-                    <img className='rp fit-cover no-click-events' src={vinoProducto2} alt="Liquido" />
+                    <img className='rp fit-cover' src={vinoProducto2} alt="Liquido" />
                     <div className='uva-productos-carac'>
                         <p className='uva-productos-subtitle'>{langText.wine.products.powder.red.title[lang]}</p>
                         <div>
@@ -197,7 +197,7 @@ const ExtractosVino = ({ location }) => {
                         </div>
                     </div>
 
-                    <img className='bp fit-cover no-click-events' src={vinoProducto4} alt="Liquido" />
+                    <img className='bp fit-cover' src={vinoProducto4} alt="Liquido" />
                     <div>
                         <p className='uva-productos-subtitle'>{langText.wine.products.powder.white.title[lang]}</p>
                         <div>
