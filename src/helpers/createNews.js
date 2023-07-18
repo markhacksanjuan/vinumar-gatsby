@@ -21,7 +21,7 @@ export function createNews(lang) {
             title: '¿Qué son los antocianos?',
             text: 'Los antocianos (o antocianinas) son sustancias naturales que se encuentran en determinados vegetales de la naturaleza.',
             image: antocianinos,
-            link: '/antocianinos'
+            link: '/antocianos'
         },
         {
             title: '¿Qué es el concentrado de vino?',
