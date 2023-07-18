@@ -1,6 +1,6 @@
 @media (max-width: 1520px) {
     .news-page-header {
-        margin: 150px 5% 0 5%;
+        margin: 200px 5% 0;
         width: auto
     }
     .news-index-container-products {
@@ -9,7 +9,7 @@
     }
 }
 @media (max-width: 1270px) {
-    
+
 }
 @media (max-width: 1100px) {
     .news-page-header {
