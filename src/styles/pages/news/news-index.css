@@ -47,6 +47,7 @@
     -webkit-box-shadow: 1px 0px 23px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 1px 0px 23px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 0px 23px 0px rgba(0, 0, 0, 0.2);
+    transition: transform .2s
 }
 .box-shadow:hover {
     -webkit-box-shadow: 1px 0px 50px 0px rgba(0, 0, 0, 0.15);
