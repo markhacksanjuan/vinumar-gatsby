@@ -1,11 +1,11 @@
 import React from 'react'
 import ExtractoSemilla from '../components/pages/Noticias/ExtractoSemilla'
 
-const AntocianinosPage = ({ location }) => {
+const ExtractoSemillaPage = ({ location }) => {
     return (
         <>
             <ExtractoSemilla location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default ExtractoSemillaPage

@@ -149,6 +149,10 @@ export function createNews(lang) {
             text: 'Vinumar stands out in the production of grape skin extract E163 among natural food colors manufacturers.',
             image: enocianina,
             link: '/en/natural-food-colors-manufacturers',
+            style:{
+                objectFit: 'none',
+                objectPosition: '-550px -244px'
+            }
         },
         {
             title: 'Vinumar: the importance of experience in polyphenols suppliers.',
@@ -161,6 +165,9 @@ export function createNews(lang) {
             text: 'Vinumar is one of the world\'s leading suppliers of oligomeric proanthocyanidins (also known by the acronym OPC).',
             image: opc,
             link: '/en/proanthocyanidins-suppliers',
+            style: {
+                objectFit: 'none'
+            }
         },
         {
             title: 'What is red wine concentrate?',
@@ -173,6 +180,10 @@ export function createNews(lang) {
             text: 'Red wine extract is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.',
             image: redWine,
             link: '/en/red-wine-extracts',
+            style: {
+                objectFit: 'none',
+                objectPosition: '-552px -244px'
+            }
         },
         {
             title: 'What is red wine extract powder?',
@@ -191,6 +202,10 @@ export function createNews(lang) {
             text: 'Wine concentrate is a natural substance obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.',
             image: whiteWine,
             link: '/en/wine-concentrate',
+            style: {
+                objectFit: 'none',
+                objectPosition: '-310px -88px'
+            }
         },
         {
             title: 'What is wine extracts?',

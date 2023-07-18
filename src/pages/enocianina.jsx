@@ -1,11 +1,11 @@
 import React from 'react'
 import Enocianina from '../components/pages/Noticias/Enocianina'
 
-const AntocianinosPage = ({ location }) => {
+const EnocianinaPage = ({ location }) => {
     return (
         <>
             <Enocianina location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default EnocianinaPage

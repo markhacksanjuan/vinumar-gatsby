@@ -1,11 +1,11 @@
 import React from 'react'
 import ConcentradoVino from '../components/pages/Noticias/ConcentradoVino'
 
-const AntocianinosPage = ({ location }) => {
+const ConcentradoVinoPage = ({ location }) => {
     return (
         <>
             <ConcentradoVino location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default ConcentradoVinoPage

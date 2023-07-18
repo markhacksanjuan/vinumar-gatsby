@@ -1,11 +1,11 @@
 import React from 'react'
 import Polifenoles from '../components/pages/Noticias/Polifenoles'
 
-const AntocianinosPage = ({ location }) => {
+const PolifenolesPage = ({ location }) => {
     return (
         <>
             <Polifenoles location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default PolifenolesPage

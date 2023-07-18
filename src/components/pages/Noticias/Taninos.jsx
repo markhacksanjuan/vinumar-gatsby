@@ -3,7 +3,7 @@ import Head from '../../Head/Head'
 import LayoutNews from '../../Layout/LayoutNews'
 import Button from '../../button/Button'
 
-import semillaImg from '../../../images/DEF/productos/semillas/BL8A9285.jpg'
+import semillaImg from '../../../images/NEWS/Imagen 14.jpg'
 
 import '../../../styles/pages/extractos-semillas.css'
 import '../../../styles/pages/news/news-pages.css'

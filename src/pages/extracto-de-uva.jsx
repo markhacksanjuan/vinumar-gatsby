@@ -1,11 +1,11 @@
 import React from 'react'
 import ExtractoUva from '../components/pages/Noticias/ExtractoUva'
 
-const AntocianinosPage = ({ location }) => {
+const ExtractoUvaPage = ({ location }) => {
     return (
         <>
             <ExtractoUva location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default ExtractoUvaPage

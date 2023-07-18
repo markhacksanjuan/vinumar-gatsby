@@ -1,11 +1,11 @@
 import React from 'react'
 import ProductosDerivados from '../components/pages/Noticias/ProductosDerivados'
 
-const AntocianinosPage = ({ location }) => {
+const ProductosDerivadosPage = ({ location }) => {
     return (
         <>
             <ProductosDerivados location={location} />
         </>
     )
 }
-export default AntocianinosPage
+export default ProductosDerivadosPage
