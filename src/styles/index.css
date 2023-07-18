@@ -80,6 +80,9 @@ span.parrafo {
 span.block {
     display: block
 }
+img {
+    pointer-events: none;
+}
 img.fit-none {
     object-fit: none
 }
@@ -100,6 +103,10 @@ img.fit-cover {
 }
 .padding-top-10 {
     padding-top: 10px
+}
+
+.no-click-events {
+    pointer-events: none;
 }
 
 /* @media only screen and (max-width: 600px) {

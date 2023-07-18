@@ -36,7 +36,7 @@ const Valores = ({ location }) => {
         return(
             <>
                 <div className="valores-container-header">
-                    <img src={headerImg} alt="Valores" />
+                    <img className='no-click-events' src={headerImg} alt="Valores" />
                     <p>{langText.values.header[lang]}</p>
                 </div>
             </>
@@ -50,7 +50,7 @@ const Valores = ({ location }) => {
                     <div>
                         <div>
                             <p className='valores-content-title'>{langText.values.values.tech.title[lang]}</p>
-                            <img src={valores1} alt="Valores" />
+                            <img className='no-click-events' src={valores1} alt="Valores" />
                             <ReadMore width={screenWidth} className='valores-content-description' lang={lang}>
                                 <p className='valores-content-description'>{langText.values.values.tech.text_1[lang]}
                                     <br/>
@@ -63,7 +63,7 @@ const Valores = ({ location }) => {
                             <div className='valores-content-card'>
                                 <div>
                                     <p className='valores-content-title'>{langText.values.values.reactivity.title[lang]}</p>
-                                    <img src={valores2} alt="Valores" />
+                                    <img className='no-click-events' src={valores2} alt="Valores" />
                                 </div>
                                 <ReadMore width={screenWidth} lang={lang}>
                                     <p>
@@ -77,7 +77,7 @@ const Valores = ({ location }) => {
                             <div className='valores-content-card'>
                                 <div>
                                     <p className='valores-content-title'>{langText.values.values.confidence.title[lang]}</p>
-                                    <img src={valores3} alt="Valores" />
+                                    <img className='no-click-events' src={valores3} alt="Valores" />
                                 </div>
                                 <ReadMore width={screenWidth} lang={lang}>
                                     {langText.values.values.confidence.text[lang]}
@@ -86,7 +86,7 @@ const Valores = ({ location }) => {
                             <div className='valores-content-card'>
                                 <div>
                                     <p className='valores-content-title'>{langText.values.values.experience.title[lang]}</p>
-                                    <img src={valores4} alt="Valores" />
+                                    <img className='no-click-events' src={valores4} alt="Valores" />
                                 </div>
                                 <p>{langText.values.values.experience.text[lang]}</p>
                             </div>

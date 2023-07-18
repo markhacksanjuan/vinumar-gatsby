@@ -39,6 +39,7 @@
     padding-top: 15px;
     border-radius: 10px;
     transition: transform .2s;
+    cursor: default
 }
 .news-index-container-text-card:hover {
     transform: scale(1.05)
