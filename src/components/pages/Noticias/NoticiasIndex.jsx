@@ -78,6 +78,7 @@ const NoticiasIndex = ({
                                             text={item.text}
                                             image={item.image}
                                             link={item.link}
+                                            style={item.style}
                                         />
                                     </>
                                 )
