@@ -47,28 +47,26 @@ const NewsPage = ({ location }) => {
                                             <li className='mt-60'>
                                                 <p className='mb-20'>
                                                     <b>Extracto de semilla de uva:</b> son compuestos fenólicos que se encuentran en las semillas de las uvas blancas. Las procianidinas oligoméricas (también conocidas con las siglas OPC), son uno de los principales compuestos que se encuentran en los extractos de semillas de uva. Estos polifenoles pertenecen a la familia de los flavonoides, y están considerados como uno de los más potentes antioxidantes naturales que existen, ayudando a proteger las células del cuerpo humano de los daños que causan los radicales libres. Por ello, su principal aplicación se encuentra en la industria alimentaria y nutracéutica, con la elaboración de alimentos y bebidas funcionales y suplementos alimenticios.
-
                                                 </p>
                                                 <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                             </li>
                                             <li className='mt-60'>
                                                 <p className='mb-20'>
                                                     <b>Taninos de uva:</b> son compuestos fenólicos naturales que se encuentran en las diferentes partes de la vid Vitis Vinifera y su fruto, cobrando una especial importancia los taninos concentrados en la piel y en las pepitas de la uva. Estos polifenoles son obtenidos a través de una extracción acuosa de la piel y de las pepitas de las uvas blancas. Los taninos tienen un uso enológico, reforzando las características y la conservación de un vino, ya que aportan los polifenoles naturales necesarios para otorgarle distintas cualidades organolépticas durante la vinificación, actuando sobre su color, estructura, astringencia y amargura.
-                                                    <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
-                                                    
                                                 </p>
+                                                <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                             </li>
                                             <li className='mt-60'>
                                                 <p className='mb-20'>
                                                     <b>Extractos de vino:</b> Se trata de sustancias naturales obtenidas por concentración de vinos tintos o blancos seleccionados y convenientemente desalcoholizados. Se utilizan en bebidas sin alcohol y son básicos para preparados alimentarios, porque sus propiedades aromatizantes y saborizantes les confieren un alto valor gastronómico añadido.
-                                                    <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                                 </p>
+                                                <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                             </li>
                                             <li className='mt-60'>
                                                 <p className='mb-20'>
                                                     <b>Polifenoles para la alimentación animal:</b> Extractos de uva con un contenido garantizado en polifenoles utilizados en la industria de la alimentación animal por su alto poder antioxidante, lo que les convierte en un perfecto sustituto de la vitamina E.
-                                                    <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                                 </p>
+                                                <Button style='red-button' width='270px' goTo='/#centered'>VER PRODUCTOS</Button>
                                             </li>
                                         </ul>
                                     </span>
