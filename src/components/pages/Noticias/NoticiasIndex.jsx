@@ -55,7 +55,7 @@ const NoticiasIndex = ({
                 <div className='news-index-container-text-card opacity-100 box-shadow' onClick={() => onClick(link)}>
                     <div>
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
-                        <p className='news-index-desc'>{useItalic(text)}</p>
+                        <p className='news-index-desc'>{useItalic({text, italic: 'Vitis Vinifera'})}</p>
                     </div>
                     <img className={`index-card-img opacity-100 ${className || ''}`}src={image} alt={title} style={style} />
                 </div>
