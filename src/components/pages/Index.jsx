@@ -48,8 +48,6 @@ const IndexPage = ({
   const [scrollDonde, setScrollDonde] = useState(false)
   
   const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
-
-  console.log(location)
   
   useEffect(() => {
     if(typeof window !== 'undefined'){
