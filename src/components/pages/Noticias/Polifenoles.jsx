@@ -43,8 +43,6 @@ const NewsPage = ({ location }) => {
                                                     <p>
                                                         <b>Extracto de piel de uva E-163:</b> El extracto de piel de uva se trata de un colorante 100% natural procedente de las uvas tintas. A través de una extracción acuosa conseguimos obtener el elemento principal de este producto, que son los antocianos o antocianinas, una sustancia perteneciente a la familia de los polifenoles, responsable de proporcionar las tonalidades de color rojo, violeta y azul. Este pigmento se encuentra clasificado en el listado de aditivos bajo la referencia E-163 con el nombre de “Antocianinas”. También conocido como enocianina, el extracto de piel de uva es muy utilizado en la formulación de licores y bebidas, ofreciendo ese color característico de la uva tinta. Su uso también es muy popular en la elaboración de helados, confitería, pastelería o incluso mermeladas.
                                                     </p>
-                                                </div>
-                                                <div>
                                                     <Button style='red-button' width='270px' goTo='/#text-centered'>VER PRODUCTOS</Button>
                                                 </div>
                                             </li>
