@@ -98,9 +98,15 @@ img.fit-cover {
 .hide {
     display: none
 }
+/* PADDING */
 .padding-top-10 {
     padding-top: 10px
 }
+.pb-20 {
+    padding-bottom: 20px
+}
+
+/* MARGIN */
 .mt-60 {
     margin-top: 60px
 }
@@ -110,6 +116,7 @@ img.fit-cover {
 .mb-20 {
     margin-bottom: 20px
 }
+
 
 /* @media only screen and (max-width: 600px) {
     h4 {
