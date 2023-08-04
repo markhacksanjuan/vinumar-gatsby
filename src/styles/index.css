@@ -104,6 +104,12 @@ img.fit-cover {
 .mt-60 {
     margin-top: 60px
 }
+.mt-40 {
+    margin-top: 40px
+}
+.mb-20 {
+    margin-bottom: 20px
+}
 
 /* @media only screen and (max-width: 600px) {
     h4 {

@@ -267,7 +267,7 @@ const IndexPage = ({
       <Layout pageLocation={location}>
         <div className='index-container'>
           {renderHeader()}
-          <div id='text-centered' className={`text-centered-bottom ${scrollTextCentered_1  ? 'text-centered-animated-bottom' : ''}`}>
+          <div id='centered' className={`text-centered-bottom ${scrollTextCentered_1  ? 'text-centered-animated-bottom' : ''}`}>
             <TextCentered>{langText.index.text_centered_top[lang]}</TextCentered>
           </div>
           {renderProductos()}
