@@ -101,6 +101,9 @@ img.fit-cover {
 .padding-top-10 {
     padding-top: 10px
 }
+.mt-60 {
+    margin-top: 60px
+}
 
 /* @media only screen and (max-width: 600px) {
     h4 {
