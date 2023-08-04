@@ -49,6 +49,8 @@ const IndexPage = ({
   
   const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.screen.width : 1920)
 
+  console.log(location)
+  
   useEffect(() => {
     if(typeof window !== 'undefined'){
       window.addEventListener('resize', e => {
@@ -171,7 +173,7 @@ const IndexPage = ({
         <div id='productos' className={`index-container-product ${scrollProductos && 'index-container-product-animated'}`}>
           <h2>{langText.index.products.title[lang]}</h2>
           <div className='index-container-cards'>
-            <div className={`index-card ${scrollPiel && 'index-card-animated-bottom'}`}>
+            <div id='extract' className={`index-card ${scrollPiel && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.grape_skin.title[lang]}
                 text={langText.index.products.grape_skin.text[lang]}
@@ -179,7 +181,7 @@ const IndexPage = ({
                 goTo={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}
               />
             </div>
-            <div className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
+            <div id='wine' className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.wine_extracts.title[lang]}
                 text={langText.index.products.wine_extracts.text[lang]}
@@ -188,7 +190,7 @@ const IndexPage = ({
                 className={'index-card-vino'}
               />
             </div>
-            <div className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
+            <div id='tannins' className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.grape_tannins.title[lang]}
                 text={langText.index.products.grape_tannins.text[lang]}
@@ -197,7 +199,7 @@ const IndexPage = ({
                 className={'index-card-tanino'}
               />
             </div>
-            <div className={`index-card ${scrollSemillas && 'index-card-animated-bottom'}`}>
+            <div id='seed-extract' className={`index-card ${scrollSemillas && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.semillas.title[lang]}
                 text={langText.index.products.semillas.text[lang]}
@@ -206,7 +208,7 @@ const IndexPage = ({
                 className={'index-card-semillas'}
               />
             </div>
-            <div className={`index-card ${scrollAlcoholes && 'index-card-animated-bottom'}`}>
+            <div id='alcohol' className={`index-card ${scrollAlcoholes && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.alcohols.title[lang]}
                 text={langText.index.products.alcohols.text[lang]}
@@ -215,7 +217,7 @@ const IndexPage = ({
                 className={'index-card-alcohol'}
               />
             </div>
-            <div className={`index-card ${scrollPepita && 'index-card-animated-bottom'}`}>
+            <div id='seed' className={`index-card ${scrollPepita && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.grape_seed.title[lang]}
                 text={langText.index.products.grape_seed.text[lang]}

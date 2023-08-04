@@ -13,6 +13,7 @@ import '../../../styles/pages/mediaQueries/index-page-media.css'
 
 import { langText } from '../../../lang'
 import { useLang } from '../../../hook/useLang'
+import useItalic from '../../../hook/useItalic'
 
 import antocianina from '../../../images/DEF/BL8A4185.jpg'
 import extract from '../../../images/DEF/BL8A9509_2.jpg'
@@ -54,7 +55,7 @@ const NoticiasIndex = ({
                 <div className='news-index-container-text-card opacity-100 box-shadow' onClick={() => onClick(link)}>
                     <div>
                         <p className='news-index-title'><b><a className='index-link' href={link}>{title}</a></b></p>
-                        <p className='news-index-desc'>{text}</p>
+                        <p className='news-index-desc'>{useItalic(text)}</p>
                     </div>
                     <img className={`index-card-img opacity-100 ${className || ''}`}src={image} alt={title} style={style} />
                 </div>

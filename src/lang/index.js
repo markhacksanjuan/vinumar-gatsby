@@ -18,6 +18,7 @@ import { langText_modal } from "./translations/lang_modal";
 import { langText_semillas } from './translations/lang_semillas'
 import { langText_common } from "./translations/lang_common";
 import { langText_routing } from "./translations/lang_routing";
+import { langText_nutri_animals } from "./translations/lang_nutri_animal";
 
 // NEWS
 
@@ -46,5 +47,6 @@ export const langText = {
     routing: langText_routing,
     news: {
         index: lang_newsIndex
-    }
+    },
+    nutriAnimals: langText_nutri_animals
 }
