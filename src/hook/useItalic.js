@@ -1,7 +1,6 @@
 import React from 'react'
 
 const useItalic = ({text, italic}) => {
-    console.log(text)
     const arr = text.split(italic)
     if(arr.length === 1) {
         return text
