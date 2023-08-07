@@ -9,8 +9,8 @@ export const langText_nutri_animals = {
             en: ''
         },
         text_2: {
-            es: '',
-            en: 'En Vinumar fabricamos distintos extractos de uva destinados a la nutrición animal según el grado de concentración de polifenoles, en formato polvo.'
+            es: 'En Vinumar fabricamos distintos extractos de uva destinados a la nutrición animal según el grado de concentración de polifenoles, en formato polvo.',
+            en: ''
         },
         application: {
             title: {

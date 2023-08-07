@@ -53,6 +53,7 @@ const Head = ({ title, description, pathname, children, pageTitle, keywordsPage 
                 <link rel='icon' href={favicon} />
                 <link rel='canonical' href='https://vinumar.es' /> 
                 <meta name='icon' href={favicon} />
+                <meta name="google-site-verification" content="3xhH1oF2tWqLERHpdAFPRE0ZZ-_gs_nS4aoB1lEEvJQ" />
             </Helmet>
         </>
     )
