@@ -44,7 +44,10 @@
     }
 }
 @media (max-width: 480px) {
-
+    .news-page-header-apli-carac-img-container {
+        flex-direction: column-reverse;
+        /* flex-wrap: wrap; */
+    }
 }
 @media (max-width: 390px) {
     .news-page-container-header {
