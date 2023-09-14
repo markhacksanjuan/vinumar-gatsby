@@ -36,7 +36,7 @@ const OpcUva = ({ location }) => {
                                 </p>
                             </div>
                         </div>
-                        <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />
+                        <img className='news-semilla-header-img' src={semillaImg} alt="Semilla uva" />
                     </div>
                 </div>
             </>

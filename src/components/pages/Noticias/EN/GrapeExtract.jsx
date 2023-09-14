@@ -41,7 +41,7 @@ const Enocyanin = ({ location }) => {
                                 <Button style='red-button' width='270px' goTo='/en/product/grape-seed-extract'>FIND OUT MORE</Button>
                             </div>
                         </div>
-                        <img className='semilla-header-img' src={semillaImg} alt="Semilla uva" />
+                        <img className='news-semilla-header-img' src={semillaImg} alt="Semilla uva" />
                     </div>
                 </div>
             </>
