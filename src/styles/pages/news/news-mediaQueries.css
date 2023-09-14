@@ -45,7 +45,7 @@
 }
 @media (max-width: 480px) {
     .news-page-header-apli-carac-img-container {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important
         /* flex-wrap: wrap; */
     }
 }
