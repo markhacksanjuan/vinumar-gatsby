@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link, navigate } from 'gatsby'
-import useStyles from './button.style'
 import './button.css'
 import './button-media.css'
 
 const Button = ({ goTo, style, width, children, onClickButton, type }) => {
-    const classes = useStyles()
 
     const onClick = (e) => {
         if(onClickButton) {
