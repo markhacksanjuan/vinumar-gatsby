@@ -37,43 +37,42 @@ const ExtractosNutricionAnimal = ({ location }) => {
             <>
                 <div className='piel-container-header'>
                     <div className='piel-container-header-title'>
-                        <h4>{langText.semillas.header.title[lang]}</h4>
-                        <p>{langText.semillas.header.text_1[lang]}<span className='parrafo'>{langText.semillas.header.text_2[lang]}</span></p>
+                        <h4>{langText.nutriAnimals.header.title[lang]}</h4>
+                        <p>{langText.nutriAnimals.header.text_1[lang]}<span className='parrafo'>{langText.nutriAnimals.header.text_2[lang]}</span></p>
                     </div>
                     <div className='piel-header-apli-carac-img-container'>
                         <div className='piel-header-apli-carac-container'>
                             <div className='piel-header-apli-container'>
-                                <p className='piel-header-apli-carac-title'>{langText.semillas.header.application.title[lang]}</p>
+                                <p className='piel-header-apli-carac-title'>{langText.nutriAnimals.header.application.title[lang]}</p>
                                 <ul>
-                                    <li>{langText.semillas.header.application.li_1[lang]}</li>
-                                    <li>{langText.semillas.header.application.li_2[lang]}</li>
-                                    <li>{langText.semillas.header.application.li_3[lang]}</li>
+                                    <li>{langText.seminutriAnimalsllas.header.application.li_1[lang]}</li>
                                 </ul>
                                 <div className='piel-header-apli-definition'>
-                                    <p>{langText.semillas.header.application.text[lang]}<span className='parrafo'>{langText.semillas.header.application.text_2[lang]}</span></p>
-                                    <ul>
+                                    <p>{langText.nutriAnimals.header.application.text[lang]}{/*<span className='parrafo'>{langText.semillas.header.application.text_2[lang]}</span>*/}</p>
+                                    {/* <ul>
                                         <li><span className='li-span'>{langText.semillas.header.application.app_text_li_1[lang]}</span></li>
                                         <li><span className='li-span'>{langText.semillas.header.application.app_text_li_2[lang]}</span></li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                             <div className='piel-header-carac-container'>
-                                <p className='piel-header-apli-carac-title'>{langText.semillas.header.characteristics.title[lang]}</p>
+                                <p className='piel-header-apli-carac-title'>{langText.nutriAnimals.header.characteristics.title[lang]}</p>
                                 <ul>
                                     <li className='piel-header-carac-li'>
-                                        <p>{langText.semillas.header.characteristics.botanic.title[lang]}</p>
-                                        <p className='italic'>{langText.semillas.header.characteristics.botanic.name[lang]}</p>
+                                        <p>{langText.nutriAnimals.header.characteristics.botanic.title[lang]}</p>
+                                        <p className='italic'>{langText.nutriAnimals.header.characteristics.botanic.name[lang]}</p>
                                     </li>
                                     <li className='piel-header-carac-li padding-top-10'>
-                                        <p>{langText.semillas.header.characteristics.labelling.title[lang]}</p>
+                                        <p>{langText.nutriAnimals.header.characteristics.labelling.title[lang]}</p>
                                         <ul>
-                                            <li>{langText.semillas.header.characteristics.labelling.extract[lang]}</li>
+                                            <li>{langText.nutriAnimals.header.characteristics.labelling.extract[lang]}</li>
+                                            <li>{langText.nutriAnimals.header.characteristics.labelling.atom[lang]}</li>
                                             {/* <li>E-163</li> */}
                                         </ul>
                                     </li>
                                     <li className='piel-header-carac-li padding-top-10'>
-                                        <p>{langText.semillas.header.characteristics.solubility.title[lang]}</p>
-                                        <p>{langText.semillas.header.characteristics.solubility.text[lang]}</p>
+                                        <p>{langText.nutriAnimals.header.characteristics.solubility.title[lang]}</p>
+                                        <p>{langText.nutriAnimals.header.characteristics.solubility.text[lang]}</p>
                                     </li>
                                     
                                 </ul>
@@ -91,29 +90,61 @@ const ExtractosNutricionAnimal = ({ location }) => {
         return(
             <>
                 <div>
-                    <p>{langText.semillas.products.powder.title[lang]}</p>
+                    <p>{langText.nutriAnimals.products.title[lang]}</p>
                     <img className='fit-cover' src={semillaProducto} alt="Polvo" />
                     <div>
-                        <p>VINUOPC</p>
+                        <p>VINUFEED 40RP</p>
                         <div className='producto-div'>
-                            <p>{langText.semillas.products.powder.text[lang]}</p>
+                            <p>{langText.nutriAnimals.products.powder.rp.text[lang]}</p>
                             <ul>
                                 <li>
-                                    <p>{langText.semillas.products.powder.colour.title[lang]}</p>
-                                    <p>&ge; {langText.semillas.products.powder.colour.value[lang]} %</p>
+                                    <p>{langText.nutriAnimals.products.powder.rp.caract.polyphenols[lang]}</p>
+                                    <p>&ge; 40 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.semillas.products.powder.colour.name[lang]}</p>
-                                    <p className='piel-productos-color'>&gt; {langText.semillas.products.powder.colour.text[lang]} %</p>
+                                    <p>{langText.nutriAnimals.products.powder.rp.caract.anthocyanins[lang]}</p>
+                                    <p className='piel-productos-color'>&gt; 0,2 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.semillas.products.powder.moisture[lang]}</p>
+                                    <p>{langText.nutriAnimals.products.powder.rp.caract.moisture[lang]}</p>
                                     <p>&le; 7 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.semillas.products.powder.packaging.title[lang]}</p>
+                                    <p>{langText.nutriAnimals.products.powder.rp.caract.pack.title[lang]}</p>
                                     <ul>
-                                        <li>{langText.semillas.products.powder.packaging.text[lang]}</li>
+                                        <li>{langText.nutriAnimals.products.powder.rp.caract.pack.text[lang]}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <img className='fit-cover' src={semillaProducto} alt="Polvo" />
+                    <div>
+                        <p>VINUFEED 80RPF   </p>
+                        <div className='producto-div'>
+                            <p>{langText.nutriAnimals.products.powder.rpf.text[lang]}</p>
+                            <ul>
+                                <li>
+                                    <p>{langText.nutriAnimals.products.powder.rpf.caract.polyphenols[lang]}</p>
+                                    <p>&ge; 80 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.nutriAnimals.products.powder.rpf.caract.anthocyanins[lang]}</p>
+                                    <p className='piel-productos-color'>&gt; 0,75 %</p>
+                                </li>
+                                <li>
+                                <p>{langText.nutriAnimals.products.powder.rpf.caract.proanthocyanidins[lang]}</p>
+                                    <p className='piel-productos-color'>&gt; 60 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.nutriAnimals.products.powder.rpf.caract.moisture[lang]}</p>
+                                    <p>&le; 7 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.nutriAnimals.products.powder.rpf.caract.pack.title[lang]}</p>
+                                    <ul>
+                                        <li>{langText.nutriAnimals.products.powder.rpf.caract.pack.text[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -148,6 +179,8 @@ const ExtractosNutricionAnimal = ({ location }) => {
                 {renderExtractosHeader()}
 
                 {renderProductos()}
+
+                <TextCentered width='925px' margin='60px'>{langText.nutriAnimals.centered[lang]} (&gt;30%).</TextCentered>
 
                 <Button style='red-button' width='270' goTo={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.semillas.button[lang]}</Button>
                 
