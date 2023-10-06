@@ -6,8 +6,8 @@ import Head from '../Head/Head'
 import Layout from '../Layout/Layout'
 
 // import images
-import semillaApliImg from '../../images/DEF/productos/semillas/BL8A9285.jpg'
-import semillaProducto from '../../images/DEF/productos/semillas/Recorte_pagina_producto.png'
+import nutriApliImg from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.jpg'
+import nutriProducto from '../../images/DEF/productos/nutri/ben-moreland-8wWpDF4Av-Y-unsplash.jpg'
 // import semillaProducto from '../../images/DEF/productos/semillas/BL8A9208_3.jpg'
 
 import { langText } from '../../lang'
@@ -78,7 +78,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
                                 </ul>
                             </div>
                         </div>
-                        <img className='semilla-header-img' src={semillaApliImg} alt="Extracto de piel"/>
+                        <img className='semilla-header-img' src={nutriApliImg} alt="Extracto de piel"/>
 
                     </div>
                 </div>
@@ -90,8 +90,8 @@ const ExtractosNutricionAnimal = ({ location }) => {
         return(
             <>
                 <div>
-                    <p>{langText.nutriAnimals.products.title[lang]}</p>
-                    <img className='fit-cover' src={semillaProducto} alt="Polvo" />
+                    <p>{langText.nutriAnimals.products.powder.title[lang]}</p>
+                    <img className='fit-cover' src={nutriProducto} alt="Polvo" />
                     <div>
                         <p>VINUFEED 40RP</p>
                         <div className='producto-div'>
@@ -119,9 +119,9 @@ const ExtractosNutricionAnimal = ({ location }) => {
                         </div>
                     </div>
 
-                    <img className='fit-cover' src={semillaProducto} alt="Polvo" />
+                    <img style={{ objectFit: 'none', objectPosition: 'center' }} className='fit-cover' src={nutriProducto} alt="Polvo" />
                     <div>
-                        <p>VINUFEED 80RPF   </p>
+                        <p>VINUFEED 80RPF</p>
                         <div className='producto-div'>
                             <p>{langText.nutriAnimals.products.powder.rpf.text[lang]}</p>
                             <ul>
@@ -158,7 +158,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
         return(
             <>
                 <div className="piel-productos-container">
-                    <h4>{langText.semillas.products.title[lang]}</h4>
+                    <h4>{langText.nutriAnimals.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
                     </div>
