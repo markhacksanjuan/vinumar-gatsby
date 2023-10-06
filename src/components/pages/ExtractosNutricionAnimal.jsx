@@ -179,7 +179,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
 
                 {renderProductos()}
 
-                <TextCentered width='925px' margin='0px'>{langText.nutriAnimals.centered[lang]}</TextCentered>
+                <TextCentered width='925px' margin='60px'>{langText.nutriAnimals.centered[lang]}</TextCentered>
 
                 <Button style='red-button' width='270' goTo={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.semillas.button[lang]}</Button>
                 
