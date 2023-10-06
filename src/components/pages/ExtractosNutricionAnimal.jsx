@@ -45,7 +45,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
                             <div className='piel-header-apli-container'>
                                 <p className='piel-header-apli-carac-title'>{langText.nutriAnimals.header.application.title[lang]}</p>
                                 <ul>
-                                    <li>{langText.seminutriAnimalsllas.header.application.li_1[lang]}</li>
+                                    <li>{langText.nutriAnimals.header.application.li_1[lang]}</li>
                                 </ul>
                                 <div className='piel-header-apli-definition'>
                                     <p>{langText.nutriAnimals.header.application.text[lang]}{/*<span className='parrafo'>{langText.semillas.header.application.text_2[lang]}</span>*/}</p>
