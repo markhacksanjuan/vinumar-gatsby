@@ -84,10 +84,8 @@ export const langText_nutri_animals = {
                 },
                 caract: {
                     polyphenols: {
-                        title: {
-                            es: 'Polifenoles totales',
-                            en: 'Total polyphenols',
-                        }
+                        es: 'Polifenoles totales',
+                        en: 'Total polyphenols',
                     },
                     anthocyanins: {
                         es: 'Antocianos',
@@ -116,10 +114,8 @@ export const langText_nutri_animals = {
                 },
                 caract: {
                     polyphenols: {
-                        title: {
-                            es: 'Polifenoles totales',
-                            en: 'Total polyphenols',
-                        }
+                        es: 'Polifenoles totales',
+                        en: 'Total polyphenols',
                     },
                     anthocyanins: {
                         es: 'Antocianos',
