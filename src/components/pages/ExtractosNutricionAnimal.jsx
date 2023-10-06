@@ -156,7 +156,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
     const renderProductos = () => {
         return(
             <>
-                <div className="piel-productos-container">
+                <div className="piel-productos-container" style={{ paddingBottom: '0px'}}>
                     <h4>{langText.nutriAnimals.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
