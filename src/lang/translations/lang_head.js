@@ -46,5 +46,9 @@ export const langText_head = {
     semillas: {
         es: 'Productos - Extractos de semilla de uva',
         en: 'Products - Grape skin extracts'
+    },
+    nutri: {
+        es: 'Productos - Extractos nutrición animal',
+        en: 'Products - Extracts for animal nutrition'
     }
 }

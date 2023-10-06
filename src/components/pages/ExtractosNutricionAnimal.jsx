@@ -173,7 +173,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
 
     return(
         <>
-            <Head keywordsPage={key_color} pageTitle={langText.head.semillas[lang]} description='VINUPER - VINUCAP - Producto extracto piel de uva, enocianina, antocianinas, antocianos, E-163, colorantes naturales - Enocyanin, anthocyanin, grape skin extracts; natural colourings'/>
+            <Head keywordsPage={key_color} pageTitle={langText.head.nutri[lang]} description='VINUFEED - Producto extractos nutrición animal - Product extracts for animal nutrition'/>
             <Layout pageLocation={location}>
                 {renderExtractosHeader()}
 
