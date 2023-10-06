@@ -47,6 +47,7 @@ const Footer = () => {
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.footer.products.grape_skin[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.footer.products.wine_extracts[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.footer.products.tannins[lang]}</Link></li>
+                            <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-nutricion-animal' : '/en/product/extract-animal-nutrition'}>{langText.footer.products.nutri_animal[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.footer.products.seed_extract[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/alcoholes' : '/en/product/alcohols'}>{langText.footer.products.alcohols[lang]}</Link></li>
                             <li><Link className='footer-link' to={lang === 'es' ? '/producto/pepita-de-uva' : '/en/product/grape-seed'}>{langText.footer.products.grape_seed[lang]}</Link></li>

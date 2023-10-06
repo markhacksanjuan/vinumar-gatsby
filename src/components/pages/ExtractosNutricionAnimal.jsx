@@ -6,9 +6,8 @@ import Head from '../Head/Head'
 import Layout from '../Layout/Layout'
 
 // import images
-import nutriApliImg from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.jpg'
-import nutriProducto from '../../images/DEF/productos/nutri/ben-moreland-8wWpDF4Av-Y-unsplash.jpg'
-// import semillaProducto from '../../images/DEF/productos/semillas/BL8A9208_3.jpg'
+import nutriProducto from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.jpg'
+import nutriApliImg from '../../images/DEF/productos/nutri/ben-moreland-8wWpDF4Av-Y-unsplash.jpg'
 
 import { langText } from '../../lang'
 import { useLang } from '../../hook/useLang'

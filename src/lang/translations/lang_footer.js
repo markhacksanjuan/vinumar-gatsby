@@ -31,6 +31,10 @@ export const langText_footer = {
         seed_extract: {
             es: 'Extractos de semilla de uva',
             en: 'Grape seed extracts'
+        },
+        nutri_animal: {
+            es: 'Extractos de nutrición animal',
+            en: 'Extracts for animal nutrition'
         }
     },
     about: {
