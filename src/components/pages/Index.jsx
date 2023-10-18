@@ -21,6 +21,7 @@ import dondeImg from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jp
 import dondeImg_en from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3.jpg'
 // import semillaImg from '../../images/DEF/productos/semillas/Recorte_pagina_inicio.png'
 import semillaImg from '../../images/DEF/productos/semillas/BL8A9208.jpg'
+import feedImg from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.JPG'
 
 import { langText } from '../../lang'
 import { useLang } from "../../hook/useLang"
@@ -41,6 +42,7 @@ const IndexPage = ({
   const [scrollPiel, setScrollPiel] = useState(false)
   const [scrollVino, setScrollVino] = useState(false)
   const [scrollTaninos, setScrollTaninos] = useState(false)
+  const [scrollAnimal, setScrollAnimal] = useState(false)
   const [scrollSemillas, setScrollSemillas] = useState(false)
   const [scrollAlcoholes, setScrollAlcoholes] = useState(false)
   const [scrollPepita, setScrollPepita] = useState(false)
@@ -67,7 +69,8 @@ const IndexPage = ({
         if(factor > 500) { setScrollPiel(true) }
         if(factor > 600) { setScrollVino(true) }
         if(factor > 1000) { setScrollTaninos(true) }
-        if(factor > 1100) { setScrollSemillas(true)}
+        if(factor > 1100) { setScrollAnimal(true) }
+        if(factor > 1300) { setScrollSemillas(true)}
         if(factor > 1500) { setScrollAlcoholes(true) }
         if(factor > 1600) { setScrollPepita(true) }
         if(factor > 3000) { setScrollTextCentered_2(true) }
@@ -195,6 +198,15 @@ const IndexPage = ({
                 image={taninosUva}
                 goTo={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}
                 className={'index-card-tanino'}
+              />
+            </div>
+            <div id='animal_nutri' className={`index-card ${scrollAnimal && 'index-card-animated-bottom'}`}>
+              <ProductoCard 
+                title={langText.index.products.animal_feed.title[lang]}
+                text={langText.index.products.animal_feed.text[lang]}
+                image={taninosUva}
+                goTo={lang === 'es' ? '/producto/extracto-nutricion-animal' : '/en/product/grape-polyphenols-animal-feed'}
+                className={'index-card-animal'}
               />
             </div>
             <div id='seed-extract' className={`index-card ${scrollSemillas && 'index-card-animated-bottom'}`}>

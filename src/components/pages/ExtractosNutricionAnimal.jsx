@@ -102,7 +102,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
                                 </li>
                                 <li>
                                     <p>{langText.nutriAnimals.products.powder.rp.caract.anthocyanins[lang]}</p>
-                                    <p className='piel-productos-color'>&gt; 0,2 %</p>
+                                    <p className='piel-productos-color'>&ge; 0,2 %</p>
                                 </li>
                                 <li>
                                     <p>{langText.nutriAnimals.products.powder.rp.caract.moisture[lang]}</p>
@@ -130,11 +130,11 @@ const ExtractosNutricionAnimal = ({ location }) => {
                                 </li>
                                 <li>
                                     <p>{langText.nutriAnimals.products.powder.rpf.caract.anthocyanins[lang]}</p>
-                                    <p className='piel-productos-color'>&gt; 0,75 %</p>
+                                    <p className='piel-productos-color'>&ge; 0,75 %</p>
                                 </li>
                                 <li>
                                 <p>{langText.nutriAnimals.products.powder.rpf.caract.proanthocyanidins[lang]}</p>
-                                    <p className='piel-productos-color'>&gt; 60 %</p>
+                                    <p className='piel-productos-color'>&ge; 60 %</p>
                                 </li>
                                 <li>
                                     <p>{langText.nutriAnimals.products.powder.rpf.caract.moisture[lang]}</p>

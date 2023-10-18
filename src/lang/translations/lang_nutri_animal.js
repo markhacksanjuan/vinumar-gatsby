@@ -101,8 +101,8 @@ export const langText_nutri_animals = {
                             en: 'Packaging'
                         },
                         text: {
-                            es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                            en: 'Vacuum sealed aluminium bag 25 Kg'
+                            es: 'Bolsa de aluminio 25 Kg termosoldada.',
+                            en: 'Heat-sealed aluminium bag 25 Kg.'
                         }
                     }
                 }
@@ -135,8 +135,8 @@ export const langText_nutri_animals = {
                             en: 'Packaging'
                         },
                         text: {
-                            es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                            en: 'Vacuum sealed aluminium bag 25 Kg'
+                            es: 'Bolsa de aluminio 25 Kg termosoldada.',
+                            en: 'Heat-sealed aluminium bag 25 Kg.'
                         }
                     }
                 }

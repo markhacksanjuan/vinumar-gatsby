@@ -56,6 +56,16 @@ export const langText_index = {
                     en: 'These are natural phenolic compounds extracted from the seeds of white grapes. There are known for their high antioxidant properties.'
                 }
             },
+            animal_feed: {
+                title: {
+                    es: 'Extractos nutrición animal',
+                    en: 'Extracts for animal nutrition'
+                },
+                text: {
+                    es: 'Polifenoles extraídos de la uva tinta destinados a la industria de la nutrición animal por su alto poder antioxidante.',
+                    en: 'Grape polyphenols extracted from selected red grapes intended for animal nutrition due to their high antioxidant properties.'
+                }
+            },
             alcohols: {
                 title: {
                     es: 'Alcoholes',
