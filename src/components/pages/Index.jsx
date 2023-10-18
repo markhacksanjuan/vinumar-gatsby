@@ -21,7 +21,7 @@ import dondeImg from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_2.jp
 import dondeImg_en from '../../images/ilustraciones/Vinumar_Ilustraciones_Mapa_3.jpg'
 // import semillaImg from '../../images/DEF/productos/semillas/Recorte_pagina_inicio.png'
 import semillaImg from '../../images/DEF/productos/semillas/BL8A9208.jpg'
-import feedImg from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.JPG'
+import feedImg from '../../images/DEF/productos/nutri/BL8A3587_MEDIA.jpg'
 
 import { langText } from '../../lang'
 import { useLang } from "../../hook/useLang"
