@@ -45,3 +45,10 @@
 .news-page-button {
     margin-top: 60px
 }
+
+.news-semilla-header-img {
+    width: 50%;
+    height: 688px;
+    object-fit: cover;
+    margin-left: 20px
+}

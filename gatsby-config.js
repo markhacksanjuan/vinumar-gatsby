@@ -6,17 +6,18 @@ module.exports = {
     description: 'Página oficial de VINUMAR, AVIALSA: Polifenoles, orujo de uva, compuestos fenólicos, extracto de uva, productos derivados de la uva - polyphenols, grapre marc, phenolic compounds, grape extract, products derived from grape',
     siteUrl: 'https://vinumar.es'
   },
-  plugins: [`gatsby-plugin-sitemap`, 'gatsby-plugin-react-helmet', {
-    resolve: `gatsby-plugin-preload`,
-    options: {
-      preloaders: [
-        {
-          href: "/src/styles/pages/mediaQueries/mediaAll.css",
-          as: "style"
-        }
-      ]
-    }
-  },
+  plugins: [`gatsby-plugin-sitemap`, 'gatsby-plugin-react-helmet',
+  //  {
+  //   resolve: `gatsby-plugin-preload`,
+  //   options: {
+  //     preloaders: [
+  //       {
+  //         href: "/src/styles/pages/mediaQueries/mediaAll.css",
+  //         as: "style"
+  //       }
+  //     ]
+  //   }
+  // },
   // {
   //   resolve: `gatsby-plugin-google-gtag`,
   //   options: {

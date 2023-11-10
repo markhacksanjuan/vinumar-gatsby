@@ -204,7 +204,7 @@ const IndexPage = ({
               <ProductoCard 
                 title={langText.index.products.animal_feed.title[lang]}
                 text={langText.index.products.animal_feed.text[lang]}
-                image={taninosUva}
+                image={feedImg}
                 goTo={lang === 'es' ? '/producto/extracto-nutricion-animal' : '/en/product/grape-polyphenols-animal-feed'}
                 className={'index-card-animal'}
               />
