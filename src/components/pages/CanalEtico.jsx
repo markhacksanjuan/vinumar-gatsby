@@ -8,11 +8,14 @@ import { LangDispatchContext, LangStateContext} from '../GlobalContextProvider/G
 import { langText } from '../../lang'
 import { historyState } from '../../helpers/historyState'
 
+import { useLang } from '../../hook/useLang'
+
 
 const CanalEtico = ({
     location
 }) => {
 
+    const lang = useLang(location)
     useEffect(() => {
 
     }, [])
