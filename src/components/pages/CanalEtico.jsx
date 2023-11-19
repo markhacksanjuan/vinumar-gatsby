@@ -48,7 +48,7 @@ const CanalEtico = ({
     }
     return (
         <>
-            <Head pageTitle={langText.ethic.title} />
+            <Head pageTitle={langText.ethic.title[lang]} />
             <Layout pageLocation={location}>
                 {renderHeader()}
             </Layout>
