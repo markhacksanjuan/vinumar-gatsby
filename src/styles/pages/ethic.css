@@ -1,5 +1,14 @@
-.ethic-list {
+.ethic-list-container {
     display: flex;
     flex-direction: row;
-    padding-top: 15px
+    padding-top: none !important;
+    justify-content: flex-start !important;
+}
+.ethic-list {
+    width: 65% !important;
+}
+.ethic-link {
+    font-size: 37px;
+    margin-top: 25px;
+    color: #a02e33
 }
