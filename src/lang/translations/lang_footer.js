@@ -69,7 +69,7 @@ export const langText_footer = {
     },
     policy: {
         title: {
-            es: 'Política de Privacidad',
+            es: 'Apartado legal',
             en: 'Privacy Policy'
         },
         cookies: {
@@ -91,6 +91,10 @@ export const langText_footer = {
         safety: {
             es: 'Política de Calidad e Inocuidad Alimentaria',
             en: 'Quality and Food Safety Policy'
+        },
+        ethic: {
+            es: 'Canal ético',
+            en: 'Canal ético'
         }
     },
     spain: {

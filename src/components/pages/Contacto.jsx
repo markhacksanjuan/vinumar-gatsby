@@ -91,6 +91,9 @@ const ContactoPage = ({
                     body: new URLSearchParams(data)
                 })
                 if(response.status === 200) {
+                    typeof window !== 'undefined' && window.gtag('event', 'formulario_contacto', {
+                        title: 'web_vinumar'
+                    })
                     setLoading(false)
                     setOpen(true)
                 }

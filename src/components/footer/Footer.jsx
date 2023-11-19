@@ -75,6 +75,7 @@ const Footer = () => {
                     <p className='footer-title'>{langText.footer.policy.title[lang]}</p>
                     <div>
                         <ul className='footer-list'>
+                            <li><a className='footer-link' href={lang === 'es' ? '/canal-etico' : '/canal-etico'}>{langText.footer.policy.ethic[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? cookies : cookiesPolicy} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
