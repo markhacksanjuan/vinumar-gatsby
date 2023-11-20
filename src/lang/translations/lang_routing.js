@@ -97,5 +97,7 @@ export const langText_routing = {
     '/en/red-wine-extract-powder': '',
     '/en/white-wine-concentrate': '',
     '/en/wine-concentrate': '',
-    '/en/wine-extracts': ''
+    '/en/wine-extracts': '',
+    '/en/canal-etico': '/canal-etico',
+    '/en/canal-etico/': '/canal-etico'
 }
