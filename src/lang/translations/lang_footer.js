@@ -70,7 +70,7 @@ export const langText_footer = {
     policy: {
         title: {
             es: 'Apartado legal',
-            en: 'Privacy Policy'
+            en: 'Legal Area'
         },
         cookies: {
             es: 'Política de cookies',
@@ -94,7 +94,7 @@ export const langText_footer = {
         },
         ethic: {
             es: 'Canal ético',
-            en: 'Canal ético'
+            en: 'Ethics Line'
         }
     },
     spain: {

@@ -26,11 +26,14 @@ const CanalEtico = ({
                 <div className="recursos-recursos-container">
                     <div>
                         <h4>{langText.ethic.title[lang]}</h4>
-                            <p>
-                                {langText.ethic.description[lang]}
-                                <br/>
-                            </p>
-                            <a className='ethic-link' target='_blank' href="https://www.sofidya.com/aceitesvinosyalcoholessa/canal-denuncias-internas">{langText.ethic.link[lang]}</a>
+                            <div className='ethic-link-container'>
+                                <p>
+                                    {langText.ethic.description[lang]}
+                                    <br/>
+                                </p>
+                                <a className='ethic-link' target='_blank' href="https://www.sofidya.com/aceitesvinosyalcoholessa/canal-denuncias-internas">{langText.ethic.link[lang]}</a>
+
+                            </div>
                     </div>
                     <div className='recursos-recursos-tecnicos ethic-list-container'>
                         <p>{langText.ethic.also.title[lang]}</p>
