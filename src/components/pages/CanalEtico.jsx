@@ -27,7 +27,7 @@ const CanalEtico = ({
                     <div>
                         <h4>{langText.ethic.title[lang]}</h4>
                             <div className='ethic-link-container'>
-                                <p>
+                                <p className='ethic-text'>
                                     {langText.ethic.description[lang]}
                                     <br/>
                                 </p>

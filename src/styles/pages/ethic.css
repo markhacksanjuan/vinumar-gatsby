@@ -7,6 +7,15 @@
 .ethic-list {
     width: 65% !important;
 }
+.ethic-list ul {
+    margin-top: 0
+}
+.ethic-link-container {
+    width: 50%
+}
+.ethic-text {
+    margin-bottom: 25px
+}
 .ethic-link {
     font-size: 37px;
     margin-top: 25px;
