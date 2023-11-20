@@ -52,6 +52,8 @@ export const langText_routing = {
     '/semilla-uva/': '',
     '/taninos-uva': '/grape-tannins',
     '/taninos-uva/': '',
+    '/canal-etico': '/canal-etico',
+    '/canal-etico/': '/canal-etico',
     '/en': '/',
     '/en/': '/',
     '/en/contact-us': '/contacto',
