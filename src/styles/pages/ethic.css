@@ -29,9 +29,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 360px;
+    height: 230px;
+    margin: 25px 0
 }
 .qr-code {
     width: 50%;
-    margin: 25px 0
+}
+.iframe {
+    width: 65%;
 }

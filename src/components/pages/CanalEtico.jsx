@@ -3,6 +3,7 @@ import Layout from '../Layout/Layout'
 import Head from '../Head/Head'
 
 import '../../styles/pages/ethic.css'
+import '../../styles/pages/mediaQueries/ethics-media.css'
 
 import { LangDispatchContext, LangStateContext} from '../GlobalContextProvider/GlobalContextProvider'
 import { langText } from '../../lang'
