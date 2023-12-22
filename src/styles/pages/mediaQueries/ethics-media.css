@@ -4,8 +4,8 @@
         height: auto;
     }
     .qr-code {
-        margin-bottom: 25px;
-        width: 50%
+        margin-top: 25px;
+        width: auto
     }
     .iframe {
         width: 100%;
