@@ -34,8 +34,10 @@ const CanalEtico = ({
                                 <br/>
                             </p>
                             <a className='ethic-link' target='_blank' href="https://bfef6082fa25db8b9586.canal.h2c.app/form.html">{langText.ethic.link[lang]}</a>
-                            <img src={qrCode} alt="QR Code" />
-                            <iframe allowtransparency="true" style={{backgroundColor: 'transparent'}} name="form-complaint" src="https://bfef6082fa25db8b9586.canal.h2c.app/form.html" frameborder="0" border="0" width="100%" height="2300"></iframe>
+                            <div className='qr-container'>
+                                <img className='qr-code' src={qrCode} alt="QR Code" />
+                                <iframe allowtransparency="true" style={{backgroundColor: 'transparent'}} name="form-complaint" src="https://bfef6082fa25db8b9586.canal.h2c.app/form.html" frameborder="0" border="0" width="100%" height='100%'></iframe>
+                            </div>
                         </div>
                     </div>
                     <div className='recursos-recursos-tecnicos ethic-list-container'>

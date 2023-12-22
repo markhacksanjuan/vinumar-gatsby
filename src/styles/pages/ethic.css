@@ -24,3 +24,14 @@
 .ethic-link:hover {
     color: black
 }
+
+.qr-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 360px;
+}
+.qr-code {
+    width: 50%;
+    margin: 25px 0
+}
