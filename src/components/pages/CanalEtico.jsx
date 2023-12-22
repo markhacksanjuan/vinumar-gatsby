@@ -26,7 +26,7 @@ const CanalEtico = ({
     const renderHeader = () => {
         return(
             <>
-                <div className="recursos-recursos-container">
+                <div className="ethic-container recursos-recursos-container">
                     <div>
                         <h4>{langText.ethic.title[lang]}</h4>
                         <div className='ethic-link-container'>
