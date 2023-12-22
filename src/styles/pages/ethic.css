@@ -33,7 +33,7 @@
     margin: 25px 0
 }
 .qr-code {
-    /* width: 50%; */
+    width: auto;
 }
 .iframe {
     width: 65%;
