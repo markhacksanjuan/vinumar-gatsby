@@ -95,6 +95,10 @@ export const langText_footer = {
         ethic: {
             es: 'Canal ético',
             en: 'Ethics Line'
+        },
+        webPolicy: {
+            es: 'Política del Canal Ético',
+            en: 'Ethics Line Policy'
         }
     },
     spain: {

@@ -14,6 +14,7 @@ import legalNotice from '../../legal/english/Legal_Notice_PDF.pdf'
 import cookiesPolicy from '../../legal/english/Cookies_Policy_PDF_2.pdf'
 import privacyPolicy from '../../legal/english/Privacy_Policy_2_PDF.pdf'
 import safety from '../../legal/english/POLITICA_CALIDAD_E_INOCUIDAD_ALIMENTARIA_rev_05_en.pdf'
+import politicaWeb from '../../legal/spanish/POLITICA_WEB.pdf'
 
 import eu from '../../images/eu.png'
 
@@ -76,6 +77,7 @@ const Footer = () => {
                     <div>
                         <ul className='footer-list'>
                             <li><a className='footer-link' href={lang === 'es' ? '/canal-etico' : '/canal-etico'}>{langText.footer.policy.ethic[lang]}</a></li>
+                            <li><a className='footer-link' href={lang === 'es' ? politicaWeb : politicaWeb} target='_blank'>{langText.footer.policy.webPolicy[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? cookies : cookiesPolicy} target='_blank'>{langText.footer.policy.cookies[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? privacidad : privacyPolicy} target='_blank'>{langText.footer.policy.privacy[lang]}</a></li>
                             <li><a className='footer-link' href={lang === 'es' ? avisoLegal : legalNotice} target='_blank'>{langText.footer.policy.legal[lang]}</a></li>
