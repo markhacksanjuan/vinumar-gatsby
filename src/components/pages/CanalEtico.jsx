@@ -10,6 +10,8 @@ import { historyState } from '../../helpers/historyState'
 
 import { useLang } from '../../hook/useLang'
 
+import qrCode from '../../images/qrcode.png'
+
 
 const CanalEtico = ({
     location
@@ -26,14 +28,15 @@ const CanalEtico = ({
                 <div className="recursos-recursos-container">
                     <div>
                         <h4>{langText.ethic.title[lang]}</h4>
-                            <div className='ethic-link-container'>
-                                <p className='ethic-text'>
-                                    {langText.ethic.description[lang]}
-                                    <br/>
-                                </p>
-                                <a className='ethic-link' target='_blank' href="https://www.sofidya.com/aceitesvinosyalcoholessa/canal-denuncias-internas">{langText.ethic.link[lang]}</a>
-
-                            </div>
+                        <div className='ethic-link-container'>
+                            <p className='ethic-text'>
+                                {langText.ethic.description[lang]}
+                                <br/>
+                            </p>
+                            <a className='ethic-link' target='_blank' href="https://bfef6082fa25db8b9586.canal.h2c.app/form.html">{langText.ethic.link[lang]}</a>
+                            <img src={qrCode} alt="QR Code" />
+                            <iframe allowtransparency="true" style="background-color: transparent;"  name="form-complaint" src="https://bfef6082fa25db8b9586.canal.h2c.app/form.html" frameborder="0" border="0" width="100%" height="2300"></iframe>
+                        </div>
                     </div>
                     <div className='recursos-recursos-tecnicos ethic-list-container'>
                         <p>{langText.ethic.also.title[lang]}</p>
