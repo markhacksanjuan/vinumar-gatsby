@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import './situacion.css'
 import './situacion-media.css'
-import SimpleImageSlider from 'react-simple-image-slider'
 
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
@@ -10,9 +9,6 @@ import "react-image-gallery/styles/css/image-gallery.css"
 // import img1 from '../../images/img/Entorno_natural_Carrusel_1.jpg'
 // import img2 from '../../images/img/Entorno_natural_Carrusel_2.jpg'
 // import img3 from '../../images/img/Entorno_natural_Carrusel_3.jpg'
-
-import imgAlcohol1 from '../../images/img/Situacion-Geografica-Carrusel-1.jpg'
-import imgAlcohol2 from '../../images/img/Entorno_natural_Pagina_6.jpg'
 
 import img1 from '../../images/selected/DJI_0682-2_sit1.jpg'
 import img2 from '../../images/selected/DJI_0684-2_sit2.jpg'

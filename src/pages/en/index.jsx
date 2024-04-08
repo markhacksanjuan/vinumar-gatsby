@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import { graphql } from "gatsby"
 import Index from '../../components/pages/Index'
 import { LangStateContext } from '../../components/GlobalContextProvider/GlobalContextProvider'
 

@@ -46,24 +46,6 @@ const ReadMore = ({ children, width, className, lang }) => {
             </>
         )
     }
-    const renderComplexShort = () => {
-        return (
-            <>
-                <p>
-                    {children.props.children[0]}
-                    {isReadMore ? renderIsShort() : renderIsLess()}
-                </p>
-            </>
-        )
-    }
-    const renderComplexShortLess = () => {
-        return (
-            <>
-                    {children}
-                    {isReadMore ? renderIsShort() : renderIsLess()}
-            </>
-        )
-    }
     if(!isComplex) {
         if(isShort) {
             return (

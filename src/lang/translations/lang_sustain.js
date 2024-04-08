@@ -29,8 +29,8 @@ export const langText_sustain = {
             en: 'We use biomass energy from grape by-products for our production processes with a neutral CO2 balance. '
         },
         parr_6: {
-            es: 'Tenemos el reconocimiento de la garantía de calidad ISO9001, que también reafirma nuestro compromiso con los valores y objetivos de responsabilidad social y desarrollo sostenible.',
-            en: 'We have ISO9001 quality assurance recognition, which also reaffirms our commitment to the values and objectives of social responsibility and sustainable development.'
+            es: 'Tenemos el reconocimiento de la garantía de calidad ISO9001 y ISO22000, que también reafirma nuestro compromiso con los valores y objetivos de responsabilidad social y desarrollo sostenible.',
+            en: 'We have ISO9001 and ISO22000 quality assurance recognition, which also reaffirms our commitment to the values and objectives of social responsibility and sustainable development.'
         },
         parr_7: {
             es: 'Invertimos en actualizar e innovar en tecnología, como hemos hecho en la modificación de procesos, sistemas de depuración y tratamiento del agua para su mayor reutilización, protegiendo los recursos hídricos.',

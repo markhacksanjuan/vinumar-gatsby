@@ -163,8 +163,8 @@ export const langText_wine = {
                         en: 'Container 1000 l'
                     },
                     drums: {
-                        es: 'Garrafas 20 l, 60 l, 220 l',
-                        en: 'Drums 20 l, 60 l, 220 l'
+                        es: 'Garrafas 20 l',
+                        en: 'Drums 20 l'
                     }
                 }
             }
@@ -213,8 +213,8 @@ export const langText_wine = {
                         en: 'Packaging'
                     },
                     name: {
-                        es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                        en: 'Vacuum-sealed aluminium bag 25 kg.'
+                        es: 'Bolsa de aluminio 25 Kg termosoldada',
+                        en: 'Heat-sealed aluminium bag 25 kg.'
                     }
                 }
             },
@@ -253,8 +253,8 @@ export const langText_wine = {
                         en: 'Packaging'
                     },
                     name: {
-                        es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                        en: 'Vacuum-sealed aluminium bag 25 kg.'
+                        es: 'Bolsa de aluminio 25 Kg termosoldada',
+                        en: 'Heat-sealed aluminium bag 25 kg.'
                     }
                 }
             }

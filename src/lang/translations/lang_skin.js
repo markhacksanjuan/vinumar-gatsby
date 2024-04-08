@@ -143,8 +143,8 @@ export const langText_skin = {
                     en: 'Container	1000 l'
                 },
                 drums: {
-                    es: 'Garrafas 25 l, 60 l, 220 l',
-                    en: 'Drums 25 l, 60 l, 220 l'
+                    es: 'Garrafas 25 l',
+                    en: 'Drums 25 l'
                 }
             }
         },
@@ -195,8 +195,8 @@ export const langText_skin = {
                     en: 'Packaging'
                 },
                 text: {
-                    es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                    en: 'Packaging	Vacuum-sealed aluminium bag 25 Kg'
+                    es: 'Bolsa de aluminio 25 Kg termosoldada',
+                    en: 'Heat-sealed aluminium bag 25 Kg'
                 }
             }
         }

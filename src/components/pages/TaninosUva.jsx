@@ -80,28 +80,59 @@ const Taninos = ({ location }) => {
                     <div>
                         <p>VINUPEP P</p>
                         <div className='producto-div taninos-productos-carac'>
-                            <p>{langText.tannins.products.powder.text[lang]}</p>
+                            <p>{langText.tannins.products.powder.vinupep.text[lang]}</p>
                             <ul>
                                 <li>
-                                    <p>{langText.tannins.products.powder.tannins[lang]}</p>
+                                    <p>{langText.tannins.products.powder.vinupep.tannins[lang]}</p>
                                     <p>&gt; 65 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.tannins.products.powder.ashes[lang]}</p>
+                                    <p>{langText.tannins.products.powder.vinupep.ashes[lang]}</p>
                                     <p>&lt; 4 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.tannins.products.powder.iron[lang]}</p>
+                                    <p>{langText.tannins.products.powder.vinupep.iron[lang]}</p>
                                     <p>&lt; 50 ppm</p>
                                 </li>
                                 <li>
-                                    <p>{langText.tannins.products.powder.moisture[lang]}</p>
+                                    <p>{langText.tannins.products.powder.vinupep.moisture[lang]}</p>
                                     <p>&lt; 7 %</p>
                                 </li>
                                 <li>
-                                    <p>{langText.tannins.products.powder.packaging.title[lang]}</p>
+                                    <p>{langText.tannins.products.powder.vinupep.packaging.title[lang]}</p>
                                     <ul>
-                                        <li>{langText.tannins.products.powder.packaging.text[lang]}</li>
+                                        <li>{langText.tannins.products.powder.vinupep.packaging.text[lang]}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img style={{  objectPosition: 'top' }} className='tanin fit-cover' src={taninosProductoImg} alt="Polvo" />
+                    <div>
+                        <p>VINUPEB P</p>
+                        <div className='producto-div taninos-productos-carac'>
+                            <p>{langText.tannins.products.powder.vinupeb.text[lang]}</p>
+                            <ul>
+                                <li>
+                                    <p>{langText.tannins.products.powder.vinupeb.tannins[lang]}</p>
+                                    <p>&gt; 65 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.tannins.products.powder.vinupeb.ashes[lang]}</p>
+                                    <p>&lt; 4 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.tannins.products.powder.vinupeb.iron[lang]}</p>
+                                    <p>&lt; 50 ppm</p>
+                                </li>
+                                <li>
+                                    <p>{langText.tannins.products.powder.vinupeb.moisture[lang]}</p>
+                                    <p>&lt; 7 %</p>
+                                </li>
+                                <li>
+                                    <p>{langText.tannins.products.powder.vinupeb.packaging.title[lang]}</p>
+                                    <ul>
+                                        <li>{langText.tannins.products.powder.vinupeb.packaging.text[lang]}</li>
                                     </ul>
                                 </li>
                             </ul>

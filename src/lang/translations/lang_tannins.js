@@ -52,46 +52,84 @@ export const langText_tannins = {
             es: 'Nuestra elección en Taninos de uva',
             en: 'Our selected grape tannins'
         },
-        powder: {
+        powder:{
             title: {
                 es: 'Polvo',
                 en: 'Powder'
             },
-            text: {
-                es: 'Taninos condensados de bajo peso molecular extraídos exclusivamente de la pepita de uva blanca seleccionada.',
-                en: 'Condensed tannins of low molecular weight extracted exclusively from selected white grape seeds.'
+            vinupep: {
+                text: {
+                    es: 'Taninos condensados de bajo peso molecular extraídos exclusivamente de la pepita de uva blanca seleccionada.',
+                    en: 'Condensed tannins of low molecular weight extracted exclusively from selected white grape seeds.'
+                },
+                tannins: {
+                    es: 'Taninos',
+                    en: 'Total Phenols'
+                },
+                ashes: {
+                    es: 'Cenizas',
+                    en: 'Ashes'
+                },
+                iron: {
+                    es: 'Hierro',
+                    en: 'Iron'
+                },
+                moisture: {
+                    es: 'Humedad',
+                    en: 'Moisture'
+                },
+                packaging: {
+                    title: {
+                        es: 'Envases',
+                        en: 'Packaging'
+                    },
+                    text: {
+                        es: 'Bolsa de aluminio 25 Kg termosoldada',
+                        en: 'Heat-sealed aluminium bag 25 kg.'
+                    }
+                }
             },
-            tannins: {
-                es: 'Taninos',
-                en: 'Total Phenols'
-            },
-            ashes: {
-                es: 'Cenizas',
-                en: 'Ashes'
-            },
-            iron: {
-                es: 'Hierro',
-                en: 'Iron'
-            },
-            moisture: {
-                es: 'Humedad',
-                en: 'Moisture'
-            },
-            packaging: {
+            vinupeb: {
                 title: {
-                    es: 'Envases',
-                    en: 'Packaging'
+                    es: 'Polvo',
+                    en: 'Powder'
                 },
                 text: {
-                    es: 'Bolsa de aluminio 25 Kg termosoldada al vacío',
-                    en: 'Vacuum-sealed aluminium bag 25 kg.'
+                    es: 'Taninos condensados de alto peso molecular extraídos exclusivamente de la uva blanca seleccionada.',
+                    en: 'Condensed tannins of high molecular weight extracted exclusively from selected white grape seeds.'
+                },
+                tannins: {
+                    es: 'Taninos',
+                    en: 'Total Phenols'
+                },
+                ashes: {
+                    es: 'Cenizas',
+                    en: 'Ashes'
+                },
+                iron: {
+                    es: 'Hierro',
+                    en: 'Iron'
+                },
+                moisture: {
+                    es: 'Humedad',
+                    en: 'Moisture'
+                },
+                packaging: {
+                    title: {
+                        es: 'Envases',
+                        en: 'Packaging'
+                    },
+                    text: {
+                        es: 'Bolsa de aluminio 25 Kg termosoldada',
+                        en: 'Heat-sealed aluminium bag 25 kg.'
+                    }
                 }
             }
-    }
+        }
     },
     centered: {
-        es: 'También ofrecemos taninos de piel de uva blanca seleccionada, de alto peso molecular.',
-        en: 'We also offer selected white grape skin tannins of high molecular weight.'
+        es: 'También ofrecemos taninos de uva con certificación ecológica.',
+        en: 'We also offer organic certified white grape tannins.'
     },
     button: {
         es: 'CONTACTA CON NOSOTROS',
