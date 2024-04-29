@@ -107,6 +107,15 @@ const Taninos = ({ location }) => {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </>
+        )
+    }
+    const renderProductosCard2 = () => {
+        return (
+            <>
+                <div>
+                    <p>{langText.tannins.products.powder.title[lang]}</p>
                     <img style={{  objectPosition: 'top' }} className='tanin fit-cover' src={taninosProductoImg} alt="Polvo" />
                     <div>
                         <p>VINUPEB P</p>
@@ -149,6 +158,7 @@ const Taninos = ({ location }) => {
                     <h4>{langText.tannins.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
+                        {renderProductosCard2()}
                     </div>
                 </div>
             </>

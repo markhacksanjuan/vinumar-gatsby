@@ -118,6 +118,16 @@ const ExtractosNutricionAnimal = ({ location }) => {
                         </div>
                     </div>
 
+                    
+                </div>
+            </>
+        )
+    }
+    const renderProductosCard2 = () => {
+        return (
+            <>
+                <div>
+                    <p>{langText.nutriAnimals.products.powder.title[lang]}</p>
                     <img style={{ objectFit: 'none', objectPosition: 'center' }} className='fit-cover' src={nutriProducto} alt="Polvo" />
                     <div>
                         <p>VINUFEED 80RPF</p>
@@ -160,6 +170,7 @@ const ExtractosNutricionAnimal = ({ location }) => {
                     <h4>{langText.nutriAnimals.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
+                        {renderProductosCard2()}
                     </div>
                 </div>
             </>

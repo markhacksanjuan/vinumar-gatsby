@@ -124,8 +124,8 @@ export const langText_wine = {
                         en: 'Container	1000 l'
                     },
                     drums: {
-                        es: 'Garrafas 20 l, 60 l, 220 l',
-                        en: 'Drums 20 l, 60 l, 220 l'
+                        es: 'Garrafas 20 l',
+                        en: 'Drums 20 l'
                     }
                 }
 

@@ -95,8 +95,8 @@ export const langText_tannins = {
                     en: 'Powder'
                 },
                 text: {
-                    es: 'Taninos condensados de alto peso molecular extraídos exclusivamente de la uva blanca seleccionada.',
-                    en: 'Condensed tannins of high molecular weight extracted exclusively from selected white grape seeds.'
+                    es: 'Taninos condensados de alto peso molecular extraídos exclusivamente de la piel de uva blanca seleccionada.',
+                    en: 'Condensed tannins of high molecular weight extracted exclusively from the skin of selected white grape seeds.'
                 },
                 tannins: {
                     es: 'Taninos',
