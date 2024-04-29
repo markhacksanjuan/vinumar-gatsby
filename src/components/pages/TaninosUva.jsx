@@ -154,7 +154,7 @@ const Taninos = ({ location }) => {
     const renderProductos = () => {
         return(
             <>
-                <div className="taninos-productos-container">
+                <div className="piel-productos-container">
                     <h4>{langText.tannins.products.title[lang]}</h4>
                     <div>
                         {renderProductosCardPolvo()}
