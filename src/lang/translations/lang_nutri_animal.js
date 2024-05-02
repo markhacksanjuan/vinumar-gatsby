@@ -9,7 +9,7 @@ export const langText_nutri_animals = {
             en: 'Grape extracts are used in feed industry for the high antioxidant properties of grapes. Among the different grape polyphenols, anthocyanins and proanthocyanidins are the main ones providing such properties. Several scientific studies have reported about the efficacy of grape polyphenols such as preventing premature ageing or improving the digestibility on animals.'
         },
         text_2: {
-            es: 'En Vinumar somos establecimiento (ESP02000383) de productos destinados a la nutrición animal. Fabricamos distintos extractos de uva según el grado de concentración de polifenoles, en formato polvo.',
+            es: 'En Vinumar somos establecimiento autorizado (ESP02000383) de productos destinados a la nutrición animal. Fabricamos distintos extractos de uva según el grado de concentración de polifenoles, en formato polvo.',
             en: 'At Vinumar, we are approved establishment (ESP02000383) for the manufacture of products intended for animal nutrition. We offer grape extracts at different levels of polyphenols concentration, in powder form.'
         },
         application: {

@@ -6,7 +6,7 @@ export const langText_modal = {
         },
         message: {
             es: 'Su mensaje ha sido enviado.',
-            en: 'Your message has vent sent.'
+            en: 'Your message has been sent.'
         }
     },
     messageError: {
