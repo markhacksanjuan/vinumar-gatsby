@@ -119,14 +119,14 @@ const Alcoholes = ({
                                 <p>{langText.alcohols.products.denatured.title[lang]}</p>
                                 <p>{langText.alcohols.products.denatured.text[lang]}</p>
                             </li>
-                            <li>
+                            {/* <li>
                                 <p>{langText.alcohols.products.distillate.title[lang]}</p>
                                 <p>{langText.alcohols.products.distillate.text[lang]}</p>
                             </li>
                             <li>
                                 <p>{langText.alcohols.products.spirit.title[lang]}</p>
                                 <p>{langText.alcohols.products.spirit.text[lang]}</p>
-                            </li>
+                            </li> */}
                         </ul>
                         <img src={alcoholesProductoImg} alt="Alcoholes" />
                     </div>
