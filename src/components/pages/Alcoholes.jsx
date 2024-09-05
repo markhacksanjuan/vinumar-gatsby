@@ -71,7 +71,7 @@ const Alcoholes = ({
                                                 <li>{langText.alcohols.header.applications.pharmaceutical.medical[lang]}</li>
                                             </ul>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <p>{langText.alcohols.header.applications.food.title[lang]}</p>
                                             <ul>
                                                 <li>{langText.alcohols.header.applications.food.drinks[lang]}</li>
@@ -81,7 +81,7 @@ const Alcoholes = ({
                                                 <li>{langText.alcohols.header.applications.food.oporto[lang]}</li>
                                                 <li>{langText.alcohols.header.applications.food.jerez[lang]}</li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                         <p>
                                             {langText.alcohols.header.applications.text[lang]}

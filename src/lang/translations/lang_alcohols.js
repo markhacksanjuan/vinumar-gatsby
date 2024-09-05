@@ -82,8 +82,8 @@ export const langText_alcohols = {
                 }
             },
             text: {
-                es: 'Los alcoholes de origen vínico se caracterizan por sus diferentes cualidades organolépticas (su sabor, aroma, etc.) respecto al resto de alcoholes.',
-                en: 'Alcohols of vinous origin are characterized by their different organoleptic qualities (taste, aroma, etc.) compared to other alcohols.'
+                es: 'Los alcoholes de origen vínico se caracterizan por sus diferentes cualidades organolépticas respecto al resto de alcoholes.',
+                en: 'Alcohols of vinous origin are characterized by their different organoleptic qualities compared to other alcohols.'
             },
             span: {
                 es: 'El uso de alcoholes procedentes del vino y sus subproductos confiere a los diversos productos a los que se incorporan soluciones más saludables y naturales.',

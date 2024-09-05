@@ -72,8 +72,8 @@ export const langText_index = {
                     en: 'Alcohols'
                 },
                 text: {
-                    es: 'Fabricados a partir del vino o los subproductos de la vinificación, los alcoholes abarcan desde los aguardientes a los utilizados por la industria química y farmacéutica, el sector sanitario o hasta el energético.',
-                    en: 'Made from wine or by-products of winemaking, alcohols range from wine spirits to those used by the chemical and pharmaceutical industries, the health sector or even the energy sector.'
+                    es: 'Fabricados a partir del vino o los subproductos de la vinificación, los alcoholes son utilizados por la industria química, el sector farmacéutico y sanitario o hasta el energético.',
+                    en: 'Made from wine or by-products of winemaking, alcohols range from the chemical industry to those used by the health and pharmaceutical industry or even the energy industry.'
                 }
             },
             grape_seed: {
