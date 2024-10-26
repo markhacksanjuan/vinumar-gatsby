@@ -9,6 +9,7 @@ import {LangStateContext, LangDispatchContext} from '../GlobalContextProvider/Gl
 
 import banderaEs from '../../images/icons/bandera-es.png'
 import banderaEng from '../../images/icons/bandera-eng.png'
+import arrowDown from '../../images/icons/arrow-down.svg'
 
 import { langText } from '../../lang'
 import { usePrefix } from '../../hook/usePathname'
@@ -193,7 +194,11 @@ const NavbarIndex = ({ location, lang }) => {
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
                 <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                 <li className='navbar-list-element-lang'>
-                    <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'} {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p>
+                    <div className='navbar-lang-selector' onMouseOver={onHoverLang}>
+                        <p className='navbar-list-general-element' onClick={onHoverLang}  to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
+                        <img src={arrowDown} />
+                    </div>
+                    {/* <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'} {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p> */}
                     {/* <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang.toUpperCase()}</p> */}
                         {showLang && renderLang()}
                 </li>
@@ -228,7 +233,8 @@ const NavbarIndex = ({ location, lang }) => {
                         <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-burger-element-contact'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-burger-element-lang'>
-                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'}  {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p>
+                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'} <img src={arrowDown} /></p>
+                            {/* <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'}  {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p> */}
                                 {showLang && renderLangBurger()}
                             </li>
                     </ul>  
