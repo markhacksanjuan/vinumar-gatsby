@@ -3,7 +3,16 @@
     list-style: none;
 }
 .navbar-burger-general-element {
-    color: black
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.navbar-burger-general-element img {
+    width: 20px;
+    height: auto;
 }
 .navbar-burger-element:visited {
     color: black
@@ -21,6 +30,17 @@
 }
 .navbar-list-sub-menu-burger {
     margin-top: 0.5rem;
-    display: block;
-    color: black
+    display: flex;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 3px;
+}
+.navbar-list-sub-menu-burger img {
+    width: 20px;
+    height: auto;
+}
+.navbar-list-sub-menu-burger span {
+    margin-top: 2px;
 }

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvinumar_web=self.webpackChunkvinumar_web||[]).push([[171],{3410:function(e,n,t){t.r(n);var a=t(7294),l=t(2592),u=t(1359);n.default=e=>{let{location:n}=e;const{lang:t}=(0,a.useContext)(u.Ie);return a.createElement(a.Fragment,null,a.createElement(l.Z,{lang:t,location:n}))}}}]);
+//# sourceMappingURL=component---src-pages-canal-etico-jsx-213ec0480428f5ea8267.js.map

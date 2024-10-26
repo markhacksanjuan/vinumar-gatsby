@@ -7,6 +7,9 @@ import './navbarIndex-media.css'
 import './navbarIndex-burger.css'
 import {LangStateContext, LangDispatchContext} from '../GlobalContextProvider/GlobalContextProvider'
 
+import banderaEs from '../../images/icons/bandera-es.png'
+import banderaEng from '../../images/icons/bandera-eng.png'
+
 import { langText } from '../../lang'
 import { usePrefix } from '../../hook/usePathname'
 
@@ -153,8 +156,8 @@ const NavbarIndex = ({ location, lang }) => {
         return(
             <>
                 <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()}>
-                    <li className='no-border navbar-list-sub-menu li-lang' onClick={onClickLang}>ES</li>
-                    <li className='navbar-list-sub-menu li-lang' onClick={onClickLang}>EN</li>
+                    <li className='no-border navbar-list-sub-menu li-lang' onClick={onClickLang}><img src={banderaEs} />ES</li>
+                    <li className='navbar-list-sub-menu li-lang' onClick={onClickLang}><img src={banderaEng} />EN</li>
                 </ul> 
             </>
         )
@@ -163,8 +166,8 @@ const NavbarIndex = ({ location, lang }) => {
         return(
             <>
                 <ul className='navbar-menu-burger' onMouseLeave={() => closeSubMenu()}>
-                    <li className='no-border navbar-list-sub-menu-burger li-lang' onClick={onClickLang}>ES</li>
-                    <li className='navbar-list-sub-menu-burger li-lang' onClick={onClickLang}>EN</li>
+                    <li className='no-border navbar-list-sub-menu-burger li-lang' onClick={onClickLang}><img src={banderaEs} /><span>ES</span></li>
+                    <li className='navbar-list-sub-menu-burger li-lang' onClick={onClickLang}><img src={banderaEng} /><span>EN</span></li>
                 </ul> 
             </>
         )
@@ -190,7 +193,7 @@ const NavbarIndex = ({ location, lang }) => {
                 <li className='navbar-list-element'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
                 <li className='navbar-list-element-contact'><Link className='navbar-list-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                 <li className='navbar-list-element-lang'>
-                    <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
+                    <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang === 'es' ? 'ES' : 'EN'} {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p>
                     {/* <p className='navbar-list-general-element' onClick={onHoverLang} onMouseOver={onHoverLang} to='/'>{lang.toUpperCase()}</p> */}
                         {showLang && renderLang()}
                 </li>
@@ -225,7 +228,7 @@ const NavbarIndex = ({ location, lang }) => {
                         <li className='navbar-burger-element'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/sostenibilidad' : '/en/sustainability'}>{langText.navbar.sustainability[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-burger-element-contact'><Link className='navbar-burger-general-element' onMouseOver={closeSubMenu} to={lang === 'es' ? '/contacto' : '/en/contact-us'}>{langText.navbar.contact[lang]}</Link></li>
                         <li className='navbar-burger-element navbar-burger-element-lang'>
-                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'}</p>
+                            <p className='navbar-burger-general-element' onClick={onClickLangBurger} to='/'>{lang === 'es' ? 'ES' : 'EN'}  {lang === 'es' ? <img src={banderaEs} /> : <img src={banderaEng} />}</p>
                                 {showLang && renderLangBurger()}
                             </li>
                     </ul>  
