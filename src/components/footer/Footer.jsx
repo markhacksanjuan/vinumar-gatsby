@@ -13,7 +13,7 @@ import fondo from '../../legal/Fondo_Europeo_de_Desarrollo_Regional_PDF 21032023
 import legalNotice from '../../legal/english/Legal_Notice_PDF.pdf'
 import cookiesPolicy from '../../legal/english/Cookies_Policy_PDF_2.pdf'
 import privacyPolicy from '../../legal/english/Privacy_Policy_2_PDF.pdf'
-import safety from '../../legal/english/POLITICA_CALIDAD_E_INOCUIDAD_ALIMENTARIA_rev_05_en.pdf'
+import safety from '../../legal/english/POLITICA_CALIDAD_E_INOCUIDAD_ALIMENTARIA_rev_06_en.pdf'
 import politicaWeb from '../../legal/spanish/POLITICA_WEB.pdf'
 
 import eu from '../../images/eu.png'
