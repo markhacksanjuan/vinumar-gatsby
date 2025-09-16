@@ -66,7 +66,7 @@ const NavbarIndex = ({ location, lang }) => {
               <ul className='navbar-menu' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
                     {/* <li className='no-border'><Link className='navbar-list-sub-menu' to='/producto/extracto-piel-uva'>{t('Extractos de piel de uva')}</Link></li> */}
                     <li className='no-border'><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.navbar.products.grape_skin[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li>
+                    {/* <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li> */}
                     <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.navbar.products.tannins[lang]}</Link></li>
                     <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-nutricion-animal' : '/en/product/grape-polyphenols-animal-feed'}>{langText.navbar.products.nutri_animal[lang]}</Link></li>
                     <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.navbar.products.seed_extract[lang]}</Link></li>
@@ -81,7 +81,7 @@ const NavbarIndex = ({ location, lang }) => {
             <>
               <ul className='navbar-menu-burger' onMouseLeave={() => closeSubMenu()} onBlur={() => closeSubMenu()} >
                     <li className='no-border'><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}>{langText.navbar.products.grape_skin[lang]}</Link></li>
-                    <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li>
+                    {/* <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}>{langText.navbar.products.wine_extracts[lang]}</Link></li> */}
                     <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/taninos-uva' : '/en/product/grape-tannins'}>{langText.navbar.products.tannins[lang]}</Link></li>
                     <li><Link className='navbar-list-sub-menu' to={lang === 'es' ? '/producto/extracto-nutricion-animal' : '/en/product/grape-polyphenols-animal-feed'}>{langText.navbar.products.nutri_animal[lang]}</Link></li>
                     <li><Link className='navbar-list-sub-menu-burger' to={lang === 'es' ? '/producto/extracto-de-semilla-de-uva' : '/en/product/grape-seed-extract'}>{langText.navbar.products.seed_extract[lang]}</Link></li>

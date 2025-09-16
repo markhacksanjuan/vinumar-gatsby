@@ -182,7 +182,7 @@ const IndexPage = ({
                 goTo={lang === 'es' ? '/producto/extracto-piel-uva' : '/en/product/grape-skin-extracts'}
               />
             </div>
-            <div id='wine' className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
+            {/* <div id='wine' className={`index-card ${scrollVino && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.wine_extracts.title[lang]}
                 text={langText.index.products.wine_extracts.text[lang]}
@@ -190,7 +190,7 @@ const IndexPage = ({
                 goTo={lang === 'es' ? '/producto/extracto-vino' : '/en/product/wine-extracts'}
                 className={'index-card-vino'}
               />
-            </div>
+            </div> */}
             <div id='tannins' className={`index-card ${scrollTaninos && 'index-card-animated-bottom'}`}>
               <ProductoCard 
                 title={langText.index.products.grape_tannins.title[lang]}
