@@ -1,14 +1,11 @@
-import React, { useContext } from 'react'
-import Vino from '../../../components/pages/Vino'
-import { LangStateContext } from '../../../components/GlobalContextProvider/GlobalContextProvider'
+import React from 'react'
+import Anthocyanins from '../../components/pages/Noticias/EN/WineExtract'
 
-const VinoPage = ({ location }) => {
-    const { lang } = useContext(LangStateContext)
+const AntocianinosPage = ({ location }) => {
     return (
         <>
-            <Vino lang={lang} location={location} />
+            <Anthocyanins location={location} />
         </>
     )
 }
-
-export default VinoPage
+export default AntocianinosPage

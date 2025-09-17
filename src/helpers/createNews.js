@@ -23,12 +23,12 @@ export function createNews(lang) {
             image: antocianinos,
             link: '/antocianos'
         },
-        {
-            title: '¿Qué es el concentrado de vino?',
-            text: 'El concentrado de vino es una sustancia natural que se obtiene de la concentración de vinos tintos y blancos',
-            image: concentrado,
-            link:'/concentrado-de-vino'
-        },
+        // {
+        //     title: '¿Qué es el concentrado de vino?',
+        //     text: 'El concentrado de vino es una sustancia natural que se obtiene de la concentración de vinos tintos y blancos',
+        //     image: concentrado,
+        //     link:'/concentrado-de-vino'
+        // },
         {
             title: '¿Qué colorante es el E-163?',
             text: 'E-163 es el código que identifica a las “Antocianinas” dentro del listado de aditivos alimentarios.',
@@ -169,50 +169,50 @@ export function createNews(lang) {
                 objectFit: 'none'
             }
         },
-        {
-            title: 'What is red wine concentrate?',
-            text: 'Red wine concentrate is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.',
-            image: redWine,
-            link: '/en/red-wine-concentrate',
-        },
-        {
-            title: 'What is red wine extract?',
-            text: 'Red wine extract is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.',
-            image: redWine,
-            link: '/en/red-wine-extracts',
-            style: {
-                objectFit: 'none',
-                objectPosition: '-552px -244px'
-            }
-        },
-        {
-            title: 'What is red wine extract powder?',
-            text: 'Red wine extract powder is a natural substance obtained by dealcoholisation, vacuum concentration, filtration and spray drying of selected red wines.',
-            image: redWinePow,
-            link: '/en/red-wine-extract-powder',
-        },
-        {
-            title: 'What is white wine concentrate?',
-            text: 'White wine concentrate is a natural substance obtained from the concentration of white wines previously selected and conveniently dealcoholised.',
-            image: whiteWine,
-            link: '/en/white-wine-concentrate',
-        },
-        {
-            title: 'What is wine concentrate?',
-            text: 'Wine concentrate is a natural substance obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.',
-            image: whiteWine,
-            link: '/en/wine-concentrate',
-            style: {
-                objectFit: 'none',
-                objectPosition: '-310px -88px'
-            }
-        },
-        {
-            title: 'What is wine extracts?',
-            text: 'Wine extracts are natural substances obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.',
-            image: concentrado,
-            link: '/en/wine-extracts',
-        }
+        // {
+        //     title: 'What is red wine concentrate?',
+        //     text: 'Red wine concentrate is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.',
+        //     image: redWine,
+        //     link: '/en/red-wine-concentrate',
+        // },
+        // {
+        //     title: 'What is red wine extract?',
+        //     text: 'Red wine extract is a natural substance obtained from the concentration of red wines previously selected and conveniently dealcoholised.',
+        //     image: redWine,
+        //     link: '/en/red-wine-extracts',
+        //     style: {
+        //         objectFit: 'none',
+        //         objectPosition: '-552px -244px'
+        //     }
+        // },
+        // {
+        //     title: 'What is red wine extract powder?',
+        //     text: 'Red wine extract powder is a natural substance obtained by dealcoholisation, vacuum concentration, filtration and spray drying of selected red wines.',
+        //     image: redWinePow,
+        //     link: '/en/red-wine-extract-powder',
+        // },
+        // {
+        //     title: 'What is white wine concentrate?',
+        //     text: 'White wine concentrate is a natural substance obtained from the concentration of white wines previously selected and conveniently dealcoholised.',
+        //     image: whiteWine,
+        //     link: '/en/white-wine-concentrate',
+        // },
+        // {
+        //     title: 'What is wine concentrate?',
+        //     text: 'Wine concentrate is a natural substance obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.',
+        //     image: whiteWine,
+        //     link: '/en/wine-concentrate',
+        //     style: {
+        //         objectFit: 'none',
+        //         objectPosition: '-310px -88px'
+        //     }
+        // },
+        // {
+        //     title: 'What is wine extracts?',
+        //     text: 'Wine extracts are natural substances obtained from the concentration of red and white wines previously selected and conveniently dealcoholised.',
+        //     image: concentrado,
+        //     link: '/en/wine-extracts',
+        // }
     ]
 
     const newsObj = {
