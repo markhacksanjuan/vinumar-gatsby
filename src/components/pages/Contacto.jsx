@@ -79,30 +79,36 @@ const ContactoPage = ({
     }
 
     const onSubmit = async (data) => {
-        setLoading(true)
-        if(data.rgpd){
-            try{
-                const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
-                    method: 'POST',
-                    mode: 'cors',
-                    headers: {
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                    body: new URLSearchParams(data)
-                })
-                if(response.status === 200) {
-                    typeof window !== 'undefined' && window.gtag('event', 'formulario_contacto', {
-                        title: 'web_vinumar'
-                    })
-                    setLoading(false)
-                    setOpen(true)
-                }
-            }catch(err) {
-                console.error(err)
-            }
-            reset()
-        }else {
+        if (!data.rgpd) {
             setError(true)
+            return
+        }
+
+        setLoading(true)
+        try{
+            const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    // 'Access-Control-Allow-Origin': '*',
+                    'Content-Type': 'text/plain'
+                },
+                body: JSON.stringify(data)
+            })
+            if (response.ok) {
+                typeof window !== 'undefined' && window.gtag('event', 'formulario_contacto', {
+                    title: 'web_vinumar'
+                })
+                setLoading(false)
+                setOpen(true)
+            } else {
+                console.error('contact fallido', response.status, await response.text())
+                setError(true)
+            }
+        }catch(err) {
+            console.error(err)
+            setError(true)
+        } finally {
             setLoading(false)
         }
     }
