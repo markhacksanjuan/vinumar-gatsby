@@ -86,7 +86,7 @@ const ContactoPage = ({
 
         setLoading(true)
         try{
-            const response = await fetch('https://angry-mccarthy.217-160-209-206.plesk.page/contact', {
+            const response = await fetch('https://www.vinumar.es/api/contact', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
