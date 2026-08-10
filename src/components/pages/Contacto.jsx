@@ -86,12 +86,12 @@ const ContactoPage = ({
 
         setLoading(true)
         try{
-            const response = await fetch('https://www.vinumar.es/api/contact', {
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
                     // 'Access-Control-Allow-Origin': '*',
-                    'Content-Type': 'text/plain'
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
             })
